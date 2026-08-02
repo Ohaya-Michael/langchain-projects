@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-01T23:04:20",
+  "question": "months where mortgage rates were highest and how many rental listings there were",
+  "search_query": "Months with the highest mortgage rates and the corresponding number of rental listings.",
+  "datasource": "real_estate",
+  "answer": "The highest mortgage rates recorded in the retrieved documents were in September 2025, with an average mortgage rate of 3.1% (source: unknown). \n\nRegarding rental listings, the number of rental listings varied across the months. In September 2020, there were 166 rental listings, in April 2022 there were 54, in March 2020 there were 148, in December 2020 there were 201, and in September 2025 there were 42 rental listings (source: unknown). \n\nThus, the month with the highest mortgage rate was September 2025, and the number of rental listings in that month was 42.",
+  "evaluation": {
+    "faithfulness": 3,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer correctly identifies September 2025 as the month with the highest mortgage rate of 3.1%. However, it inaccurately states that there were 42 rental listings in that month, while the context only provides the number of rental listings for various months without specifying that the 42 listings were the only ones relevant to the question. The answer could have been clearer about the rental listings across different months."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Adlershof, Treptow-Köpenick, Berlin in 2020-09. Kiez premium: medium. Resale price 4016 EUR/m2, new-construction price 4971 EUR/m2, average cold rent 10.44 EUR/m2/month. Listings this month: 118 resale, 5 new-build, 166 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "ortsteil": "Adlershof",
+        "kiez_premium": "medium",
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 4016,
+        "avg_mortgage_rate_pct": 1.1,
+        "kaltmiete_per_m2_monthly_eur": 10.44,
+        "bezirk": "Treptow-Köpenick",
+        "source": "kiez_prices_monthly",
+        "year_month": "2020-09"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Baumschulenweg, Treptow-Köpenick, Berlin in 2022-04. Kiez premium: medium. Resale price 5114 EUR/m2, new-construction price 6418 EUR/m2, average cold rent 12.64 EUR/m2/month. Listings this month: 26 resale, 15 new-build, 54 rental. ECB main rate 0.0%, average mortgage rate 1.8%.",
+      "metadata": {
+        "kaltmiete_per_m2_monthly_eur": 12.64,
+        "secondary_price_per_m2_eur": 5114,
+        "avg_mortgage_rate_pct": 1.8,
+        "source": "kiez_prices_monthly",
+        "kiez_premium": "medium",
+        "year_month": "2022-04",
+        "ortsteil": "Baumschulenweg",
+        "listing_type": "market_stats",
+        "bezirk": "Treptow-Köpenick"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Adlershof, Treptow-Köpenick, Berlin in 2020-03. Kiez premium: medium. Resale price 4225 EUR/m2, new-construction price 5080 EUR/m2, average cold rent 10.86 EUR/m2/month. Listings this month: 143 resale, 4 new-build, 148 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "avg_mortgage_rate_pct": 1.1,
+        "secondary_price_per_m2_eur": 4225,
+        "listing_type": "market_stats",
+        "source": "kiez_prices_monthly",
+        "kiez_premium": "medium",
+        "kaltmiete_per_m2_monthly_eur": 10.86,
+        "ortsteil": "Adlershof",
+        "year_month": "2020-03",
+        "bezirk": "Treptow-Köpenick"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Adlershof, Treptow-Köpenick, Berlin in 2025-09. Kiez premium: medium. Resale price 5168 EUR/m2, new-construction price 6597 EUR/m2, average cold rent 15.5 EUR/m2/month. Listings this month: 174 resale, 14 new-build, 42 rental. ECB main rate 2.75%, average mortgage rate 3.1%.",
+      "metadata": {
+        "kaltmiete_per_m2_monthly_eur": 15.5,
+        "source": "kiez_prices_monthly",
+        "bezirk": "Treptow-Köpenick",
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 5168,
+        "kiez_premium": "medium",
+        "ortsteil": "Adlershof",
+        "avg_mortgage_rate_pct": 3.1,
+        "year_month": "2025-09"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Adlershof, Treptow-Köpenick, Berlin in 2020-12. Kiez premium: medium. Resale price 4533 EUR/m2, new-construction price 5664 EUR/m2, average cold rent 10.63 EUR/m2/month. Listings this month: 16 resale, 26 new-build, 201 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "ortsteil": "Adlershof",
+        "secondary_price_per_m2_eur": 4533,
+        "kaltmiete_per_m2_monthly_eur": 10.63,
+        "kiez_premium": "medium",
+        "avg_mortgage_rate_pct": 1.1,
+        "bezirk": "Treptow-Köpenick",
+        "year_month": "2020-12",
+        "listing_type": "market_stats",
+        "source": "kiez_prices_monthly"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-01T20:14:59",
+  "question": "2-room family rental with a balcony and lift in Steglitz",
+  "search_query": "2-room family rental with a balcony and elevator in Steglitz",
+  "datasource": "real_estate",
+  "answer": "The relevant document for your inquiry about a 2-room family rental with a balcony and lift in Steglitz is as follows:\n\nThere is a rental apartment available in Steglitz, Steglitz-Zehlendorf, Berlin, which features 2 rooms, a balcony, and a lift. The apartment is 46.5 m², located on the first floor of a five-story building, and is in modern condition (renovated). The rental details are as follows: the cold rent (Kaltmiete) is EUR 562 per month, with additional costs (Nebenkosten) of EUR 170, leading to a total warm rent (Warmmiete) of EUR 733 per month. A deposit of three months' rent is required. This listing was made on March 11, 2020 (Real Estate). \n\nThis apartment meets your criteria of being a 2-room family rental with a balcony and lift.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, which describes a 2-room rental apartment in Steglitz that includes a balcony and a lift. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 2-room 2_room, 46.5 m2, floor 1 of 5, modern_1990_2010, condition kernsaniert, position vorderhaus, energy class F. Furnished: no, lift: yes, balcony: yes. Nearest transit: Hallesches Tor (U1), 73 min; 8.0 km to Brandenburg Gate. Kaltmiete EUR 562/month, Nebenkosten EUR 170, Warmmiete EUR 733/month (12.09 EUR/m2 kalt). Deposit: 3 months. Listed 2020-03-11.",
+      "metadata": {
+        "property_type": "2_room",
+        "rent_per_m2_kalt_eur": 12.09,
+        "kiez_premium": "medium",
+        "energy_class": "F",
+        "area_m2": 46.5,
+        "ortsteil": "Steglitz",
+        "source": "rentals",
+        "listing_type": "rental",
+        "furnished": "False",
+        "rooms": 2,
+        "warmmiete_eur_monthly": 733,
+        "id": "R008587",
+        "bezirk": "Steglitz-Zehlendorf",
+        "kaltmiete_eur_monthly": 562,
+        "date_listed": "2020-03-11"
+      }
+    },
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 4-room 4_room, 123.6 m2, floor 3 of 5, new_post_2010, condition saniert, position vorderhaus, energy class C. Furnished: yes, lift: yes, balcony: yes. Nearest transit: Hohenzollerndamm S (S Ringbahn), 42 min; 7.13 km to Brandenburg Gate. Kaltmiete EUR 3137/month, Nebenkosten EUR 323, Warmmiete EUR 3460/month (25.38 EUR/m2 kalt). Deposit: 3 months. Listed 2024-10-13.",
+      "metadata": {
+        "furnished": "True",
+        "bezirk": "Steglitz-Zehlendorf",
+        "rent_per_m2_kalt_eur": 25.38,
+        "warmmiete_eur_monthly": 3460,
+        "energy_class": "C",
+        "id": "R006238",
+        "kiez_premium": "medium",
+        "area_m2": 123.6,
+        "property_type": "4_room",
+        "source": "rentals",
+        "ortsteil": "Steglitz",
+        "kaltmiete_eur_monthly": 3137,
+        "listing_type": "rental",
+        "date_listed": "2024-10-13",
+        "rooms": 4
+      }
+    }
+  ]
+}

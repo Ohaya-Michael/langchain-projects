@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-08-01T20:13:30",
+  "question": "cheap 2-room rental near a U-Bahn in Kreuzberg",
+  "search_query": "affordable two-room rental near U-Bahn station in Kreuzberg",
+  "datasource": "real_estate",
+  "answer": "In Kreuzberg, there are a few rental options for 2-room apartments, but they may not be considered \"cheap\" based on the provided listings. \n\n1. One option is a 2-room apartment with 63.1 m², located on the first floor of a modern building (built between 1990-2010). The Kaltmiete (base rent) is EUR 1409/month, with additional Nebenkosten (additional costs) of EUR 201, leading to a Warmmiete (total rent) of EUR 1609/month. This apartment is near the Weinmeisterstraße U-Bahn station, which is a 36-minute transit time to the center (2.56 km to Brandenburg Gate) (Real Estate).\n\n2. Another listing features a 2-room apartment with 52.3 m², also on the first floor of a modernized building. The Kaltmiete is EUR 1229/month, with Nebenkosten of EUR 229, resulting in a Warmmiete of EUR 1458/month. This apartment is closer to the Görlitzer Bahnhof U-Bahn station, with a 25-minute transit time (2.8 km to Brandenburg Gate) (Real Estate).\n\nBoth options are above EUR 1200 for Kaltmiete, which may not align with the expectation of a \"cheap\" rental. Unfortunately, there are no listings for 2-room rentals in Kreuzberg that are significantly lower in price.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context regarding the 2-room rental options in Kreuzberg, including their prices and proximity to U-Bahn stations. It correctly identifies that these options may not be considered 'cheap' based on the provided listings."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 1-room 1_room, 41.2 m2, floor 5 of 6, altbau_pre_1949, condition saniert, position hinterhaus, energy class E. Furnished: no, lift: no, balcony: yes. Nearest transit: Görlitzer Bahnhof (U1), 25 min; 3.52 km to Brandenburg Gate. Kaltmiete EUR 808/month, Nebenkosten EUR 132, Warmmiete EUR 940/month (19.59 EUR/m2 kalt). Deposit: 3 months. Listed 2025-05-18.",
+      "metadata": {
+        "listing_type": "rental",
+        "property_type": "1_room",
+        "kiez_premium": "high",
+        "area_m2": 41.2,
+        "kaltmiete_eur_monthly": 808,
+        "date_listed": "2025-05-18",
+        "id": "R013426",
+        "rooms": 1,
+        "furnished": "False",
+        "warmmiete_eur_monthly": 940,
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "ortsteil": "Kreuzberg",
+        "rent_per_m2_kalt_eur": 19.59,
+        "energy_class": "E",
+        "source": "rentals"
+      }
+    },
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 2-room 2_room, 63.1 m2, floor 1 of 5, modern_1990_2010, condition modernisiert, position vorderhaus, energy class F. Furnished: no, lift: yes, balcony: no. Nearest transit: Weinmeisterstraße (U8), 36 min; 2.56 km to Brandenburg Gate. Kaltmiete EUR 1409/month, Nebenkosten EUR 201, Warmmiete EUR 1609/month (22.33 EUR/m2 kalt). Deposit: 2 months. Listed 2024-06-15.",
+      "metadata": {
+        "id": "R025008",
+        "rent_per_m2_kalt_eur": 22.33,
+        "kaltmiete_eur_monthly": 1409,
+        "listing_type": "rental",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "furnished": "False",
+        "property_type": "2_room",
+        "source": "rentals",
+        "area_m2": 63.1,
+        "date_listed": "2024-06-15",
+        "ortsteil": "Kreuzberg",
+        "rooms": 2,
+        "warmmiete_eur_monthly": 1609,
+        "energy_class": "F",
+        "kiez_premium": "high"
+      }
+    },
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 2-room 2_room, 52.3 m2, floor 1 of 5, modern_1990_2010, condition renoviert, position seitenflügel, energy class C. Furnished: no, lift: yes, balcony: no. Nearest transit: Görlitzer Bahnhof (U1), 25 min; 2.8 km to Brandenburg Gate. Kaltmiete EUR 1229/month, Nebenkosten EUR 229, Warmmiete EUR 1458/month (23.49 EUR/m2 kalt). Deposit: 2 months. Listed 2023-08-21.",
+      "metadata": {
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "area_m2": 52.3,
+        "kaltmiete_eur_monthly": 1229,
+        "furnished": "False",
+        "listing_type": "rental",
+        "property_type": "2_room",
+        "ortsteil": "Kreuzberg",
+        "rooms": 2,
+        "rent_per_m2_kalt_eur": 23.49,
+        "warmmiete_eur_monthly": 1458,
+        "kiez_premium": "high",
+        "energy_class": "C",
+        "id": "R006413",
+        "source": "rentals",
+        "date_listed": "2023-08-21"
+      }
+    }
+  ]
+}

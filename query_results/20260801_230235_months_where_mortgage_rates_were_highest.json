@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-08-01T23:02:35",
+  "question": "months where mortgage rates were highest and how many rental listings there were",
+  "search_query": "months when mortgage rates were highest and the number of rental listings available during those months",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not provide any information regarding mortgage rates or the months when they were highest. They only contain details about rental listings, including their prices and attributes. \n\nFrom the rental listings, there are several apartments mentioned, but no specific count of total rental listings is provided. Therefore, I cannot determine how many rental listings there were based on the available documents.\n\nIn summary, there is insufficient information to answer the question about mortgage rates and the number of rental listings.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of information in the retrieved context regarding mortgage rates and the number of rental listings. It correctly states that the context only contains details about rental apartments without providing a count of listings."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Lübars, Reinickendorf, Berlin. 1-room 1_room, 27.4 m2, floor 0 of 8, modern_1990_2010, condition modernisiert, position seitenflügel, energy class E. Furnished: no, lift: yes, balcony: no. Nearest transit: Franz-Neumann-Platz (U8), 67 min; 11.14 km to Brandenburg Gate. Kaltmiete EUR 265/month, Nebenkosten EUR 84, Warmmiete EUR 350/month (9.67 EUR/m2 kalt). Deposit: 2 months. Listed 2024-04-10.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 9.67,
+        "rooms": 1,
+        "id": "R022686",
+        "kaltmiete_eur_monthly": 265,
+        "listing_type": "rental",
+        "bezirk": "Reinickendorf",
+        "kiez_premium": "medium",
+        "source": "rentals",
+        "date_listed": "2024-04-10",
+        "area_m2": 27.4,
+        "energy_class": "E",
+        "ortsteil": "Lübars",
+        "warmmiete_eur_monthly": 350,
+        "property_type": "1_room",
+        "furnished": "False"
+      }
+    },
+    {
+      "content": "Rental apartment in Lübars, Reinickendorf, Berlin. 1-room 1_room, 47.6 m2, floor 4 of 4, modern_1990_2010, condition modernisiert, position hinterhaus, energy class C. Furnished: no, lift: yes, balcony: no. Nearest transit: Beusselstraße (S Ringbahn), 100 min; 11.82 km to Brandenburg Gate. Kaltmiete EUR 411/month, Nebenkosten EUR 213, Warmmiete EUR 624/month (8.63 EUR/m2 kalt). Deposit: 3 months. Listed 2022-07-28.",
+      "metadata": {
+        "warmmiete_eur_monthly": 624,
+        "source": "rentals",
+        "kiez_premium": "medium",
+        "area_m2": 47.6,
+        "property_type": "1_room",
+        "ortsteil": "Lübars",
+        "furnished": "False",
+        "kaltmiete_eur_monthly": 411,
+        "bezirk": "Reinickendorf",
+        "listing_type": "rental",
+        "rooms": 1,
+        "energy_class": "C",
+        "rent_per_m2_kalt_eur": 8.63,
+        "date_listed": "2022-07-28",
+        "id": "R008481"
+      }
+    },
+    {
+      "content": "Rental apartment in Lübars, Reinickendorf, Berlin. 3-room 3_room, 53.9 m2, floor 0 of 4, new_post_2010, condition modernisiert, position vorderhaus, energy class B. Furnished: no, lift: yes, balcony: no. Nearest transit: Jakob-Kaiser-Platz (U7), 104 min; 11.18 km to Brandenburg Gate. Kaltmiete EUR 939/month, Nebenkosten EUR 175, Warmmiete EUR 1114/month (17.43 EUR/m2 kalt). Deposit: 3 months. Listed 2026-04-08.",
+      "metadata": {
+        "kaltmiete_eur_monthly": 939,
+        "rent_per_m2_kalt_eur": 17.43,
+        "bezirk": "Reinickendorf",
+        "date_listed": "2026-04-08",
+        "listing_type": "rental",
+        "rooms": 3,
+        "source": "rentals",
+        "property_type": "3_room",
+        "warmmiete_eur_monthly": 1114,
+        "ortsteil": "Lübars",
+        "id": "R021434",
+        "energy_class": "B",
+        "kiez_premium": "medium",
+        "furnished": "False",
+        "area_m2": 53.9
+      }
+    },
+    {
+      "content": "Rental apartment in Staaken, Spandau, Berlin. 1-room 1_room, 49.1 m2, floor 3 of 4, post_war_1949_1990, condition kernsaniert, position vorderhaus, energy class G. Furnished: no, lift: no, balcony: no. Nearest transit: Yorckstraße (U7), 201 min; 16.53 km to Brandenburg Gate. Kaltmiete EUR 355/month, Nebenkosten EUR 161, Warmmiete EUR 516/month (7.22 EUR/m2 kalt). Deposit: 3 months. Listed 2025-04-22.",
+      "metadata": {
+        "bezirk": "Spandau",
+        "rent_per_m2_kalt_eur": 7.22,
+        "date_listed": "2025-04-22",
+        "source": "rentals",
+        "area_m2": 49.1,
+        "rooms": 1,
+        "id": "R012646",
+        "warmmiete_eur_monthly": 516,
+        "energy_class": "G",
+        "ortsteil": "Staaken",
+        "kiez_premium": "low",
+        "property_type": "1_room",
+        "listing_type": "rental",
+        "kaltmiete_eur_monthly": 355,
+        "furnished": "False"
+      }
+    },
+    {
+      "content": "Rental apartment in Malchow, Lichtenberg, Berlin. 2-room 2_room, 43.5 m2, floor 0 of 8, post_war_1949_1990, condition modernisiert, position seitenflügel, energy class E. Furnished: no, lift: yes, balcony: yes. Nearest transit: Yorckstraße (U7), 142 min; 10.11 km to Brandenburg Gate. Kaltmiete EUR 291/month, Nebenkosten EUR 145, Warmmiete EUR 436/month (6.7 EUR/m2 kalt). Deposit: 2 months. Listed 2025-11-23.",
+      "metadata": {
+        "energy_class": "E",
+        "warmmiete_eur_monthly": 436,
+        "rent_per_m2_kalt_eur": 6.7,
+        "kaltmiete_eur_monthly": 291,
+        "id": "R006547",
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Malchow",
+        "furnished": "False",
+        "property_type": "2_room",
+        "rooms": 2,
+        "source": "rentals",
+        "listing_type": "rental",
+        "kiez_premium": "low",
+        "area_m2": 43.5,
+        "date_listed": "2025-11-23"
+      }
+    }
+  ]
+}

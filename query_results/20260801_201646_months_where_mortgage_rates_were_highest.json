@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-01T20:16:46",
+  "question": "months where mortgage rates were highest and how many rental listings there were",
+  "search_query": "months when mortgage rates were highest and the number of rental listings available",
+  "datasource": "real_estate",
+  "answer": "The months with the highest mortgage rates from the retrieved documents are:\n\n1. January 2024, with an average mortgage rate of 3.85%.\n2. January 2026, with an average mortgage rate of 3.1%.\n\nIn terms of rental listings, the number of rental listings for these months is as follows:\n\n- January 2024: 79 rental listings.\n- January 2026: 153 rental listings.\n\nThus, January 2024 had the highest mortgage rate, while January 2026 had the highest number of rental listings.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately identifies January 2024 and January 2026 as the months with the highest mortgage rates and provides the correct number of rental listings for those months, all of which are supported by the retrieved context."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin in 2020-09. Kiez premium: high. Resale price 7015 EUR/m2, new-construction price 8900 EUR/m2, average cold rent 18.24 EUR/m2/month. Listings this month: 15 resale, 26 new-build, 166 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "listing_type": "market_stats",
+        "kaltmiete_per_m2_monthly_eur": 18.24,
+        "ortsteil": "Wilmersdorf",
+        "avg_mortgage_rate_pct": 1.1,
+        "secondary_price_per_m2_eur": 7015,
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "kiez_premium": "high",
+        "source": "kiez_prices_monthly",
+        "year_month": "2020-09"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin in 2024-01. Kiez premium: high. Resale price 8038 EUR/m2, new-construction price 10168 EUR/m2, average cold rent 23.44 EUR/m2/month. Listings this month: 106 resale, 11 new-build, 79 rental. ECB main rate 4.5%, average mortgage rate 3.85%.",
+      "metadata": {
+        "listing_type": "market_stats",
+        "ortsteil": "Wilmersdorf",
+        "kiez_premium": "high",
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "source": "kiez_prices_monthly",
+        "avg_mortgage_rate_pct": 3.85,
+        "secondary_price_per_m2_eur": 8038,
+        "year_month": "2024-01",
+        "kaltmiete_per_m2_monthly_eur": 23.44
+      }
+    },
+    {
+      "content": "Monthly market statistics for Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin in 2022-05. Kiez premium: high. Resale price 8686 EUR/m2, new-construction price 11214 EUR/m2, average cold rent 21.47 EUR/m2/month. Listings this month: 43 resale, 34 new-build, 198 rental. ECB main rate 0.0%, average mortgage rate 1.8%.",
+      "metadata": {
+        "year_month": "2022-05",
+        "ortsteil": "Wilmersdorf",
+        "source": "kiez_prices_monthly",
+        "avg_mortgage_rate_pct": 1.8,
+        "secondary_price_per_m2_eur": 8686,
+        "listing_type": "market_stats",
+        "kaltmiete_per_m2_monthly_eur": 21.47,
+        "kiez_premium": "high",
+        "bezirk": "Charlottenburg-Wilmersdorf"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin in 2021-07. Kiez premium: high. Resale price 7686 EUR/m2, new-construction price 9639 EUR/m2, average cold rent 20.22 EUR/m2/month. Listings this month: 150 resale, 10 new-build, 143 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "secondary_price_per_m2_eur": 7686,
+        "source": "kiez_prices_monthly",
+        "kaltmiete_per_m2_monthly_eur": 20.22,
+        "year_month": "2021-07",
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "listing_type": "market_stats",
+        "avg_mortgage_rate_pct": 1.1,
+        "ortsteil": "Wilmersdorf",
+        "kiez_premium": "high"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin in 2026-01. Kiez premium: high. Resale price 8621 EUR/m2, new-construction price 11015 EUR/m2, average cold rent 25.86 EUR/m2/month. Listings this month: 57 resale, 23 new-build, 153 rental. ECB main rate 2.75%, average mortgage rate 3.1%.",
+      "metadata": {
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "avg_mortgage_rate_pct": 3.1,
+        "kaltmiete_per_m2_monthly_eur": 25.86,
+        "secondary_price_per_m2_eur": 8621,
+        "ortsteil": "Wilmersdorf",
+        "year_month": "2026-01",
+        "kiez_premium": "high",
+        "listing_type": "market_stats",
+        "source": "kiez_prices_monthly"
+      }
+    }
+  ]
+}

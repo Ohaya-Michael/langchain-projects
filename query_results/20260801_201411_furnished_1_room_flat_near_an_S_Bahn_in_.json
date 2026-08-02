@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-01T20:14:11",
+  "question": "furnished 1-room flat near an S-Bahn in Prenzlauer Berg",
+  "search_query": "furnished one-room flat near S-Bahn in Prenzlauer Berg",
+  "datasource": "real_estate",
+  "answer": "The retrieved document provides information about a rental apartment in Prenzlauer Berg, Berlin. It is a furnished 4-room flat with a size of 131.0 m², located on the ground floor of a pre-1949 building. The apartment is described as needing renovation and is situated in a side wing. It has a balcony but does not have a lift. \n\nThe nearest transit option is the Prenzlauer Allee S-Bahn station, which is approximately 19 minutes away. The rental costs are as follows: the base rent (Kaltmiete) is EUR 1911 per month, with additional costs (Nebenkosten) of EUR 396, leading to a total warm rent (Warmmiete) of EUR 2307 per month, which translates to EUR 14.59 per square meter for the base rent. A deposit of three months' rent is required.\n\nHowever, this document does not specifically mention a 1-room flat, so it may not fully meet the criteria of your request. \n\n(Real Estate)",
+  "evaluation": {
+    "faithfulness": 2,
+    "answer_relevance": 4,
+    "context_relevance": 4,
+    "hallucinated": true,
+    "rationale": "The answer provides detailed information about a 4-room flat, which is not what the question asked for (a 1-room flat). While the context is relevant to the location and some features, the answer includes claims about the flat's size and number of rooms that are not supported by the question's request."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Prenzlauer Berg, Pankow, Berlin. 4-room 4_room, 131.0 m2, floor 0 of 4, altbau_pre_1949, condition renovierungsbedürftig, position seitenflügel, energy class G. Furnished: yes, lift: no, balcony: yes. Nearest transit: Prenzlauer Allee S (S Ringbahn), 19 min; 3.79 km to Brandenburg Gate. Kaltmiete EUR 1911/month, Nebenkosten EUR 396, Warmmiete EUR 2307/month (14.59 EUR/m2 kalt). Deposit: 3 months. Listed 2025-01-11.",
+      "metadata": {
+        "kaltmiete_eur_monthly": 1911,
+        "property_type": "4_room",
+        "energy_class": "G",
+        "listing_type": "rental",
+        "area_m2": 131.0,
+        "kiez_premium": "high",
+        "warmmiete_eur_monthly": 2307,
+        "date_listed": "2025-01-11",
+        "bezirk": "Pankow",
+        "furnished": "True",
+        "rooms": 4,
+        "rent_per_m2_kalt_eur": 14.59,
+        "ortsteil": "Prenzlauer Berg",
+        "source": "rentals",
+        "id": "R002624"
+      }
+    }
+  ]
+}

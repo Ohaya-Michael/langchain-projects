@@ -1,0 +1,10 @@
+pandas 
+fastapi
+uvicorn
+langgraph
+langchain-core 
+langchain-chroma 
+langchain-huggingface 
+langchain_openai
+sentence-transformers 
+chromadb

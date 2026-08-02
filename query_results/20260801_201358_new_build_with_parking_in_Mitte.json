@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-08-01T20:13:58",
+  "question": "new build with parking in Mitte",
+  "search_query": "new construction with parking in Mitte",
+  "datasource": "real_estate",
+  "answer": "In the real estate domain, there are several new construction apartments available in Mitte, Berlin, that include parking. \n\n1. The project \"Heimat Mitte\" by developer Vonovia offers a 2-room apartment with a size of 79.2 m², located on the 10th floor of a 12-story building. This unit is priced at EUR 1,013,000 (EUR 12,794/m²) and is expected to be completed in 2028. It features a balcony, but does not have a lift. The payment plan is structured in quarterly tranches, and it is located 2.97 km from Brandenburg Gate, with the nearest transit station being Prinzenstraße (U1), approximately 14 minutes away (Real Estate).\n\n2. Another option is the \"Domizil Mitte\" project by GHL Berlin, which has a 4-room apartment measuring 98.3 m² on the first floor of an 8-story building. This unit is listed at EUR 1,541,000 (EUR 15,681/m²) and is currently under construction, with completion expected in 2025. It includes a lift, a balcony, and parking. The payment plan is 30% upfront and 70% off-plan. This apartment is located 2.14 km from Brandenburg Gate, with the nearest transit station being Rosenthaler Platz (U8), just 5 minutes away (Real Estate).\n\n3. Additionally, there is another unit in the \"Heimat Mitte\" project, a 2-room apartment of 63.9 m² on the ground floor of a 4-story building. This apartment is priced at EUR 935,000 (EUR 14,630/m²) and is also under construction, with completion expected in 2028. It features a lift, a balcony, and parking, and is located 2.97 km from Brandenburg Gate, with Kottbusser Tor (U1) being the nearest transit station, approximately 16 minutes away (Real Estate).\n\nThese options provide a range of sizes and prices for new builds with parking in Mitte.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, detailing multiple new construction apartments in Mitte that include parking, along with their specifications, prices, and other relevant information. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status ready_within_6m). 2-room 2_room, 79.2 m2, floor 10 of 12, energy class A_plus. Lift: no, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Prinzenstraße (U1), 14 min; 2.97 km to Brandenburg Gate. Price: EUR 1,013,000 (12,794 EUR/m2). Listed 2022-03-23.",
+      "metadata": {
+        "energy_class": "A_plus",
+        "completion_year": 2028,
+        "source": "new_construction",
+        "developer": "Vonovia",
+        "price_per_m2_eur": 12794,
+        "project_name": "Heimat Mitte",
+        "area_m2": 79.2,
+        "bezirk": "Mitte",
+        "rooms": 2,
+        "price_eur": 1013000,
+        "date_listed": "2022-03-23",
+        "ortsteil": "Mitte (Ort)",
+        "listing_type": "new_construction",
+        "property_type": "2_room",
+        "id": "N002926"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Domizil Mitte' by developer GHL Berlin (250 units, completion 2025, status under_construction). 4-room 4_room, 98.3 m2, floor 1 of 8, energy class A_plus. Lift: yes, balcony: yes, parking: yes. Payment plan: off_plan_30_70. Nearest transit: Rosenthaler Platz (U8), 5 min; 2.14 km to Brandenburg Gate. Price: EUR 1,541,000 (15,681 EUR/m2). Listed 2026-03-06.",
+      "metadata": {
+        "project_name": "Domizil Mitte",
+        "id": "N003158",
+        "rooms": 4,
+        "price_per_m2_eur": 15681,
+        "completion_year": 2025,
+        "area_m2": 98.3,
+        "price_eur": 1541000,
+        "property_type": "4_room",
+        "developer": "GHL Berlin",
+        "listing_type": "new_construction",
+        "energy_class": "A_plus",
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "source": "new_construction",
+        "date_listed": "2026-03-06"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 2-room 2_room, 63.9 m2, floor 0 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Kottbusser Tor (U1), 16 min; 2.97 km to Brandenburg Gate. Price: EUR 935,000 (14,630 EUR/m2). Listed 2024-08-22.",
+      "metadata": {
+        "developer": "Vonovia",
+        "price_per_m2_eur": 14630,
+        "completion_year": 2028,
+        "property_type": "2_room",
+        "id": "N002318",
+        "ortsteil": "Mitte (Ort)",
+        "source": "new_construction",
+        "project_name": "Heimat Mitte",
+        "price_eur": 935000,
+        "area_m2": 63.9,
+        "date_listed": "2024-08-22",
+        "bezirk": "Mitte",
+        "rooms": 2,
+        "energy_class": "A_plus",
+        "listing_type": "new_construction"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Virtual environments
+langchain_project_venv/
+chroma_immobilien/
+chroma_medicine/
+immobilien_dataset/
+download_data_script/
+query_results/
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store/
