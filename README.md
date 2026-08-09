@@ -1,91 +1,146 @@
-# Building a vector DB from the Immobilien CSVs
+# A two-domain RAG pipeline with LangGraph
 
-Turns the five Berlin real-estate CSVs into a single Chroma vector database you can
-retrieve over in a RAG pipeline.
+Answers questions over two unrelated Chroma vector databases — Berlin real-estate
+listings and medical claims — by routing each question to the right store, retrieving
+and grading documents, synthesizing a sourced answer, and self-scoring it with an
+LLM-as-judge. Built as a `langgraph` `StateGraph` in `using_langchain_langgraph.py`.
 
-## The data
+This is the query side of the project: it consumes the `immobilien` collection built by
+`build_immobilien_vectordb.py` (see `README_vectordb.md`) plus a `medicine_claims`
+collection built from the scripts in `download_data_script/`.
 
-| File | ~Rows | What it is | Becomes |
-|------|------|------------|---------|
-| `secondary_sales.csv` | 50,000 | Resale apartment listings | one doc per listing |
-| `rentals.csv` | 30,000 | Rental listings | one doc per listing |
-| `new_construction.csv` | 10,000 | New-build listings | one doc per listing |
-| `kiez_prices_monthly.csv` | 6,232 | Monthly price/rent stats per Ortsteil | one doc per row |
-| `transit_stations.csv` | 135 | U/S-Bahn station reference | one doc per station |
+## Project layout
 
-They relate through shared keys — `ortsteil` / `bezirk` tie listings to the monthly
-stats, and `transit_station` / `transit_line` tie listings to the station table. Rather
-than SQL-joining them, we put **all five into one collection** and tag each document with
-a `source` field, so the retriever can pull the right mix (a listing plus its Kiez's
-market stats, say) and you can filter by `source` when you want just one type.
+The repository is organized as follows (`tree -L 1`):
+
+```
+langchain_project/
+├── README_vectordb.md                    # how the immobilien vector DB is built
+├── requirements.txt                      # Python dependencies
+├── __init__.py
+├── build_immobilien_vectordb.py          # Berlin CSVs  -> chroma_immobilien
+├── query_chroma_db_vectordb.py           # CLI to query a Chroma store directly
+├── using_langchain_langgraph.py          # the LangGraph RAG pipeline (this README)
+├── using_langchain_langgraph.ipynb       # notebook version of the pipeline
+├── langchain_chain_rag_function_api.py   # pipeline wrapped as a callable API
+├── testing_rag_api.ipynb                 # scratch notebook for exercising the API
+├── download_data_script/                 # fetch + parse CMS SynPUF and Synthea data
+├── immobilien_dataset/                   # the five Berlin real-estate CSVs
+├── chroma_immobilien/                    # persisted real-estate vector store
+├── chroma_medicine/                      # persisted medical vector store
+├── query_results/                        # JSON records written by the save node
+├── langchain_project_venv/               # local virtualenv
+└── __pycache__/
+```
+
+Plus hidden files `.env` (holds `OPENAI_API_KEY`) and `.gitignore`. The layout above is
+the expected structure — keep these names and folders in place so the relative paths in
+the pipeline (`./chroma_immobilien`, `./chroma_medicine`, `./query_results`) resolve.
+
+### Data & large files (not on GitHub)
+
+The datasets and prebuilt vector stores are too large for GitHub and are excluded via
+`.gitignore`. Download them here and drop them into the project root, keeping the folder
+names above:
+
+**[Download dataset + vector stores (Google Drive)](https://drive.google.com/drive/folders/1zPuuBJnQHf2nuvQiFweA_2fSNbVrvi3M?usp=drive_link)**
+
+This covers `immobilien_dataset/`, the `download_data_script/` data, and the persisted
+`chroma_immobilien/` and `chroma_medicine/` stores. With the stores in place you can run
+the pipeline directly; otherwise rebuild them with `build_immobilien_vectordb.py` and the
+`download_data_script/` scripts.
+
+## The stores
+
+| Store | Collection | Persist dir | What it holds |
+|-------|-----------|-------------|---------------|
+| `real_estate` | `immobilien` | `./chroma_immobilien` | Berlin resale, rental, new-build listings, monthly Kiez stats, transit stations |
+| `medical` | `medicine_claims` | `./chroma_medicine` | `synthea` patient records + `cms_synpuf` 2008–2010 Medicare claims |
+
+Both are embedded locally with `sentence-transformers/all-MiniLM-L6-v2` (free, no API
+key). Each store is exposed as a retriever with `k=5`. The `data_source` metadata field
+(`real_estate`, `synthea`, `cms_synpuf`) is what lets the answer cite where each fact
+came from.
 
 ## How it works
 
-Each CSV row is converted into:
+The pipeline is a `StateGraph` over a shared `RAGState`. Each node returns a partial dict
+that merges into the state, and one conditional edge picks the retriever:
 
-1. **`page_content`** — a natural-language sentence (this is what gets embedded and
-   matched). Example:
-   > *Rental apartment in Adlershof, Treptow-Köpenick, Berlin. 2-room, 55.1 m2 ...
-   > Kaltmiete EUR 517/month ...*
-2. **`metadata`** — the structured fields (`ortsteil`, `bezirk`, `rooms`, `price_eur`,
-   `date_listed`, ...) kept as native types so you can do filtered / numeric retrieval.
+```
+START → rewrite → route ─┬─→ retrieve_real_estate ─┐
+                         └─→ retrieve_medical ──────┴─→ grade → generate → evaluate → save → END
+```
 
-Embeddings are computed locally with `sentence-transformers/all-MiniLM-L6-v2` (free, no
-API key). The result is persisted to `./chroma_db`.
+1. **rewrite** — a query rewriter turns the raw question into a clean, self-contained
+   search query (fixes spelling, expands abbreviations like `COPD →
+   COPD (chronic obstructive pulmonary disease)`, strips chit-chat) without changing
+   meaning.
+2. **route** — a structured-output router (`RouteQuery`) classifies the rewritten query
+   as `medical` or `real_estate`.
+3. **retrieve** — the conditional edge runs only the matching retriever (`k=5`).
+4. **grade** — a binary relevance grader (`GradeDocument`, `yes`/`no`) drops off-topic
+   retrievals, keeping only documents that could help answer the question.
+5. **generate** — an answer chain built on `SYNTHESIS_PROMPT` synthesizes a single
+   coherent answer from the graded context and tags each fact with its source, e.g.
+   `(Real Estate)`, `(Synthea)`, `(CMS SynPUF)`.
+6. **evaluate** — an LLM-as-judge (`RagEvaluation`) scores `faithfulness`,
+   `answer_relevance`, and `context_relevance` (1–5), flags `hallucinated`, and gives a
+   short `rationale`.
+7. **save** — the full record (question, rewritten query, datasource, answer, evaluation,
+   retrieved docs) is written to `./query_results/<timestamp>_<slug>.json`.
+
+The LLM throughout is `gpt-4o-mini` at `temperature=0`.
 
 ## Setup
 
 ```bash
-pip install pandas langchain-core langchain-chroma langchain-huggingface sentence-transformers chromadb
+pip install langgraph langchain-core langchain-openai langchain-chroma langchain-huggingface pydantic python-dotenv sentence-transformers chromadb
 ```
 
-## Build the DB
+Set your OpenAI key (loaded via `python-dotenv`):
 
 ```bash
-# quick test first — 500 rows per file
-python build_vectordb.py --sample 500
-
-# full build (~96k docs; several minutes on CPU)
-python build_vectordb.py
-
-# or just some files
-python build_vectordb.py --files rentals kiez_prices_monthly
+echo "OPENAI_API_KEY=sk-..." > .env
 ```
 
-> First run downloads the ~90 MB embedding model. Full ingest embeds ~96k short docs;
-> on a CPU expect a few minutes. Re-running appends, so delete `chroma_db/` to rebuild
-> clean.
+You also need the two Chroma stores on disk (`./chroma_immobilien` and
+`./chroma_medicine`) — build the real-estate one with `build_immobilien_vectordb.py` per
+`README_vectordb.md`, and the medical one from the scripts in `download_data_script/`.
 
-## Query it
-
-```bash
-python query_vectordb.py "cheap 2-room rental near a U-Bahn in Kreuzberg"
-python query_vectordb.py "new build with parking in Mitte" --k 5 --source new_construction
-```
-
-## Use it in a RAG chain
+## Run it
 
 ```python
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
+from using_langchain_langgraph import build_pipeline
 
-emb = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-db = Chroma(collection_name="immobilien", embedding_function=emb,
-            persist_directory="chroma_db")
+graph = build_pipeline()
 
-retriever = db.as_retriever(search_kwargs={"k": 4})
-docs = retriever.invoke("cheap 2-room rental near a U-Bahn in Kreuzberg")
-for doc in docs:
-  print(doc)
-# plug `retriever` into your LangChain RetrievalQA / LCEL chain with an LLM
+result = graph.invoke({"question": "cheap 2-room rental near a U-Bahn in Kreuzberg"})
+print(result["answer"])
+print("saved ->", result["saved_path"], "| faithfulness:", result["evaluation"]["faithfulness"])
+```
+
+`build_pipeline()` wires everything (stores, LLM, rewriter, grader, router, answer chain,
+evaluator) and returns a compiled graph. Every `invoke` also drops a JSON record in
+`./query_results`.
+
+Example questions the router handles from either domain:
+
+```python
+graph.invoke({"question": "What are typical COPD reimbursement amounts?"})   # → medical
+graph.invoke({"question": "new build with parking in Mitte"})                # → real_estate
 ```
 
 ## Notes & next steps
 
-- **Filtered retrieval:** pass a `filter=` dict, e.g. `{"source": "rentals"}` or
-  `{"rooms": {"$gte": 3}}`, to scope results.
-- **Scale:** 96k rows is fine for Chroma locally. If ingest is slow, start with
-  `--sample` or a subset of files.
-- **Better recall on numbers:** embeddings match meaning, not exact figures. For
-  hard numeric constraints ("under EUR 500k"), combine vector search with the metadata
-  filters rather than relying on the text alone.
+- **Result state:** each run returns a `RAGState` dict with `question`, `search_query`,
+  `datasource`, `documents`, `context`, `answer`, `evaluation`, and `saved_path`.
+- **Grading trade-off:** the grader is a coarse filter that leans toward `yes` for
+  topically related docs; if it drops everything, `generate` will say it lacks enough
+  context rather than guess.
+- **Cross-domain safety:** the synthesis prompt is told to use only the relevant domain
+  and never blend real-estate and medical content into one answer.
+- **Serving it:** wrap `build_pipeline()` in a long-lived object and call `graph.invoke`
+  per request to expose the pipeline behind an API (build the graph once, reuse it).
+- **Inspect the graph:** `print(graph.get_graph().draw_ascii())` renders the node/edge
+  layout shown above.
