@@ -1,7 +1,9 @@
 import csv
 import re
 import json
+from typing import Literal
 from pathlib import Path
+from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from using_langchain_langgraph import build_llm 
@@ -123,3 +125,80 @@ def generate_ground_truth(input_dir=INPUT_DIR, output_path=OUTPUT_PATH):
 
     #print(f"\nSaved {len(results)} rows to {output_path.resolve()}")
     return results
+
+
+###################################################################################
+########################### Evaluating Ground Truth ###############################
+###################################################################################
+
+# --- structured similarity judge ---
+class SimilarityCheck(BaseModel):
+    """Whether a generated question asks for the same information as the source."""
+
+    similar: Literal["yes", "no"] = Field(
+        ..., description="Do both questions seek the same information? 'yes' or 'no'."
+    )
+    similarity_score: int = Field(
+        ..., ge=1, le=5,
+        description="1 = unrelated, 5 = same intent / paraphrase.",
+    )
+    rationale: str = Field(..., description="One sentence explaining the verdict.")
+
+
+sim_system = (
+    "You judge whether two questions ask for the same information. Focus on "
+    "intent and the answer they'd require, not wording - a casual paraphrase of "
+    "the same question is 'yes'. Different topic, scope, or required answer is "
+    "'no'. Be consistent."
+)
+sim_prompt = ChatPromptTemplate.from_messages([
+    ("system", sim_system),
+    ("human", "Source question:\n{question}\n\nGenerated question:\n{generated_question}"),
+])
+similarity_checker = sim_prompt | llm.with_structured_output(SimilarityCheck, method="function_calling")
+
+
+def load_records(path="./data/ground_truth.csv"):
+    with open(path, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def check_similarity(records=None, in_path="./data/ground_truth.csv", output_path="./data/ground_truth_checked.csv"):
+    records = records if records is not None else load_records(in_path)
+
+    fieldnames = ["source_file", "question", "generated_question",
+                  "similar", "similarity_score", "rationale"]
+    checked = []
+    with open(output_path, "w", encoding="utf-8", newline="") as out:
+        writer = csv.DictWriter(out, fieldnames=fieldnames)
+        writer.writeheader()
+        for i, r in enumerate(records, 1):
+            verdict = similarity_checker.invoke({
+                "question": r["question"],
+                "generated_question": r["generated_question"],
+            })
+            if not isinstance(verdict, SimilarityCheck):   # guard: raw message
+                verdict = SimilarityCheck.model_validate_json(verdict.content)
+
+            row = {
+                "source_file": r["source_file"],
+                "question": r["question"],
+                "generated_question": r["generated_question"],
+                "similar": verdict.similar,
+                "similarity_score": verdict.similarity_score,
+                "rationale": verdict.rationale,
+            }
+            checked.append(row)
+            writer.writerow(row)
+            print(f"  [{i}/{len(records)}] {verdict.similar} ({verdict.similarity_score}/5)")
+
+    passed = sum(1 for r in checked if r["similar"] == "yes")
+    print(f"\n{passed}/{len(checked)} generated questions matched the source "
+          f"({passed / len(checked):.0%}). Saved to {output_path}")
+    return checked
+
+
+#####################################################################################################
+################################### ------------------------- #######################################
+#####################################################################################################
+
