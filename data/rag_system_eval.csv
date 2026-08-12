@@ -1,0 +1,934 @@
+question,datasource,answer,correctness,completeness,conciseness,verdict,rationale
+"The record appears to belong to the medical domain, specifically related to a Medicare claim for a patient with COPD (Chronic Obstructive Pulmonary Disease). Here are five questions a user might ask based on this record:",medical,"The retrieved documents pertain to the medical domain, specifically Medicare claims related to patients with Chronic Obstructive Pulmonary Disease (COPD). 
+
+1. The first claim (for beneficiary 23139CBEFDD82DB9) indicates that the patient had multiple chronic conditions, including COPD, and the service was provided from February 20 to February 21, 2009. The claim was paid $4,000.00 (CMS SynPUF).
+
+2. The second claim (for beneficiary 0E90A4D62833FCC4) also lists COPD among the chronic conditions and covers services from December 7 to December 11, 2009. The payment amount for this claim was $6,000.00 (CMS SynPUF).
+
+3. A third claim (for beneficiary 1EEB3DEE178B22D8) includes COPD as well, with services rendered from April 9 to April 10, 2009, but notably, this claim had a payment amount of $0.00 (CMS SynPUF).
+
+In summary, the claims show varying payment amounts for patients with COPD, with one claim receiving $4,000.00, another $6,000.00, and a third receiving no payment at all. This variation could be due to differences in the services provided, the specific circumstances of each case, or other factors related to Medicare reimbursement policies during that time period.",5,5,4,pass,"The answer accurately summarizes the retrieved context, addressing the question about Medicare claims related to COPD. It provides specific details about each claim, including payment amounts and service dates, and concludes with a relevant observation about the variation in payments. The only minor issue is slight verbosity in the summary, but overall, it is focused and complete."
+What specific procedures were performed for the COPD diagnosis in this claim?,medical,The retrieved documents do not contain enough relevant information to answer the question about specific procedures performed for the COPD diagnosis in this claim.,1,1,5,fail,"The answer does not provide any specific procedures for the COPD diagnosis, which is the main focus of the question. It only states a lack of information without addressing the question directly."
+Can you provide the total reimbursement amount for the COPD treatment listed in the record?,medical,"The total reimbursement amount for the COPD treatment listed in the records is $27,000.00 for one claim and $4,000.00 for another claim. Therefore, the total reimbursement across these claims is $31,000.00. 
+
+The claims are as follows:
+1. A claim for a service from May 20 to May 23, 2009, with a payment amount of $27,000.00 (CMS SynPUF).
+2. A claim for a service from February 20 to February 21, 2009, with a payment amount of $4,000.00 (CMS SynPUF).
+
+The third claim listed for COPD treatment resulted in a payment amount of $0.00, which does not contribute to the total (CMS SynPUF).",5,5,5,pass,"The answer accurately provides the total reimbursement amount for COPD treatment, correctly summing the relevant claims and explaining the contributions from each claim. It is complete and focused without unnecessary detail."
+What dates of service are associated with the COPD-related claims in this record?,medical,"The date of service associated with the COPD-related claim in the retrieved record is February 24, 1994 (Synthea).",5,5,5,pass,"The answer accurately identifies the date of service as February 24, 1994, which is directly supported by the retrieved context. It fully addresses the question and is concise without any irrelevant details."
+Are there any chronic conditions noted in this record that could affect the COPD treatment reimbursement?,medical,"The retrieved documents indicate that several chronic conditions are noted that could affect the reimbursement for COPD treatment. Specifically, the known chronic conditions include:
+
+- Congestive heart failure
+- Chronic kidney disease
+- COPD (Chronic Obstructive Pulmonary Disease)
+- Depression
+- Diabetes
+- Ischemic heart disease
+- Osteoporosis
+- Rheumatoid/osteoarthritis
+
+These conditions are documented across multiple inpatient claims (CMS SynPUF) and are relevant as they can complicate the management of COPD and potentially influence reimbursement rates due to the increased complexity of care required for patients with multiple chronic conditions. 
+
+For instance, the presence of congestive heart failure and chronic kidney disease alongside COPD may necessitate more comprehensive treatment plans, which could impact the reimbursement amounts. The claim payment amounts for the cases range from $4000 to $6000, reflecting the complexity of the patients' conditions (CMS SynPUF). 
+
+In summary, the chronic conditions noted in the records are significant as they can affect the treatment and reimbursement for COPD.",5,5,4,pass,"The answer accurately identifies and lists the chronic conditions relevant to COPD treatment reimbursement, fully addressing the question. It explains how these conditions can complicate treatment and affect reimbursement, providing a clear and focused response, though it could be slightly more concise."
+How does the reimbursement amount for COPD compare to other respiratory conditions in similar claims?,medical,The retrieved documents do not contain enough relevant information to answer the question about the reimbursement amount for COPD compared to other respiratory conditions in similar claims. There are no specific details or comparisons provided regarding reimbursement amounts for COPD or other respiratory conditions in the available sources.,1,1,5,fail,"The answer does not provide any information regarding the reimbursement amounts for COPD or other respiratory conditions, failing to address the question. While it is concise, it lacks the necessary details to be considered accurate or complete."
+What medications are included in the asthma treatment plan for this patient?,medical,"The medications included in the asthma treatment plan for the patient are:
+
+1. **Albuterol 0.83 MG/ML Inhalation Solution**
+2. **Beclomethasone Dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler (Qvar)**
+
+These medications were prescribed during a general examination on December 7, 2020, for a patient with a history of asthma (Synthea).",5,5,5,pass,"The answer accurately lists the medications prescribed for the patient's asthma treatment plan, fully addresses the question, and is concise without irrelevant details."
+Are there any specific lifestyle changes recommended to manage asthma symptoms effectively?,medical,"The retrieved documents do not contain any information regarding specific lifestyle changes recommended to manage asthma symptoms effectively. Therefore, I cannot provide an answer to your question based on the available sources.",1,1,5,fail,"The answer does not provide any information about lifestyle changes for managing asthma symptoms, which is the core of the question. It also fails to address the question directly, leading to a low score for correctness and completeness."
+How often should the patient follow up with their healthcare provider regarding their asthma management?,medical,"The retrieved document does not specify how often the patient should follow up with their healthcare provider regarding asthma management. It includes a care plan for asthma self-management but lacks specific follow-up frequency recommendations. Therefore, I cannot provide an answer based on the available information.",5,5,5,pass,The answer accurately reflects the lack of information in the retrieved context regarding follow-up frequency for asthma management. It fully addresses the question and is concise.
+What are the peak flow monitoring instructions outlined in the treatment plan?,medical,"The retrieved documents do not contain any relevant information regarding peak flow monitoring instructions or treatment plans. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information about peak flow monitoring instructions, which is the main focus of the question. It also fails to address the question adequately, as it only states the absence of information without summarizing any relevant details."
+Are there any triggers identified in the treatment plan that the patient should avoid to prevent asthma attacks?,medical,"The retrieved documents do not contain any relevant information regarding triggers identified in a treatment plan for asthma that the patient should avoid. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information about triggers, which is the main focus of the question. It also fails to address the possibility of triggers being mentioned in the context, leading to a lack of completeness."
+What are the typical reimbursement amounts for COPD treatments under Medicare?,medical,"The typical reimbursement amounts for COPD treatments under Medicare, based on the retrieved claims data, show some variability. One inpatient claim indicates a payment amount of $27,000 for a patient with COPD among other chronic conditions (CMS SynPUF). In contrast, another claim for a different patient with COPD shows a reimbursement of $4,000 (CMS SynPUF). 
+
+This discrepancy in reimbursement amounts is expected, as it can depend on various factors such as the specific services rendered, the severity of the condition, and the overall health status of the patient.",5,5,5,pass,"The answer accurately presents the typical reimbursement amounts for COPD treatments under Medicare as indicated in the retrieved context, providing specific figures and explaining the variability in those amounts. It fully addresses the question without unnecessary detail."
+Can you provide details on the billing codes associated with COPD claims?,medical,"The billing codes associated with COPD claims, as retrieved from the documents, include the following ICD-9 diagnosis codes:
+
+1. **496** - This code specifically represents ""Chronic obstructive pulmonary disease (COPD)"".
+2. Other related codes from the claims include:
+   - **5609** - Unspecified intestinal obstruction
+   - **71590** - Osteoarthritis, unspecified
+   - **53081** - Esophageal reflux
+   - **3320** - Parkinson's disease
+   - **78701** - Nausea
+   - **4019** - Essential hypertension
+   - **27651** - Hypokalemia
+   - **V4581** - Other specified procedures
+   - **4589** - Other and unspecified hypotension
+   - **42731** - Atrial fibrillation
+   - **53550** - Unspecified gastritis
+   - **4111** - Other acute myocardial infarction
+   - **25000** - Diabetes mellitus without mention of complication
+   - **34831** - Other specified cerebral ischemia
+   - **40491** - Hypertensive heart AND chronic kidney disease
+   - **V1251** - Personal history of transient ischemic attack (TIA)
+   - **43310** - Occlusion and stenosis of carotid artery
+
+These codes were found in multiple inpatient claims for beneficiaries with COPD as a known chronic condition (CMS SynPUF). The claims reflect various service dates and payment amounts, indicating the complexity and variability of COPD-related healthcare services.",4,4,3,pass,"The answer accurately identifies the ICD-9 code for COPD (496) and lists other related codes found in the retrieved context. However, it could be more concise by omitting unrelated codes that do not pertain to COPD specifically."
+How does the reimbursement for COPD compare to other chronic conditions?,medical,"The reimbursement for Chronic Obstructive Pulmonary Disease (COPD) can vary significantly based on the specific circumstances of each claim. In the retrieved documents, there are three inpatient claims that include COPD among other chronic conditions:
+
+1. One claim resulted in a payment amount of $4,000.00 (CMS SynPUF).
+2. Another claim resulted in a payment amount of $0.00 (CMS SynPUF).
+3. A third claim had a payment amount of $27,000.00 (CMS SynPUF).
+
+This variation indicates that the reimbursement for COPD can differ widely, potentially influenced by factors such as the severity of the condition, the specific treatments provided, and the overall complexity of the patient's health status. However, without additional claims data for other chronic conditions for direct comparison, it is not possible to definitively state how COPD reimbursement compares to other chronic conditions based solely on the retrieved documents.",5,5,4,pass,"The answer accurately summarizes the reimbursement amounts for COPD from the retrieved context and explains the variability in payments. It also acknowledges the lack of comparative data for other chronic conditions, addressing the question fully."
+Are there specific procedures for which COPD patients receive higher reimbursement rates?,medical,"The retrieved documents do not contain specific information regarding procedures for which COPD patients receive higher reimbursement rates. Therefore, I cannot provide an answer to this question based on the available sources.",1,1,5,fail,"The answer does not provide any information regarding the question about specific procedures for COPD patients and only states that the retrieved context lacks this information, failing to address the question adequately."
+What dates of service are most commonly associated with COPD claims and their reimbursement amounts?,medical,"The retrieved documents do not contain specific information regarding the dates of service most commonly associated with COPD claims or their reimbursement amounts. Therefore, I cannot provide an answer to the question based on the available documents.",1,1,5,fail,"The answer does not provide any relevant information regarding the question about dates of service and reimbursement amounts for COPD claims, and it fails to address the question adequately."
+"Based on the record provided, it appears to belong to the real estate domain. Here are five questions a user might ask:",real_estate,"The retrieved documents provide information about various for-sale apartments in Berlin, specifically in the districts of Wilmersdorf and Marzahn. Here are the details of the properties:
+
+1. **Wilmersdorf, Charlottenburg-Wilmersdorf**:
+   - **Apartment 1**: 3 rooms, 89.2 m², built in 1991, priced at EUR 729,000 (8,174 EUR/m²). Condition: kernsaniert, no lift, has a balcony and cellar. Nearest transit: Uhlandstraße (U1), 12 min away. Listed on 2024-03-05.
+   - **Apartment 2**: 3 rooms, 83.0 m², built in 2009, priced at EUR 574,000 (6,916 EUR/m²). Condition: modernisiert, has a lift, no balcony, no cellar. Nearest transit: Hohenzollerndamm S (S Ringbahn), 4 min away. Listed on 2023-06-15.
+   - **Apartment 3**: 3 rooms, 73.3 m², built in 1999, priced at EUR 654,000 (8,917 EUR/m²). Condition: kernsaniert, has a lift, no balcony, has a cellar. Nearest transit: Westkreuz (S Ringbahn), 19 min away. Listed on 2024-04-27.
+   - **Apartment 4**: 3 rooms, 97.9 m², built in 2017, priced at EUR 748,000 (7,642 EUR/m²). Condition: renovierungsbedürftig, has a lift, has a balcony and cellar. Nearest transit: Wilmersdorfer Straße (U7), 7 min away. Listed on 2024-01-31.
+
+2. **Marzahn, Marzahn-Hellersdorf**:
+   - **Apartment**: 1 room, 47.0 m², built in 1909, priced at EUR 75,000 (1,591 EUR/m²). Condition: renovierungsbedürftig, no lift, has a balcony and cellar. Nearest transit: Karl-Bonhoeffer-Nervenklinik (U8), 67 min away. Listed on 2025-06-11.
+
+These listings provide a range of options in terms of size, condition, and price, catering to different buyer preferences in the Berlin real estate market.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing detailed information about each apartment, including size, price, condition, and location. It fully addresses the question by listing multiple properties and their characteristics, though it could be slightly more concise."
+What are the current rental prices for 2-room apartments in Kreuzberg close to the U-Bahn?,real_estate,"The current rental prices for 2-room apartments in Kreuzberg close to the U-Bahn are as follows:
+
+1. A 2-room apartment with 63.1 m² is available for a Kaltmiete (base rent) of EUR 1409/month, with additional Nebenkosten (additional costs) of EUR 201, resulting in a Warmmiete (total rent) of EUR 1609/month. This apartment is located near the Weinmeisterstraße (U8) station and was listed on June 15, 2024.
+
+2. Another 2-room apartment with 42.7 m² has a Kaltmiete of EUR 1123/month, with Nebenkosten of EUR 154, leading to a Warmmiete of EUR 1277/month. This apartment is situated near the Klosterstraße (U2) station and was listed on January 2, 2025.
+
+These listings indicate a range of rental prices for 2-room apartments in the area, reflecting different sizes and conditions of the properties (Real Estate).",5,5,5,pass,"The answer accurately provides the current rental prices for 2-room apartments in Kreuzberg, including specific details about each listing such as size, Kaltmiete, Nebenkosten, Warmmiete, and proximity to U-Bahn stations. It fully addresses the question and is concise without irrelevant details."
+Are there any available 2-room rentals near a U-Bahn station in Kreuzberg right now?,real_estate,"Yes, there is a 2-room rental available in Kreuzberg. The apartment is 52.3 m², located on the first floor of a five-story building, and has been renovated. It is not furnished and does not have a balcony, but it does have a lift. The nearest U-Bahn station is Görlitzer Bahnhof (U1), which is 25 minutes away. The rental price is EUR 1,229 per month for the base rent (Kaltmiete), with additional costs (Nebenkosten) of EUR 229, making the total warm rent (Warmmiete) EUR 1,458 per month. A deposit of two months' rent is required. This listing was made on August 21, 2023 (Real Estate).",5,5,4,pass,"The answer accurately provides details about the available 2-room rental in Kreuzberg, including its size, condition, rental price, and proximity to the nearest U-Bahn station. It fully addresses the question and is mostly concise, though it could be slightly more succinct."
+Can you provide details on the features of 2-room rentals near U-Bahn in Kreuzberg?,real_estate,"Here are the details of two 2-room rentals near U-Bahn in Kreuzberg:
+
+1. **First Rental**:
+   - Size: 63.9 m²
+   - Floor: 5 of 6
+   - Condition: Modernized (altbau pre-1949)
+   - Position: Vorderhaus
+   - Energy Class: G
+   - Furnished: No
+   - Lift: No
+   - Balcony: No
+   - Nearest Transit: Berlin Hauptbahnhof (Stadtbahn), 44 min; 3.27 km to Brandenburg Gate
+   - Kaltmiete (Base Rent): EUR 716/month
+   - Nebenkosten (Additional Costs): EUR 171
+   - Warmmiete (Total Rent): EUR 887/month (11.21 EUR/m² kalt)
+   - Deposit: 2 months
+   - Listed: July 14, 2021
+
+2. **Second Rental**:
+   - Size: 52.3 m²
+   - Floor: 1 of 5
+   - Condition: Renovated (modern 1990-2010)
+   - Position: Seitenflügel
+   - Energy Class: C
+   - Furnished: No
+   - Lift: Yes
+   - Balcony: No
+   - Nearest Transit: Görlitzer Bahnhof (U1), 25 min; 2.8 km to Brandenburg Gate
+   - Kaltmiete (Base Rent): EUR 1229/month
+   - Nebenkosten (Additional Costs): EUR 229
+   - Warmmiete (Total Rent): EUR 1458/month (23.49 EUR/m² kalt)
+   - Deposit: 2 months
+   - Listed: August 21, 2023
+
+These rentals provide a range of options in terms of size, condition, and pricing, reflecting the diverse rental market in Kreuzberg.",5,5,5,pass,"The answer accurately provides detailed information about two 2-room rentals near U-Bahn in Kreuzberg, addressing all aspects of the question. It is well-organized and focused, presenting relevant details without unnecessary information."
+How does the rental market in Kreuzberg look for 2-room apartments near U-Bahn stations?,real_estate,"The retrieved documents do not contain any relevant information regarding the rental market in Kreuzberg for 2-room apartments near U-Bahn stations. Therefore, I cannot provide an answer to your question.",1,1,5,fail,"The answer does not provide any information about the rental market in Kreuzberg, failing to address the question. While it is concise, it lacks any relevant content or context."
+What is the average size of 2-room rentals available near U-Bahn in Kreuzberg?,real_estate,"The average size of 2-room rentals available near U-Bahn in Kreuzberg, based on the retrieved documents, is calculated from the two listings provided. 
+
+1. The first rental is 42.7 m².
+2. The second rental is 63.9 m².
+
+To find the average size, we add the two sizes together and divide by the number of listings:
+
+(42.7 m² + 63.9 m²) / 2 = 53.3 m².
+
+Therefore, the average size of 2-room rentals available near U-Bahn in Kreuzberg is 53.3 m².",5,5,5,pass,"The answer accurately calculates the average size of 2-room rentals based on the provided context, fully addressing the question. It is clear and concise, presenting the calculation steps without unnecessary detail."
+"Based on the record indicating a new build with parking in Mitte, the domain is real estate. Here are five questions a potential buyer or renter might ask:",real_estate,"Based on the retrieved documents regarding new construction in Mitte, Berlin, here are answers to potential buyer or renter questions:
+
+1. **What is the price of the new apartments?**
+   - Prices for the new apartments in the 'Domizil Mitte' project range from EUR 343,000 for a 1-room apartment (25.7 m²) to EUR 1,198,000 for a 3-room apartment (100.1 m²). The 4-room apartments are priced at EUR 902,000 (65.0 m²) and EUR 1,263,000 (114.7 m²) (source: various listings).
+
+2. **What are the sizes of the available apartments?**
+   - The sizes of the apartments vary: 
+     - 1-room: 25.7 m² and 20.0 m²
+     - 4-room: 65.0 m² and 114.7 m²
+     - 3-room: 100.1 m² (source: various listings).
+
+3. **Is parking available?**
+   - Parking availability differs among the apartments. The 4-room and 1-room apartments (25.7 m²) have parking, while the 3-room and the other 1-room apartment (20.0 m²) do not (source: various listings).
+
+4. **What is the payment plan for these apartments?**
+   - The payment plans vary: 
+     - The 3-room and 1-room (25.7 m²) apartments have a payment plan of 70% upfront and 30% later.
+     - The 4-room apartments have a payment plan structured in quarterly tranches (source: various listings).
+
+5. **What is the energy efficiency rating of the apartments?**
+   - The apartments are rated with energy classes A and A+, indicating good energy efficiency (source: various listings).
+
+These details provide a comprehensive overview for potential buyers or renters interested in the new construction in Mitte.",5,5,5,pass,"The answer accurately addresses all five potential questions regarding the new construction apartments in Mitte, providing specific details about prices, sizes, parking availability, payment plans, and energy efficiency ratings. It is complete and focused, with no irrelevant information."
+"What are the available units in the new build located in Mitte, and what are their sizes?",real_estate,"The new build located in Mitte, Berlin, known as 'Heimat Mitte' by developer Vonovia, offers the following available units:
+
+1. **1-room apartment**: 
+   - Size: 20.0 m²
+   - Floor: 3 of 4
+   - Energy class: A+
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: No
+   - Price: EUR 254,000 (12,714 EUR/m²)
+
+2. **1-room apartment**: 
+   - Size: 22.1 m²
+   - Floor: 11 of 12
+   - Energy class: B
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: Yes
+   - Price: EUR 262,000 (11,857 EUR/m²)
+
+3. **2-room apartment**: 
+   - Size: 72.1 m²
+   - Floor: 0 of 5
+   - Energy class: A
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: No
+   - Price: EUR 824,000 (11,429 EUR/m²)
+
+4. **3-room apartment**: 
+   - Size: 84.4 m²
+   - Floor: 1 of 6
+   - Energy class: A
+   - Lift: No
+   - Balcony: No
+   - Parking: No
+   - Price: EUR 999,000 (11,833 EUR/m²)
+
+5. **4-room apartment**: 
+   - Size: 108.2 m²
+   - Floor: 1 of 5
+   - Energy class: A
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: Yes
+   - Price: EUR 1,429,000 (13,208 EUR/m²)
+
+These units are part of a total of 120 units in the project, which is currently under construction and expected to be completed in 2028.",5,5,5,pass,"The answer accurately lists all available units in the new build located in Mitte, including their sizes and relevant details. It fully addresses the question without any irrelevant information."
+Can you provide details about the parking options available for residents in this new development?,real_estate,"The new development ""Domizil Köpenick"" in Treptow-Köpenick, Berlin, offers parking options for residents in all listed units. Each of the retrieved documents indicates that the apartments come with parking availability. 
+
+1. The first apartment is a 2-room unit of 66.0 m² with parking included.
+2. The second apartment is a 2-room unit of 57.7 m², also with parking.
+3. The third apartment is a 2-room unit of 60.5 m², which includes parking as well.
+4. The fourth apartment is a larger 5-room unit of 142.3 m², and it too has parking available.
+
+Thus, residents of this development can expect parking options as part of their living arrangements (Real Estate).",5,5,5,pass,"The answer accurately details the parking options available for residents in the new development, confirming that all listed units include parking. It fully addresses the question and is concise without irrelevant information."
+What is the price range for the units in the new build in Mitte?,real_estate,"The price range for the units in the new builds in Mitte varies based on the size and specifications of the apartments. Here are the details:
+
+1. A 1-room apartment (20.0 m²) in the 'Heimat Mitte' project is priced at EUR 254,000, which translates to EUR 12,714 per m².
+2. A 4-room apartment (124.4 m²) in the same project is listed for EUR 1,132,000, or EUR 9,098 per m².
+3. In the 'Domizil Mitte' project, a 2-room apartment (70.2 m²) is priced at EUR 831,000, equating to EUR 11,832 per m².
+4. Another 1-room apartment (23.4 m²) in 'Domizil Mitte' is listed at EUR 330,000, which is EUR 14,107 per m².
+5. Additionally, a 3-room apartment (84.4 m²) in 'Heimat Mitte' is priced at EUR 999,000, or EUR 11,833 per m².
+
+Overall, the prices for the new construction units in Mitte range from EUR 254,000 to EUR 1,132,000, with price per square meter ranging from approximately EUR 9,098 to EUR 14,107.",5,5,5,pass,"The answer accurately summarizes the price range for the new builds in Mitte, providing specific prices and price per square meter for various units. It fully addresses the question and presents the information in a clear and concise manner."
+Are there any special features or amenities included in the new build in Mitte?,real_estate,"The new builds in Mitte include several special features and amenities. All the projects mentioned have the following common amenities:
+
+1. **Lift**: All the apartments have a lift.
+2. **Balcony**: Each apartment includes a balcony.
+3. **Parking**: Most of the projects offer parking, except for one (Höfe Mitte) which does not provide parking.
+
+Here are the details of the specific projects:
+
+- **Heimat Mitte** by Vonovia: This project features 4-room apartments with a size of 108.2 m² and includes a lift, balcony, and parking. The energy class is A, and it is currently under construction with completion expected in 2028.
+
+- **Wohnen Mitte** by TAG Immobilien: This project offers 5-room plus apartments with a size of 210.8 m², also featuring a lift, balcony, and parking. It has an energy class of A+ and is expected to be ready within 6 months, with completion also set for 2028.
+
+- **Höfe Mitte** by Project Immobilien: This project includes 4-room apartments of 102.7 m², with a lift and balcony, but no parking available. It has an energy class of A+ and is under construction, with completion expected in 2026.
+
+Overall, the new builds in Mitte are designed with modern amenities and energy-efficient classifications, making them attractive options for potential buyers.",5,5,4,pass,"The answer accurately lists the special features and amenities of the new builds in Mitte, including lifts, balconies, and parking availability. It also provides detailed information about each project, addressing the question fully and clearly, though it could be slightly more concise."
+How does the rental market in Mitte compare to other neighborhoods in terms of availability and pricing?,real_estate,"The retrieved documents do not contain any relevant information regarding the rental market in Mitte or comparisons to other neighborhoods in terms of availability and pricing. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information about the rental market in Mitte or comparisons to other neighborhoods, failing to address the question."
+"Based on the record, it belongs to the real estate domain. Here are five questions a potential renter or buyer might ask:",real_estate,"Based on the retrieved documents, here are the details of the available for-sale apartments in Baumschulenweg, Treptow-Köpenick, Berlin:
+
+1. **5-room Apartment**: 
+   - Size: 206.6 m²
+   - Floor: 4 of 6
+   - Built: 2017
+   - Condition: Renovated
+   - Energy Class: B
+   - Lift: Yes
+   - Balcony: Yes
+   - Price: EUR 973,000 (EUR 4,709/m²)
+   - Mortgage Rate: 3.1%
+   - Nearest Transit: Rudow (U7), 25 min away
+   - Distance to Brandenburg Gate: 8.98 km
+   - Listed on: 2025-11-13
+
+2. **5-room Apartment**: 
+   - Size: 135.3 m²
+   - Floor: 5 of 5
+   - Built: 1983
+   - Condition: Needs renovation
+   - Energy Class: E
+   - Lift: No
+   - Balcony: Yes
+   - Price: EUR 343,000 (EUR 2,536/m²)
+   - Mortgage Rate: 4.1%
+   - Nearest Transit: Grenzallee (U7), 12 min away
+   - Distance to Brandenburg Gate: 9.07 km
+   - Listed on: 2023-11-11
+
+3. **1-room Apartment**: 
+   - Size: 38.8 m²
+   - Floor: 3 of 3
+   - Built: 1999
+   - Condition: Modernized
+   - Energy Class: C
+   - Lift: Yes
+   - Balcony: Yes
+   - Price: EUR 143,000 (EUR 3,700/m²)
+   - Mortgage Rate: 3.3%
+   - Nearest Transit: Johannisthaler Chaussee (U7), 25 min away
+   - Distance to Brandenburg Gate: 9.99 km
+   - Listed on: 2025-01-27
+
+4. **4-room Apartment**: 
+   - Size: 109.1 m²
+   - Floor: 3 of 6
+   - Built: 2010
+   - Condition: Completely renovated
+   - Energy Class: A
+   - Lift: Yes
+   - Balcony: No
+   - Price: EUR 592,000 (EUR 5,431/m²)
+   - Mortgage Rate: 3.85%
+   - Nearest Transit: Johannisthaler Chaussee (U7), 22 min away
+   - Distance to Brandenburg Gate: 9.4 km
+   - Listed on: 2023-04-29
+
+5. **1-room Apartment**: 
+   - Size: 30.3 m²
+   - Floor: 2 of 4
+   - Built: 2017
+   - Condition: Needs renovation
+   - Energy Class: B
+   - Lift: Yes
+   - Balcony: Yes
+   - Price: EUR 91,000 (EUR 3,013/m²)
+   - Mortgage Rate: 1.1%
+   - Nearest Transit: Hausvogteiplatz (U2), 35 min away
+   - Distance to Brandenburg Gate: 8.47 km
+   - Listed on: 2021-04-30
+
+These listings provide a range of options in terms of size, condition, and price, catering to different preferences and budgets.",5,5,5,pass,"The answer accurately summarizes the details of the available for-sale apartments in Baumschulenweg, addressing the question fully. It provides complete information on each listing, including size, condition, price, and other relevant features, without unnecessary detail."
+What is the monthly rent for the furnished 1-room flat in Prenzlauer Berg?,real_estate,"The monthly rent for the furnished 1-room flat in Prenzlauer Berg is not explicitly provided in the retrieved document. However, there is a listing for a 2-room flat in the same area with a Kaltmiete (base rent) of EUR 688 per month and a Warmmiete (total rent including utilities) of EUR 939 per month (Real Estate). Since the question specifically asks about a furnished 1-room flat, and the retrieved document does not contain that specific information, I cannot provide the exact monthly rent for the requested flat.",3,3,4,fail,"The answer acknowledges the lack of specific information about the furnished 1-room flat but does not provide a clear indication of the rent for any similar flat, which is relevant to the question. It could have mentioned that the provided rent details are for a different type of flat, which would help clarify the context."
+How close is the flat to the nearest S-Bahn station?,real_estate,"The retrieved documents do not provide information about the proximity of the flat to the nearest S-Bahn station. Therefore, I cannot determine how close the flat is to the nearest S-Bahn station based on the available information.",5,5,5,pass,"The answer accurately states that the retrieved context does not provide information about the proximity of the flat to the nearest S-Bahn station, fully addressing the question and remaining focused without irrelevant details."
+Are there any additional fees or utilities included in the rent for this flat?,real_estate,"The retrieved documents do not provide any information regarding additional fees or utilities included in the rent for the flat. Therefore, I cannot answer the question based on the available sources.",5,5,5,pass,"The answer accurately states that the retrieved context does not provide information about additional fees or utilities, fully addressing the question and remaining concise."
+What amenities are available in the furnished 1-room flat?,real_estate,"The retrieved documents provide information about several furnished 1-room flats for sale in Berlin, detailing their amenities. Here are the available amenities for each flat:
+
+1. **Gropiusstadt, Neukölln**:
+   - Size: 25.4 m²
+   - Condition: Modernized
+   - Balcony: Yes
+   - Lift: No
+   - Cellar: No
+   - Parking: No
+
+2. **Karlshorst, Lichtenberg**:
+   - Size: 34.1 m²
+   - Condition: Modernized
+   - Balcony: Yes
+   - Lift: Yes
+   - Cellar: Yes
+   - Parking: No
+
+3. **Britz, Neukölln**:
+   - Size: 32.8 m²
+   - Condition: Needs renovation
+   - Balcony: No
+   - Lift: Yes
+   - Cellar: Yes
+   - Parking: No
+
+In summary, the amenities available in the furnished 1-room flats include balconies (in two of the listings), lifts (in two of the listings), cellars (in two of the listings), and none of the flats offer parking. The condition of the flats varies, with some being modernized and one requiring renovation.",5,5,4,pass,"The answer accurately lists the amenities available in the furnished 1-room flats as detailed in the retrieved context. It fully addresses the question by summarizing the amenities for each flat and providing a clear overview. The answer is mostly concise, though it could be slightly more streamlined."
+"Is the flat currently available for rent, and when can I schedule a viewing?",real_estate,"The documents retrieved do not specify whether any of the flats are currently available for rent or provide information on scheduling viewings. Therefore, I cannot answer your question based on the available information.",5,5,5,pass,"The answer accurately states that the retrieved context does not provide information on availability or scheduling viewings, fully addressing the question."
+What is the monthly rent for the large 2-room family rental in Steglitz with a balcony and lift?,real_estate,"The retrieved documents do not provide specific information about the monthly rent for a large 2-room family rental in Steglitz with a balcony and lift. The first document describes a new construction project with a 2-room apartment but does not mention rental prices, while the second document details a 3-room apartment with different specifications and a known rental price. Therefore, I cannot provide the requested information about the 2-room rental.",5,5,5,pass,The answer accurately states that the retrieved context does not provide the specific information requested about the monthly rent for a large 2-room family rental in Steglitz. It fully addresses the question and is concise without irrelevant details.
+Are there any additional fees or costs associated with renting the 2-room family apartment in Steglitz?,real_estate,"The retrieved documents do not provide any information regarding additional fees or costs associated with renting the 2-room family apartment in Steglitz. Therefore, I cannot answer the question based on the available documents.",5,5,5,pass,"The answer accurately states that the retrieved context does not provide information about additional fees or costs, fully addressing the question and remaining focused without irrelevant details."
+Can you provide details about the size and layout of the 2-room family rental in Steglitz?,real_estate,"The details about the 2-room family rentals in Steglitz are as follows:
+
+1. **First Apartment**:
+   - Size: 47.3 m²
+   - Layout: 2 rooms
+   - Floor: 0 of 12
+   - Energy Class: A
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: No
+   - Payment Plan: Off-plan (30% upfront, 70% later)
+   - Nearest Transit: Lipschitzallee (U7), 117 min to Brandenburg Gate
+   - Price: EUR 474,000 (10,030 EUR/m²)
+   - Listing Date: March 31, 2026
+
+2. **Second Apartment**:
+   - Size: 60.1 m²
+   - Layout: 2 rooms
+   - Floor: 0 of 4
+   - Energy Class: A+
+   - Lift: Yes
+   - Balcony: Yes
+   - Parking: No
+   - Payment Plan: Quarterly tranches
+   - Nearest Transit: Blaschkoallee (U7), 103 min to Brandenburg Gate
+   - Price: EUR 583,000 (9,712 EUR/m²)
+   - Listing Date: October 1, 2025
+
+These apartments are part of the 'Suites Steglitz' project by developer Diamona & Harnisch, which is currently under construction and expected to be completed in 2026.",5,5,5,pass,"The answer accurately provides detailed information about two 2-room family rentals in Steglitz, including size, layout, floor, energy class, amenities, payment plans, transit information, prices, and listing dates. It fully addresses the question and is presented in a clear and concise manner."
+Is the large 2-room family rental in Steglitz currently available for immediate move-in?,real_estate,"The retrieved documents do not contain any information regarding the availability of a large 2-room family rental in Steglitz for immediate move-in. Therefore, I cannot provide an answer to your question.",1,1,5,fail,"The answer correctly states that there is no information available regarding the rental, but it fails to provide any relevant details or context that could help the user, resulting in low completeness and correctness scores."
+What amenities are included with the 2-room family rental in Steglitz besides the balcony and lift?,real_estate,"The 2-room family rental in Steglitz includes several amenities besides the balcony and lift. Specifically, it also offers parking (source: unknown).",5,5,5,pass,"The answer accurately identifies parking as an additional amenity included with the rental, fully addressing the question about amenities besides the balcony and lift. It is concise and focused."
+"Based on the record, it belongs to the real estate domain. Here are five questions a potential renter or buyer might ask:",real_estate,"Based on the retrieved documents, here are the details for potential renters or buyers in the real estate domain:
+
+1. **Apartment in Gatow, Spandau, Berlin**: 
+   - Size: 109.5 m², 5 rooms
+   - Condition: Kernsanierung (fully renovated)
+   - Energy Class: B
+   - Price: EUR 515,000 (4,705 EUR/m²)
+   - Listed on: 2022-10-27
+   - Mortgage Rate: 3.4%
+   - Nearest Transit: Franz-Neumann-Platz (U8), 64 min away; 14.04 km to Brandenburg Gate.
+
+2. **Apartment in Gatow, Spandau, Berlin**: 
+   - Size: 152.8 m², 5 rooms
+   - Condition: Renoviert (renovated)
+   - Energy Class: F
+   - Price: EUR 378,000 (2,475 EUR/m²)
+   - Listed on: 2021-08-27
+   - Mortgage Rate: 1.1%
+   - Nearest Transit: Yorckstraße (U7), 56 min away; 13.52 km to Brandenburg Gate.
+
+3. **Apartment in Hohenschönhausen, Lichtenberg, Berlin**: 
+   - Size: 59.3 m², 2 rooms
+   - Condition: Renoviert (renovated)
+   - Energy Class: H
+   - Price: EUR 102,000 (1,722 EUR/m²)
+   - Listed on: 2021-07-07
+   - Mortgage Rate: 1.1%
+   - Nearest Transit: Bernauer Straße (U8), 39 min away; 10.54 km to Brandenburg Gate.
+
+4. **Apartment in Müggelheim, Treptow-Köpenick, Berlin**: 
+   - Size: 100.3 m², 3 rooms
+   - Condition: Kernsanierung (fully renovated)
+   - Energy Class: B
+   - Price: EUR 441,000 (4,394 EUR/m²)
+   - Listed on: 2025-01-15
+   - Mortgage Rate: 3.3%
+   - Nearest Transit: Grenzallee (U7), 70 min away; 25.2 km to Brandenburg Gate.
+
+5. **Apartment in Baumschulenweg, Treptow-Köpenick, Berlin**: 
+   - Size: 206.6 m², 5 rooms
+   - Condition: Renoviert (renovated)
+   - Energy Class: B
+   - Price: EUR 973,000 (4,709 EUR/m²)
+   - Listed on: 2025-11-13
+   - Mortgage Rate: 3.1%
+   - Nearest Transit: Rudow (U7), 25 min away; 8.98 km to Brandenburg Gate.
+
+These listings provide a variety of options in terms of size, condition, price, and location within Berlin.",5,5,4,pass,"The answer accurately summarizes the details of five real estate listings, addressing the potential questions a renter or buyer might have. It includes essential information such as size, condition, energy class, price, listing date, mortgage rate, and transit options, making it complete and relevant. The only minor issue is slight redundancy in the introductory sentence, which could be more concise."
+What is the monthly rent for the 2-room family rental in Steglitz?,real_estate,"The monthly rent for the 2-room family rental in Steglitz is as follows: the Kaltmiete (base rent) is EUR 562, the Nebenkosten (additional costs) are EUR 170, and the Warmmiete (total rent including additional costs) is EUR 733 (source: unknown).",5,5,5,pass,"The answer accurately provides the monthly rent details for the 2-room family rental in Steglitz, including Kaltmiete, Nebenkosten, and Warmmiete, fully addressing the question without irrelevant details."
+Does the rental property include any additional amenities besides the balcony and lift?,real_estate,"The retrieved documents indicate that some rental properties do include additional amenities besides the balcony and lift. For example, one property in Hellersdorf has a cellar as an additional amenity (Real Estate). Another property in Halensee not only has a balcony and lift but also includes a cellar and parking (Real Estate). Therefore, it can be concluded that there are rental properties with amenities beyond just the balcony and lift.",5,5,5,pass,"The answer accurately identifies additional amenities (cellar and parking) present in the retrieved context, fully addressing the question about amenities beyond the balcony and lift. It is concise and focused, providing relevant details without unnecessary information."
+How large is the 2-room family rental in Steglitz in terms of square footage?,real_estate,"The size of the 2-room family rentals in Steglitz varies among the listings. The retrieved documents provide the following square footage for different units:
+
+1. One unit is 47.3 m².
+2. Another unit is 70.8 m².
+3. A third unit is 60.1 m².
+
+Thus, the sizes of the 2-room family rentals in Steglitz range from 47.3 m² to 70.8 m² (Real Estate).",5,5,5,pass,"The answer accurately lists the sizes of the 2-room family rentals in Steglitz as provided in the retrieved context, fully addressing the question about square footage. It is concise and focused, presenting the information clearly without unnecessary detail."
+Is the 2-room family rental currently available for immediate move-in?,real_estate,"There are no relevant documents retrieved that provide information about the availability of a 2-room family rental for immediate move-in. Therefore, I cannot answer the question based on the provided sources.",1,2,3,fail,"The answer indicates a lack of information but does not provide any details about the current status of the 2-room family rental, which is essential to fully address the question. It is somewhat concise but ultimately fails to provide a satisfactory response."
+Are there any nearby schools or parks that would be convenient for families living in Steglitz?,real_estate,"The retrieved documents do not contain any information regarding nearby schools or parks in Steglitz. Therefore, I cannot provide an answer to your question.",1,1,5,fail,"The answer does not provide any information about nearby schools or parks in Steglitz, which is the main focus of the question. It also fails to address the question adequately."
+"The record pertains to real estate, specifically rental market data. Here are five questions a user might ask based on the retrieved record:",real_estate,"The retrieved documents provide rental market data for Waidmannslust, Reinickendorf, Berlin over several months. Here are the key insights regarding average cold rent and rental listings:
+
+1. **Average Cold Rent**:
+   - In February 2020, the average cold rent was **10.14 EUR/m²/month**.
+   - By May 2021, it slightly decreased to **10.06 EUR/m²/month**.
+   - In February 2022, it increased to **10.56 EUR/m²/month**.
+   - By May 2022, it decreased again to **9.85 EUR/m²/month**.
+   - In July 2025, the average cold rent rose significantly to **13.23 EUR/m²/month**.
+
+2. **Rental Listings**:
+   - The number of rental listings varied over the months:
+     - February 2020: **47 rental listings**
+     - May 2021: **198 rental listings**
+     - February 2022: **207 rental listings**
+     - May 2022: **163 rental listings**
+     - July 2025: **176 rental listings**
+
+Overall, the data indicates fluctuations in average cold rent and the number of rental listings over the specified periods, with a notable increase in average rent by 2025 compared to earlier years.",5,5,4,pass,"The answer accurately summarizes the average cold rent and rental listings from the retrieved context, addressing the user's potential questions completely. It is mostly concise, though the structure could be slightly more streamlined."
+What is the average rent per square meter in Kreuzberg for the year 2024?,real_estate,"The retrieved documents do not provide sufficient information to calculate the average rent per square meter in Kreuzberg for the year 2024. The only relevant listing for 2024 indicates a cold rent of EUR 20.02 per square meter for a 1-room apartment (source: unknown). However, without additional listings from 2024 to compare, it is not possible to determine an average rent for that year.",4,4,5,pass,"The answer accurately identifies the lack of sufficient data to calculate an average rent for 2024, while also mentioning the relevant figure of EUR 20.02 per square meter. It addresses the question well, though it could have slightly emphasized the limitation of only having one data point."
+How does the rental price in Kreuzberg compare to other neighborhoods in Berlin for 2024?,real_estate,"The rental price in Kreuzberg for 2024 is reported to be approximately 23.32 EUR/m²/month in October and 23.22 EUR/m²/month in December (source: unknown). However, the retrieved documents do not provide comparative rental prices for other neighborhoods in Berlin for 2024. Therefore, I cannot determine how Kreuzberg's rental prices compare to those in other neighborhoods.",4,4,4,pass,"The answer accurately presents the rental prices in Kreuzberg for 2024 and acknowledges the lack of comparative data for other neighborhoods, which is relevant to the question. It is focused and avoids unnecessary detail."
+Are there any trends in rental prices in Kreuzberg over the past few years leading up to 2024?,real_estate,"In analyzing rental prices in Kreuzberg leading up to 2024, we can observe a trend of increasing average cold rent over the past few years. 
+
+- In October 2022, the average cold rent was 20.9 EUR/m²/month.
+- By December 2022, it had risen to 21.3 EUR/m²/month.
+- In December 2023, the average cold rent increased further to 22.21 EUR/m²/month.
+- Moving into 2024, the average cold rent continued to rise, reaching 23.32 EUR/m²/month in October 2024 and slightly decreasing to 23.22 EUR/m²/month by December 2024.
+
+This data indicates a general upward trend in rental prices in Kreuzberg, with the average cold rent increasing from 20.9 EUR/m²/month in late 2022 to around 23.22-23.32 EUR/m²/month by the end of 2024 (source: monthly market statistics for Kreuzberg).",4,4,4,pass,"The answer accurately summarizes the trend in rental prices in Kreuzberg, providing specific figures from the retrieved context. It addresses the question well, though it could clarify that the slight decrease in December 2024 is part of the overall trend. The answer is focused and avoids irrelevant details."
+What is the availability of rental listings in Kreuzberg for 2024?,real_estate,"In Kreuzberg, there are several rental listings available for 2024. Here are the details of the available apartments:
+
+1. A 2-room apartment with 74.6 m², located on the 5th floor of a modern building (constructed between 1990-2010) and in renovated condition. The cold rent (Kaltmiete) is EUR 1779/month, with additional costs (Nebenkosten) of EUR 276, leading to a total warm rent (Warmmiete) of EUR 2055/month. This apartment is listed as of December 5, 2024.
+
+2. Another 2-room apartment with 63.1 m², situated on the 1st floor of a modernized building (constructed between 1990-2010). The cold rent is EUR 1409/month, with additional costs of EUR 201, resulting in a total warm rent of EUR 1609/month. This listing is from June 15, 2024.
+
+3. A 2-room apartment with 68.8 m², located on the 1st floor of a pre-1949 building that has been completely renovated (kernsaniert). The cold rent is EUR 1130/month, with additional costs of EUR 174, leading to a total warm rent of EUR 1304/month. This apartment is listed as of November 30, 2024.
+
+These listings indicate a range of options in terms of size, condition, and pricing for potential renters in Kreuzberg for the year 2024.",5,5,5,pass,"The answer accurately summarizes the availability of rental listings in Kreuzberg for 2024, providing specific details about multiple apartments, including size, condition, rent, and listing dates. It fully addresses the question and is focused without irrelevant information."
+Can you provide information on the factors influencing rent prices in Kreuzberg this year?,real_estate,"The retrieved documents do not contain any relevant information regarding the factors influencing rent prices in Kreuzberg this year. Therefore, I cannot provide an answer to your question.",1,1,5,fail,"The answer does not provide any information about the factors influencing rent prices in Kreuzberg, which is the main focus of the question. It also fails to address the question adequately, resulting in a low score for correctness and completeness."
+"The record pertains to real estate, specifically focusing on resale prices versus new construction in Mitte during a period of high mortgage rates. Here are five questions a user might ask based on this record:",real_estate,"The retrieved documents provide information on resale prices for apartments in Mitte, Berlin, during a period of varying mortgage rates. 
+
+1. **Resale Prices**: The prices for the resale apartments vary significantly based on size, condition, and other attributes. For example:
+   - A 3-room apartment (52.8 m²) built in 2003 is listed for EUR 516,000 (9,778 EUR/m²) at a mortgage rate of 1.1% (listed in August 2021).
+   - A 1-room apartment (32.5 m²) built in 2012 is priced at EUR 252,000 (7,763 EUR/m²) with the same mortgage rate of 1.1% (listed in January 2020).
+   - A smaller 1-room apartment (20.9 m²) built in 1996 is listed for EUR 201,000 (9,656 EUR/m²) at a higher mortgage rate of 3.85% (listed in February 2024).
+   - A larger 3-room apartment (62.2 m²) built in 1995 is priced at EUR 385,000 (6,194 EUR/m²) also at 3.85% (listed in April 2024).
+   - A 4-room apartment (116.8 m²) built in 2000 is listed for EUR 624,000 (5,344 EUR/m²) at the same mortgage rate of 3.85% (also listed in April 2024).
+
+2. **Impact of Mortgage Rates**: The documents indicate that the mortgage rates have increased from 1.1% to 3.85% over the period covered. This increase in mortgage rates may influence the resale prices, as seen in the listings where newer properties tend to have higher prices per square meter compared to older ones, despite the increase in mortgage rates.
+
+In summary, the resale prices for apartments in Mitte show a range of values influenced by factors such as size, condition, and the prevailing mortgage rates at the time of listing. The data suggests that while newer constructions may command higher prices, the overall market dynamics are also affected by the changing mortgage rates.",5,5,4,pass,"The answer accurately summarizes the resale prices and mortgage rates for apartments in Mitte, addressing the question fully. It provides specific examples and discusses the impact of mortgage rates on resale prices, though it could be slightly more concise."
+What were the average resale prices in Mitte compared to new construction during the time of high mortgage rates?,real_estate,"During the time of high mortgage rates, the average resale prices in Mitte compared to new construction were as follows:
+
+In May 2020, the resale price was 7386 EUR/m², while the new construction price was 9112 EUR/m². By September 2020, the resale price slightly decreased to 7352 EUR/m², and the new construction price increased to 9368 EUR/m². In March 2020, the resale price was higher at 7489 EUR/m², with new construction at 9737 EUR/m². In April 2020, the resale price was 7400 EUR/m², and the new construction price was 9376 EUR/m². 
+
+In summary, during this period, the average resale prices ranged from 7352 to 7489 EUR/m², while new construction prices ranged from 9112 to 9737 EUR/m² (Real Estate). 
+
+In January 2023, which reflects a later period with higher mortgage rates, the resale price increased to 9405 EUR/m², and the new construction price rose to 11698 EUR/m², indicating a significant increase in both categories over time (Real Estate).",5,5,4,pass,"The answer accurately presents the average resale prices and new construction prices in Mitte during the specified time of high mortgage rates, providing specific figures and comparisons. It fully addresses the question and maintains focus, though it could be slightly more concise by omitting some repetitive details."
+Did high mortgage rates affect the demand for resale properties versus new construction in Mitte?,real_estate,"The retrieved documents do not contain any relevant information regarding the impact of high mortgage rates on the demand for resale properties versus new construction in Mitte. Therefore, I cannot provide an answer to this question.",1,1,5,fail,"The answer does not provide any information regarding the question and simply states the lack of relevant context, which does not address the question about the impact of high mortgage rates."
+How did the price trends for resale homes in Mitte differ from those of new builds during the high mortgage rate period?,real_estate,"The retrieved documents do not contain any relevant information regarding the price trends for resale homes in Mitte or new builds during the high mortgage rate period. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information regarding the price trends for resale homes in Mitte or new builds, which is the core of the question. It acknowledges the lack of information but fails to address the question at all."
+Were there any notable differences in the availability of resale properties versus new construction in Mitte when mortgage rates were elevated?,real_estate,"The retrieved document provides information about a resale apartment in Mitte, Berlin, including its specifications and listing price. However, it does not contain any comparative data regarding the availability of resale properties versus new construction, nor does it mention the impact of elevated mortgage rates on this availability. Therefore, there is not enough relevant information to answer the question about notable differences in the availability of resale properties versus new construction in Mitte when mortgage rates were elevated.",5,5,5,pass,"The answer accurately identifies the lack of relevant information in the retrieved context regarding the comparison of resale properties and new construction in Mitte, as well as the impact of elevated mortgage rates. It fully addresses the question and is concise."
+Can you provide insights on how high mortgage rates influenced buyer preferences between resale and new construction homes in Mitte?,real_estate,"The retrieved documents do not contain any relevant information regarding how high mortgage rates influenced buyer preferences between resale and new construction homes in Mitte. Therefore, I cannot provide insights on this topic.",1,1,5,fail,"The answer correctly states that there is no relevant information in the retrieved context, but it fails to provide any insights or analysis regarding the question asked, resulting in low scores for correctness and completeness."
+"The record appears to belong to the real estate domain, specifically regarding mortgage rates and rental listings. Here are five questions a user might ask based on that record:",real_estate,"The retrieved documents pertain to the real estate domain, specifically regarding property listings and mortgage rates. Here are the relevant details:
+
+1. **Mortgage Rates**: The mortgage rates for the listed properties vary significantly. For example, one apartment listed on April 27, 2024, has a mortgage rate of 3.85%, while another listed on May 14, 2022, has a much lower rate of 1.8%. Additionally, a property listed on March 5, 2024, also has a mortgage rate of 3.85%, and another from May 9, 2020, has a rate of 1.1% (Real Estate).
+
+2. **Rental Listings**: The documents primarily focus on properties for sale rather than rental listings. However, the prices for these properties range from EUR 113,000 to EUR 729,000, with varying sizes and conditions, indicating a diverse market (Real Estate).
+
+3. **Property Attributes**: The properties listed include various attributes such as size (ranging from 49.3 m² to 89.2 m²), condition (e.g., ""kern saniert,"" ""renoviert,"" ""modernisiert""), and energy classes (ranging from B to F). The locations are also specified, with proximity to transit options and distances to notable landmarks like Brandenburg Gate (Real Estate).
+
+In summary, the documents provide a snapshot of the real estate market in Berlin, highlighting mortgage rates, property prices, and key attributes of the listings.",5,5,4,pass,"The answer accurately summarizes the retrieved context, addressing both mortgage rates and property attributes while noting the lack of rental listings. It is complete and focused, though slightly verbose in some areas."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",1,1,5,fail,"The answer correctly states that there is no information in the retrieved context regarding mortgage rates, but it fails to provide any relevant details or context that could help answer the question, resulting in low scores for correctness and completeness."
+How many rental listings were available during the months with the highest mortgage rates?,real_estate,"The documents provide rental listing data for various months, but they do not specify which months had the highest mortgage rates. However, we can identify the rental listings available during the months mentioned in the documents along with their corresponding mortgage rates:
+
+1. **April 2026**: 139 rental listings, average mortgage rate 3.1%.
+2. **February 2026**: 146 rental listings, average mortgage rate 3.1%.
+3. **July 2021**: 214 rental listings, average mortgage rate 1.1%.
+4. **March 2020**: 163 rental listings, average mortgage rate 1.1%.
+5. **May 2021**: 187 rental listings, average mortgage rate 1.1%.
+
+From the data, the months with the highest mortgage rates (3.1%) are April 2026 and February 2026, with 139 and 146 rental listings, respectively. 
+
+Thus, during the months with the highest mortgage rates, there were a total of **285 rental listings** (139 in April 2026 and 146 in February 2026).",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the correct number of rental listings for those months. It fully addresses the question and is concise without irrelevant details.
+Can you provide a comparison of rental inventory levels during the highest mortgage rate months?,real_estate,"The question pertains to the real estate domain, specifically regarding rental inventory levels during the highest mortgage rate months. 
+
+From the retrieved documents, we can identify the following relevant data points:
+
+1. In September 2023, the average mortgage rate was 4.1%, which is significantly higher compared to previous years. During this month, there were 133 rental listings in Malchow, Lichtenberg, Berlin (source: September 2023 statistics).
+
+2. In earlier months with lower mortgage rates, such as March 2020, the average mortgage rate was 1.1%, and there were 163 rental listings in Hohenschönhausen, Lichtenberg, Berlin (source: March 2020 statistics). 
+
+3. In January 2021, with the same mortgage rate of 1.1%, there were 126 rental listings (source: January 2021 statistics). 
+
+4. In September 2021, again with a mortgage rate of 1.1%, there were 199 rental listings (source: September 2021 statistics).
+
+From this data, we can observe that during the highest mortgage rate month (September 2023), the rental inventory was 133 listings. In contrast, during months with a much lower mortgage rate (1.1%), the rental inventory varied, with 163 listings in March 2020, 126 in January 2021, and 199 in September 2021. 
+
+This suggests that higher mortgage rates may correlate with lower rental inventory levels, but further analysis would be needed to establish a definitive trend.",5,5,4,pass,"The answer accurately compares rental inventory levels during the highest mortgage rate month (September 2023) with those during months of lower mortgage rates, providing specific data points. It fully addresses the question and maintains focus, though it could be slightly more concise by reducing some repetitive phrasing."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide rental price data for various months in Hohenschönhausen, Lichtenberg, Berlin, but do not specify the exact months when mortgage rates were at their highest. However, we can observe trends in rental prices over time.
+
+In 2021, the average cold rent was as follows:
+- January: 7.98 EUR/m²/month
+- July: 9.39 EUR/m²/month
+- September: 9.41 EUR/m²/month
+
+This indicates a noticeable increase in rental prices from January to September 2021.
+
+In April 2026, the average cold rent was 12.14 EUR/m²/month, which shows a significant increase compared to the earlier years.
+
+The documents do not provide specific information about the correlation between rental prices and mortgage rates, nor do they indicate the months when mortgage rates were at their highest. Therefore, while there is a clear upward trend in rental prices over the years, we cannot definitively link these trends to mortgage rates based on the available data.",3,4,4,pass,"The answer accurately summarizes the rental price trends over the specified months, but it lacks specific information about the highest mortgage rates. It addresses the question well, noting the upward trend in rental prices, but does not fully connect this to mortgage rates."
+How did the availability of rental properties fluctuate in relation to the changes in mortgage rates?,real_estate,"The retrieved documents do not contain any relevant information regarding the availability of rental properties in relation to changes in mortgage rates. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information regarding the relationship between rental properties and mortgage rates, which is the core of the question. It also fails to address the question directly."
+The record appears to belong to the real estate domain. Here are five questions a user might ask based on the retrieved record:,real_estate,"The retrieved documents pertain to the real estate domain, specifically detailing various for-sale apartments in Berlin. Here are the key details from the listings:
+
+1. **Falkenhagener Feld, Spandau**: A 2-room apartment of 48.2 m², built in 1986, listed for EUR 90,000 (1,872 EUR/m²). It is modernized, located on the 3rd floor of an 8-story building, and has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 55 minutes away. The mortgage rate is 3.85% (listed on 2024-06-09).
+
+2. **Baumschulenweg, Treptow-Köpenick**: A 2-room apartment of 58.1 m², built in 1984, listed for EUR 137,000 (2,356 EUR/m²). This apartment is in need of renovation, located on the 2nd floor of a 4-story building, with a balcony and cellar, but no lift or parking. The nearest transit is Bellevue, 50 minutes away. The mortgage rate is 3.1% (listed on 2026-04-28).
+
+3. **Mahlsdorf, Marzahn-Hellersdorf**: A 4-room apartment of 105.0 m², built in 1975, listed for EUR 134,000 (1,273 EUR/m²). It is modernized, located on the 7th floor of an 8-story building, with no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-03).
+
+4. **Falkenhagener Feld, Spandau**: A 1-room apartment of 34.5 m², built in 1973, listed for EUR 92,000 (2,652 EUR/m²). This apartment is fully renovated, located on the 2nd floor of a 4-story building, with a balcony but no cellar or parking. The nearest transit is Ruhleben, 26 minutes away. The mortgage rate is 1.8% (listed on 2022-01-05).
+
+5. **Mahlsdorf, Marzahn-Hellersdorf**: A 2-room apartment of 54.1 m², built in 1985, listed for EUR 73,000 (1,352 EUR/m²). It is fully renovated, located on the 5th floor of a 5-story building, with no lift, balcony, or cellar, and no parking. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-28).
+
+These listings provide a range of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing detailed information about each apartment listing, including size, condition, price, and other relevant features. It fully addresses the question by listing five distinct properties and their key details, though it could be slightly more concise by reducing redundancy in phrasing."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",1,1,5,fail,"The answer correctly states that the retrieved context does not contain relevant information, but it fails to provide any specific months or details about mortgage rates, which is what the question asks for."
+Can you provide the number of rental listings available during the months with the highest mortgage rates?,real_estate,"The retrieved documents provide rental listing data for various months, but they do not specify which months had the highest mortgage rates. However, we can identify the number of rental listings for the months mentioned along with their corresponding mortgage rates:
+
+1. **April 2026**: 139 rental listings, average mortgage rate 3.1%.
+2. **February 2026**: 146 rental listings, average mortgage rate 3.1%.
+3. **July 2021**: 214 rental listings, average mortgage rate 1.1%.
+4. **March 2020**: 163 rental listings, average mortgage rate 1.1%.
+5. **May 2021**: 187 rental listings, average mortgage rate 1.1%.
+
+From this data, the months with the highest mortgage rates (3.1%) are April 2026 and February 2026, with 139 and 146 rental listings, respectively. 
+
+Thus, during the months with the highest mortgage rates, there were a total of 139 rental listings in April 2026 and 146 rental listings in February 2026.",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the corresponding number of rental listings for those months. It fully addresses the question and is concise without irrelevant details.
+How did the rental inventory change in relation to the fluctuations in mortgage rates?,real_estate,"The rental inventory in Malchow, Lichtenberg, Berlin has shown notable fluctuations in relation to mortgage rates over the years. 
+
+In May 2020, the average cold rent was 7.86 EUR/m² with only 23 rental listings, while the average mortgage rate was 1.1%. By September 2020, the average cold rent slightly decreased to 7.85 EUR/m², but the rental listings increased significantly to 181. This period coincided with stable mortgage rates.
+
+Moving forward to 2021, the average cold rent varied slightly, with 7.78 EUR/m² in April and increasing to 8.88 EUR/m² by July, while the number of rental listings remained relatively high (175 in April and 184 in July). The mortgage rate remained constant at 1.1% during this time.
+
+However, a significant change occurred by September 2023, when the average cold rent rose to 10.18 EUR/m², and the number of rental listings decreased to 133. This period also saw a rise in the average mortgage rate to 4.1%, indicating a potential correlation between higher mortgage rates and a reduction in rental inventory.
+
+Overall, the data suggests that as mortgage rates increased, there was a tendency for rental inventory to decrease, while average rents increased. This trend may reflect broader market dynamics where higher borrowing costs could lead to reduced investment in rental properties, thereby affecting availability. (Real Estate)",5,5,4,pass,"The answer accurately describes the changes in rental inventory in relation to mortgage rates, providing specific data points and trends over time. It fully addresses the question and maintains focus, though it could be slightly more concise."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide rental price data for Hohenschönhausen, Lichtenberg, Berlin, but do not specify the months when mortgage rates were at their highest. However, we can observe trends in rental prices over time.
+
+From the documents, the average cold rent per square meter per month is as follows:
+- March 2020: 8.43 EUR/m² (average mortgage rate 1.1%)
+- July 2021: 9.39 EUR/m² (average mortgage rate 1.1%)
+- September 2021: 9.41 EUR/m² (average mortgage rate 1.1%)
+- April 2026: 12.14 EUR/m² (average mortgage rate 3.1%)
+
+Notably, there is a clear upward trend in rental prices from March 2020 to April 2026, with a significant increase from 9.41 EUR/m² in September 2021 to 12.14 EUR/m² in April 2026, coinciding with a rise in the average mortgage rate to 3.1%. 
+
+While the documents do not directly correlate rental prices with specific mortgage rate peaks, the general trend indicates that as mortgage rates increased, rental prices also tended to rise over the observed period (Real Estate).",4,4,4,pass,"The answer accurately summarizes the rental price trends and mentions the mortgage rates, but it lacks specific identification of the months when mortgage rates were highest. It provides a clear trend analysis and is focused without irrelevant details."
+Is there a correlation between the highest mortgage rates and the availability of rental properties in the market?,real_estate,"The retrieved documents provide data on mortgage rates and rental property availability in Hohenschönhausen, Lichtenberg, Berlin, but they do not explicitly establish a correlation between the two. 
+
+From the data, we can observe the following:
+
+1. In 2021, the average mortgage rate was consistently low at 1.1%, with rental listings ranging from 126 to 214 properties available per month.
+2. By 2026, the average mortgage rate increased to 3.1%, and the number of rental listings decreased to between 139 and 146 properties.
+
+While there is a noticeable trend of decreasing rental availability as mortgage rates rise, the documents do not provide enough information to definitively conclude that there is a direct correlation. The changes in rental listings could be influenced by various factors beyond just mortgage rates, such as market demand, economic conditions, or changes in housing policy.
+
+Therefore, while the data suggests a potential relationship, it does not confirm a correlation between the highest mortgage rates and the availability of rental properties in the market. More comprehensive analysis would be needed to draw a firm conclusion.",4,5,4,pass,"The answer accurately summarizes the retrieved context and discusses the observed trends in mortgage rates and rental availability. It fully addresses the question by noting the lack of explicit correlation while suggesting a potential relationship, and it remains focused without unnecessary detail."
+"The record appears to belong to the real estate domain, specifically regarding mortgage rates and rental listings. Here are five questions a user might ask based on this record:",real_estate,"The retrieved documents pertain to the real estate domain, specifically regarding property listings and mortgage rates. Here are the relevant details:
+
+1. **Wilmersdorf, Charlottenburg-Wilmersdorf**:
+   - A 3-room apartment (73.3 m²) built in 1999 is listed for EUR 654,000 at a mortgage rate of 3.85%. It is in a kernsaniert condition and has a price per square meter of EUR 8,917 (listed on 2024-04-27).
+   - Another 3-room apartment (58.3 m²) built in 2006 is available for EUR 429,000 with a mortgage rate of 1.8%. This unit is in a renoviert condition, priced at EUR 7,365 per square meter (listed on 2022-05-14).
+   - A third 3-room apartment (89.2 m²) built in 1991 is priced at EUR 729,000 with a mortgage rate of 3.85%. It is in a kernsaniert condition, with a price per square meter of EUR 8,174 (listed on 2024-03-05).
+
+2. **Hohenschönhausen, Lichtenberg**:
+   - A 2-room apartment (49.3 m²) built in 1965 is listed for EUR 123,000 at a mortgage rate of 3.1%. It is modernisiert and priced at EUR 2,483 per square meter (listed on 2025-08-25).
+   - Another 2-room apartment (54.7 m²) built in 1950 is available for EUR 113,000 with a mortgage rate of 1.1%. This unit is in a kernsaniert condition, priced at EUR 2,066 per square meter (listed on 2020-05-09).
+
+These listings provide a snapshot of the current real estate market in Berlin, highlighting various properties, their conditions, and associated mortgage rates.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing specific details about the properties, including their locations, sizes, conditions, prices, and mortgage rates. It fully addresses the question regarding the real estate domain and is mostly concise, though it could be slightly more succinct."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",1,1,5,fail,"The answer correctly states that there is no information in the retrieved context regarding mortgage rates, but it fails to provide any relevant details or insights that could help answer the question, resulting in low scores for correctness and completeness."
+How many rental listings were available during the months with the highest mortgage rates?,real_estate,"To determine the number of rental listings available during the months with the highest mortgage rates, we can analyze the retrieved documents for the relevant data.
+
+The documents indicate the following average mortgage rates and corresponding rental listings:
+
+1. **April 2026**: Average mortgage rate 3.1%, 139 rental listings (Real Estate).
+2. **February 2026**: Average mortgage rate 3.1%, 146 rental listings (Real Estate).
+3. **July 2021**: Average mortgage rate 1.1%, 214 rental listings (Real Estate).
+4. **March 2020**: Average mortgage rate 1.1%, 163 rental listings (Real Estate).
+5. **May 2021**: Average mortgage rate 1.1%, 187 rental listings (Real Estate).
+
+The highest mortgage rates recorded in the documents are 3.1% in both April and February of 2026. During these months, the number of rental listings was:
+
+- **April 2026**: 139 rental listings
+- **February 2026**: 146 rental listings
+
+Thus, during the months with the highest mortgage rates (3.1%), there were a total of **285 rental listings** (139 in April and 146 in February).",5,5,4,pass,"The answer accurately identifies the months with the highest mortgage rates and provides the correct number of rental listings for each month, totaling them correctly. It fully addresses the question and is mostly concise, though it could be slightly more succinct."
+Can you provide a comparison of rental inventory levels during the highest mortgage rate months?,real_estate,"The question pertains to the real-estate domain, specifically regarding rental inventory levels during the highest mortgage rate months. 
+
+From the retrieved documents, we can observe the following rental inventory levels during periods of higher mortgage rates:
+
+1. In September 2023, the average mortgage rate was 4.1%. During this month, there were 133 rental listings in Malchow, Lichtenberg, Berlin (Real Estate).
+   
+2. In earlier months with lower mortgage rates (1.1%), such as March 2020, there were 163 rental listings in Hohenschönhausen, and in January 2021, there were 126 rental listings (Real Estate). 
+
+3. In September 2021, with the same mortgage rate of 1.1%, there were 199 rental listings in Hohenschönhausen (Real Estate).
+
+The comparison indicates that during the highest mortgage rate month (September 2023), the rental inventory was 133 listings, which is lower than the inventory levels observed in previous months with lower mortgage rates, such as September 2021 (199 listings) and March 2020 (163 listings). 
+
+This suggests a potential inverse relationship between higher mortgage rates and rental inventory levels, although further analysis would be needed to draw definitive conclusions.",4,4,4,pass,"The answer accurately identifies rental inventory levels during the highest mortgage rate month (September 2023) and compares it to previous months with lower rates. It provides relevant data and insights, though it could be slightly more concise by reducing some repetitive phrasing."
+Were there any notable trends in rental prices during the months with elevated mortgage rates?,real_estate,"The retrieved documents provide monthly market statistics for rental prices in Hohenschönhausen, Lichtenberg, Berlin, across different months. Notably, the average cold rent per square meter has shown an upward trend over the years, particularly during periods with elevated mortgage rates.
+
+For instance, in April 2026, when the average mortgage rate was 3.1%, the average cold rent was 12.14 EUR/m²/month. In contrast, during earlier months with lower mortgage rates (around 1.1%), such as in July 2021, the average cold rent was 9.39 EUR/m²/month, and in September 2021, it increased to 9.41 EUR/m²/month. 
+
+This suggests that as mortgage rates increased, rental prices also tended to rise, indicating a potential correlation between elevated mortgage rates and increasing rental prices in the market (Real Estate).",5,5,4,pass,"The answer accurately identifies the trend of rising rental prices during periods of elevated mortgage rates, supported by specific data from the retrieved context. It fully addresses the question and provides relevant comparisons, though it could be slightly more concise."
+How did the availability of rental properties fluctuate in relation to the changes in mortgage rates?,real_estate,"The retrieved documents do not contain any relevant information regarding the availability of rental properties in relation to changes in mortgage rates. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information regarding the relationship between rental properties and mortgage rates, which is the core of the question. It also fails to address the question directly."
+The record appears to belong to the real estate domain. Here are five questions a user might ask based on the retrieved record:,real_estate,"The retrieved documents pertain to the real estate domain, specifically detailing various for-sale apartments in Berlin. Here are the key details from the listings:
+
+1. **Falkenhagener Feld, Spandau**: A 2-room apartment of 48.2 m², built in 1986, modernized condition, priced at EUR 90,000 (EUR 1,872/m²). It has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 55 minutes away. Listed on June 9, 2024, with a mortgage rate of 3.85%.
+
+2. **Baumschulenweg, Treptow-Köpenick**: A 2-room apartment of 58.1 m², built in 1984, in need of renovation, priced at EUR 137,000 (EUR 2,356/m²). It has a balcony and cellar, but no lift or parking. The nearest transit is Bellevue, 50 minutes away. Listed on April 28, 2026, with a mortgage rate of 3.1%.
+
+3. **Mahlsdorf, Marzahn-Hellersdorf**: A 4-room apartment of 105.0 m², built in 1975, modernized condition, priced at EUR 134,000 (EUR 1,273/m²). It has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 81 minutes away. Listed on April 3, 2024, with a mortgage rate of 3.85%.
+
+4. **Falkenhagener Feld, Spandau**: A 1-room apartment of 34.5 m², built in 1973, fully renovated, priced at EUR 92,000 (EUR 2,652/m²). It has a balcony but no cellar or parking. The nearest transit is Ruhleben, 26 minutes away. Listed on January 5, 2022, with a mortgage rate of 1.8%.
+
+5. **Mahlsdorf, Marzahn-Hellersdorf**: A 2-room apartment of 54.1 m², built in 1985, fully renovated, priced at EUR 73,000 (EUR 1,352/m²). It has no lift, balcony, or cellar, and no parking. The nearest transit is Bellevue, 81 minutes away. Listed on April 28, 2024, with a mortgage rate of 3.85%.
+
+These listings provide a variety of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",5,5,5,pass,"The answer accurately summarizes the retrieved context, providing detailed information about each apartment listing, including location, size, condition, price, and other relevant features. It fully addresses the question by presenting all five listings clearly and concisely."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",1,1,5,fail,"The answer correctly states that there is no information in the retrieved context regarding mortgage rates, but it fails to provide any relevant details or context that could help answer the question, resulting in low scores for correctness and completeness."
+Can you provide the number of rental listings available during the months with the highest mortgage rates?,real_estate,"The retrieved documents provide rental listing data for various months, but they do not specify which months had the highest mortgage rates. However, we can identify the number of rental listings for the months mentioned along with their corresponding mortgage rates:
+
+1. **April 2026**: 139 rental listings, average mortgage rate 3.1% (Real Estate).
+2. **February 2026**: 146 rental listings, average mortgage rate 3.1% (Real Estate).
+3. **July 2021**: 214 rental listings, average mortgage rate 1.1% (Real Estate).
+4. **March 2020**: 163 rental listings, average mortgage rate 1.1% (Real Estate).
+5. **May 2021**: 187 rental listings, average mortgage rate 1.1% (Real Estate).
+
+From the data, the months with the highest recorded mortgage rates (3.1%) are April 2026 and February 2026, with 139 and 146 rental listings, respectively. Therefore, during the months with the highest mortgage rates, there were 139 and 146 rental listings available.",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the corresponding number of rental listings. It fully addresses the question and is concise without irrelevant details.
+How did the rental inventory change in relation to the fluctuations in mortgage rates?,real_estate,"The rental inventory in Malchow, Lichtenberg, Berlin has shown significant fluctuations in relation to mortgage rates over the years. 
+
+In May 2020, the average cold rent was 7.86 EUR/m²/month, with only 23 rental listings available, while the average mortgage rate was 1.1% (Real Estate). By September 2020, the average cold rent slightly decreased to 7.85 EUR/m²/month, but the number of rental listings increased to 181, despite the mortgage rate remaining the same at 1.1% (Real Estate).
+
+Moving to 2021, the average cold rent increased to 8.88 EUR/m²/month in July, with 184 rental listings available, while the mortgage rate continued to hold at 1.1% (Real Estate). In April 2021, the average cold rent was slightly lower at 7.78 EUR/m²/month, with 175 rental listings (Real Estate).
+
+By September 2023, the average cold rent rose significantly to 10.18 EUR/m²/month, coinciding with a notable increase in the average mortgage rate to 4.1%. The number of rental listings decreased to 133 (Real Estate). 
+
+Overall, the data suggests that as mortgage rates remained low (1.1%) from 2020 to mid-2021, the rental inventory was relatively stable or increased. However, as mortgage rates rose to 4.1% by 2023, the rental inventory decreased, and rents increased significantly. This indicates a potential inverse relationship between rising mortgage rates and rental inventory, where higher rates may lead to reduced rental listings and increased rents.",5,5,4,pass,"The answer accurately summarizes the changes in rental inventory in relation to mortgage rates, providing specific data points and trends over time. It fully addresses the question and maintains focus, though it could be slightly more concise by reducing some repetitive phrases."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide monthly market statistics for rental prices in Hohenschönhausen, Lichtenberg, Berlin, but they do not specify the months when mortgage rates were at their highest. However, we can observe trends in rental prices over the months provided.
+
+From the data:
+- In January 2021, the average cold rent was 7.98 EUR/m²/month.
+- By March 2020, it was 8.43 EUR/m²/month.
+- In July 2021, it increased to 9.39 EUR/m²/month.
+- In September 2021, it further rose to 9.41 EUR/m²/month.
+- By April 2026, the average cold rent had increased significantly to 12.14 EUR/m²/month.
+
+This indicates a general upward trend in rental prices over the observed months, particularly from early 2021 to 2026. However, without specific information on the timing of the highest mortgage rates, we cannot directly correlate these trends with those rates. 
+
+Thus, while there is a notable increase in rental prices over time, the relationship to mortgage rates cannot be established with the provided data.",4,4,4,pass,"The answer accurately summarizes the rental price trends based on the retrieved context and acknowledges the lack of specific information regarding the highest mortgage rates. It addresses the question well, though it could be slightly more concise."
+Is there a correlation between the highest mortgage rates and the availability of rental properties in the market?,real_estate,"The retrieved documents provide data on mortgage rates and rental property availability in Hohenschönhausen, Lichtenberg, Berlin, but they do not explicitly establish a correlation between the two. 
+
+From the data, we can observe the following:
+
+1. In 2021, the average mortgage rate was consistently low at 1.1%, with rental listings ranging from 126 to 214 properties available per month.
+2. By 2026, the average mortgage rate increased to 3.1%, and the number of rental listings decreased to between 139 and 146 properties.
+
+While there is a noticeable trend of decreasing rental availability as mortgage rates rise, the documents do not provide enough information to definitively conclude that there is a direct correlation. The changes in rental listings could be influenced by various factors beyond just mortgage rates, such as market demand, economic conditions, or changes in housing policies.
+
+Therefore, while the data suggests a potential relationship, it does not confirm a correlation between the highest mortgage rates and the availability of rental properties in the market. More comprehensive analysis would be needed to draw a firm conclusion.",4,5,4,pass,"The answer accurately summarizes the retrieved context and discusses the observed trends in mortgage rates and rental availability. It fully addresses the question by noting the lack of explicit correlation while suggesting a potential relationship, and it remains focused without unnecessary detail."
+The record appears to belong to the real estate domain. Here are five questions a user might ask based on the retrieved record:,real_estate,"The retrieved documents pertain to the real estate domain, specifically detailing various for-sale apartments in Berlin. Here are the key details from the listings:
+
+1. **Falkenhagener Feld, Spandau**: A 2-room apartment of 48.2 m², built in 1986, listed for EUR 90,000 (1,872 EUR/m²). It is modernized, located on the 3rd floor of an 8-story building, and has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 55 minutes away. The mortgage rate is 3.85% (listed on 2024-06-09).
+
+2. **Baumschulenweg, Treptow-Köpenick**: A 2-room apartment of 58.1 m², built in 1984, listed for EUR 137,000 (2,356 EUR/m²). This apartment is in need of renovation, located on the 2nd floor of a 4-story building, with a balcony and cellar, but no lift or parking. The nearest transit is Bellevue, 50 minutes away. The mortgage rate is 3.1% (listed on 2026-04-28).
+
+3. **Mahlsdorf, Marzahn-Hellersdorf**: A 4-room apartment of 105.0 m², built in 1975, listed for EUR 134,000 (1,273 EUR/m²). It is modernized, located on the 7th floor of an 8-story building, with no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-03).
+
+4. **Falkenhagener Feld, Spandau**: A 1-room apartment of 34.5 m², built in 1973, listed for EUR 92,000 (2,652 EUR/m²). This apartment is fully renovated, located on the 2nd floor of a 4-story building, with a balcony but no cellar or parking. The nearest transit is Ruhleben, 26 minutes away. The mortgage rate is 1.8% (listed on 2022-01-05).
+
+5. **Mahlsdorf, Marzahn-Hellersdorf**: A 2-room apartment of 54.1 m², built in 1985, listed for EUR 73,000 (1,352 EUR/m²). It is fully renovated, located on the 5th floor of a 5-story building, with no lift, balcony, cellar, or parking. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-28).
+
+These listings provide a range of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing detailed information about each apartment listing, including size, condition, price, and other relevant features. It fully addresses the question by listing five distinct properties and their characteristics, though it could be slightly more concise by reducing redundancy in phrasing."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",1,1,5,fail,"The answer correctly states that there is no information in the retrieved context regarding mortgage rates, but it fails to provide any relevant details or context that could help answer the question, resulting in low scores for correctness and completeness."
+Can you provide the number of rental listings available during those months with the highest mortgage rates?,real_estate,"The question pertains to the real estate domain, specifically regarding rental listings during months with the highest mortgage rates. 
+
+From the retrieved documents, the months with the highest recorded mortgage rates are April 2026 and February 2026, both with an average mortgage rate of 3.1%. 
+
+- In April 2026, there were 139 rental listings.
+- In February 2026, there were 146 rental listings.
+
+Therefore, during the months with the highest mortgage rates (April and February 2026), the total number of rental listings available was 139 in April and 146 in February.",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the corresponding number of rental listings for each month. It fully addresses the question and is concise without irrelevant details.
+How did the rental inventory change in relation to the fluctuations in mortgage rates?,real_estate,"The rental inventory in Malchow, Lichtenberg, Berlin has shown significant fluctuations in relation to changes in mortgage rates over the years. 
+
+In May 2020, the average cold rent was 7.86 EUR/m²/month, with only 23 rental listings available, while the average mortgage rate was 1.1% (Real Estate). By September 2020, the average cold rent slightly decreased to 7.85 EUR/m²/month, but the number of rental listings increased to 181, despite the mortgage rate remaining the same at 1.1% (Real Estate).
+
+Moving to 2021, the average cold rent increased to 8.88 EUR/m²/month in July, with 184 rental listings available, while the mortgage rate continued to hold at 1.1% (Real Estate). In April 2021, the average cold rent was slightly lower at 7.78 EUR/m²/month, with 175 rental listings (Real Estate).
+
+By September 2023, the average cold rent rose significantly to 10.18 EUR/m²/month, coinciding with a notable increase in the average mortgage rate to 4.1%. The number of rental listings decreased to 133 (Real Estate). 
+
+Overall, the data suggests that as mortgage rates remained low (1.1%) from 2020 to mid-2021, the rental inventory was relatively stable, with fluctuations in the number of listings. However, as mortgage rates increased to 4.1% in 2023, the average rent also increased significantly, while the number of rental listings decreased. This indicates a potential correlation between rising mortgage rates and a tightening rental inventory, alongside increasing rental prices.",5,5,4,pass,"The answer accurately describes the changes in rental inventory in relation to fluctuations in mortgage rates, providing specific data points and trends over time. It fully addresses the question and maintains focus, though it could be slightly more concise."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide rental price data for Hohenschönhausen, Lichtenberg, Berlin, but do not specify the months when mortgage rates were at their highest. However, we can observe trends in rental prices over time.
+
+From the documents, the average cold rent per square meter per month shows the following values:
+
+- March 2020: 8.43 EUR/m² (average mortgage rate 1.1%)
+- July 2021: 9.39 EUR/m² (average mortgage rate 1.1%)
+- September 2021: 9.41 EUR/m² (average mortgage rate 1.1%)
+- April 2026: 12.14 EUR/m² (average mortgage rate 3.1%)
+
+The data indicates a general upward trend in rental prices from March 2020 to April 2026, with a notable increase from 9.41 EUR/m² in September 2021 to 12.14 EUR/m² in April 2026, coinciding with a rise in mortgage rates to 3.1%. 
+
+While the documents do not explicitly correlate these trends with the highest mortgage rates, the increase in rental prices over time suggests a potential relationship between rising mortgage rates and rental prices, particularly in the later period when mortgage rates increased significantly. 
+
+However, without specific data on the months when mortgage rates peaked, we cannot definitively conclude the impact of high mortgage rates on rental prices.",4,4,3,pass,"The answer accurately summarizes the rental price trends and acknowledges the lack of specific data on peak mortgage rates. It provides a clear overview of the rental prices over time, but could be more concise by reducing some repetitive phrases."
+Is there a correlation between the highest mortgage rates and the availability of rental properties in the market?,real_estate,"The retrieved documents provide data on mortgage rates and rental property availability in Hohenschönhausen, Lichtenberg, Berlin, but they do not explicitly establish a correlation between the two. 
+
+From the data, we can observe the following:
+
+1. In 2021, the average mortgage rate was consistently low at 1.1%, with rental listings ranging from 126 to 214 properties available per month.
+2. By 2026, the average mortgage rate increased to 3.1%, and the number of rental listings decreased to between 139 and 146 properties.
+
+While there is a noticeable trend of decreasing rental availability as mortgage rates rise, the documents do not provide enough information to definitively conclude that there is a direct correlation. The changes in rental listings could be influenced by various factors beyond just mortgage rates, such as market demand, economic conditions, or changes in housing policies.
+
+Therefore, while the data suggests a potential relationship, it does not confirm a correlation between the highest mortgage rates and the availability of rental properties in the market. More comprehensive analysis would be needed to draw a firm conclusion.",4,5,4,pass,"The answer accurately summarizes the retrieved context and discusses the observed trends in mortgage rates and rental availability. It fully addresses the question by noting the lack of explicit correlation while suggesting a potential relationship, and it remains focused without unnecessary detail."
+"The record appears to belong to the real estate domain, specifically regarding mortgage rates and rental listings. Here are five questions a user might ask based on this record:",real_estate,"The retrieved documents pertain to the real estate domain, specifically regarding property listings and mortgage rates. Here are the relevant details:
+
+1. **Wilmersdorf, Charlottenburg-Wilmersdorf**:
+   - A 3-room apartment (73.3 m²) built in 1999 is listed for EUR 654,000 at a mortgage rate of 3.85%. It is in a kernsaniert condition and has a price per square meter of EUR 8,917 (listed on 2024-04-27).
+   - Another 3-room apartment (58.3 m²) built in 2006 is available for EUR 429,000 with a mortgage rate of 1.8%. This unit is in a renoviert condition, priced at EUR 7,365 per square meter (listed on 2022-05-14).
+   - A third 3-room apartment (89.2 m²) built in 1991 is priced at EUR 729,000 with a mortgage rate of 3.85%. It is in a kernsaniert condition, with a price per square meter of EUR 8,174 (listed on 2024-03-05).
+
+2. **Hohenschönhausen, Lichtenberg**:
+   - A 2-room apartment (49.3 m²) built in 1965 is listed for EUR 123,000 at a mortgage rate of 3.1%. It is modernisiert and priced at EUR 2,483 per square meter (listed on 2025-08-25).
+   - Another 2-room apartment (54.7 m²) built in 1950 is available for EUR 113,000 with a mortgage rate of 1.1%. This unit is in a kernsaniert condition, priced at EUR 2,066 per square meter (listed on 2020-05-09).
+
+These listings provide a snapshot of the current real estate market in Berlin, highlighting various properties, their conditions, and associated mortgage rates.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing specific details about the properties, including their locations, sizes, conditions, prices, and mortgage rates. It fully addresses the question by covering all relevant aspects of the real estate domain without unnecessary detail, though it could be slightly more concise."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their peaks in the last year. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any specific months when mortgage rates peaked, as it states that the retrieved context lacks relevant information. It fails to address the question adequately."
+Can you provide the number of rental listings available during the months with the highest mortgage rates?,real_estate,"The retrieved documents provide information on rental listings in Hohenschönhausen, Lichtenberg, Berlin, along with the corresponding mortgage rates for various months. 
+
+During the months with the highest mortgage rates (3.1%), the following number of rental listings were available:
+- In April 2026, there were 139 rental listings.
+- In February 2026, there were 146 rental listings.
+
+Thus, the total number of rental listings available during the months with the highest mortgage rates was 139 in April and 146 in February (Real Estate).",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the correct number of rental listings for those months. It fully addresses the question and is concise without irrelevant details.
+How did the rental inventory change in relation to the fluctuations in mortgage rates?,real_estate,"The rental inventory in Malchow, Lichtenberg, Berlin has shown notable fluctuations in relation to mortgage rates over the years. 
+
+In May 2020, the average cold rent was 7.86 EUR/m²/month, with only 23 rental listings available, while the average mortgage rate was 1.1% (Real Estate). By September 2020, the average cold rent slightly decreased to 7.85 EUR/m²/month, but the number of rental listings increased significantly to 181, despite the mortgage rate remaining the same at 1.1% (Real Estate).
+
+Moving forward to 2021, the average cold rent varied slightly, with 7.78 EUR/m²/month in April and increasing to 8.88 EUR/m²/month by July. The number of rental listings remained relatively stable, with 175 in April and 184 in July, while the mortgage rate continued to hold at 1.1% (Real Estate).
+
+However, by September 2023, the average cold rent had risen to 10.18 EUR/m²/month, and the number of rental listings decreased to 133, coinciding with a significant increase in the average mortgage rate to 4.1% (Real Estate). 
+
+This data suggests that as mortgage rates increased, particularly in 2023, the rental inventory decreased, indicating a potential correlation where higher mortgage rates may lead to reduced rental listings, possibly due to fewer people being able to afford to buy homes, thus affecting the rental market dynamics.",5,5,4,pass,"The answer accurately summarizes the changes in rental inventory and average cold rent in relation to mortgage rates over the specified time periods. It fully addresses the question by providing specific data points and trends, although it could be slightly more concise by reducing some repetitive phrases."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide rental price data for Hohenschönhausen, Lichtenberg, Berlin, but do not specify the months when mortgage rates were at their highest. However, we can observe trends in rental prices over the months provided.
+
+In January 2021, the average cold rent was 7.98 EUR/m²/month. By July 2021, it increased slightly to 9.39 EUR/m²/month, and then further rose to 9.41 EUR/m²/month in September 2021. This indicates a general upward trend in rental prices during the first three quarters of 2021.
+
+In April 2026, the average cold rent was significantly higher at 12.14 EUR/m²/month, coinciding with a higher average mortgage rate of 3.1%. This suggests that as mortgage rates increased, rental prices also tended to rise, although the specific correlation with the highest mortgage rates is not detailed in the documents.
+
+Overall, while there is evidence of increasing rental prices over time, the documents do not provide specific information about the relationship between rental prices and the highest mortgage rates. Therefore, while a trend of rising rental prices is noted, the exact impact of high mortgage rates on these trends cannot be conclusively determined from the available data.",4,4,4,pass,"The answer accurately summarizes the rental price trends based on the retrieved context and acknowledges the lack of specific information regarding the highest mortgage rates. It addresses the question well, though it could be slightly more concise."
+Is there a correlation between the highest mortgage rates and the availability of rental properties in the market?,real_estate,"The retrieved documents provide data on mortgage rates and rental property availability in Hohenschönhausen, Lichtenberg, Berlin, but they do not explicitly establish a correlation between the two. 
+
+From the data, we can observe the following:
+
+1. In 2021, the average mortgage rate was consistently low at 1.1%, with rental listings ranging from 126 to 214 properties available per month.
+2. By 2026, the average mortgage rate increased to 3.1%, and the number of rental listings decreased to between 139 and 146 properties.
+
+While there is a noticeable trend of decreasing rental availability as mortgage rates rise, the documents do not provide enough information to definitively conclude that there is a direct correlation. The changes in rental listings could be influenced by various factors beyond just mortgage rates, such as market demand, economic conditions, or changes in housing policy.
+
+Therefore, while the data suggests a potential relationship, it does not confirm a correlation between the highest mortgage rates and the availability of rental properties in the market. More comprehensive analysis would be needed to draw a firm conclusion.",4,5,4,pass,"The answer accurately summarizes the retrieved context and discusses the observed trends in mortgage rates and rental availability. It fully addresses the question by noting the lack of definitive correlation while suggesting a potential relationship, and it remains focused without unnecessary detail."
+The record appears to belong to the real estate domain. Here are five questions a user might ask based on the retrieved record:,real_estate,"The retrieved documents pertain to the real estate domain, specifically detailing various for-sale apartments in Berlin. Here are the key details from the listings:
+
+1. **Falkenhagener Feld, Spandau**: A 2-room apartment of 48.2 m², built in 1986, listed for EUR 90,000 (1,872 EUR/m²). It is modernized, located on the 3rd floor of an 8-story building, and has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 55 minutes away. The mortgage rate is 3.85% (listed on 2024-06-09).
+
+2. **Baumschulenweg, Treptow-Köpenick**: A 2-room apartment of 58.1 m², built in 1984, listed for EUR 137,000 (2,356 EUR/m²). This apartment is in need of renovation, located on the 2nd floor of a 4-story building, with a balcony and cellar, but no lift or parking. The nearest transit is Bellevue, 50 minutes away. The mortgage rate is 3.1% (listed on 2026-04-28).
+
+3. **Mahlsdorf, Marzahn-Hellersdorf**: A 4-room apartment of 105.0 m², built in 1975, listed for EUR 134,000 (1,273 EUR/m²). It is modernized, located on the 7th floor of an 8-story building, with no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-03).
+
+4. **Falkenhagener Feld, Spandau**: A 1-room apartment of 34.5 m², built in 1973, listed for EUR 92,000 (2,652 EUR/m²). This apartment is fully renovated, located on the 2nd floor of a 4-story building, with a balcony but no cellar or parking. The nearest transit is Ruhleben, 26 minutes away. The mortgage rate is 1.8% (listed on 2022-01-05).
+
+5. **Mahlsdorf, Marzahn-Hellersdorf**: A 2-room apartment of 54.1 m², built in 1985, listed for EUR 73,000 (1,352 EUR/m²). It is fully renovated, located on the 5th floor of a 5-story building, with no lift, balcony, or cellar. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-28).
+
+These listings provide a range of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",5,5,4,pass,"The answer accurately summarizes the retrieved context, providing detailed information about each apartment listing, including size, condition, price, and other relevant features. It fully addresses the question by listing five different properties and their key details, though it could be slightly more concise by reducing redundancy in phrasing."
+What were the specific months when mortgage rates peaked in the last year?,real_estate,"The retrieved documents do not contain any information regarding mortgage rates or their peaks in the last year. Therefore, I cannot provide an answer to the question.",1,1,5,fail,"The answer does not provide any information about the specific months when mortgage rates peaked, as it states that the retrieved context lacks relevant information. This fails to address the question."
+Can you provide the number of rental listings available during those months with the highest mortgage rates?,real_estate,"The question pertains to the real-estate domain, specifically regarding rental listings during months with the highest mortgage rates. 
+
+From the retrieved documents, the highest mortgage rates noted are 3.1%, which occurred in both April 2026 and February 2026. The number of rental listings for these months is as follows:
+
+- In April 2026, there were 139 rental listings (Real Estate).
+- In February 2026, there were 146 rental listings (Real Estate).
+
+Therefore, during the months with the highest mortgage rates (April and February 2026), there were a total of 139 and 146 rental listings, respectively.",5,5,5,pass,The answer accurately identifies the months with the highest mortgage rates and provides the correct number of rental listings for each month. It fully addresses the question without unnecessary detail.
+How did the rental inventory change in relation to the fluctuations in mortgage rates?,real_estate,"The rental inventory in Malchow, Lichtenberg, Berlin has shown notable fluctuations in relation to mortgage rates over the years. 
+
+In May 2020, the average cold rent was 7.86 EUR/m²/month, with only 23 rental listings available, while the average mortgage rate was 1.1% (Real Estate). By September 2020, the average cold rent slightly decreased to 7.85 EUR/m²/month, but the number of rental listings increased significantly to 181, despite the mortgage rate remaining the same at 1.1% (Real Estate).
+
+Moving to 2021, the average cold rent in April was 7.78 EUR/m²/month with 175 rental listings, and in July, it increased to 8.88 EUR/m²/month with 184 listings, while the mortgage rate continued to hold at 1.1% (Real Estate). 
+
+However, by September 2023, the average cold rent rose sharply to 10.18 EUR/m²/month, and the number of rental listings decreased to 133, coinciding with a significant increase in the average mortgage rate to 4.1% (Real Estate). 
+
+This data suggests that as mortgage rates remained low (1.1%) from 2020 to mid-2021, the rental inventory was relatively stable or increasing. In contrast, the rise in mortgage rates to 4.1% in 2023 appears to correlate with a decrease in rental listings, despite a significant increase in rental prices. This indicates a potential shift in the rental market dynamics as borrowing costs increased, possibly leading to reduced demand for rentals.",5,5,4,pass,"The answer accurately summarizes the changes in rental inventory and prices in relation to mortgage rates, providing specific data points from the retrieved context. It fully addresses the question and maintains focus, though it could be slightly more concise."
+Were there any notable trends in rental prices during the months when mortgage rates were at their highest?,real_estate,"The retrieved documents provide rental price data for various months in Hohenschönhausen, Lichtenberg, Berlin, but do not specify the exact months when mortgage rates were at their highest. However, we can observe trends in rental prices over time.
+
+In 2021, the average cold rent was as follows:
+- January: 7.98 EUR/m²/month
+- July: 9.39 EUR/m²/month
+- September: 9.41 EUR/m²/month
+
+This indicates a noticeable increase in rental prices from January to September 2021.
+
+In April 2026, the average cold rent was reported at 12.14 EUR/m²/month, which shows a significant increase compared to the earlier years.
+
+The documents do not provide specific information about the correlation between rental prices and mortgage rates, nor do they indicate the months when mortgage rates were at their highest. Therefore, while there is a clear upward trend in rental prices over the years, the relationship with mortgage rates cannot be definitively established based on the available data.",3,4,4,pass,"The answer accurately summarizes the rental price trends over the specified months, but it lacks specific information about the highest mortgage rates and their correlation with rental prices. It is mostly focused and provides relevant details."
+Is there a correlation between the highest mortgage rates and the availability of rental properties in the market?,real_estate,"The retrieved documents provide data on mortgage rates and rental property availability in Hohenschönhausen, Lichtenberg, Berlin, over different time periods. 
+
+In 2021, the average mortgage rate was consistently low at 1.1%, with rental listings varying from 126 to 214 properties available per month. For instance, in January 2021, there were 126 rental listings, while in July 2021, this number increased to 214 (source: monthly market statistics).
+
+In contrast, by 2026, the average mortgage rate had increased to 3.1%, and the number of rental listings decreased to between 139 and 146 properties available per month (source: monthly market statistics). 
+
+This data suggests a potential correlation where higher mortgage rates in 2026 corresponded with a decrease in the availability of rental properties compared to the lower rates in 2021. However, the documents do not provide a comprehensive analysis or direct causation, so while there appears to be a trend, further investigation would be needed to establish a definitive correlation.",5,5,4,pass,"The answer accurately summarizes the retrieved context, highlighting the relationship between mortgage rates and rental property availability over time. It fully addresses the question and provides a clear analysis of the data, though it could be slightly more concise."
+"Based on the record provided, it appears to belong to the real estate domain. Here are five questions a user might ask:",real_estate,"The question pertains to the real estate domain, specifically regarding the details of for-sale apartments in Berlin. 
+
+Based on the retrieved documents, here are some key details about the properties listed for sale:
+
+1. **Waidmannslust, Reinickendorf**: A 3-room apartment measuring 96.0 m², located on the 2nd floor of a 4-story building, built in 2007. It is in renovated condition, has an energy class of D, and includes a lift, balcony, and cellar, but no parking. The price is EUR 379,000, which translates to EUR 3,944 per m². It is listed with a mortgage rate of 3.3% (source: unknown).
+
+2. **Wilmersdorf, Charlottenburg-Wilmersdorf**: A 3-room apartment of 89.2 m² on the 5th floor of an 8-story building, built in 1991. This property is fully renovated (kernsaniert), has an energy class of D, and features a balcony and cellar, but no lift or parking. The asking price is EUR 729,000, or EUR 8,174 per m², with a mortgage rate of 3.85% (source: unknown).
+
+3. **Lübars, Reinickendorf**: A smaller 1-room apartment of 22.8 m² on the 11th floor of a 12-story building, built in 2008. It is also renovated, has an energy class of A, and includes a lift, balcony, and cellar, but no parking. The price is EUR 96,000, which is EUR 4,196 per m², and it is listed with a mortgage rate of 3.1% (source: unknown).
+
+4. **Westend, Charlottenburg-Wilmersdorf**: This 3-room apartment is 81.3 m², located on the ground floor of a 6-story building, built in 2003. It is modernized, has an energy class of C, and includes a lift, balcony, and cellar, but no parking. The price is EUR 422,000, or EUR 5,194 per m², with a mortgage rate of 1.1% (source: unknown).
+
+5. **Waidmannslust, Reinickendorf**: Another 1-room apartment, this one is 35.1 m² on the ground floor of a 6-story building, built in 2003. It is renovated, has an energy class of E, and features a lift, balcony, and cellar, but no parking. The asking price is EUR 83,000, or EUR 2,372 per m², with a mortgage rate of 1.1% (source: unknown).
+
+These listings provide a variety of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",5,5,4,pass,"The answer accurately summarizes the details of the for-sale apartments in Berlin as per the retrieved context, addressing the question fully. It provides specific information about each property, including size, condition, energy class, and pricing, while remaining focused and relevant."
+What are the current rental prices for 2-room apartments in Kreuzberg close to the U-Bahn?,real_estate,"The current rental prices for 2-room apartments in Kreuzberg close to the U-Bahn are as follows:
+
+1. A 2-room apartment measuring 63.1 m² has a Kaltmiete (base rent) of EUR 1409/month, with Nebenkosten (additional costs) of EUR 201, resulting in a Warmmiete (total rent) of EUR 1609/month. This apartment is located near the Weinmeisterstraße U-Bahn station and was listed on June 15, 2024.
+
+2. Another 2-room apartment, which is 42.7 m², has a Kaltmiete of EUR 1123/month, with Nebenkosten of EUR 154, leading to a Warmmiete of EUR 1277/month. This apartment is situated near the Klosterstraße U-Bahn station and was listed on January 2, 2025.
+
+These listings indicate a range of rental prices for 2-room apartments in the area, reflecting different sizes and conditions of the properties (Real Estate).",5,5,5,pass,"The answer accurately provides the current rental prices for 2-room apartments in Kreuzberg, including specific details about each apartment's size, base rent, additional costs, and total rent, as well as their proximity to U-Bahn stations. It fully addresses the question without irrelevant details."
+Are there any available 2-room rentals near a U-Bahn station in Kreuzberg right now?,real_estate,"Yes, there is a 2-room rental available in Kreuzberg. The apartment is 52.3 m², located on the first floor of a five-story building, and has been renovated. It is not furnished and does not have a balcony, but it does have a lift. The nearest U-Bahn station is Görlitzer Bahnhof (U1), which is 25 minutes away. The rental price is EUR 1,229 per month for the base rent (Kaltmiete), with additional costs (Nebenkosten) of EUR 229, making the total warm rent (Warmmiete) EUR 1,458 per month. A deposit of two months' rent is required. This listing was made on August 21, 2023 (Real Estate).",4,5,4,pass,"The answer accurately states that there is a 2-room rental available in Kreuzberg and provides relevant details about the apartment and its proximity to the U-Bahn station. It fully addresses the question and is mostly concise, though it could be slightly more focused by omitting some less critical details."
+Can you provide details on the features of 2-room rentals near U-Bahn in Kreuzberg?,real_estate,"Here are the details of two 2-room rentals near U-Bahn in Kreuzberg:
+
+1. **First Rental**:
+   - Size: 63.9 m²
+   - Floor: 5 of 6
+   - Condition: Modernized (altbau pre-1949)
+   - Position: Vorderhaus
+   - Energy Class: G
+   - Furnished: No
+   - Lift: No
+   - Balcony: No
+   - Nearest Transit: Berlin Hauptbahnhof (Stadtbahn), 44 min; 3.27 km to Brandenburg Gate
+   - Kaltmiete (Base Rent): EUR 716/month
+   - Nebenkosten (Additional Costs): EUR 171
+   - Warmmiete (Total Rent): EUR 887/month (11.21 EUR/m² kalt)
+   - Deposit: 2 months
+   - Listed: July 14, 2021
+
+2. **Second Rental**:
+   - Size: 52.3 m²
+   - Floor: 1 of 5
+   - Condition: Renovated (modern 1990-2010)
+   - Position: Seitenflügel
+   - Energy Class: C
+   - Furnished: No
+   - Lift: Yes
+   - Balcony: No
+   - Nearest Transit: Görlitzer Bahnhof (U1), 25 min; 2.8 km to Brandenburg Gate
+   - Kaltmiete (Base Rent): EUR 1229/month
+   - Nebenkosten (Additional Costs): EUR 229
+   - Warmmiete (Total Rent): EUR 1458/month (23.49 EUR/m² kalt)
+   - Deposit: 2 months
+   - Listed: August 21, 2023
+
+These rentals provide a range of options in terms of size, condition, and pricing, with varying proximity to U-Bahn stations.",5,5,5,pass,"The answer accurately provides detailed information about two 2-room rentals near U-Bahn in Kreuzberg, addressing all aspects of the question. It is well-organized and focused, presenting relevant details without unnecessary information."
+How does the rental market in Kreuzberg look for 2-room apartments near U-Bahn stations?,real_estate,"The retrieved documents do not contain any relevant information regarding the rental market in Kreuzberg for 2-room apartments near U-Bahn stations. Therefore, I cannot provide an answer to your question.",1,1,5,fail,"The answer does not provide any information about the rental market in Kreuzberg, failing to address the question. While it is concise, it lacks any relevant content or context."
+What is the average size of 2-room rentals available near U-Bahn in Kreuzberg?,real_estate,"The average size of 2-room rentals available near U-Bahn in Kreuzberg, based on the retrieved documents, is calculated from the two listings provided. 
+
+1. The first rental apartment is 42.7 m².
+2. The second rental apartment is 63.9 m².
+
+To find the average size, we add the two sizes together and divide by the number of listings:
+
+(42.7 m² + 63.9 m²) / 2 = 53.3 m².
+
+Therefore, the average size of 2-room rentals available near U-Bahn in Kreuzberg is 53.3 m².",5,5,5,pass,"The answer accurately calculates the average size of 2-room rentals based on the provided context, fully addressing the question. It is clear and concise, presenting the calculation step-by-step without unnecessary detail."

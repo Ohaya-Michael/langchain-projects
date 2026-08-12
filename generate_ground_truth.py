@@ -6,7 +6,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from using_langchain_langgraph import build_llm 
+from using_langchain_langgraph import build_llm, build_pipeline
 
 
 ground_truth_generator_instructions = """
@@ -202,3 +202,85 @@ def check_similarity(records=None, in_path="./data/ground_truth.csv", output_pat
 ################################### ------------------------- #######################################
 #####################################################################################################
 
+graph = build_pipeline()
+llm = build_llm()
+
+
+# --- end-to-end answer-quality judge (complements the in-graph faithfulness judge) ---
+class AnswerQualityEval(BaseModel):
+    """Judge a RAG answer given the question and the context it retrieved."""
+
+    correctness: int = Field(..., ge=1, le=5,
+        description="Is the answer accurate and supported by the retrieved context?")
+    completeness: int = Field(..., ge=1, le=5,
+        description="Does it fully address everything the question asks?")
+    conciseness: int = Field(..., ge=1, le=5,
+        description="Is it focused, without padding or irrelevant detail?")
+    verdict: Literal["pass", "fail"] = Field(...,
+        description="Overall: 'pass' if a user would consider this a good answer.")
+    rationale: str = Field(..., description="One or two sentences justifying the scores.")
+
+
+judge_system = (
+    "You are an expert evaluator of a retrieval-augmented QA system. Judge the "
+    "answer ONLY against the question and the retrieved context provided. An "
+    "answer that is unsupported by the context, or that ignores part of the "
+    "question, should score low. Reward accurate, complete, focused answers. "
+    "Be strict and consistent."
+)
+judge_prompt = ChatPromptTemplate.from_messages([
+    ("system", judge_system),
+    ("human",
+     "Question:\n{question}\n\nRetrieved context:\n{context}\n\nAnswer:\n{answer}"),
+])
+answer_judge = judge_prompt | llm.with_structured_output(
+    AnswerQualityEval, method="function_calling"
+)
+
+
+def load_questions(path="./data/ground_truth.csv", column="generated_question"):
+    with open(path, encoding="utf-8", newline="") as f:
+        return [row[column] for row in csv.DictReader(f) if row.get(column)]
+
+
+def evaluate_rag_system(questions=None, in_path="./data/ground_truth.csv",
+                        output_path="./data/rag_system_eval.csv"):
+    questions = questions if questions is not None else load_questions(in_path)
+
+    fieldnames = ["question", "datasource", "answer",
+                  "correctness", "completeness", "conciseness", "verdict", "rationale"]
+    rows = []
+    with open(output_path, "w", encoding="utf-8", newline="") as out:
+        writer = csv.DictWriter(out, fieldnames=fieldnames)
+        writer.writeheader()
+        for i, q in enumerate(questions, 1):
+            result = graph.invoke({"question": q})        # run the real pipeline
+            answer, context = result["answer"], result["context"]
+
+            v = answer_judge.invoke(
+                {"question": q, "context": context, "answer": answer}
+            )
+            if not isinstance(v, AnswerQualityEval):       # guard: raw message
+                v = AnswerQualityEval.model_validate_json(v.content)
+
+            row = {
+                "question": q,
+                "datasource": result["datasource"],
+                "answer": answer,
+                "correctness": v.correctness,
+                "completeness": v.completeness,
+                "conciseness": v.conciseness,
+                "verdict": v.verdict,
+                "rationale": v.rationale,
+            }
+            rows.append(row)
+            writer.writerow(row)
+            print(f"  [{i}/{len(questions)}] {v.verdict}  "
+                  f"c{v.correctness}/comp{v.completeness}/con{v.conciseness}")
+
+    passed = sum(r["verdict"] == "pass" for r in rows)
+    avg = lambda k: sum(r[k] for r in rows) / len(rows)
+    print(f"\nPass rate: {passed}/{len(rows)} ({passed/len(rows):.0%}) | "
+          f"correctness {avg('correctness'):.1f}, completeness {avg('completeness'):.1f}, "
+          f"conciseness {avg('conciseness'):.1f}")
+    return rows
