@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-12T22:31:46",
+  "question": "What were the average resale prices in Mitte compared to new construction during the time of high mortgage rates?",
+  "search_query": "Average resale prices in Mitte compared to new construction during periods of high mortgage rates.",
+  "datasource": "real_estate",
+  "answer": "During the time of high mortgage rates, the average resale prices in Mitte compared to new construction were as follows:\n\nIn May 2020, the resale price was 7386 EUR/m², while the new construction price was 9112 EUR/m². By September 2020, the resale price slightly decreased to 7352 EUR/m², and the new construction price increased to 9368 EUR/m². In March 2020, the resale price was higher at 7489 EUR/m², with new construction at 9737 EUR/m². In April 2020, the resale price was 7400 EUR/m², and the new construction price was 9376 EUR/m². \n\nIn summary, during this period, the average resale prices ranged from 7352 to 7489 EUR/m², while new construction prices ranged from 9112 to 9737 EUR/m² (Real Estate). \n\nIn January 2023, which reflects a later period with higher mortgage rates, the resale price increased to 9405 EUR/m², and the new construction price rose to 11698 EUR/m², indicating a significant increase in both categories over time (Real Estate).",
+  "evaluation": {
+    "faithfulness": 3,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer provides accurate resale and new construction prices from the retrieved context, but it incorrectly states that January 2023 reflects a period of high mortgage rates without clarifying that the average mortgage rate was lower in 2020. The context does not support the claim that January 2023 is during high mortgage rates, as it was actually higher than in 2020."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Mitte (Ort), Mitte, Berlin in 2020-05. Kiez premium: high. Resale price 7386 EUR/m2, new-construction price 9112 EUR/m2, average cold rent 19.21 EUR/m2/month. Listings this month: 73 resale, 29 new-build, 59 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "kiez_premium": "high",
+        "ortsteil": "Mitte (Ort)",
+        "source": "kiez_prices_monthly",
+        "avg_mortgage_rate_pct": 1.1,
+        "bezirk": "Mitte",
+        "secondary_price_per_m2_eur": 7386,
+        "kaltmiete_per_m2_monthly_eur": 19.21,
+        "year_month": "2020-05",
+        "listing_type": "market_stats"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Mitte (Ort), Mitte, Berlin in 2020-09. Kiez premium: high. Resale price 7352 EUR/m2, new-construction price 9368 EUR/m2, average cold rent 19.12 EUR/m2/month. Listings this month: 129 resale, 34 new-build, 197 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "kaltmiete_per_m2_monthly_eur": 19.12,
+        "listing_type": "market_stats",
+        "year_month": "2020-09",
+        "bezirk": "Mitte",
+        "avg_mortgage_rate_pct": 1.1,
+        "kiez_premium": "high",
+        "secondary_price_per_m2_eur": 7352,
+        "ortsteil": "Mitte (Ort)",
+        "source": "kiez_prices_monthly"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Mitte (Ort), Mitte, Berlin in 2020-03. Kiez premium: high. Resale price 7489 EUR/m2, new-construction price 9737 EUR/m2, average cold rent 19.24 EUR/m2/month. Listings this month: 118 resale, 44 new-build, 153 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "avg_mortgage_rate_pct": 1.1,
+        "secondary_price_per_m2_eur": 7489,
+        "ortsteil": "Mitte (Ort)",
+        "kiez_premium": "high",
+        "bezirk": "Mitte",
+        "listing_type": "market_stats",
+        "year_month": "2020-03",
+        "source": "kiez_prices_monthly",
+        "kaltmiete_per_m2_monthly_eur": 19.24
+      }
+    },
+    {
+      "content": "Monthly market statistics for Mitte (Ort), Mitte, Berlin in 2020-04. Kiez premium: high. Resale price 7400 EUR/m2, new-construction price 9376 EUR/m2, average cold rent 19.24 EUR/m2/month. Listings this month: 158 resale, 22 new-build, 145 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 7400,
+        "source": "kiez_prices_monthly",
+        "year_month": "2020-04",
+        "kiez_premium": "high",
+        "kaltmiete_per_m2_monthly_eur": 19.24,
+        "avg_mortgage_rate_pct": 1.1
+      }
+    },
+    {
+      "content": "Monthly market statistics for Mitte (Ort), Mitte, Berlin in 2023-01. Kiez premium: high. Resale price 9405 EUR/m2, new-construction price 11698 EUR/m2, average cold rent 25.82 EUR/m2/month. Listings this month: 33 resale, 18 new-build, 180 rental. ECB main rate 3.5%, average mortgage rate 3.85%.",
+      "metadata": {
+        "listing_type": "market_stats",
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "secondary_price_per_m2_eur": 9405,
+        "kaltmiete_per_m2_monthly_eur": 25.82,
+        "year_month": "2023-01",
+        "kiez_premium": "high",
+        "avg_mortgage_rate_pct": 3.85,
+        "source": "kiez_prices_monthly"
+      }
+    }
+  ]
+}

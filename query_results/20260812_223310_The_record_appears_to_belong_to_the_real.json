@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-12T22:33:10",
+  "question": "The record appears to belong to the real estate domain. Here are five questions a user might ask based on the retrieved record:",
+  "search_query": "Questions related to the real estate domain based on a retrieved record.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents pertain to the real estate domain, specifically detailing various for-sale apartments in Berlin. Here are the key details from the listings:\n\n1. **Falkenhagener Feld, Spandau**: A 2-room apartment of 48.2 m², built in 1986, listed for EUR 90,000 (1,872 EUR/m²). It is modernized, located on the 3rd floor of an 8-story building, and has no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 55 minutes away. The mortgage rate is 3.85% (listed on 2024-06-09).\n\n2. **Baumschulenweg, Treptow-Köpenick**: A 2-room apartment of 58.1 m², built in 1984, listed for EUR 137,000 (2,356 EUR/m²). This apartment is in need of renovation, located on the 2nd floor of a 4-story building, with a balcony and cellar, but no lift or parking. The nearest transit is Bellevue, 50 minutes away. The mortgage rate is 3.1% (listed on 2026-04-28).\n\n3. **Mahlsdorf, Marzahn-Hellersdorf**: A 4-room apartment of 105.0 m², built in 1975, listed for EUR 134,000 (1,273 EUR/m²). It is modernized, located on the 7th floor of an 8-story building, with no lift or balcony, but includes a cellar. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-03).\n\n4. **Falkenhagener Feld, Spandau**: A 1-room apartment of 34.5 m², built in 1973, listed for EUR 92,000 (2,652 EUR/m²). This apartment is fully renovated, located on the 2nd floor of a 4-story building, with a balcony but no cellar or parking. The nearest transit is Ruhleben, 26 minutes away. The mortgage rate is 1.8% (listed on 2022-01-05).\n\n5. **Mahlsdorf, Marzahn-Hellersdorf**: A 2-room apartment of 54.1 m², built in 1985, listed for EUR 73,000 (1,352 EUR/m²). It is fully renovated, located on the 5th floor of a 5-story building, with no lift, balcony, or cellar, and no parking. The nearest transit is Bellevue, 81 minutes away. The mortgage rate is 3.85% (listed on 2024-04-28).\n\nThese listings provide a range of options in terms of size, condition, and pricing for potential buyers in the Berlin real estate market.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, providing detailed information about various for-sale apartments in Berlin, including their sizes, conditions, prices, and other relevant features. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Falkenhagener Feld, Spandau, Berlin. 2-room 2_room, 48.2 m2, on floor 3 of 8, built 1986 (post_war_1949_1990). Condition: modernisiert, position: seitenflügel, energy class D. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 55 min away; 13.93 km to Brandenburg Gate. Price: EUR 90,000 (1,872 EUR/m2). Listed 2024-06-09 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "area_m2": 48.2,
+        "property_type": "2_room",
+        "kiez_premium": "low",
+        "listing_type": "resale",
+        "energy_class": "D",
+        "price_per_m2_eur": 1872,
+        "id": "S001094",
+        "year_built": 1986,
+        "bezirk": "Spandau",
+        "source": "secondary_sales",
+        "ortsteil": "Falkenhagener Feld",
+        "date_listed": "2024-06-09",
+        "rooms": 2,
+        "price_eur": 90000
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Baumschulenweg, Treptow-Köpenick, Berlin. 2-room 2_room, 58.1 m2, on floor 2 of 4, built 1984 (post_war_1949_1990). Condition: renovierungsbedürftig, position: hinterhaus, energy class F. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 50 min away; 8.11 km to Brandenburg Gate. Price: EUR 137,000 (2,356 EUR/m2). Listed 2026-04-28 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "price_per_m2_eur": 2356,
+        "kiez_premium": "medium",
+        "id": "S019316",
+        "bezirk": "Treptow-Köpenick",
+        "ortsteil": "Baumschulenweg",
+        "source": "secondary_sales",
+        "energy_class": "F",
+        "area_m2": 58.1,
+        "date_listed": "2026-04-28",
+        "listing_type": "resale",
+        "rooms": 2,
+        "year_built": 1984,
+        "price_eur": 137000,
+        "property_type": "2_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mahlsdorf, Marzahn-Hellersdorf, Berlin. 4-room 4_room, 105.0 m2, on floor 7 of 8, built 1975 (post_war_1949_1990). Condition: modernisiert, position: gartenhaus, energy class D. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 81 min away; 16.52 km to Brandenburg Gate. Price: EUR 134,000 (1,273 EUR/m2). Listed 2024-04-03 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "rooms": 4,
+        "price_eur": 134000,
+        "listing_type": "resale",
+        "id": "S014725",
+        "source": "secondary_sales",
+        "kiez_premium": "low",
+        "year_built": 1975,
+        "price_per_m2_eur": 1273,
+        "energy_class": "D",
+        "ortsteil": "Mahlsdorf",
+        "date_listed": "2024-04-03",
+        "property_type": "4_room",
+        "area_m2": 105.0,
+        "bezirk": "Marzahn-Hellersdorf"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Falkenhagener Feld, Spandau, Berlin. 1-room 1_room, 34.5 m2, on floor 2 of 4, built 1973 (post_war_1949_1990). Condition: kernsaniert, position: gartenhaus, energy class D. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Ruhleben (U2), 26 min away; 13.36 km to Brandenburg Gate. Price: EUR 92,000 (2,652 EUR/m2). Listed 2022-01-05 at a mortgage rate of 1.8%.",
+      "metadata": {
+        "year_built": 1973,
+        "ortsteil": "Falkenhagener Feld",
+        "rooms": 1,
+        "area_m2": 34.5,
+        "bezirk": "Spandau",
+        "id": "S037506",
+        "price_eur": 92000,
+        "kiez_premium": "low",
+        "listing_type": "resale",
+        "price_per_m2_eur": 2652,
+        "source": "secondary_sales",
+        "date_listed": "2022-01-05",
+        "property_type": "1_room",
+        "energy_class": "D"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mahlsdorf, Marzahn-Hellersdorf, Berlin. 2-room 2_room, 54.1 m2, on floor 5 of 5, built 1985 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class G. Lift: no, balcony: no, cellar: no, parking: no. Nearest transit: Bellevue (Stadtbahn), 81 min away; 18.0 km to Brandenburg Gate. Price: EUR 73,000 (1,352 EUR/m2). Listed 2024-04-28 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "area_m2": 54.1,
+        "year_built": 1985,
+        "rooms": 2,
+        "listing_type": "resale",
+        "price_eur": 73000,
+        "property_type": "2_room",
+        "kiez_premium": "low",
+        "energy_class": "G",
+        "ortsteil": "Mahlsdorf",
+        "date_listed": "2024-04-28",
+        "bezirk": "Marzahn-Hellersdorf",
+        "id": "S015998",
+        "price_per_m2_eur": 1352
+      }
+    }
+  ]
+}

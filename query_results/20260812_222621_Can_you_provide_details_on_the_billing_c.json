@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-08-12T22:26:21",
+  "question": "Can you provide details on the billing codes associated with COPD claims?",
+  "search_query": "Billing codes associated with COPD (chronic obstructive pulmonary disease) claims.",
+  "datasource": "medical",
+  "answer": "The billing codes associated with COPD claims, as retrieved from the documents, include the following ICD-9 diagnosis codes:\n\n1. **496** - This code specifically represents \"Chronic obstructive pulmonary disease (COPD)\".\n2. Other related codes from the claims include:\n   - **5609** - Unspecified intestinal obstruction\n   - **71590** - Osteoarthritis, unspecified\n   - **53081** - Esophageal reflux\n   - **3320** - Parkinson's disease\n   - **78701** - Nausea\n   - **4019** - Essential hypertension\n   - **27651** - Hypokalemia\n   - **V4581** - Other specified procedures\n   - **4589** - Other and unspecified hypotension\n   - **42731** - Atrial fibrillation\n   - **53550** - Unspecified gastritis\n   - **4111** - Other acute myocardial infarction\n   - **25000** - Diabetes mellitus without mention of complication\n   - **34831** - Other specified cerebral ischemia\n   - **40491** - Hypertensive heart AND chronic kidney disease\n   - **V1251** - Personal history of transient ischemic attack (TIA)\n   - **43310** - Occlusion and stenosis of carotid artery\n\nThese codes were found in multiple inpatient claims for beneficiaries with COPD as a known chronic condition (CMS SynPUF). The claims reflect various service dates and payment amounts, indicating the complexity and variability of COPD-related healthcare services.",
+  "evaluation": {
+    "faithfulness": 2,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": true,
+    "rationale": "The answer includes several ICD-9 codes that are not directly associated with COPD, as they are not mentioned in the retrieved context. The only code explicitly linked to COPD in the context is 496, while the other codes listed do not pertain to COPD claims specifically, leading to a lower faithfulness score."
+  },
+  "retrieved": [
+    {
+      "content": "Inpatient claim for beneficiary 1EEB3DEE178B22D8. Known chronic conditions: congestive heart failure, chronic kidney disease, cancer, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis. Service from 20090409 to 20090410. Provider: 1002DC. Diagnosis codes (ICD-9): 5609, 5609, 71590, 53081, 3320, 78701, 4019, 27651, V4581, 496. Claim payment amount: $0.00.",
+      "metadata": {
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "beneficiary_id": "1EEB3DEE178B22D8",
+        "thru_date": "20090410",
+        "data_source": "cms_synpuf",
+        "claim_type": "inpatient",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, cancer, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis",
+        "from_date": "20090409",
+        "diagnosis_codes": "5609, 5609, 71590, 53081, 3320, 78701, 4019, 27651, V4581, 496",
+        "state_code": "10",
+        "amount": 0.0
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 1EEB3DEE178B22D8. Known chronic conditions: congestive heart failure, chronic kidney disease, cancer, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis. Service from 20090409 to 20090410. Provider: 1002DC. Diagnosis codes (ICD-9): 5609, 5609, 71590, 53081, 3320, 78701, 4019, 27651, V4581, 496. Claim payment amount: $0.00.",
+      "metadata": {
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, cancer, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis",
+        "diagnosis_codes": "5609, 5609, 71590, 53081, 3320, 78701, 4019, 27651, V4581, 496",
+        "thru_date": "20090410",
+        "from_date": "20090409",
+        "beneficiary_id": "1EEB3DEE178B22D8",
+        "amount": 0.0,
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "state_code": "10",
+        "data_source": "cms_synpuf",
+        "claim_type": "inpatient"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 0D9B1DC90B7CEC6C. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis. Service from 20090626 to 20090709. Provider: 3101JM. Diagnosis codes (ICD-9): 4589, 42731, V4581, 53550, 4111, 25000, 34831, 4019, 40491, V1251. Claim payment amount: $17000.00.",
+      "metadata": {
+        "claim_type": "inpatient",
+        "from_date": "20090626",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "amount": 17000.0,
+        "data_source": "cms_synpuf",
+        "beneficiary_id": "0D9B1DC90B7CEC6C",
+        "thru_date": "20090709",
+        "diagnosis_codes": "4589, 42731, V4581, 53550, 4111, 25000, 34831, 4019, 40491, V1251",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis",
+        "state_code": "31"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 0D9B1DC90B7CEC6C. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis. Service from 20090626 to 20090709. Provider: 3101JM. Diagnosis codes (ICD-9): 4589, 42731, V4581, 53550, 4111, 25000, 34831, 4019, 40491, V1251. Claim payment amount: $17000.00.",
+      "metadata": {
+        "claim_type": "inpatient",
+        "diagnosis_codes": "4589, 42731, V4581, 53550, 4111, 25000, 34831, 4019, 40491, V1251",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "beneficiary_id": "0D9B1DC90B7CEC6C",
+        "data_source": "cms_synpuf",
+        "amount": 17000.0,
+        "from_date": "20090626",
+        "thru_date": "20090709",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis",
+        "state_code": "31"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 23139CBEFDD82DB9. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Service from 20090220 to 20090221. Provider: 3400XN. Diagnosis codes (ICD-9): 43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859. Claim payment amount: $4000.00.",
+      "metadata": {
+        "thru_date": "20090221",
+        "amount": 4000.0,
+        "from_date": "20090220",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "data_source": "cms_synpuf",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "claim_type": "inpatient",
+        "state_code": "34",
+        "diagnosis_codes": "43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859",
+        "beneficiary_id": "23139CBEFDD82DB9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:32:58",
+  "question": "How did the availability of rental properties fluctuate in relation to the changes in mortgage rates?",
+  "search_query": "Fluctuations in the availability of rental properties in relation to changes in mortgage rates.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any relevant information regarding the availability of rental properties in relation to changes in mortgage rates. Therefore, I cannot provide an answer to the question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide relevant information to answer the question, but it does not address the question at all, leading to a low score for answer relevance."
+  },
+  "retrieved": []
+}

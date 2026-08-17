@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-08-12T22:29:05",
+  "question": "What amenities are available in the furnished 1-room flat?",
+  "search_query": "What amenities are available in a furnished one-room flat?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents provide information about several furnished 1-room flats for sale in Berlin, detailing their amenities. Here are the available amenities for each flat:\n\n1. **Gropiusstadt, Neukölln**:\n   - Size: 25.4 m²\n   - Condition: Modernized\n   - Balcony: Yes\n   - Lift: No\n   - Cellar: No\n   - Parking: No\n\n2. **Karlshorst, Lichtenberg**:\n   - Size: 34.1 m²\n   - Condition: Modernized\n   - Balcony: Yes\n   - Lift: Yes\n   - Cellar: Yes\n   - Parking: No\n\n3. **Britz, Neukölln**:\n   - Size: 32.8 m²\n   - Condition: Needs renovation\n   - Balcony: No\n   - Lift: Yes\n   - Cellar: Yes\n   - Parking: No\n\nIn summary, the amenities available in the furnished 1-room flats include balconies (in two of the listings), lifts (in two of the listings), cellars (in two of the listings), and none of the flats offer parking. The condition of the flats varies, with some being modernized and one requiring renovation.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the amenities available in the furnished 1-room flats as detailed in the retrieved context. Each flat's features are correctly listed, and the overall summary reflects the information provided."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Gropiusstadt, Neukölln, Berlin. 1-room 1_room, 25.4 m2, on floor 3 of 12, built 2021 (new_post_2010). Condition: modernisiert, position: hinterhaus, energy class D. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Johannisthaler Chaussee (U7), 9 min away; 12.12 km to Brandenburg Gate. Price: EUR 74,000 (2,909 EUR/m2). Listed 2021-10-30 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "price_eur": 74000,
+        "property_type": "1_room",
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "id": "S036675",
+        "area_m2": 25.4,
+        "date_listed": "2021-10-30",
+        "rooms": 1,
+        "year_built": 2021,
+        "price_per_m2_eur": 2909,
+        "energy_class": "D",
+        "bezirk": "Neukölln",
+        "ortsteil": "Gropiusstadt",
+        "kiez_premium": "low"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Karlshorst, Lichtenberg, Berlin. 1-room 1_room, 34.1 m2, on floor 2 of 4, built 1998 (modern_1990_2010). Condition: modernisiert, position: seitenflügel, energy class E. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Schlesisches Tor (U1), 28 min away; 11.11 km to Brandenburg Gate. Price: EUR 124,000 (3,631 EUR/m2). Listed 2022-09-24 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "kiez_premium": "medium",
+        "rooms": 1,
+        "price_per_m2_eur": 3631,
+        "bezirk": "Lichtenberg",
+        "id": "S027433",
+        "property_type": "1_room",
+        "area_m2": 34.1,
+        "year_built": 1998,
+        "price_eur": 124000,
+        "listing_type": "resale",
+        "date_listed": "2022-09-24",
+        "energy_class": "E",
+        "ortsteil": "Karlshorst",
+        "source": "secondary_sales"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Britz, Neukölln, Berlin. 1-room 1_room, 32.8 m2, on floor 1 of 6, built 1999 (modern_1990_2010). Condition: renovierungsbedürftig, position: hinterhaus, energy class D. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Schlesisches Tor (U1), 30 min away; 8.05 km to Brandenburg Gate. Price: EUR 90,000 (2,740 EUR/m2). Listed 2023-02-25 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "energy_class": "D",
+        "price_per_m2_eur": 2740,
+        "ortsteil": "Britz",
+        "rooms": 1,
+        "bezirk": "Neukölln",
+        "area_m2": 32.8,
+        "kiez_premium": "low",
+        "id": "S040112",
+        "property_type": "1_room",
+        "year_built": 1999,
+        "source": "secondary_sales",
+        "date_listed": "2023-02-25",
+        "price_eur": 90000,
+        "listing_type": "resale"
+      }
+    }
+  ]
+}

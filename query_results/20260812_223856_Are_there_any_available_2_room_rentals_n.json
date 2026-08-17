@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-12T22:38:56",
+  "question": "Are there any available 2-room rentals near a U-Bahn station in Kreuzberg right now?",
+  "search_query": "Available 2-room rentals near a U-Bahn (underground) station in Kreuzberg.",
+  "datasource": "real_estate",
+  "answer": "Yes, there is a 2-room rental available in Kreuzberg. The apartment is 52.3 m², located on the first floor of a five-story building, and has been renovated. It is not furnished and does not have a balcony, but it does have a lift. The nearest U-Bahn station is Görlitzer Bahnhof (U1), which is 25 minutes away. The rental price is EUR 1,229 per month for the base rent (Kaltmiete), with additional costs (Nebenkosten) of EUR 229, making the total warm rent (Warmmiete) EUR 1,458 per month. A deposit of two months' rent is required. This listing was made on August 21, 2023 (Real Estate).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the details provided in the retrieved context, including the availability of a 2-room rental, its specifications, and proximity to the U-Bahn station. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 2-room 2_room, 52.3 m2, floor 1 of 5, modern_1990_2010, condition renoviert, position seitenflügel, energy class C. Furnished: no, lift: yes, balcony: no. Nearest transit: Görlitzer Bahnhof (U1), 25 min; 2.8 km to Brandenburg Gate. Kaltmiete EUR 1229/month, Nebenkosten EUR 229, Warmmiete EUR 1458/month (23.49 EUR/m2 kalt). Deposit: 2 months. Listed 2023-08-21.",
+      "metadata": {
+        "property_type": "2_room",
+        "listing_type": "rental",
+        "furnished": "False",
+        "rooms": 2,
+        "source": "rentals",
+        "ortsteil": "Kreuzberg",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "area_m2": 52.3,
+        "rent_per_m2_kalt_eur": 23.49,
+        "date_listed": "2023-08-21",
+        "kiez_premium": "high",
+        "warmmiete_eur_monthly": 1458,
+        "kaltmiete_eur_monthly": 1229,
+        "energy_class": "C",
+        "id": "R006413"
+      }
+    }
+  ]
+}

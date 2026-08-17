@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:25:09",
+  "question": "What specific procedures were performed for the COPD diagnosis in this claim?",
+  "search_query": "What specific procedures were performed for the diagnosis of COPD (chronic obstructive pulmonary disease) in this claim?",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain enough relevant information to answer the question about specific procedures performed for the COPD diagnosis in this claim.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide information about the specific procedures for COPD diagnosis, but it does not address the question directly, leading to a low score for answer relevance."
+  },
+  "retrieved": []
+}

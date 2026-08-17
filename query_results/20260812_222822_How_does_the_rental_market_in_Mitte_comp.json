@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:28:22",
+  "question": "How does the rental market in Mitte compare to other neighborhoods in terms of availability and pricing?",
+  "search_query": "Comparison of the rental market in Mitte to other neighborhoods regarding availability and pricing.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any relevant information regarding the rental market in Mitte or comparisons to other neighborhoods in terms of availability and pricing. Therefore, I cannot provide an answer to the question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that there is no relevant information in the retrieved context regarding the rental market in Mitte, but it fails to provide any information or analysis that could be inferred or deduced from the context, leading to a low score for faithfulness."
+  },
+  "retrieved": []
+}

@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-08-12T22:31:02",
+  "question": "How does the rental price in Kreuzberg compare to other neighborhoods in Berlin for 2024?",
+  "search_query": "Comparison of rental prices in Kreuzberg to other neighborhoods in Berlin for the year 2024.",
+  "datasource": "real_estate",
+  "answer": "The rental price in Kreuzberg for 2024 is reported to be approximately 23.32 EUR/m²/month in October and 23.22 EUR/m²/month in December (source: unknown). However, the retrieved documents do not provide comparative rental prices for other neighborhoods in Berlin for 2024. Therefore, I cannot determine how Kreuzberg's rental prices compare to those in other neighborhoods.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the rental prices in Kreuzberg for 2024 as provided in the context and correctly states that there is no comparative data for other neighborhoods, making it fully supported and relevant."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Kreuzberg, Friedrichshain-Kreuzberg, Berlin in 2022-12. Kiez premium: high. Resale price 8515 EUR/m2, new-construction price 11045 EUR/m2, average cold rent 22.21 EUR/m2/month. Listings this month: 41 resale, 40 new-build, 152 rental. ECB main rate 2.5%, average mortgage rate 3.4%.",
+      "metadata": {
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "avg_mortgage_rate_pct": 3.4,
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 8515,
+        "source": "kiez_prices_monthly",
+        "ortsteil": "Kreuzberg",
+        "kiez_premium": "high",
+        "year_month": "2022-12",
+        "kaltmiete_per_m2_monthly_eur": 22.21
+      }
+    },
+    {
+      "content": "Monthly market statistics for Kreuzberg, Friedrichshain-Kreuzberg, Berlin in 2022-10. Kiez premium: high. Resale price 8015 EUR/m2, new-construction price 9796 EUR/m2, average cold rent 20.9 EUR/m2/month. Listings this month: 149 resale, 29 new-build, 180 rental. ECB main rate 2.5%, average mortgage rate 3.4%.",
+      "metadata": {
+        "avg_mortgage_rate_pct": 3.4,
+        "source": "kiez_prices_monthly",
+        "kiez_premium": "high",
+        "kaltmiete_per_m2_monthly_eur": 20.9,
+        "listing_type": "market_stats",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "ortsteil": "Kreuzberg",
+        "year_month": "2022-10",
+        "secondary_price_per_m2_eur": 8015
+      }
+    },
+    {
+      "content": "Monthly market statistics for Kreuzberg, Friedrichshain-Kreuzberg, Berlin in 2024-10. Kiez premium: high. Resale price 7919 EUR/m2, new-construction price 9819 EUR/m2, average cold rent 23.32 EUR/m2/month. Listings this month: 156 resale, 20 new-build, 54 rental. ECB main rate 4.25%, average mortgage rate 3.5%.",
+      "metadata": {
+        "secondary_price_per_m2_eur": 7919,
+        "avg_mortgage_rate_pct": 3.5,
+        "year_month": "2024-10",
+        "listing_type": "market_stats",
+        "ortsteil": "Kreuzberg",
+        "kaltmiete_per_m2_monthly_eur": 23.32,
+        "source": "kiez_prices_monthly",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "kiez_premium": "high"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Kreuzberg, Friedrichshain-Kreuzberg, Berlin in 2024-12. Kiez premium: high. Resale price 7884 EUR/m2, new-construction price 10016 EUR/m2, average cold rent 23.22 EUR/m2/month. Listings this month: 15 resale, 39 new-build, 149 rental. ECB main rate 3.65%, average mortgage rate 3.5%.",
+      "metadata": {
+        "year_month": "2024-12",
+        "kaltmiete_per_m2_monthly_eur": 23.22,
+        "source": "kiez_prices_monthly",
+        "avg_mortgage_rate_pct": 3.5,
+        "kiez_premium": "high",
+        "ortsteil": "Kreuzberg",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 7884
+      }
+    }
+  ]
+}

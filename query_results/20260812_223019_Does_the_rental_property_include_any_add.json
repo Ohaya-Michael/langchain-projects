@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-08-12T22:30:19",
+  "question": "Does the rental property include any additional amenities besides the balcony and lift?",
+  "search_query": "Does the rental property include any additional amenities besides the balcony and elevator?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents indicate that some rental properties do include additional amenities besides the balcony and lift. For example, one property in Hellersdorf has a cellar as an additional amenity (Real Estate). Another property in Halensee not only has a balcony and lift but also includes a cellar and parking (Real Estate). Therefore, it can be concluded that there are rental properties with amenities beyond just the balcony and lift.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the information in the retrieved context, which mentions additional amenities such as a cellar and parking in the properties described. It directly addresses the question about additional amenities beyond the balcony and lift."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Hellersdorf, Marzahn-Hellersdorf, Berlin. 2-room 2_room, 46.2 m2, on floor 3 of 12, built 1950 (post_war_1949_1990). Condition: renovierungsbedürftig, position: vorderhaus, energy class D. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 74 min away; 15.56 km to Brandenburg Gate. Price: EUR 92,000 (1,995 EUR/m2). Listed 2025-12-21 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "date_listed": "2025-12-21",
+        "source": "secondary_sales",
+        "rooms": 2,
+        "listing_type": "resale",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "bezirk": "Marzahn-Hellersdorf",
+        "price_per_m2_eur": 1995,
+        "energy_class": "D",
+        "id": "S021383",
+        "area_m2": 46.2,
+        "year_built": 1950,
+        "price_eur": 92000,
+        "ortsteil": "Hellersdorf"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hellersdorf, Marzahn-Hellersdorf, Berlin. 2-room 2_room, 49.1 m2, on floor 5 of 5, built 1974 (post_war_1949_1990). Condition: modernisiert, position: vorderhaus, energy class D. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 77 min away; 14.75 km to Brandenburg Gate. Price: EUR 58,000 (1,182 EUR/m2). Listed 2021-04-12 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "kiez_premium": "low",
+        "date_listed": "2021-04-12",
+        "id": "S040987",
+        "year_built": 1974,
+        "area_m2": 49.1,
+        "energy_class": "D",
+        "source": "secondary_sales",
+        "bezirk": "Marzahn-Hellersdorf",
+        "property_type": "2_room",
+        "ortsteil": "Hellersdorf",
+        "listing_type": "resale",
+        "price_eur": 58000,
+        "rooms": 2,
+        "price_per_m2_eur": 1182
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mahlsdorf, Marzahn-Hellersdorf, Berlin. 4-room 4_room, 85.0 m2, on floor 5 of 5, built 1971 (post_war_1949_1990). Condition: renoviert, position: vorderhaus, energy class C. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 81 min away; 15.8 km to Brandenburg Gate. Price: EUR 177,000 (2,085 EUR/m2). Listed 2023-10-28 at a mortgage rate of 4.1%.",
+      "metadata": {
+        "rooms": 4,
+        "ortsteil": "Mahlsdorf",
+        "listing_type": "resale",
+        "price_eur": 177000,
+        "id": "S020585",
+        "price_per_m2_eur": 2085,
+        "year_built": 1971,
+        "kiez_premium": "low",
+        "property_type": "4_room",
+        "source": "secondary_sales",
+        "bezirk": "Marzahn-Hellersdorf",
+        "area_m2": 85.0,
+        "date_listed": "2023-10-28",
+        "energy_class": "C"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Halensee, Charlottenburg-Wilmersdorf, Berlin. 2-room 2_room, 63.2 m2, on floor 5 of 6, built 1999 (modern_1990_2010). Condition: modernisiert, position: vorderhaus, energy class B. Lift: yes, balcony: yes, cellar: yes, parking: yes. Nearest transit: Bellevue (Stadtbahn), 24 min away; 4.98 km to Brandenburg Gate. Price: EUR 451,000 (7,131 EUR/m2). Listed 2020-09-05 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "energy_class": "B",
+        "id": "S017954",
+        "source": "secondary_sales",
+        "year_built": 1999,
+        "listing_type": "resale",
+        "rooms": 2,
+        "area_m2": 63.2,
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "price_eur": 451000,
+        "ortsteil": "Halensee",
+        "price_per_m2_eur": 7131,
+        "date_listed": "2020-09-05",
+        "property_type": "2_room",
+        "kiez_premium": "high"
+      }
+    }
+  ]
+}

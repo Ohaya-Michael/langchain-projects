@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-08-12T22:27:50",
+  "question": "What are the available units in the new build located in Mitte, and what are their sizes?",
+  "search_query": "Available units and their sizes in the new building located in Mitte.",
+  "datasource": "real_estate",
+  "answer": "The new build located in Mitte, Berlin, known as 'Heimat Mitte' by developer Vonovia, offers the following available units:\n\n1. **1-room apartment**: \n   - Size: 20.0 m²\n   - Floor: 3 of 4\n   - Energy class: A+\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: No\n   - Price: EUR 254,000 (12,714 EUR/m²)\n\n2. **1-room apartment**: \n   - Size: 22.1 m²\n   - Floor: 11 of 12\n   - Energy class: B\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: Yes\n   - Price: EUR 262,000 (11,857 EUR/m²)\n\n3. **2-room apartment**: \n   - Size: 72.1 m²\n   - Floor: 0 of 5\n   - Energy class: A\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: No\n   - Price: EUR 824,000 (11,429 EUR/m²)\n\n4. **3-room apartment**: \n   - Size: 84.4 m²\n   - Floor: 1 of 6\n   - Energy class: A\n   - Lift: No\n   - Balcony: No\n   - Parking: No\n   - Price: EUR 999,000 (11,833 EUR/m²)\n\n5. **4-room apartment**: \n   - Size: 108.2 m²\n   - Floor: 1 of 5\n   - Energy class: A\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: Yes\n   - Price: EUR 1,429,000 (13,208 EUR/m²)\n\nThese units are part of a total of 120 units in the project, which is currently under construction and expected to be completed in 2028.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately lists all available units and their sizes as provided in the retrieved context. Each detail about the apartments, including size, floor, energy class, lift availability, balcony, parking, and price, is directly supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 3-room 3_room, 84.4 m2, floor 1 of 6, energy class A. Lift: no, balcony: no, parking: no. Payment plan: tranches_quarterly. Nearest transit: Adenauerplatz (U7), 92 min; 2.97 km to Brandenburg Gate. Price: EUR 999,000 (11,833 EUR/m2). Listed 2024-12-04.",
+      "metadata": {
+        "completion_year": 2028,
+        "source": "new_construction",
+        "id": "N007364",
+        "price_per_m2_eur": 11833,
+        "rooms": 3,
+        "energy_class": "A",
+        "price_eur": 999000,
+        "listing_type": "new_construction",
+        "property_type": "3_room",
+        "ortsteil": "Mitte (Ort)",
+        "project_name": "Heimat Mitte",
+        "area_m2": 84.4,
+        "bezirk": "Mitte",
+        "developer": "Vonovia",
+        "date_listed": "2024-12-04"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 4-room 4_room, 108.2 m2, floor 1 of 5, energy class A. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Märkisches Museum (U2), 13 min; 2.97 km to Brandenburg Gate. Price: EUR 1,429,000 (13,208 EUR/m2). Listed 2025-11-17.",
+      "metadata": {
+        "listing_type": "new_construction",
+        "completion_year": 2028,
+        "date_listed": "2025-11-17",
+        "developer": "Vonovia",
+        "bezirk": "Mitte",
+        "price_per_m2_eur": 13208,
+        "energy_class": "A",
+        "price_eur": 1429000,
+        "project_name": "Heimat Mitte",
+        "area_m2": 108.2,
+        "source": "new_construction",
+        "rooms": 4,
+        "id": "N008754",
+        "ortsteil": "Mitte (Ort)",
+        "property_type": "4_room"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 2-room 2_room, 72.1 m2, floor 0 of 5, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: 70_30. Nearest transit: Kottbusser Tor U8 (U8), 15 min; 2.97 km to Brandenburg Gate. Price: EUR 824,000 (11,429 EUR/m2). Listed 2024-05-19.",
+      "metadata": {
+        "source": "new_construction",
+        "price_per_m2_eur": 11429,
+        "ortsteil": "Mitte (Ort)",
+        "rooms": 2,
+        "property_type": "2_room",
+        "developer": "Vonovia",
+        "project_name": "Heimat Mitte",
+        "bezirk": "Mitte",
+        "price_eur": 824000,
+        "listing_type": "new_construction",
+        "area_m2": 72.1,
+        "energy_class": "A",
+        "completion_year": 2028,
+        "id": "N006661",
+        "date_listed": "2024-05-19"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 1-room 1_room, 20.0 m2, floor 3 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Hermannplatz U8 (U8), 33 min; 2.97 km to Brandenburg Gate. Price: EUR 254,000 (12,714 EUR/m2). Listed 2024-05-27.",
+      "metadata": {
+        "developer": "Vonovia",
+        "rooms": 1,
+        "property_type": "1_room",
+        "source": "new_construction",
+        "project_name": "Heimat Mitte",
+        "completion_year": 2028,
+        "price_per_m2_eur": 12714,
+        "ortsteil": "Mitte (Ort)",
+        "date_listed": "2024-05-27",
+        "id": "N000485",
+        "listing_type": "new_construction",
+        "energy_class": "A_plus",
+        "price_eur": 254000,
+        "bezirk": "Mitte",
+        "area_m2": 20.0
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 1-room 1_room, 22.1 m2, floor 11 of 12, energy class B. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Märkisches Museum (U2), 15 min; 2.97 km to Brandenburg Gate. Price: EUR 262,000 (11,857 EUR/m2). Listed 2021-11-01.",
+      "metadata": {
+        "listing_type": "new_construction",
+        "developer": "Vonovia",
+        "source": "new_construction",
+        "date_listed": "2021-11-01",
+        "price_eur": 262000,
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "area_m2": 22.1,
+        "energy_class": "B",
+        "property_type": "1_room",
+        "project_name": "Heimat Mitte",
+        "completion_year": 2028,
+        "price_per_m2_eur": 11857,
+        "id": "N008499",
+        "rooms": 1
+      }
+    }
+  ]
+}

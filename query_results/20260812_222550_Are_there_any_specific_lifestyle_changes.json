@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:25:50",
+  "question": "Are there any specific lifestyle changes recommended to manage asthma symptoms effectively?",
+  "search_query": "What specific lifestyle changes are recommended to effectively manage asthma symptoms?",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain any information regarding specific lifestyle changes recommended to manage asthma symptoms effectively. Therefore, I cannot provide an answer to your question based on the available sources.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide information on lifestyle changes for managing asthma symptoms. However, it does not attempt to summarize or infer any relevant information, leading to a low score for faithfulness."
+  },
+  "retrieved": []
+}

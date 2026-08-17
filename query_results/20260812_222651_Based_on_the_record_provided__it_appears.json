@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-12T22:26:51",
+  "question": "Based on the record provided, it appears to belong to the real estate domain. Here are five questions a user might ask:",
+  "search_query": "\"Questions related to real estate domain records.\"",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents provide information about various for-sale apartments in Berlin, specifically in the districts of Wilmersdorf and Marzahn. Here are the details of the properties:\n\n1. **Wilmersdorf, Charlottenburg-Wilmersdorf**:\n   - **Apartment 1**: 3 rooms, 89.2 m², built in 1991, priced at EUR 729,000 (8,174 EUR/m²). Condition: kernsaniert, no lift, has a balcony and cellar. Nearest transit: Uhlandstraße (U1), 12 min away. Listed on 2024-03-05.\n   - **Apartment 2**: 3 rooms, 83.0 m², built in 2009, priced at EUR 574,000 (6,916 EUR/m²). Condition: modernisiert, has a lift, no balcony, no cellar. Nearest transit: Hohenzollerndamm S (S Ringbahn), 4 min away. Listed on 2023-06-15.\n   - **Apartment 3**: 3 rooms, 73.3 m², built in 1999, priced at EUR 654,000 (8,917 EUR/m²). Condition: kernsaniert, has a lift, no balcony, has a cellar. Nearest transit: Westkreuz (S Ringbahn), 19 min away. Listed on 2024-04-27.\n   - **Apartment 4**: 3 rooms, 97.9 m², built in 2017, priced at EUR 748,000 (7,642 EUR/m²). Condition: renovierungsbedürftig, has a lift, has a balcony and cellar. Nearest transit: Wilmersdorfer Straße (U7), 7 min away. Listed on 2024-01-31.\n\n2. **Marzahn, Marzahn-Hellersdorf**:\n   - **Apartment**: 1 room, 47.0 m², built in 1909, priced at EUR 75,000 (1,591 EUR/m²). Condition: renovierungsbedürftig, no lift, has a balcony and cellar. Nearest transit: Karl-Bonhoeffer-Nervenklinik (U8), 67 min away. Listed on 2025-06-11.\n\nThese listings provide a range of options in terms of size, condition, and price, catering to different buyer preferences in the Berlin real estate market.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the details of the for-sale apartments in Berlin as provided in the retrieved context. Each apartment's specifications, including size, price, condition, and location, are correctly represented, making the answer fully supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 89.2 m2, on floor 5 of 8, built 1991 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class D. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 12 min away; 5.21 km to Brandenburg Gate. Price: EUR 729,000 (8,174 EUR/m2). Listed 2024-03-05 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "kiez_premium": "high",
+        "energy_class": "D",
+        "ortsteil": "Wilmersdorf",
+        "area_m2": 89.2,
+        "id": "S011857",
+        "price_per_m2_eur": 8174,
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "price_eur": 729000,
+        "date_listed": "2024-03-05",
+        "rooms": 3,
+        "year_built": 1991,
+        "property_type": "3_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 83.0 m2, on floor 1 of 3, built 2009 (modern_1990_2010). Condition: modernisiert, position: hinterhaus, energy class D. Lift: yes, balcony: no, cellar: no, parking: no. Nearest transit: Hohenzollerndamm S (S Ringbahn), 4 min away; 6.17 km to Brandenburg Gate. Price: EUR 574,000 (6,916 EUR/m2). Listed 2023-06-15 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "area_m2": 83.0,
+        "listing_type": "resale",
+        "property_type": "3_room",
+        "ortsteil": "Wilmersdorf",
+        "date_listed": "2023-06-15",
+        "rooms": 3,
+        "kiez_premium": "high",
+        "source": "secondary_sales",
+        "energy_class": "D",
+        "year_built": 2009,
+        "price_eur": 574000,
+        "price_per_m2_eur": 6916,
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "id": "S007157"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Marzahn, Marzahn-Hellersdorf, Berlin. 1-room 1_room, 47.0 m2, on floor 3 of 6, built 1909 (altbau_pre_1949). Condition: renovierungsbedürftig, position: hinterhaus, energy class F. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Karl-Bonhoeffer-Nervenklinik (U8), 67 min away; 12.76 km to Brandenburg Gate. Price: EUR 75,000 (1,591 EUR/m2). Listed 2025-06-11 at a mortgage rate of 3.3%.",
+      "metadata": {
+        "energy_class": "F",
+        "price_per_m2_eur": 1591,
+        "rooms": 1,
+        "listing_type": "resale",
+        "date_listed": "2025-06-11",
+        "id": "S020715",
+        "source": "secondary_sales",
+        "kiez_premium": "low",
+        "area_m2": 47.0,
+        "bezirk": "Marzahn-Hellersdorf",
+        "price_eur": 75000,
+        "year_built": 1909,
+        "ortsteil": "Marzahn",
+        "property_type": "1_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 73.3 m2, on floor 1 of 3, built 1999 (modern_1990_2010). Condition: kernsaniert, position: seitenflügel, energy class B. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Westkreuz (S Ringbahn), 19 min away; 5.6 km to Brandenburg Gate. Price: EUR 654,000 (8,917 EUR/m2). Listed 2024-04-27 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "ortsteil": "Wilmersdorf",
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "property_type": "3_room",
+        "kiez_premium": "high",
+        "year_built": 1999,
+        "id": "S032740",
+        "price_per_m2_eur": 8917,
+        "rooms": 3,
+        "area_m2": 73.3,
+        "date_listed": "2024-04-27",
+        "price_eur": 654000,
+        "energy_class": "B",
+        "bezirk": "Charlottenburg-Wilmersdorf"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Charlottenburg, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 97.9 m2, on floor 2 of 5, built 2017 (new_post_2010). Condition: renovierungsbedürftig, position: hinterhaus, energy class A. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Wilmersdorfer Straße (U7), 7 min away; 4.47 km to Brandenburg Gate. Price: EUR 748,000 (7,642 EUR/m2). Listed 2024-01-31 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "date_listed": "2024-01-31",
+        "rooms": 3,
+        "price_per_m2_eur": 7642,
+        "source": "secondary_sales",
+        "energy_class": "A",
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "price_eur": 748000,
+        "ortsteil": "Charlottenburg",
+        "listing_type": "resale",
+        "id": "S005793",
+        "kiez_premium": "high",
+        "area_m2": 97.9,
+        "year_built": 2017,
+        "property_type": "3_room"
+      }
+    }
+  ]
+}

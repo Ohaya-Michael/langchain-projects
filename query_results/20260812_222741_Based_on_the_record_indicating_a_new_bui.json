@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-08-12T22:27:41",
+  "question": "Based on the record indicating a new build with parking in Mitte, the domain is real estate. Here are five questions a potential buyer or renter might ask:",
+  "search_query": "Questions potential buyers or renters might ask about a new real estate build with parking in Mitte.",
+  "datasource": "real_estate",
+  "answer": "Based on the retrieved documents regarding new construction in Mitte, Berlin, here are answers to potential buyer or renter questions:\n\n1. **What is the price of the new apartments?**\n   - Prices for the new apartments in the 'Domizil Mitte' project range from EUR 343,000 for a 1-room apartment (25.7 m²) to EUR 1,198,000 for a 3-room apartment (100.1 m²). The 4-room apartments are priced at EUR 902,000 (65.0 m²) and EUR 1,263,000 (114.7 m²) (source: various listings).\n\n2. **What are the sizes of the available apartments?**\n   - The sizes of the apartments vary: \n     - 1-room: 25.7 m² and 20.0 m²\n     - 4-room: 65.0 m² and 114.7 m²\n     - 3-room: 100.1 m² (source: various listings).\n\n3. **Is parking available?**\n   - Parking availability differs among the apartments. The 4-room and 1-room apartments (25.7 m²) have parking, while the 3-room and the other 1-room apartment (20.0 m²) do not (source: various listings).\n\n4. **What is the payment plan for these apartments?**\n   - The payment plans vary: \n     - The 3-room and 1-room (25.7 m²) apartments have a payment plan of 70% upfront and 30% later.\n     - The 4-room apartments have a payment plan structured in quarterly tranches (source: various listings).\n\n5. **What is the energy efficiency rating of the apartments?**\n   - The apartments are rated with energy classes A and A+, indicating good energy efficiency (source: various listings).\n\nThese details provide a comprehensive overview for potential buyers or renters interested in the new construction in Mitte.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the information provided in the retrieved context, addressing each question with specific details about prices, sizes, parking availability, payment plans, and energy efficiency ratings as mentioned in the listings."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Domizil Mitte' by developer GHL Berlin (250 units, completion 2025, status under_construction). 3-room 3_room, 100.1 m2, floor 1 of 5, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: 70_30. Nearest transit: Rosenthaler Platz (U8), 2 min; 2.14 km to Brandenburg Gate. Price: EUR 1,198,000 (11,961 EUR/m2). Listed 2026-04-08.",
+      "metadata": {
+        "listing_type": "new_construction",
+        "bezirk": "Mitte",
+        "project_name": "Domizil Mitte",
+        "id": "N000675",
+        "property_type": "3_room",
+        "source": "new_construction",
+        "price_eur": 1198000,
+        "completion_year": 2025,
+        "price_per_m2_eur": 11961,
+        "developer": "GHL Berlin",
+        "ortsteil": "Mitte (Ort)",
+        "area_m2": 100.1,
+        "rooms": 3,
+        "date_listed": "2026-04-08",
+        "energy_class": "A"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Domizil Mitte' by developer GHL Berlin (250 units, completion 2025, status under_construction). 4-room 4_room, 65.0 m2, floor 3 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Rosenthaler Platz (U8), 1 min; 2.14 km to Brandenburg Gate. Price: EUR 902,000 (13,888 EUR/m2). Listed 2025-08-04.",
+      "metadata": {
+        "source": "new_construction",
+        "energy_class": "A_plus",
+        "id": "N004314",
+        "developer": "GHL Berlin",
+        "date_listed": "2025-08-04",
+        "bezirk": "Mitte",
+        "ortsteil": "Mitte (Ort)",
+        "price_per_m2_eur": 13888,
+        "price_eur": 902000,
+        "property_type": "4_room",
+        "rooms": 4,
+        "project_name": "Domizil Mitte",
+        "completion_year": 2025,
+        "area_m2": 65.0,
+        "listing_type": "new_construction"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Domizil Mitte' by developer GHL Berlin (250 units, completion 2025, status under_construction). 1-room 1_room, 25.7 m2, floor 4 of 5, energy class A. Lift: yes, balcony: yes, parking: yes. Payment plan: 70_30. Nearest transit: Rosenthaler Platz (U8), 7 min; 2.14 km to Brandenburg Gate. Price: EUR 343,000 (13,326 EUR/m2). Listed 2024-04-09.",
+      "metadata": {
+        "id": "N006245",
+        "property_type": "1_room",
+        "source": "new_construction",
+        "price_per_m2_eur": 13326,
+        "completion_year": 2025,
+        "energy_class": "A",
+        "project_name": "Domizil Mitte",
+        "area_m2": 25.7,
+        "listing_type": "new_construction",
+        "rooms": 1,
+        "date_listed": "2024-04-09",
+        "bezirk": "Mitte",
+        "ortsteil": "Mitte (Ort)",
+        "price_eur": 343000,
+        "developer": "GHL Berlin"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 1-room 1_room, 20.0 m2, floor 3 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Hermannplatz U8 (U8), 33 min; 2.97 km to Brandenburg Gate. Price: EUR 254,000 (12,714 EUR/m2). Listed 2024-05-27.",
+      "metadata": {
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "date_listed": "2024-05-27",
+        "price_per_m2_eur": 12714,
+        "price_eur": 254000,
+        "listing_type": "new_construction",
+        "area_m2": 20.0,
+        "id": "N000485",
+        "property_type": "1_room",
+        "rooms": 1,
+        "project_name": "Heimat Mitte",
+        "energy_class": "A_plus",
+        "developer": "Vonovia",
+        "source": "new_construction",
+        "completion_year": 2028
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Domizil Mitte' by developer GHL Berlin (250 units, completion 2025, status under_construction). 4-room 4_room, 114.7 m2, floor 1 of 6, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Hackescher Markt (Stadtbahn), 11 min; 2.14 km to Brandenburg Gate. Price: EUR 1,263,000 (11,010 EUR/m2). Listed 2021-10-30.",
+      "metadata": {
+        "price_eur": 1263000,
+        "id": "N009486",
+        "project_name": "Domizil Mitte",
+        "area_m2": 114.7,
+        "developer": "GHL Berlin",
+        "date_listed": "2021-10-30",
+        "rooms": 4,
+        "energy_class": "A",
+        "completion_year": 2025,
+        "property_type": "4_room",
+        "price_per_m2_eur": 11010,
+        "bezirk": "Mitte",
+        "listing_type": "new_construction",
+        "source": "new_construction",
+        "ortsteil": "Mitte (Ort)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:32:12",
+  "question": "Can you provide insights on how high mortgage rates influenced buyer preferences between resale and new construction homes in Mitte?",
+  "search_query": "Insights on how high mortgage rates influenced buyer preferences between resale and new construction homes in Mitte.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any relevant information regarding how high mortgage rates influenced buyer preferences between resale and new construction homes in Mitte. Therefore, I cannot provide insights on this topic.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide relevant information on the topic, but it does not address the question directly. The answer is mostly unsupported as it does not attempt to provide any insights or analysis based on the lack of information."
+  },
+  "retrieved": []
+}

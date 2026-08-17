@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-08-12T22:32:05",
+  "question": "Were there any notable differences in the availability of resale properties versus new construction in Mitte when mortgage rates were elevated?",
+  "search_query": "Notable differences in the availability of resale properties versus new construction in Mitte during periods of elevated mortgage rates.",
+  "datasource": "real_estate",
+  "answer": "The retrieved document provides information about a resale apartment in Mitte, Berlin, including its specifications and listing price. However, it does not contain any comparative data regarding the availability of resale properties versus new construction, nor does it mention the impact of elevated mortgage rates on this availability. Therefore, there is not enough relevant information to answer the question about notable differences in the availability of resale properties versus new construction in Mitte when mortgage rates were elevated.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of comparative data in the retrieved context regarding resale properties versus new construction in Mitte. It correctly states that the context does not provide information on the impact of elevated mortgage rates on availability, thus fully supporting the claims made."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 4-room 4_room, 116.8 m2, on floor 5 of 6, built 2000 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class E. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 27 min away; 2.01 km to Brandenburg Gate. Price: EUR 624,000 (5,344 EUR/m2). Listed 2024-04-16 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "price_eur": 624000,
+        "year_built": 2000,
+        "id": "S007528",
+        "bezirk": "Mitte",
+        "ortsteil": "Mitte (Ort)",
+        "date_listed": "2024-04-16",
+        "rooms": 4,
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "area_m2": 116.8,
+        "kiez_premium": "high",
+        "property_type": "4_room",
+        "energy_class": "E",
+        "price_per_m2_eur": 5344
+      }
+    }
+  ]
+}

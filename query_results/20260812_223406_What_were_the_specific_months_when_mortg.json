@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:34:06",
+  "question": "What were the specific months when mortgage rates peaked in the last year?",
+  "search_query": "What were the specific months when mortgage rates peaked in the last year (2022-2023)?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any information regarding mortgage rates or their fluctuations over the last year. Therefore, I cannot provide an answer to the question about the specific months when mortgage rates peaked.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not contain information about mortgage rates, which is a faithful response. However, it does not provide any specific months, as there is no relevant context to support such information."
+  },
+  "retrieved": []
+}

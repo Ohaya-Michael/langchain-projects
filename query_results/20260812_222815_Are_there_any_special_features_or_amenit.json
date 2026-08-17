@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-08-12T22:28:15",
+  "question": "Are there any special features or amenities included in the new build in Mitte?",
+  "search_query": "What special features or amenities are included in the new building in Mitte?",
+  "datasource": "real_estate",
+  "answer": "The new builds in Mitte include several special features and amenities. All the projects mentioned have the following common amenities:\n\n1. **Lift**: All the apartments have a lift.\n2. **Balcony**: Each apartment includes a balcony.\n3. **Parking**: Most of the projects offer parking, except for one (Höfe Mitte) which does not provide parking.\n\nHere are the details of the specific projects:\n\n- **Heimat Mitte** by Vonovia: This project features 4-room apartments with a size of 108.2 m² and includes a lift, balcony, and parking. The energy class is A, and it is currently under construction with completion expected in 2028.\n\n- **Wohnen Mitte** by TAG Immobilien: This project offers 5-room plus apartments with a size of 210.8 m², also featuring a lift, balcony, and parking. It has an energy class of A+ and is expected to be ready within 6 months, with completion also set for 2028.\n\n- **Höfe Mitte** by Project Immobilien: This project includes 4-room apartments of 102.7 m², with a lift and balcony, but no parking available. It has an energy class of A+ and is under construction, with completion expected in 2026.\n\nOverall, the new builds in Mitte are designed with modern amenities and energy-efficient classifications, making them attractive options for potential buyers.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the special features and amenities of the new builds in Mitte as detailed in the retrieved context. It correctly identifies the presence of lifts, balconies, and parking in most projects, and provides specific details about each project, all of which are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 4-room 4_room, 108.2 m2, floor 1 of 5, energy class A. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Märkisches Museum (U2), 13 min; 2.97 km to Brandenburg Gate. Price: EUR 1,429,000 (13,208 EUR/m2). Listed 2025-11-17.",
+      "metadata": {
+        "developer": "Vonovia",
+        "ortsteil": "Mitte (Ort)",
+        "id": "N008754",
+        "price_per_m2_eur": 13208,
+        "energy_class": "A",
+        "project_name": "Heimat Mitte",
+        "price_eur": 1429000,
+        "rooms": 4,
+        "area_m2": 108.2,
+        "bezirk": "Mitte",
+        "source": "new_construction",
+        "listing_type": "new_construction",
+        "completion_year": 2028,
+        "date_listed": "2025-11-17",
+        "property_type": "4_room"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Wohnen Mitte' by developer TAG Immobilien (50 units, completion 2028, status ready_within_6m). 5-room 5_room_plus, 210.8 m2, floor 1 of 5, energy class A_plus. Lift: yes, balcony: yes, parking: yes. Payment plan: off_plan_30_70. Nearest transit: Märkisches Museum (U2), 23 min; 1.3 km to Brandenburg Gate. Price: EUR 2,681,000 (12,720 EUR/m2). Listed 2023-12-23.",
+      "metadata": {
+        "developer": "TAG Immobilien",
+        "price_eur": 2681000,
+        "energy_class": "A_plus",
+        "id": "N004785",
+        "completion_year": 2028,
+        "bezirk": "Mitte",
+        "project_name": "Wohnen Mitte",
+        "source": "new_construction",
+        "area_m2": 210.8,
+        "ortsteil": "Mitte (Ort)",
+        "listing_type": "new_construction",
+        "property_type": "5_room_plus",
+        "price_per_m2_eur": 12720,
+        "rooms": 5,
+        "date_listed": "2023-12-23"
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Höfe Mitte' by developer Project Immobilien (50 units, completion 2026, status under_construction). 4-room 4_room, 102.7 m2, floor 5 of 5, energy class A_plus. Lift: yes, balcony: yes, parking: no. Payment plan: 70_30. Nearest transit: Schlesisches Tor (U1), 31 min; 3.2 km to Brandenburg Gate. Price: EUR 1,137,000 (11,067 EUR/m2). Listed 2021-04-14.",
+      "metadata": {
+        "date_listed": "2021-04-14",
+        "area_m2": 102.7,
+        "id": "N009983",
+        "developer": "Project Immobilien",
+        "rooms": 4,
+        "listing_type": "new_construction",
+        "project_name": "Höfe Mitte",
+        "completion_year": 2026,
+        "ortsteil": "Mitte (Ort)",
+        "property_type": "4_room",
+        "bezirk": "Mitte",
+        "source": "new_construction",
+        "energy_class": "A_plus",
+        "price_eur": 1137000,
+        "price_per_m2_eur": 11067
+      }
+    },
+    {
+      "content": "New-construction apartment in Mitte (Ort), Mitte, Berlin. Project 'Heimat Mitte' by developer Vonovia (120 units, completion 2028, status under_construction). 1-room 1_room, 22.1 m2, floor 11 of 12, energy class B. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Märkisches Museum (U2), 15 min; 2.97 km to Brandenburg Gate. Price: EUR 262,000 (11,857 EUR/m2). Listed 2021-11-01.",
+      "metadata": {
+        "date_listed": "2021-11-01",
+        "id": "N008499",
+        "price_per_m2_eur": 11857,
+        "ortsteil": "Mitte (Ort)",
+        "source": "new_construction",
+        "listing_type": "new_construction",
+        "completion_year": 2028,
+        "project_name": "Heimat Mitte",
+        "area_m2": 22.1,
+        "price_eur": 262000,
+        "energy_class": "B",
+        "developer": "Vonovia",
+        "property_type": "1_room",
+        "bezirk": "Mitte",
+        "rooms": 1
+      }
+    }
+  ]
+}

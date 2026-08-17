@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:26:05",
+  "question": "Are there any triggers identified in the treatment plan that the patient should avoid to prevent asthma attacks?",
+  "search_query": "What triggers should a patient avoid in their treatment plan to prevent asthma attacks?",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain any relevant information regarding triggers identified in a treatment plan for asthma that the patient should avoid. Therefore, I cannot provide an answer to the question.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of information in the retrieved context regarding asthma triggers, thus it is fully supported and directly addresses the question."
+  },
+  "retrieved": []
+}

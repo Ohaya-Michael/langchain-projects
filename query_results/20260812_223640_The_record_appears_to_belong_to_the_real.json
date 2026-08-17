@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-12T22:36:40",
+  "question": "The record appears to belong to the real estate domain, specifically regarding mortgage rates and rental listings. Here are five questions a user might ask based on this record:",
+  "search_query": "Questions related to mortgage rates and rental listings in the real estate domain.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents pertain to the real estate domain, specifically regarding property listings and mortgage rates. Here are the relevant details:\n\n1. **Wilmersdorf, Charlottenburg-Wilmersdorf**:\n   - A 3-room apartment (73.3 m²) built in 1999 is listed for EUR 654,000 at a mortgage rate of 3.85%. It is in a kernsaniert condition and has a price per square meter of EUR 8,917 (listed on 2024-04-27).\n   - Another 3-room apartment (58.3 m²) built in 2006 is available for EUR 429,000 with a mortgage rate of 1.8%. This unit is in a renoviert condition, priced at EUR 7,365 per square meter (listed on 2022-05-14).\n   - A third 3-room apartment (89.2 m²) built in 1991 is priced at EUR 729,000 with a mortgage rate of 3.85%. It is in a kernsaniert condition, with a price per square meter of EUR 8,174 (listed on 2024-03-05).\n\n2. **Hohenschönhausen, Lichtenberg**:\n   - A 2-room apartment (49.3 m²) built in 1965 is listed for EUR 123,000 at a mortgage rate of 3.1%. It is modernisiert and priced at EUR 2,483 per square meter (listed on 2025-08-25).\n   - Another 2-room apartment (54.7 m²) built in 1950 is available for EUR 113,000 with a mortgage rate of 1.1%. This unit is in a kernsaniert condition, priced at EUR 2,066 per square meter (listed on 2020-05-09).\n\nThese listings provide a snapshot of the current real estate market in Berlin, highlighting various properties, their conditions, and associated mortgage rates.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, providing specific details about the properties, their conditions, prices, and mortgage rates, all of which are present in the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 73.3 m2, on floor 1 of 3, built 1999 (modern_1990_2010). Condition: kernsaniert, position: seitenflügel, energy class B. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Westkreuz (S Ringbahn), 19 min away; 5.6 km to Brandenburg Gate. Price: EUR 654,000 (8,917 EUR/m2). Listed 2024-04-27 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "price_per_m2_eur": 8917,
+        "price_eur": 654000,
+        "property_type": "3_room",
+        "kiez_premium": "high",
+        "year_built": 1999,
+        "energy_class": "B",
+        "source": "secondary_sales",
+        "date_listed": "2024-04-27",
+        "rooms": 3,
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "id": "S032740",
+        "area_m2": 73.3,
+        "ortsteil": "Wilmersdorf",
+        "listing_type": "resale"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 58.3 m2, on floor 3 of 5, built 2006 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class F. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Hohenzollerndamm S (S Ringbahn), 4 min away; 4.91 km to Brandenburg Gate. Price: EUR 429,000 (7,365 EUR/m2). Listed 2022-05-14 at a mortgage rate of 1.8%.",
+      "metadata": {
+        "ortsteil": "Wilmersdorf",
+        "bezirk": "Charlottenburg-Wilmersdorf",
+        "area_m2": 58.3,
+        "price_per_m2_eur": 7365,
+        "year_built": 2006,
+        "date_listed": "2022-05-14",
+        "energy_class": "F",
+        "kiez_premium": "high",
+        "listing_type": "resale",
+        "id": "S045947",
+        "source": "secondary_sales",
+        "property_type": "3_room",
+        "rooms": 3,
+        "price_eur": 429000
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin. 3-room 3_room, 89.2 m2, on floor 5 of 8, built 1991 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class D. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 12 min away; 5.21 km to Brandenburg Gate. Price: EUR 729,000 (8,174 EUR/m2). Listed 2024-03-05 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "ortsteil": "Wilmersdorf",
+        "property_type": "3_room",
+        "area_m2": 89.2,
+        "price_eur": 729000,
+        "year_built": 1991,
+        "source": "secondary_sales",
+        "id": "S011857",
+        "price_per_m2_eur": 8174,
+        "kiez_premium": "high",
+        "energy_class": "D",
+        "rooms": 3,
+        "date_listed": "2024-03-05",
+        "listing_type": "resale",
+        "bezirk": "Charlottenburg-Wilmersdorf"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 49.3 m2, on floor 3 of 12, built 1965 (post_war_1949_1990). Condition: modernisiert, position: seitenflügel, energy class D. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 58 min away; 10.19 km to Brandenburg Gate. Price: EUR 123,000 (2,483 EUR/m2). Listed 2025-08-25 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "year_built": 1965,
+        "energy_class": "D",
+        "ortsteil": "Hohenschönhausen",
+        "id": "S047025",
+        "kiez_premium": "low",
+        "area_m2": 49.3,
+        "price_eur": 123000,
+        "bezirk": "Lichtenberg",
+        "listing_type": "resale",
+        "price_per_m2_eur": 2483,
+        "property_type": "2_room",
+        "source": "secondary_sales",
+        "rooms": 2,
+        "date_listed": "2025-08-25"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 54.7 m2, on floor 10 of 12, built 1950 (post_war_1949_1990). Condition: kernsaniert, position: seitenflügel, energy class B. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Lipschitzallee (U7), 69 min away; 9.11 km to Brandenburg Gate. Price: EUR 113,000 (2,066 EUR/m2). Listed 2020-05-09 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "area_m2": 54.7,
+        "listing_type": "resale",
+        "property_type": "2_room",
+        "date_listed": "2020-05-09",
+        "year_built": 1950,
+        "id": "S014627",
+        "bezirk": "Lichtenberg",
+        "energy_class": "B",
+        "kiez_premium": "low",
+        "ortsteil": "Hohenschönhausen",
+        "price_per_m2_eur": 2066,
+        "source": "secondary_sales",
+        "rooms": 2,
+        "price_eur": 113000
+      }
+    }
+  ]
+}

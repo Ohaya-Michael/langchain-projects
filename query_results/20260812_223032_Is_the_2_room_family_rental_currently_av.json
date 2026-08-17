@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:30:32",
+  "question": "Is the 2-room family rental currently available for immediate move-in?",
+  "search_query": "Is the two-room family rental currently available for immediate move-in?",
+  "datasource": "real_estate",
+  "answer": "There are no relevant documents retrieved that provide information about the availability of a 2-room family rental for immediate move-in. Therefore, I cannot answer the question based on the provided sources.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 2,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer acknowledges the lack of information in the retrieved context regarding the availability of the rental, which is accurate. However, it does not directly address the question about immediate move-in, leading to a low score for answer relevance."
+  },
+  "retrieved": []
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:31:59",
+  "question": "How did the price trends for resale homes in Mitte differ from those of new builds during the high mortgage rate period?",
+  "search_query": "Price trends for resale homes in Mitte compared to new builds during the high mortgage rate period.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any relevant information regarding the price trends for resale homes in Mitte or new builds during the high mortgage rate period. Therefore, I cannot provide an answer to the question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide relevant information to answer the question, but it does not address the question at all. Therefore, it is mostly unsupported and lacks relevance."
+  },
+  "retrieved": []
+}

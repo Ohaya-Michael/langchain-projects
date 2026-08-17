@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-02T17:19:26",
+  "question": "months where mortgage rates were highest and how many rental listings there were",
+  "search_query": "months when mortgage rates were highest and the number of rental listings available",
+  "datasource": "real_estate",
+  "answer": "The question pertains to the real-estate domain, specifically regarding mortgage rates and rental listings.\n\nFrom the retrieved documents, the highest mortgage rates were observed in September 2023, with an average mortgage rate of 4.1%. In that month, there were 133 rental listings. \n\nIn comparison, other months had lower mortgage rates: \n- In November 2022, the mortgage rate was 3.4% with 116 rental listings.\n- In April 2023, the mortgage rate was 3.85% with 62 rental listings.\n- In March 2020 and September 2020, the mortgage rates were both 1.1%, with 51 and 181 rental listings, respectively.\n\nThus, September 2023 had the highest mortgage rate and 133 rental listings (Real Estate).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately identifies September 2023 as the month with the highest mortgage rate of 4.1% and correctly states that there were 133 rental listings. All claims made in the answer are supported by the retrieved context."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2020-09. Kiez premium: low. Resale price 3017 EUR/m2, new-construction price 3658 EUR/m2, average cold rent 7.85 EUR/m2/month. Listings this month: 119 resale, 16 new-build, 181 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "kaltmiete_per_m2_monthly_eur": 7.85,
+        "bezirk": "Lichtenberg",
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 3017,
+        "year_month": "2020-09",
+        "source": "kiez_prices_monthly",
+        "avg_mortgage_rate_pct": 1.1,
+        "ortsteil": "Malchow",
+        "kiez_premium": "low"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2023-09. Kiez premium: low. Resale price 3563 EUR/m2, new-construction price 4469 EUR/m2, average cold rent 10.18 EUR/m2/month. Listings this month: 111 resale, 11 new-build, 133 rental. ECB main rate 4.0%, average mortgage rate 4.1%.",
+      "metadata": {
+        "ortsteil": "Malchow",
+        "source": "kiez_prices_monthly",
+        "secondary_price_per_m2_eur": 3563,
+        "year_month": "2023-09",
+        "listing_type": "market_stats",
+        "kiez_premium": "low",
+        "bezirk": "Lichtenberg",
+        "avg_mortgage_rate_pct": 4.1,
+        "kaltmiete_per_m2_monthly_eur": 10.18
+      }
+    },
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2020-03. Kiez premium: low. Resale price 3000 EUR/m2, new-construction price 3845 EUR/m2, average cold rent 7.71 EUR/m2/month. Listings this month: 130 resale, 9 new-build, 51 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "kiez_premium": "low",
+        "year_month": "2020-03",
+        "secondary_price_per_m2_eur": 3000,
+        "listing_type": "market_stats",
+        "bezirk": "Lichtenberg",
+        "avg_mortgage_rate_pct": 1.1,
+        "source": "kiez_prices_monthly",
+        "ortsteil": "Malchow",
+        "kaltmiete_per_m2_monthly_eur": 7.71
+      }
+    },
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2022-11. Kiez premium: low. Resale price 3658 EUR/m2, new-construction price 4594 EUR/m2, average cold rent 9.54 EUR/m2/month. Listings this month: 174 resale, 40 new-build, 116 rental. ECB main rate 2.5%, average mortgage rate 3.4%.",
+      "metadata": {
+        "source": "kiez_prices_monthly",
+        "year_month": "2022-11",
+        "listing_type": "market_stats",
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Malchow",
+        "kaltmiete_per_m2_monthly_eur": 9.54,
+        "kiez_premium": "low",
+        "secondary_price_per_m2_eur": 3658,
+        "avg_mortgage_rate_pct": 3.4
+      }
+    },
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2023-04. Kiez premium: low. Resale price 3661 EUR/m2, new-construction price 4596 EUR/m2, average cold rent 10.05 EUR/m2/month. Listings this month: 96 resale, 19 new-build, 62 rental. ECB main rate 4.0%, average mortgage rate 3.85%.",
+      "metadata": {
+        "listing_type": "market_stats",
+        "secondary_price_per_m2_eur": 3661,
+        "bezirk": "Lichtenberg",
+        "kaltmiete_per_m2_monthly_eur": 10.05,
+        "source": "kiez_prices_monthly",
+        "kiez_premium": "low",
+        "year_month": "2023-04",
+        "ortsteil": "Malchow",
+        "avg_mortgage_rate_pct": 3.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-08-12T22:30:26",
+  "question": "How large is the 2-room family rental in Steglitz in terms of square footage?",
+  "search_query": "What is the square footage of a 2-room family rental in Steglitz?",
+  "datasource": "real_estate",
+  "answer": "The size of the 2-room family rentals in Steglitz varies among the listings. The retrieved documents provide the following square footage for different units:\n\n1. One unit is 47.3 m².\n2. Another unit is 70.8 m².\n3. A third unit is 60.1 m².\n\nThus, the sizes of the 2-room family rentals in Steglitz range from 47.3 m² to 70.8 m² (Real Estate).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the square footage of the 2-room family rentals in Steglitz as provided in the retrieved context, which lists three different sizes. It directly addresses the question about the size of the rentals."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 47.3 m2, floor 0 of 12, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: off_plan_30_70. Nearest transit: Lipschitzallee (U7), 117 min; 8.41 km to Brandenburg Gate. Price: EUR 474,000 (10,030 EUR/m2). Listed 2026-03-31.",
+      "metadata": {
+        "rooms": 2,
+        "source": "new_construction",
+        "completion_year": 2026,
+        "id": "N007842",
+        "developer": "Diamona & Harnisch",
+        "energy_class": "A",
+        "listing_type": "new_construction",
+        "property_type": "2_room",
+        "date_listed": "2026-03-31",
+        "price_eur": 474000,
+        "ortsteil": "Steglitz",
+        "area_m2": 47.3,
+        "price_per_m2_eur": 10030,
+        "bezirk": "Steglitz-Zehlendorf",
+        "project_name": "Suites Steglitz"
+      }
+    },
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 70.8 m2, floor 1 of 4, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Schöneberg S (S Ringbahn), 50 min; 8.41 km to Brandenburg Gate. Price: EUR 655,000 (9,242 EUR/m2). Listed 2023-10-22.",
+      "metadata": {
+        "bezirk": "Steglitz-Zehlendorf",
+        "price_eur": 655000,
+        "completion_year": 2026,
+        "id": "N008069",
+        "source": "new_construction",
+        "area_m2": 70.8,
+        "rooms": 2,
+        "ortsteil": "Steglitz",
+        "developer": "Diamona & Harnisch",
+        "property_type": "2_room",
+        "listing_type": "new_construction",
+        "energy_class": "A",
+        "project_name": "Suites Steglitz",
+        "price_per_m2_eur": 9242,
+        "date_listed": "2023-10-22"
+      }
+    },
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 60.1 m2, floor 0 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Blaschkoallee (U7), 103 min; 8.41 km to Brandenburg Gate. Price: EUR 583,000 (9,712 EUR/m2). Listed 2025-10-01.",
+      "metadata": {
+        "listing_type": "new_construction",
+        "energy_class": "A_plus",
+        "date_listed": "2025-10-01",
+        "id": "N000956",
+        "developer": "Diamona & Harnisch",
+        "area_m2": 60.1,
+        "price_eur": 583000,
+        "ortsteil": "Steglitz",
+        "project_name": "Suites Steglitz",
+        "price_per_m2_eur": 9712,
+        "source": "new_construction",
+        "rooms": 2,
+        "bezirk": "Steglitz-Zehlendorf",
+        "property_type": "2_room",
+        "completion_year": 2026
+      }
+    }
+  ]
+}

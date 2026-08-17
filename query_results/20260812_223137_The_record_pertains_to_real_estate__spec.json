@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-12T22:31:37",
+  "question": "The record pertains to real estate, specifically focusing on resale prices versus new construction in Mitte during a period of high mortgage rates. Here are five questions a user might ask based on this record:",
+  "search_query": "Real estate resale prices compared to new construction prices in Mitte during a period of high mortgage rates.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents provide information on resale prices for apartments in Mitte, Berlin, during a period of varying mortgage rates. \n\n1. **Resale Prices**: The prices for the resale apartments vary significantly based on size, condition, and other attributes. For example:\n   - A 3-room apartment (52.8 m²) built in 2003 is listed for EUR 516,000 (9,778 EUR/m²) at a mortgage rate of 1.1% (listed in August 2021).\n   - A 1-room apartment (32.5 m²) built in 2012 is priced at EUR 252,000 (7,763 EUR/m²) with the same mortgage rate of 1.1% (listed in January 2020).\n   - A smaller 1-room apartment (20.9 m²) built in 1996 is listed for EUR 201,000 (9,656 EUR/m²) at a higher mortgage rate of 3.85% (listed in February 2024).\n   - A larger 3-room apartment (62.2 m²) built in 1995 is priced at EUR 385,000 (6,194 EUR/m²) also at 3.85% (listed in April 2024).\n   - A 4-room apartment (116.8 m²) built in 2000 is listed for EUR 624,000 (5,344 EUR/m²) at the same mortgage rate of 3.85% (also listed in April 2024).\n\n2. **Impact of Mortgage Rates**: The documents indicate that the mortgage rates have increased from 1.1% to 3.85% over the period covered. This increase in mortgage rates may influence the resale prices, as seen in the listings where newer properties tend to have higher prices per square meter compared to older ones, despite the increase in mortgage rates.\n\nIn summary, the resale prices for apartments in Mitte show a range of values influenced by factors such as size, condition, and the prevailing mortgage rates at the time of listing. The data suggests that while newer constructions may command higher prices, the overall market dynamics are also affected by the changing mortgage rates.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, detailing the resale prices of apartments in Mitte and the impact of varying mortgage rates. Each claim made in the answer is supported by specific examples from the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 3-room 3_room, 52.8 m2, on floor 3 of 5, built 2003 (modern_1990_2010). Condition: modernisiert, position: vorderhaus, energy class A. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Klosterstraße (U2), 9 min away; 2.04 km to Brandenburg Gate. Price: EUR 516,000 (9,778 EUR/m2). Listed 2021-08-03 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "kiez_premium": "high",
+        "year_built": 2003,
+        "area_m2": 52.8,
+        "source": "secondary_sales",
+        "price_eur": 516000,
+        "listing_type": "resale",
+        "date_listed": "2021-08-03",
+        "bezirk": "Mitte",
+        "energy_class": "A",
+        "price_per_m2_eur": 9778,
+        "id": "S004686",
+        "property_type": "3_room",
+        "rooms": 3,
+        "ortsteil": "Mitte (Ort)"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 1-room 1_room, 32.5 m2, on floor 4 of 12, built 2012 (new_post_2010). Condition: renoviert, position: gartenhaus, energy class B. Lift: yes, balcony: yes, cellar: no, parking: yes. Nearest transit: Leinestraße (U8), 27 min away; 2.92 km to Brandenburg Gate. Price: EUR 252,000 (7,763 EUR/m2). Listed 2020-01-19 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "kiez_premium": "high",
+        "id": "S037168",
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte",
+        "year_built": 2012,
+        "area_m2": 32.5,
+        "price_eur": 252000,
+        "energy_class": "B",
+        "property_type": "1_room",
+        "date_listed": "2020-01-19",
+        "source": "secondary_sales",
+        "price_per_m2_eur": 7763,
+        "listing_type": "resale",
+        "rooms": 1
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 1-room 1_room, 20.9 m2, on floor 1 of 8, built 1996 (modern_1990_2010). Condition: modernisiert, position: gartenhaus, energy class B. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Alexanderplatz (U2), 11 min away; 1.5 km to Brandenburg Gate. Price: EUR 201,000 (9,656 EUR/m2). Listed 2024-02-03 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "rooms": 1,
+        "price_eur": 201000,
+        "price_per_m2_eur": 9656,
+        "property_type": "1_room",
+        "listing_type": "resale",
+        "id": "S048984",
+        "energy_class": "B",
+        "date_listed": "2024-02-03",
+        "year_built": 1996,
+        "area_m2": 20.9,
+        "kiez_premium": "high",
+        "source": "secondary_sales",
+        "ortsteil": "Mitte (Ort)",
+        "bezirk": "Mitte"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 3-room 3_room, 62.2 m2, on floor 2 of 4, built 1995 (modern_1990_2010). Condition: modernisiert, position: hinterhaus, energy class D. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Kottbusser Tor U8 (U8), 14 min away; 2.51 km to Brandenburg Gate. Price: EUR 385,000 (6,194 EUR/m2). Listed 2024-04-28 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "bezirk": "Mitte",
+        "rooms": 3,
+        "energy_class": "D",
+        "price_per_m2_eur": 6194,
+        "source": "secondary_sales",
+        "year_built": 1995,
+        "price_eur": 385000,
+        "id": "S034465",
+        "ortsteil": "Mitte (Ort)",
+        "date_listed": "2024-04-28",
+        "kiez_premium": "high",
+        "area_m2": 62.2,
+        "property_type": "3_room",
+        "listing_type": "resale"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mitte (Ort), Mitte, Berlin. 4-room 4_room, 116.8 m2, on floor 5 of 6, built 2000 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class E. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 27 min away; 2.01 km to Brandenburg Gate. Price: EUR 624,000 (5,344 EUR/m2). Listed 2024-04-16 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "price_per_m2_eur": 5344,
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "date_listed": "2024-04-16",
+        "energy_class": "E",
+        "ortsteil": "Mitte (Ort)",
+        "rooms": 4,
+        "price_eur": 624000,
+        "kiez_premium": "high",
+        "bezirk": "Mitte",
+        "id": "S007528",
+        "property_type": "4_room",
+        "area_m2": 116.8,
+        "year_built": 2000
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-12T22:30:47",
+  "question": "The record pertains to real estate, specifically rental market data. Here are five questions a user might ask based on the retrieved record:",
+  "search_query": "Real estate rental market data inquiries.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents provide rental market data for Waidmannslust, Reinickendorf, Berlin over several months. Here are the key insights regarding average cold rent and rental listings:\n\n1. **Average Cold Rent**:\n   - In February 2020, the average cold rent was **10.14 EUR/m²/month**.\n   - By May 2021, it slightly decreased to **10.06 EUR/m²/month**.\n   - In February 2022, it increased to **10.56 EUR/m²/month**.\n   - By May 2022, it decreased again to **9.85 EUR/m²/month**.\n   - In July 2025, the average cold rent rose significantly to **13.23 EUR/m²/month**.\n\n2. **Rental Listings**:\n   - The number of rental listings varied over the months:\n     - February 2020: **47 rental listings**\n     - May 2021: **198 rental listings**\n     - February 2022: **207 rental listings**\n     - May 2022: **163 rental listings**\n     - July 2025: **176 rental listings**\n\nOverall, the data indicates fluctuations in average cold rent and the number of rental listings over the specified periods, with a notable increase in average rent by 2025 compared to earlier years.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the rental market data provided in the retrieved context, including specific figures for average cold rent and rental listings over the specified months. All claims made in the answer are directly supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Waidmannslust, Reinickendorf, Berlin in 2020-02. Kiez premium: low. Resale price 3650 EUR/m2, new-construction price 4466 EUR/m2, average cold rent 10.14 EUR/m2/month. Listings this month: 178 resale, 42 new-build, 47 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "avg_mortgage_rate_pct": 1.1,
+        "year_month": "2020-02",
+        "bezirk": "Reinickendorf",
+        "ortsteil": "Waidmannslust",
+        "listing_type": "market_stats",
+        "kaltmiete_per_m2_monthly_eur": 10.14,
+        "kiez_premium": "low",
+        "source": "kiez_prices_monthly",
+        "secondary_price_per_m2_eur": 3650
+      }
+    },
+    {
+      "content": "Monthly market statistics for Waidmannslust, Reinickendorf, Berlin in 2022-05. Kiez premium: low. Resale price 3986 EUR/m2, new-construction price 5018 EUR/m2, average cold rent 9.85 EUR/m2/month. Listings this month: 157 resale, 45 new-build, 163 rental. ECB main rate 0.0%, average mortgage rate 1.8%.",
+      "metadata": {
+        "source": "kiez_prices_monthly",
+        "kiez_premium": "low",
+        "ortsteil": "Waidmannslust",
+        "kaltmiete_per_m2_monthly_eur": 9.85,
+        "listing_type": "market_stats",
+        "avg_mortgage_rate_pct": 1.8,
+        "secondary_price_per_m2_eur": 3986,
+        "bezirk": "Reinickendorf",
+        "year_month": "2022-05"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Waidmannslust, Reinickendorf, Berlin in 2022-02. Kiez premium: low. Resale price 4472 EUR/m2, new-construction price 5686 EUR/m2, average cold rent 10.56 EUR/m2/month. Listings this month: 57 resale, 5 new-build, 207 rental. ECB main rate 0.0%, average mortgage rate 1.8%.",
+      "metadata": {
+        "ortsteil": "Waidmannslust",
+        "avg_mortgage_rate_pct": 1.8,
+        "year_month": "2022-02",
+        "listing_type": "market_stats",
+        "kaltmiete_per_m2_monthly_eur": 10.56,
+        "kiez_premium": "low",
+        "source": "kiez_prices_monthly",
+        "bezirk": "Reinickendorf",
+        "secondary_price_per_m2_eur": 4472
+      }
+    },
+    {
+      "content": "Monthly market statistics for Waidmannslust, Reinickendorf, Berlin in 2025-07. Kiez premium: low. Resale price 4412 EUR/m2, new-construction price 5417 EUR/m2, average cold rent 13.23 EUR/m2/month. Listings this month: 31 resale, 48 new-build, 176 rental. ECB main rate 2.75%, average mortgage rate 3.1%.",
+      "metadata": {
+        "secondary_price_per_m2_eur": 4412,
+        "kaltmiete_per_m2_monthly_eur": 13.23,
+        "source": "kiez_prices_monthly",
+        "listing_type": "market_stats",
+        "bezirk": "Reinickendorf",
+        "year_month": "2025-07",
+        "kiez_premium": "low",
+        "avg_mortgage_rate_pct": 3.1,
+        "ortsteil": "Waidmannslust"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Waidmannslust, Reinickendorf, Berlin in 2021-05. Kiez premium: low. Resale price 3822 EUR/m2, new-construction price 4767 EUR/m2, average cold rent 10.06 EUR/m2/month. Listings this month: 35 resale, 11 new-build, 198 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "ortsteil": "Waidmannslust",
+        "avg_mortgage_rate_pct": 1.1,
+        "secondary_price_per_m2_eur": 3822,
+        "year_month": "2021-05",
+        "kaltmiete_per_m2_monthly_eur": 10.06,
+        "kiez_premium": "low",
+        "listing_type": "market_stats",
+        "bezirk": "Reinickendorf",
+        "source": "kiez_prices_monthly"
+      }
+    }
+  ]
+}

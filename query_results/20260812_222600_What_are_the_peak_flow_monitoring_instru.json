@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:26:00",
+  "question": "What are the peak flow monitoring instructions outlined in the treatment plan?",
+  "search_query": "Peak flow monitoring instructions in the treatment plan.",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain any relevant information regarding peak flow monitoring instructions or treatment plans. Therefore, I cannot provide an answer to the question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not contain relevant information about peak flow monitoring instructions, but it does not provide any information that could be inferred or summarized from the context, leading to a low faithfulness score."
+  },
+  "retrieved": []
+}

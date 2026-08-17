@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-12T22:39:36",
+  "question": "What is the average size of 2-room rentals available near U-Bahn in Kreuzberg?",
+  "search_query": "Average size of 2-room rentals near U-Bahn in Kreuzberg",
+  "datasource": "real_estate",
+  "answer": "The average size of 2-room rentals available near U-Bahn in Kreuzberg, based on the retrieved documents, is calculated from the two listings provided. \n\n1. The first rental apartment is 42.7 m².\n2. The second rental apartment is 63.9 m².\n\nTo find the average size, we add the two sizes together and divide by the number of listings:\n\n(42.7 m² + 63.9 m²) / 2 = 53.3 m².\n\nTherefore, the average size of 2-room rentals available near U-Bahn in Kreuzberg is 53.3 m².",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately calculates the average size of 2-room rentals based on the sizes provided in the retrieved context, which are 42.7 m² and 63.9 m². All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 2-room 2_room, 42.7 m2, floor 1 of 6, modern_1990_2010, condition kernsaniert, position vorderhaus, energy class C. Furnished: no, lift: yes, balcony: no. Nearest transit: Klosterstraße (U2), 27 min; 2.36 km to Brandenburg Gate. Kaltmiete EUR 1123/month, Nebenkosten EUR 154, Warmmiete EUR 1277/month (26.3 EUR/m2 kalt). Deposit: 2 months. Listed 2025-01-02.",
+      "metadata": {
+        "area_m2": 42.7,
+        "rent_per_m2_kalt_eur": 26.3,
+        "property_type": "2_room",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "listing_type": "rental",
+        "kiez_premium": "high",
+        "source": "rentals",
+        "ortsteil": "Kreuzberg",
+        "energy_class": "C",
+        "rooms": 2,
+        "id": "R016287",
+        "date_listed": "2025-01-02",
+        "kaltmiete_eur_monthly": 1123,
+        "warmmiete_eur_monthly": 1277,
+        "furnished": "False"
+      }
+    },
+    {
+      "content": "Rental apartment in Kreuzberg, Friedrichshain-Kreuzberg, Berlin. 2-room 2_room, 63.9 m2, floor 5 of 6, altbau_pre_1949, condition modernisiert, position vorderhaus, energy class G. Furnished: no, lift: no, balcony: no. Nearest transit: Berlin Hauptbahnhof (Stadtbahn), 44 min; 3.27 km to Brandenburg Gate. Kaltmiete EUR 716/month, Nebenkosten EUR 171, Warmmiete EUR 887/month (11.21 EUR/m2 kalt). Deposit: 2 months. Listed 2021-07-14.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 11.21,
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "property_type": "2_room",
+        "furnished": "False",
+        "area_m2": 63.9,
+        "ortsteil": "Kreuzberg",
+        "source": "rentals",
+        "listing_type": "rental",
+        "kiez_premium": "high",
+        "kaltmiete_eur_monthly": 716,
+        "warmmiete_eur_monthly": 887,
+        "id": "R017702",
+        "energy_class": "G",
+        "rooms": 2,
+        "date_listed": "2021-07-14"
+      }
+    }
+  ]
+}

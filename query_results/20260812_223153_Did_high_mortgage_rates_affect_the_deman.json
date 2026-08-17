@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:31:53",
+  "question": "Did high mortgage rates affect the demand for resale properties versus new construction in Mitte?",
+  "search_query": "Impact of high mortgage rates on demand for resale properties compared to new construction in Mitte.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any relevant information regarding the impact of high mortgage rates on the demand for resale properties versus new construction in Mitte. Therefore, I cannot provide an answer to this question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context does not provide information on the impact of high mortgage rates on demand for resale versus new construction properties in Mitte. However, it does not attempt to answer the question, which affects its relevance."
+  },
+  "retrieved": []
+}

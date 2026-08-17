@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-08-12T22:25:55",
+  "question": "How often should the patient follow up with their healthcare provider regarding their asthma management?",
+  "search_query": "What is the recommended frequency for patients to follow up with their healthcare provider for asthma management?",
+  "datasource": "medical",
+  "answer": "The retrieved document does not specify how often the patient should follow up with their healthcare provider regarding asthma management. It includes a care plan for asthma self-management but lacks specific follow-up frequency recommendations. Therefore, I cannot provide an answer based on the available information.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of specific follow-up frequency in the retrieved context, which discusses the patient's asthma management plan but does not provide details on follow-up appointments."
+  },
+  "retrieved": [
+    {
+      "content": "Encounter: Encounter for symptom (procedure) on 2002-09-13.\nConditions: Childhood asthma (disorder).\nMedications: budesonide 0.125 MG/ML Inhalation Suspension, NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin].\nBilled: $85.55 to Cigna Health.\n\nClinical note:\n2002-09-13\r\n\r\n# Chief Complaint\r\nNo complaints.\r\n\r\n# History of Present Illness\r\nGaylord332 is a 4 year-old nonhispanic white male.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a middle socioeconomic background.\r\n\r\nPatient currently has Cigna Health.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with childhood asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- budesonide 0.125 mg/ml inhalation suspension\r\n- nda020983 200 actuat albuterol 0.09 mg/actuat metered dose inhaler [ventolin]\r\nThe patient was placed on a careplan:\r\n- asthma self management (regime/therapy)",
+      "metadata": {
+        "patient_name": "Gaylord332 Darryl392 Nolan344",
+        "insurer": "Cigna Health",
+        "date": "2002-09-13",
+        "data_source": "synthea",
+        "birth_date": "1997-11-25",
+        "total_billed": 85.55,
+        "encounter_type": "Encounter for symptom (procedure)",
+        "state": "MA",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "source_file": "Gaylord332_Nolan344_aa430f1c-a4b3-18d0-e175-18afe1030694.json",
+        "encounter_id": "aa430f1c-a4b3-18d0-6af6-cbbb7a1dbd7b",
+        "gender": "male",
+        "patient_id": "aa430f1c-a4b3-18d0-e175-18afe1030694"
+      }
+    }
+  ]
+}

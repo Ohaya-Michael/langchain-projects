@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:26:33",
+  "question": "Are there specific procedures for which COPD patients receive higher reimbursement rates?",
+  "search_query": "What specific procedures result in higher reimbursement rates for patients with COPD (chronic obstructive pulmonary disease)?",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain specific information regarding procedures for which COPD patients receive higher reimbursement rates. Therefore, I cannot provide an answer to this question based on the available sources.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of specific information in the retrieved context regarding COPD patients and reimbursement rates, making it fully supported and relevant."
+  },
+  "retrieved": []
+}

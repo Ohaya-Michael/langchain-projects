@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-12T22:28:43",
+  "question": "What is the monthly rent for the furnished 1-room flat in Prenzlauer Berg?",
+  "search_query": "What is the monthly rent for a furnished one-room flat in Prenzlauer Berg?",
+  "datasource": "real_estate",
+  "answer": "The monthly rent for the furnished 1-room flat in Prenzlauer Berg is not explicitly provided in the retrieved document. However, there is a listing for a 2-room flat in the same area with a Kaltmiete (base rent) of EUR 688 per month and a Warmmiete (total rent including utilities) of EUR 939 per month (Real Estate). Since the question specifically asks about a furnished 1-room flat, and the retrieved document does not contain that specific information, I cannot provide the exact monthly rent for the requested flat.",
+  "evaluation": {
+    "faithfulness": 2,
+    "answer_relevance": 4,
+    "context_relevance": 3,
+    "hallucinated": false,
+    "rationale": "The answer acknowledges that the specific rent for a furnished 1-room flat is not provided in the context, which is accurate. However, it incorrectly implies that the information about the 2-room flat is relevant to the question about a 1-room flat, leading to a lower faithfulness score. The answer is relevant to the question but does not directly answer it."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Prenzlauer Berg, Pankow, Berlin. 2-room 2_room, 46.9 m2, floor 0 of 6, altbau_pre_1949, condition saniert, position vorderhaus, energy class H. Furnished: no, lift: no, balcony: no. Nearest transit: Bernauer Straße (U8), 25 min; 3.82 km to Brandenburg Gate. Kaltmiete EUR 688/month, Nebenkosten EUR 251, Warmmiete EUR 939/month (14.66 EUR/m2 kalt). Deposit: 3 months. Listed 2023-07-15.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 14.66,
+        "id": "R028912",
+        "property_type": "2_room",
+        "rooms": 2,
+        "energy_class": "H",
+        "kaltmiete_eur_monthly": 688,
+        "listing_type": "rental",
+        "furnished": "False",
+        "ortsteil": "Prenzlauer Berg",
+        "kiez_premium": "high",
+        "source": "rentals",
+        "area_m2": 46.9,
+        "date_listed": "2023-07-15",
+        "warmmiete_eur_monthly": 939,
+        "bezirk": "Pankow"
+      }
+    }
+  ]
+}

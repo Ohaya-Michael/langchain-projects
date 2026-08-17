@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:30:38",
+  "question": "Are there any nearby schools or parks that would be convenient for families living in Steglitz?",
+  "search_query": "Nearby schools and parks convenient for families living in Steglitz.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any information regarding nearby schools or parks in Steglitz. Therefore, I cannot provide an answer to your question.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that there is no information in the retrieved context about nearby schools or parks in Steglitz, but it does not provide any relevant information or alternative suggestions, making it mostly unsupported."
+  },
+  "retrieved": []
+}

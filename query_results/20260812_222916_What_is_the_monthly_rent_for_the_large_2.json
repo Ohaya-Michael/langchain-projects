@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-12T22:29:16",
+  "question": "What is the monthly rent for the large 2-room family rental in Steglitz with a balcony and lift?",
+  "search_query": "Monthly rent for a large 2-room family rental in Steglitz with a balcony and elevator.",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not provide specific information about the monthly rent for a large 2-room family rental in Steglitz with a balcony and lift. The first document describes a new construction project with a 2-room apartment but does not mention rental prices, while the second document details a 3-room apartment with different specifications and a known rental price. Therefore, I cannot provide the requested information about the 2-room rental.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 4,
+    "hallucinated": false,
+    "rationale": "The answer accurately states that the retrieved context does not provide specific information about the monthly rent for a large 2-room family rental with a balcony and lift. It correctly identifies the lack of relevant rental price information in the context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 47.3 m2, floor 0 of 12, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: off_plan_30_70. Nearest transit: Lipschitzallee (U7), 117 min; 8.41 km to Brandenburg Gate. Price: EUR 474,000 (10,030 EUR/m2). Listed 2026-03-31.",
+      "metadata": {
+        "property_type": "2_room",
+        "area_m2": 47.3,
+        "project_name": "Suites Steglitz",
+        "completion_year": 2026,
+        "bezirk": "Steglitz-Zehlendorf",
+        "source": "new_construction",
+        "date_listed": "2026-03-31",
+        "price_eur": 474000,
+        "id": "N007842",
+        "rooms": 2,
+        "energy_class": "A",
+        "developer": "Diamona & Harnisch",
+        "ortsteil": "Steglitz",
+        "listing_type": "new_construction",
+        "price_per_m2_eur": 10030
+      }
+    },
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 3-room 3_room, 74.7 m2, floor 1 of 3, modern_1990_2010, condition modernisiert, position vorderhaus, energy class B. Furnished: yes, lift: yes, balcony: no. Nearest transit: Lipschitzallee (U7), 115 min; 8.3 km to Brandenburg Gate. Kaltmiete EUR 1559/month, Nebenkosten EUR 291, Warmmiete EUR 1850/month (20.85 EUR/m2 kalt). Deposit: 3 months. Listed 2020-01-25.",
+      "metadata": {
+        "id": "R012134",
+        "listing_type": "rental",
+        "kiez_premium": "medium",
+        "furnished": "True",
+        "area_m2": 74.7,
+        "rent_per_m2_kalt_eur": 20.85,
+        "date_listed": "2020-01-25",
+        "warmmiete_eur_monthly": 1850,
+        "kaltmiete_eur_monthly": 1559,
+        "bezirk": "Steglitz-Zehlendorf",
+        "rooms": 3,
+        "property_type": "3_room",
+        "ortsteil": "Steglitz",
+        "source": "rentals",
+        "energy_class": "B"
+      }
+    }
+  ]
+}

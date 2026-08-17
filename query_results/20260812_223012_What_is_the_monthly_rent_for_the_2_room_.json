@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-08-12T22:30:12",
+  "question": "What is the monthly rent for the 2-room family rental in Steglitz?",
+  "search_query": "What is the monthly rent for a 2-room family rental in Steglitz?",
+  "datasource": "real_estate",
+  "answer": "The monthly rent for the 2-room family rental in Steglitz is as follows: the Kaltmiete (base rent) is EUR 562, the Nebenkosten (additional costs) are EUR 170, and the Warmmiete (total rent including additional costs) is EUR 733 (source: unknown).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the information provided in the retrieved context about the 2-room rental in Steglitz, including the Kaltmiete, Nebenkosten, and Warmmiete."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 3-room 3_room, 74.7 m2, floor 1 of 3, modern_1990_2010, condition modernisiert, position vorderhaus, energy class B. Furnished: yes, lift: yes, balcony: no. Nearest transit: Lipschitzallee (U7), 115 min; 8.3 km to Brandenburg Gate. Kaltmiete EUR 1559/month, Nebenkosten EUR 291, Warmmiete EUR 1850/month (20.85 EUR/m2 kalt). Deposit: 3 months. Listed 2020-01-25.",
+      "metadata": {
+        "ortsteil": "Steglitz",
+        "listing_type": "rental",
+        "furnished": "True",
+        "warmmiete_eur_monthly": 1850,
+        "source": "rentals",
+        "bezirk": "Steglitz-Zehlendorf",
+        "kiez_premium": "medium",
+        "rent_per_m2_kalt_eur": 20.85,
+        "id": "R012134",
+        "property_type": "3_room",
+        "date_listed": "2020-01-25",
+        "rooms": 3,
+        "area_m2": 74.7,
+        "kaltmiete_eur_monthly": 1559,
+        "energy_class": "B"
+      }
+    },
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 2-room 2_room, 46.5 m2, floor 1 of 5, modern_1990_2010, condition kernsaniert, position vorderhaus, energy class F. Furnished: no, lift: yes, balcony: yes. Nearest transit: Hallesches Tor (U1), 73 min; 8.0 km to Brandenburg Gate. Kaltmiete EUR 562/month, Nebenkosten EUR 170, Warmmiete EUR 733/month (12.09 EUR/m2 kalt). Deposit: 3 months. Listed 2020-03-11.",
+      "metadata": {
+        "ortsteil": "Steglitz",
+        "source": "rentals",
+        "date_listed": "2020-03-11",
+        "bezirk": "Steglitz-Zehlendorf",
+        "kaltmiete_eur_monthly": 562,
+        "area_m2": 46.5,
+        "listing_type": "rental",
+        "furnished": "False",
+        "energy_class": "F",
+        "rent_per_m2_kalt_eur": 12.09,
+        "kiez_premium": "medium",
+        "rooms": 2,
+        "warmmiete_eur_monthly": 733,
+        "id": "R008587",
+        "property_type": "2_room"
+      }
+    },
+    {
+      "content": "Rental apartment in Steglitz, Steglitz-Zehlendorf, Berlin. 3-room 3_room, 53.8 m2, floor 1 of 3, modern_1990_2010, condition modernisiert, position hinterhaus, energy class C. Furnished: no, lift: yes, balcony: no. Nearest transit: Lichterfelde West (S1), 54 min; 6.44 km to Brandenburg Gate. Kaltmiete EUR 824/month, Nebenkosten EUR 270, Warmmiete EUR 1094/month (15.31 EUR/m2 kalt). Deposit: 2 months. Listed 2023-11-03.",
+      "metadata": {
+        "warmmiete_eur_monthly": 1094,
+        "rent_per_m2_kalt_eur": 15.31,
+        "property_type": "3_room",
+        "source": "rentals",
+        "listing_type": "rental",
+        "furnished": "False",
+        "id": "R028169",
+        "rooms": 3,
+        "bezirk": "Steglitz-Zehlendorf",
+        "kaltmiete_eur_monthly": 824,
+        "date_listed": "2023-11-03",
+        "ortsteil": "Steglitz",
+        "energy_class": "C",
+        "area_m2": 53.8,
+        "kiez_premium": "medium"
+      }
+    }
+  ]
+}

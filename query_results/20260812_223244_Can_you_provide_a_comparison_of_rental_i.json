@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-12T22:32:44",
+  "question": "Can you provide a comparison of rental inventory levels during the highest mortgage rate months?",
+  "search_query": "Comparison of rental inventory levels during months with the highest mortgage interest rates",
+  "datasource": "real_estate",
+  "answer": "The question pertains to the real estate domain, specifically regarding rental inventory levels during the highest mortgage rate months. \n\nFrom the retrieved documents, we can identify the following relevant data points:\n\n1. In September 2023, the average mortgage rate was 4.1%, which is significantly higher compared to previous years. During this month, there were 133 rental listings in Malchow, Lichtenberg, Berlin (source: September 2023 statistics).\n\n2. In earlier months with lower mortgage rates, such as March 2020, the average mortgage rate was 1.1%, and there were 163 rental listings in Hohenschönhausen, Lichtenberg, Berlin (source: March 2020 statistics). \n\n3. In January 2021, with the same mortgage rate of 1.1%, there were 126 rental listings (source: January 2021 statistics). \n\n4. In September 2021, again with a mortgage rate of 1.1%, there were 199 rental listings (source: September 2021 statistics).\n\nFrom this data, we can observe that during the highest mortgage rate month (September 2023), the rental inventory was 133 listings. In contrast, during months with a much lower mortgage rate (1.1%), the rental inventory varied, with 163 listings in March 2020, 126 in January 2021, and 199 in September 2021. \n\nThis suggests that higher mortgage rates may correlate with lower rental inventory levels, but further analysis would be needed to establish a definitive trend.",
+  "evaluation": {
+    "faithfulness": 3,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately references the rental inventory levels during the highest mortgage rate month (September 2023) and compares it with months of lower mortgage rates. However, it makes a claim about a correlation between higher mortgage rates and lower rental inventory levels that is not explicitly supported by the context provided."
+  },
+  "retrieved": [
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2020-09. Kiez premium: low. Resale price 3017 EUR/m2, new-construction price 3658 EUR/m2, average cold rent 7.85 EUR/m2/month. Listings this month: 119 resale, 16 new-build, 181 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "source": "kiez_prices_monthly",
+        "ortsteil": "Malchow",
+        "year_month": "2020-09",
+        "secondary_price_per_m2_eur": 3017,
+        "avg_mortgage_rate_pct": 1.1,
+        "kiez_premium": "low",
+        "listing_type": "market_stats",
+        "bezirk": "Lichtenberg",
+        "kaltmiete_per_m2_monthly_eur": 7.85
+      }
+    },
+    {
+      "content": "Monthly market statistics for Hohenschönhausen, Lichtenberg, Berlin in 2020-03. Kiez premium: low. Resale price 3281 EUR/m2, new-construction price 4119 EUR/m2, average cold rent 8.43 EUR/m2/month. Listings this month: 110 resale, 19 new-build, 163 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "kaltmiete_per_m2_monthly_eur": 8.43,
+        "kiez_premium": "low",
+        "avg_mortgage_rate_pct": 1.1,
+        "ortsteil": "Hohenschönhausen",
+        "year_month": "2020-03",
+        "secondary_price_per_m2_eur": 3281,
+        "source": "kiez_prices_monthly",
+        "listing_type": "market_stats",
+        "bezirk": "Lichtenberg"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Hohenschönhausen, Lichtenberg, Berlin in 2021-01. Kiez premium: low. Resale price 3402 EUR/m2, new-construction price 4412 EUR/m2, average cold rent 7.98 EUR/m2/month. Listings this month: 21 resale, 22 new-build, 126 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "secondary_price_per_m2_eur": 3402,
+        "listing_type": "market_stats",
+        "source": "kiez_prices_monthly",
+        "year_month": "2021-01",
+        "kiez_premium": "low",
+        "ortsteil": "Hohenschönhausen",
+        "avg_mortgage_rate_pct": 1.1,
+        "bezirk": "Lichtenberg",
+        "kaltmiete_per_m2_monthly_eur": 7.98
+      }
+    },
+    {
+      "content": "Monthly market statistics for Malchow, Lichtenberg, Berlin in 2023-09. Kiez premium: low. Resale price 3563 EUR/m2, new-construction price 4469 EUR/m2, average cold rent 10.18 EUR/m2/month. Listings this month: 111 resale, 11 new-build, 133 rental. ECB main rate 4.0%, average mortgage rate 4.1%.",
+      "metadata": {
+        "avg_mortgage_rate_pct": 4.1,
+        "source": "kiez_prices_monthly",
+        "year_month": "2023-09",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "secondary_price_per_m2_eur": 3563,
+        "ortsteil": "Malchow",
+        "kaltmiete_per_m2_monthly_eur": 10.18,
+        "listing_type": "market_stats"
+      }
+    },
+    {
+      "content": "Monthly market statistics for Hohenschönhausen, Lichtenberg, Berlin in 2021-09. Kiez premium: low. Resale price 3576 EUR/m2, new-construction price 4557 EUR/m2, average cold rent 9.41 EUR/m2/month. Listings this month: 98 resale, 48 new-build, 199 rental. ECB main rate 0.0%, average mortgage rate 1.1%.",
+      "metadata": {
+        "ortsteil": "Hohenschönhausen",
+        "secondary_price_per_m2_eur": 3576,
+        "kaltmiete_per_m2_monthly_eur": 9.41,
+        "kiez_premium": "low",
+        "bezirk": "Lichtenberg",
+        "source": "kiez_prices_monthly",
+        "listing_type": "market_stats",
+        "avg_mortgage_rate_pct": 1.1,
+        "year_month": "2021-09"
+      }
+    }
+  ]
+}

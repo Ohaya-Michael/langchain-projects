@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-12T22:29:52",
+  "question": "What amenities are included with the 2-room family rental in Steglitz besides the balcony and lift?",
+  "search_query": "Amenities included with the 2-room family rental in Steglitz (Berlin, Germany) besides the balcony and lift.",
+  "datasource": "real_estate",
+  "answer": "The 2-room family rental in Steglitz includes several amenities besides the balcony and lift. Specifically, it also offers parking (source: unknown).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately lists parking as an amenity included with the 2-room family rental, which is explicitly mentioned in the retrieved context. It directly addresses the question about additional amenities."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 1-room 1_room, 36.7 m2, floor 2 of 12, energy class B. Lift: yes, balcony: yes, parking: yes. Payment plan: off_plan_30_70. Nearest transit: Lichterfelde West (S1), 39 min; 8.41 km to Brandenburg Gate. Price: EUR 340,000 (9,263 EUR/m2). Listed 2024-11-26.",
+      "metadata": {
+        "energy_class": "B",
+        "developer": "Diamona & Harnisch",
+        "rooms": 1,
+        "completion_year": 2026,
+        "price_per_m2_eur": 9263,
+        "bezirk": "Steglitz-Zehlendorf",
+        "price_eur": 340000,
+        "id": "N008564",
+        "area_m2": 36.7,
+        "project_name": "Suites Steglitz",
+        "property_type": "1_room",
+        "date_listed": "2024-11-26",
+        "source": "new_construction",
+        "ortsteil": "Steglitz",
+        "listing_type": "new_construction"
+      }
+    }
+  ]
+}

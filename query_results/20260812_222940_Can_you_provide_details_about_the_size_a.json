@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-12T22:29:40",
+  "question": "Can you provide details about the size and layout of the 2-room family rental in Steglitz?",
+  "search_query": "Details about the size and layout of a 2-room family rental in Steglitz.",
+  "datasource": "real_estate",
+  "answer": "The details about the 2-room family rentals in Steglitz are as follows:\n\n1. **First Apartment**:\n   - Size: 47.3 m²\n   - Layout: 2 rooms\n   - Floor: 0 of 12\n   - Energy Class: A\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: No\n   - Payment Plan: Off-plan (30% upfront, 70% later)\n   - Nearest Transit: Lipschitzallee (U7), 117 min to Brandenburg Gate\n   - Price: EUR 474,000 (10,030 EUR/m²)\n   - Listing Date: March 31, 2026\n\n2. **Second Apartment**:\n   - Size: 60.1 m²\n   - Layout: 2 rooms\n   - Floor: 0 of 4\n   - Energy Class: A+\n   - Lift: Yes\n   - Balcony: Yes\n   - Parking: No\n   - Payment Plan: Quarterly tranches\n   - Nearest Transit: Blaschkoallee (U7), 103 min to Brandenburg Gate\n   - Price: EUR 583,000 (9,712 EUR/m²)\n   - Listing Date: October 1, 2025\n\nThese apartments are part of the 'Suites Steglitz' project by developer Diamona & Harnisch, which is currently under construction and expected to be completed in 2026.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer provides detailed information about two 2-room family rentals in Steglitz, including size, layout, floor, energy class, lift availability, balcony, parking, payment plan, nearest transit, price, and listing date, all of which are directly supported by the retrieved context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 47.3 m2, floor 0 of 12, energy class A. Lift: yes, balcony: yes, parking: no. Payment plan: off_plan_30_70. Nearest transit: Lipschitzallee (U7), 117 min; 8.41 km to Brandenburg Gate. Price: EUR 474,000 (10,030 EUR/m2). Listed 2026-03-31.",
+      "metadata": {
+        "project_name": "Suites Steglitz",
+        "completion_year": 2026,
+        "property_type": "2_room",
+        "id": "N007842",
+        "source": "new_construction",
+        "rooms": 2,
+        "area_m2": 47.3,
+        "price_per_m2_eur": 10030,
+        "price_eur": 474000,
+        "energy_class": "A",
+        "listing_type": "new_construction",
+        "bezirk": "Steglitz-Zehlendorf",
+        "ortsteil": "Steglitz",
+        "date_listed": "2026-03-31",
+        "developer": "Diamona & Harnisch"
+      }
+    },
+    {
+      "content": "New-construction apartment in Steglitz, Steglitz-Zehlendorf, Berlin. Project 'Suites Steglitz' by developer Diamona & Harnisch (500 units, completion 2026, status under_construction). 2-room 2_room, 60.1 m2, floor 0 of 4, energy class A_plus. Lift: yes, balcony: yes, parking: no. Payment plan: tranches_quarterly. Nearest transit: Blaschkoallee (U7), 103 min; 8.41 km to Brandenburg Gate. Price: EUR 583,000 (9,712 EUR/m2). Listed 2025-10-01.",
+      "metadata": {
+        "source": "new_construction",
+        "id": "N000956",
+        "energy_class": "A_plus",
+        "bezirk": "Steglitz-Zehlendorf",
+        "date_listed": "2025-10-01",
+        "rooms": 2,
+        "listing_type": "new_construction",
+        "completion_year": 2026,
+        "developer": "Diamona & Harnisch",
+        "ortsteil": "Steglitz",
+        "price_eur": 583000,
+        "area_m2": 60.1,
+        "price_per_m2_eur": 9712,
+        "project_name": "Suites Steglitz",
+        "property_type": "2_room"
+      }
+    }
+  ]
+}

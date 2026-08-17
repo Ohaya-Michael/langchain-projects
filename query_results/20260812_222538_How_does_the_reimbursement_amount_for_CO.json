@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:25:38",
+  "question": "How does the reimbursement amount for COPD compare to other respiratory conditions in similar claims?",
+  "search_query": "Comparison of reimbursement amounts for COPD (chronic obstructive pulmonary disease) versus other respiratory conditions in similar claims.",
+  "datasource": "medical",
+  "answer": "The retrieved documents do not contain enough relevant information to answer the question about the reimbursement amount for COPD compared to other respiratory conditions in similar claims. There are no specific details or comparisons provided regarding reimbursement amounts for COPD or other respiratory conditions in the available sources.",
+  "evaluation": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer correctly states that the retrieved context lacks relevant information to compare reimbursement amounts for COPD with other respiratory conditions. However, it does not provide any claims or details that could be inferred from the context, leading to a low faithfulness score."
+  },
+  "retrieved": []
+}

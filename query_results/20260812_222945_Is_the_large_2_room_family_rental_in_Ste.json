@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:29:45",
+  "question": "Is the large 2-room family rental in Steglitz currently available for immediate move-in?",
+  "search_query": "Is the large two-room family rental in Steglitz currently available for immediate move-in?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not contain any information regarding the availability of a large 2-room family rental in Steglitz for immediate move-in. Therefore, I cannot provide an answer to your question.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of information in the retrieved context regarding the availability of the rental, thus it is fully supported and directly addresses the question."
+  },
+  "retrieved": []
+}

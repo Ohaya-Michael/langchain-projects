@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-08-12T22:27:57",
+  "question": "Can you provide details about the parking options available for residents in this new development?",
+  "search_query": "Parking options available for residents in the new development.",
+  "datasource": "real_estate",
+  "answer": "The new development \"Domizil Köpenick\" in Treptow-Köpenick, Berlin, offers parking options for residents in all listed units. Each of the retrieved documents indicates that the apartments come with parking availability. \n\n1. The first apartment is a 2-room unit of 66.0 m² with parking included.\n2. The second apartment is a 2-room unit of 57.7 m², also with parking.\n3. The third apartment is a 2-room unit of 60.5 m², which includes parking as well.\n4. The fourth apartment is a larger 5-room unit of 142.3 m², and it too has parking available.\n\nThus, residents of this development can expect parking options as part of their living arrangements (Real Estate).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the parking options available for residents in the 'Domizil Köpenick' development, as all retrieved contexts confirm that each listed apartment includes parking. The details provided in the answer are fully supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "New-construction apartment in Köpenick (Ort), Treptow-Köpenick, Berlin. Project 'Domizil Köpenick' by developer Groth Gruppe (120 units, completion 2028, status completed). 2-room 2_room, 66.0 m2, floor 2 of 12, energy class B. Lift: yes, balcony: yes, parking: yes. Payment plan: full_at_handover. Nearest transit: Treptower Park (S Ringbahn), 123 min; 16.27 km to Brandenburg Gate. Price: EUR 462,000 (6,998 EUR/m2). Listed 2024-07-16.",
+      "metadata": {
+        "completion_year": 2028,
+        "area_m2": 66.0,
+        "price_eur": 462000,
+        "ortsteil": "Köpenick (Ort)",
+        "bezirk": "Treptow-Köpenick",
+        "date_listed": "2024-07-16",
+        "source": "new_construction",
+        "project_name": "Domizil Köpenick",
+        "price_per_m2_eur": 6998,
+        "energy_class": "B",
+        "developer": "Groth Gruppe",
+        "id": "N004248",
+        "property_type": "2_room",
+        "rooms": 2,
+        "listing_type": "new_construction"
+      }
+    },
+    {
+      "content": "New-construction apartment in Köpenick (Ort), Treptow-Köpenick, Berlin. Project 'Domizil Köpenick' by developer Groth Gruppe (120 units, completion 2028, status under_construction). 2-room 2_room, 57.7 m2, floor 3 of 5, energy class A. Lift: no, balcony: yes, parking: yes. Payment plan: 70_30. Nearest transit: Landsberger Allee (S Ringbahn), 144 min; 16.27 km to Brandenburg Gate. Price: EUR 401,000 (6,960 EUR/m2). Listed 2025-03-11.",
+      "metadata": {
+        "area_m2": 57.7,
+        "energy_class": "A",
+        "listing_type": "new_construction",
+        "project_name": "Domizil Köpenick",
+        "rooms": 2,
+        "property_type": "2_room",
+        "price_eur": 401000,
+        "price_per_m2_eur": 6960,
+        "bezirk": "Treptow-Köpenick",
+        "ortsteil": "Köpenick (Ort)",
+        "completion_year": 2028,
+        "source": "new_construction",
+        "developer": "Groth Gruppe",
+        "id": "N009744",
+        "date_listed": "2025-03-11"
+      }
+    },
+    {
+      "content": "New-construction apartment in Köpenick (Ort), Treptow-Köpenick, Berlin. Project 'Domizil Köpenick' by developer Groth Gruppe (120 units, completion 2028, status under_construction). 2-room 2_room, 60.5 m2, floor 0 of 5, energy class A_plus. Lift: yes, balcony: yes, parking: yes. Payment plan: tranches_quarterly. Nearest transit: Landsberger Allee (S Ringbahn), 145 min; 16.27 km to Brandenburg Gate. Price: EUR 516,000 (8,534 EUR/m2). Listed 2026-02-02.",
+      "metadata": {
+        "price_per_m2_eur": 8534,
+        "rooms": 2,
+        "source": "new_construction",
+        "property_type": "2_room",
+        "area_m2": 60.5,
+        "listing_type": "new_construction",
+        "price_eur": 516000,
+        "project_name": "Domizil Köpenick",
+        "developer": "Groth Gruppe",
+        "id": "N008205",
+        "date_listed": "2026-02-02",
+        "bezirk": "Treptow-Köpenick",
+        "ortsteil": "Köpenick (Ort)",
+        "energy_class": "A_plus",
+        "completion_year": 2028
+      }
+    },
+    {
+      "content": "New-construction apartment in Köpenick (Ort), Treptow-Köpenick, Berlin. Project 'Domizil Köpenick' by developer Groth Gruppe (120 units, completion 2028, status under_construction). 5-room 5_room_plus, 142.3 m2, floor 0 of 6, energy class A_plus. Lift: yes, balcony: no, parking: yes. Payment plan: 70_30. Nearest transit: Theodor-Heuss-Platz (U2), 272 min; 16.27 km to Brandenburg Gate. Price: EUR 998,000 (7,015 EUR/m2). Listed 2023-05-27.",
+      "metadata": {
+        "listing_type": "new_construction",
+        "price_eur": 998000,
+        "completion_year": 2028,
+        "developer": "Groth Gruppe",
+        "area_m2": 142.3,
+        "project_name": "Domizil Köpenick",
+        "ortsteil": "Köpenick (Ort)",
+        "date_listed": "2023-05-27",
+        "id": "N003395",
+        "source": "new_construction",
+        "rooms": 5,
+        "property_type": "5_room_plus",
+        "price_per_m2_eur": 7015,
+        "energy_class": "A_plus",
+        "bezirk": "Treptow-Köpenick"
+      }
+    }
+  ]
+}

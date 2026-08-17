@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:28:55",
+  "question": "Are there any additional fees or utilities included in the rent for this flat?",
+  "search_query": "Are there any additional fees or utilities included in the rent for this apartment?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not provide any information regarding additional fees or utilities included in the rent for the flat. Therefore, I cannot answer the question based on the available sources.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of information in the retrieved context regarding additional fees or utilities, making it fully supported and directly relevant to the question."
+  },
+  "retrieved": []
+}

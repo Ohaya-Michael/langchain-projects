@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-02T17:18:36",
+  "question": "months where mortgage rates were highest and how many rental listings there were",
+  "search_query": "Months with the highest mortgage rates and the corresponding number of rental listings.",
+  "datasource": "real_estate",
+  "answer": "The question pertains to the real-estate domain, specifically regarding mortgage rates and rental listings. However, the retrieved documents only provide information about for-sale apartments and their respective mortgage rates, without any details on rental listings.\n\nFrom the available documents, the highest mortgage rates listed are 3.85%, which appears multiple times for different properties. The listings are dated from May 2023 to August 2024, but no specific months are indicated as having the highest rates beyond the current listings.\n\nUnfortunately, there is no information regarding the number of rental listings in the retrieved documents. Therefore, I cannot provide an answer regarding the months with the highest mortgage rates or the count of rental listings.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 3,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the information in the retrieved context, stating that the highest mortgage rate is 3.85% and that there is no information on rental listings. It directly addresses the question about mortgage rates and acknowledges the lack of data on rental listings."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Alt-Treptow, Treptow-Köpenick, Berlin. 5-room 5_room_plus, 203.3 m2, on floor 1 of 3, built 2021 (new_post_2010). Condition: modernisiert, position: vorderhaus, energy class A. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Hallesches Tor (U1), 23 min away; 5.95 km to Brandenburg Gate. Price: EUR 1,165,000 (5,729 EUR/m2). Listed 2024-05-12 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "price_per_m2_eur": 5729,
+        "source": "secondary_sales",
+        "date_listed": "2024-05-12",
+        "property_type": "5_room_plus",
+        "id": "S006018",
+        "ortsteil": "Alt-Treptow",
+        "area_m2": 203.3,
+        "rooms": 5,
+        "price_eur": 1165000,
+        "kiez_premium": "medium",
+        "listing_type": "resale",
+        "year_built": 2021,
+        "bezirk": "Treptow-Köpenick",
+        "energy_class": "A"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Adlershof, Treptow-Köpenick, Berlin. 1-room 1_room, 22.8 m2, on floor 3 of 5, built 2014 (new_post_2010). Condition: renoviert, position: vorderhaus, energy class C. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Wutzkyallee (U7), 22 min away; 14.13 km to Brandenburg Gate. Price: EUR 120,000 (5,256 EUR/m2). Listed 2023-05-04 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "area_m2": 22.8,
+        "kiez_premium": "medium",
+        "year_built": 2014,
+        "energy_class": "C",
+        "source": "secondary_sales",
+        "id": "S040162",
+        "property_type": "1_room",
+        "rooms": 1,
+        "price_per_m2_eur": 5256,
+        "ortsteil": "Adlershof",
+        "bezirk": "Treptow-Köpenick",
+        "price_eur": 120000,
+        "date_listed": "2023-05-04",
+        "listing_type": "resale"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Alt-Treptow, Treptow-Köpenick, Berlin. 3-room 3_room, 97.5 m2, on floor 3 of 3, built 1997 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class D. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Südstern (U7), 18 min away; 6.26 km to Brandenburg Gate. Price: EUR 474,000 (4,863 EUR/m2). Listed 2024-08-24 at a mortgage rate of 3.5%.",
+      "metadata": {
+        "date_listed": "2024-08-24",
+        "area_m2": 97.5,
+        "ortsteil": "Alt-Treptow",
+        "bezirk": "Treptow-Köpenick",
+        "price_eur": 474000,
+        "id": "S041352",
+        "price_per_m2_eur": 4863,
+        "kiez_premium": "medium",
+        "energy_class": "D",
+        "property_type": "3_room",
+        "listing_type": "resale",
+        "source": "secondary_sales",
+        "rooms": 3,
+        "year_built": 1997
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Adlershof, Treptow-Köpenick, Berlin. 3-room 3_room, 90.6 m2, on floor 0 of 5, built 2010 (new_post_2010). Condition: renoviert, position: seitenflügel, energy class B. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Franz-Neumann-Platz (U8), 77 min away; 15.42 km to Brandenburg Gate. Price: EUR 316,000 (3,483 EUR/m2). Listed 2024-05-18 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "year_built": 2010,
+        "bezirk": "Treptow-Köpenick",
+        "area_m2": 90.6,
+        "property_type": "3_room",
+        "source": "secondary_sales",
+        "price_eur": 316000,
+        "id": "S043759",
+        "rooms": 3,
+        "energy_class": "B",
+        "ortsteil": "Adlershof",
+        "listing_type": "resale",
+        "price_per_m2_eur": 3483,
+        "date_listed": "2024-05-18",
+        "kiez_premium": "medium"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Adlershof, Treptow-Köpenick, Berlin. 3-room 3_room, 93.7 m2, on floor 1 of 4, built 2002 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class C. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Ostkreuz (S Ringbahn), 43 min away; 15.65 km to Brandenburg Gate. Price: EUR 356,000 (3,796 EUR/m2). Listed 2024-05-22 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "energy_class": "C",
+        "year_built": 2002,
+        "date_listed": "2024-05-22",
+        "rooms": 3,
+        "property_type": "3_room",
+        "source": "secondary_sales",
+        "price_per_m2_eur": 3796,
+        "price_eur": 356000,
+        "listing_type": "resale",
+        "bezirk": "Treptow-Köpenick",
+        "kiez_premium": "medium",
+        "id": "S047835",
+        "area_m2": 93.7,
+        "ortsteil": "Adlershof"
+      }
+    }
+  ]
+}

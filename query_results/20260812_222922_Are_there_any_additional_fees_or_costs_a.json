@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-12T22:29:22",
+  "question": "Are there any additional fees or costs associated with renting the 2-room family apartment in Steglitz?",
+  "search_query": "What are the additional fees or costs associated with renting a 2-room family apartment in Steglitz?",
+  "datasource": "real_estate",
+  "answer": "The retrieved documents do not provide any information regarding additional fees or costs associated with renting the 2-room family apartment in Steglitz. Therefore, I cannot answer the question based on the available documents.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the lack of information in the retrieved context regarding additional fees or costs, making it fully supported and directly relevant to the question."
+  },
+  "retrieved": []
+}

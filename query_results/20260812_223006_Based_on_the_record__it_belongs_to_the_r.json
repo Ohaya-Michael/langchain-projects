@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-12T22:30:06",
+  "question": "Based on the record, it belongs to the real estate domain. Here are five questions a potential renter or buyer might ask:",
+  "search_query": "Questions potential renters or buyers might ask in the real estate domain.",
+  "datasource": "real_estate",
+  "answer": "Based on the retrieved documents, here are the details for potential renters or buyers in the real estate domain:\n\n1. **Apartment in Gatow, Spandau, Berlin**: \n   - Size: 109.5 m², 5 rooms\n   - Condition: Kernsanierung (fully renovated)\n   - Energy Class: B\n   - Price: EUR 515,000 (4,705 EUR/m²)\n   - Listed on: 2022-10-27\n   - Mortgage Rate: 3.4%\n   - Nearest Transit: Franz-Neumann-Platz (U8), 64 min away; 14.04 km to Brandenburg Gate.\n\n2. **Apartment in Gatow, Spandau, Berlin**: \n   - Size: 152.8 m², 5 rooms\n   - Condition: Renoviert (renovated)\n   - Energy Class: F\n   - Price: EUR 378,000 (2,475 EUR/m²)\n   - Listed on: 2021-08-27\n   - Mortgage Rate: 1.1%\n   - Nearest Transit: Yorckstraße (U7), 56 min away; 13.52 km to Brandenburg Gate.\n\n3. **Apartment in Hohenschönhausen, Lichtenberg, Berlin**: \n   - Size: 59.3 m², 2 rooms\n   - Condition: Renoviert (renovated)\n   - Energy Class: H\n   - Price: EUR 102,000 (1,722 EUR/m²)\n   - Listed on: 2021-07-07\n   - Mortgage Rate: 1.1%\n   - Nearest Transit: Bernauer Straße (U8), 39 min away; 10.54 km to Brandenburg Gate.\n\n4. **Apartment in Müggelheim, Treptow-Köpenick, Berlin**: \n   - Size: 100.3 m², 3 rooms\n   - Condition: Kernsanierung (fully renovated)\n   - Energy Class: B\n   - Price: EUR 441,000 (4,394 EUR/m²)\n   - Listed on: 2025-01-15\n   - Mortgage Rate: 3.3%\n   - Nearest Transit: Grenzallee (U7), 70 min away; 25.2 km to Brandenburg Gate.\n\n5. **Apartment in Baumschulenweg, Treptow-Köpenick, Berlin**: \n   - Size: 206.6 m², 5 rooms\n   - Condition: Renoviert (renovated)\n   - Energy Class: B\n   - Price: EUR 973,000 (4,709 EUR/m²)\n   - Listed on: 2025-11-13\n   - Mortgage Rate: 3.1%\n   - Nearest Transit: Rudow (U7), 25 min away; 8.98 km to Brandenburg Gate.\n\nThese listings provide a variety of options in terms of size, condition, price, and location within Berlin.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the details of the apartments listed in the retrieved context, including size, condition, energy class, price, listing date, mortgage rate, and nearest transit. All claims made in the answer are directly supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 5-room 5_room_plus, 109.5 m2, on floor 5 of 12, built 2007 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class B. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Franz-Neumann-Platz (U8), 64 min away; 14.04 km to Brandenburg Gate. Price: EUR 515,000 (4,705 EUR/m2). Listed 2022-10-27 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "area_m2": 109.5,
+        "date_listed": "2022-10-27",
+        "listing_type": "resale",
+        "kiez_premium": "medium",
+        "source": "secondary_sales",
+        "ortsteil": "Gatow",
+        "price_eur": 515000,
+        "property_type": "5_room_plus",
+        "energy_class": "B",
+        "rooms": 5,
+        "bezirk": "Spandau",
+        "price_per_m2_eur": 4705,
+        "id": "S049532",
+        "year_built": 2007
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 5-room 5_room_plus, 152.8 m2, on floor 3 of 3, built 1991 (modern_1990_2010). Condition: renoviert, position: vorderhaus, energy class F. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Yorckstraße (U7), 56 min away; 13.52 km to Brandenburg Gate. Price: EUR 378,000 (2,475 EUR/m2). Listed 2021-08-27 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "bezirk": "Spandau",
+        "rooms": 5,
+        "source": "secondary_sales",
+        "id": "S001770",
+        "date_listed": "2021-08-27",
+        "price_eur": 378000,
+        "year_built": 1991,
+        "kiez_premium": "medium",
+        "listing_type": "resale",
+        "price_per_m2_eur": 2475,
+        "energy_class": "F",
+        "property_type": "5_room_plus",
+        "ortsteil": "Gatow",
+        "area_m2": 152.8
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 59.3 m2, on floor 3 of 4, built 2002 (modern_1990_2010). Condition: renoviert, position: hinterhaus, energy class H. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Bernauer Straße (U8), 39 min away; 10.54 km to Brandenburg Gate. Price: EUR 102,000 (1,722 EUR/m2). Listed 2021-07-07 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "rooms": 2,
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Hohenschönhausen",
+        "price_per_m2_eur": 1722,
+        "date_listed": "2021-07-07",
+        "property_type": "2_room",
+        "source": "secondary_sales",
+        "year_built": 2002,
+        "price_eur": 102000,
+        "kiez_premium": "low",
+        "listing_type": "resale",
+        "id": "S003767",
+        "energy_class": "H",
+        "area_m2": 59.3
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Müggelheim, Treptow-Köpenick, Berlin. 3-room 3_room, 100.3 m2, on floor 0 of 5, built 2016 (new_post_2010). Condition: kernsaniert, position: hinterhaus, energy class B. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Grenzallee (U7), 70 min away; 25.2 km to Brandenburg Gate. Price: EUR 441,000 (4,394 EUR/m2). Listed 2025-01-15 at a mortgage rate of 3.3%.",
+      "metadata": {
+        "kiez_premium": "low",
+        "source": "secondary_sales",
+        "id": "S004848",
+        "bezirk": "Treptow-Köpenick",
+        "listing_type": "resale",
+        "price_per_m2_eur": 4394,
+        "date_listed": "2025-01-15",
+        "price_eur": 441000,
+        "rooms": 3,
+        "ortsteil": "Müggelheim",
+        "area_m2": 100.3,
+        "year_built": 2016,
+        "energy_class": "B",
+        "property_type": "3_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Baumschulenweg, Treptow-Köpenick, Berlin. 5-room 5_room_plus, 206.6 m2, on floor 4 of 6, built 2017 (new_post_2010). Condition: renoviert, position: hinterhaus, energy class B. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Rudow (U7), 25 min away; 8.98 km to Brandenburg Gate. Price: EUR 973,000 (4,709 EUR/m2). Listed 2025-11-13 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "area_m2": 206.6,
+        "ortsteil": "Baumschulenweg",
+        "energy_class": "B",
+        "kiez_premium": "medium",
+        "property_type": "5_room_plus",
+        "price_per_m2_eur": 4709,
+        "id": "S027279",
+        "bezirk": "Treptow-Köpenick",
+        "listing_type": "resale",
+        "rooms": 5,
+        "price_eur": 973000,
+        "date_listed": "2025-11-13",
+        "year_built": 2017
+      }
+    }
+  ]
+}
