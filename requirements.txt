@@ -8,3 +8,5 @@ langchain-huggingface
 langchain_openai
 sentence-transformers 
 chromadb
+streamlit
+pandas
