@@ -79,9 +79,9 @@ Retrieved documents:
 Answer:"""
 
 
-# -----------------------
+# -------------------
 # Structured schemas
-# -----------------------
+# -------------------
 class RouteQuery(BaseModel):
     """Route a user query to the most relevant datasource."""
 
@@ -235,7 +235,7 @@ class RagPipeline:
                 json.dump(record, f, ensure_ascii=False, indent=2)
             record["saved_path"] = str(path)
 
-        return record
+        return record["answer"]
 
 
 @lru_cache(maxsize=1)
@@ -262,6 +262,8 @@ class QueryResponse(BaseModel):
     retrieved: list
     saved_path: Optional[str] = None
 
+class QueryAnswer(BaseModel):
+    answer: str
 
 app = FastAPI(title="Two-Domain RAG API")
 
@@ -277,7 +279,7 @@ def health():
     return {"status": "ok"}
 
 
-@app.post("/query", response_model=QueryResponse)
+@app.post("/query") #, response_model=QueryResponse
 def query(req: QueryRequest):
     if not req.question.strip():
         raise HTTPException(status_code=422, detail="question must not be empty")
