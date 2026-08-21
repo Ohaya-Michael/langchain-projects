@@ -2,7 +2,6 @@
 langchain_project_venv/
 chroma_immobilien/
 chroma_medicine/
-immobilien_dataset/
 download_data_script/
 venv/
 env/

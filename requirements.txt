@@ -7,6 +7,12 @@ langchain-chroma
 langchain-huggingface 
 langchain_openai
 sentence-transformers 
+python-dotenv
+langchain-pinecone 
+pinecone 
+langchain-qdrant 
+qdrant-client
 chromadb
 streamlit
 pandas
+numpy 
