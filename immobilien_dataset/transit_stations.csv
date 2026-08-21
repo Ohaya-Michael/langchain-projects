@@ -1,0 +1,136 @@
+station_name,line,lat,lon,year_opened,to_brandenburg_gate_km
+Warschauer Straße,U1,52.5057,13.4495,1902,5.0
+Schlesisches Tor,U1,52.5012,13.4423,1902,4.68
+Görlitzer Bahnhof,U1,52.4986,13.4286,1902,3.97
+Kottbusser Tor,U1,52.4994,13.4181,1902,3.32
+Prinzenstraße,U1,52.5006,13.4097,1902,2.78
+Hallesches Tor,U1,52.4983,13.3909,1902,2.19
+Möckernbrücke,U1,52.4994,13.3814,1902,1.9
+Gleisdreieck,U1,52.4992,13.3736,1902,1.92
+Kurfürstenstraße,U1,52.5005,13.3651,1902,1.95
+Nollendorfplatz,U1,52.5007,13.3535,1902,2.39
+Wittenbergplatz,U1,52.5018,13.3424,1902,2.88
+Kurfürstendamm,U1,52.5031,13.3318,1961,3.44
+Uhlandstraße,U1,52.5036,13.3239,1913,3.91
+Pankow U2,U2,52.569,13.403,2000,6.1
+Senefelderplatz,U2,52.5378,13.415,1913,3.48
+Rosa-Luxemburg-Platz,U2,52.5279,13.4112,1913,2.61
+Alexanderplatz,U2,52.5219,13.4132,1913,2.48
+Klosterstraße,U2,52.5163,13.4112,1913,2.27
+Märkisches Museum,U2,52.5128,13.4087,1913,2.13
+Spittelmarkt,U2,52.5113,13.4017,1908,1.72
+Hausvogteiplatz,U2,52.5118,13.3937,1908,1.19
+Stadtmitte,U2,52.5114,13.3884,1908,0.91
+Mohrenstraße,U2,52.5102,13.3893,1908,1.04
+Potsdamer Platz,U2,52.5102,13.376,1908,0.69
+Mendelssohn-Bartholdy,U2,52.505,13.37,1908,1.36
+Bülowstraße,U2,52.4993,13.3593,1902,2.26
+Zoologischer Garten,U2,52.5071,13.332,1902,3.26
+Ernst-Reuter-Platz,U2,52.5125,13.321,1929,3.86
+Theodor-Heuss-Platz,U2,52.506,13.274,1908,7.11
+Olympia-Stadion,U2,52.517,13.235,1929,9.66
+Ruhleben,U2,52.524,13.235,1929,9.69
+Rathaus Spandau,U7,52.536,13.201,1984,12.15
+Altstadt Spandau,U7,52.539,13.205,1984,11.95
+Rohrdamm,U7,52.536,13.241,1980,9.5
+Siemensdamm,U7,52.535,13.264,1980,7.97
+Halemweg,U7,52.541,13.278,1980,7.28
+Jakob-Kaiser-Platz,U7,52.543,13.29,1980,6.63
+Jungfernheide U,U7,52.536,13.294,1980,6.07
+Mierendorffplatz,U7,52.529,13.302,1980,5.31
+Richard-Wagner-Platz,U7,52.523,13.307,1978,4.84
+Bismarckstraße,U7,52.513,13.308,1978,4.73
+Wilmersdorfer Straße,U7,52.506,13.306,1978,4.99
+Adenauerplatz,U7,52.499,13.307,1978,5.16
+Konstanzer Straße,U7,52.4924,13.314,1978,5.06
+Fehrbelliner Platz,U7,52.491,13.317,1971,4.98
+Berliner Straße,U7,52.486,13.33,1971,4.67
+Bayerischer Platz,U7,52.486,13.3417,1971,4.16
+Eisenacher Straße,U7,52.4855,13.3525,1971,3.83
+Kleistpark,U7,52.4878,13.3617,1971,3.35
+Yorckstraße,U7,52.492,13.3766,1971,2.7
+Mehringdamm,U7,52.4936,13.3884,1924,2.63
+Gneisenaustraße,U7,52.4915,13.3995,1971,3.13
+Südstern,U7,52.4861,13.4029,1971,3.77
+Hermannplatz,U7,52.4865,13.4233,1926,4.53
+Rathaus Neukölln,U7,52.4811,13.4399,1963,5.75
+Karl-Marx-Straße,U7,52.4742,13.44,1963,6.3
+Neukölln,U7,52.4655,13.4421,1963,7.14
+Grenzallee,U7,52.4585,13.4517,1963,8.15
+Blaschkoallee,U7,52.454,13.4445,1970,8.27
+Parchimer Allee,U7,52.4474,13.4453,1970,8.92
+Britz-Süd,U7,52.4395,13.4438,1970,9.64
+Johannisthaler Chaussee,U7,52.431,13.452,1970,10.74
+Lipschitzallee,U7,52.4275,13.466,1970,11.54
+Wutzkyallee,U7,52.422,13.4775,1970,12.48
+Zwickauer Damm,U7,52.418,13.486,1970,13.16
+Rudow,U7,52.418,13.49,1972,13.32
+Wittenau U,U8,52.591,13.326,1994,9.01
+Rathaus Reinickendorf,U8,52.581,13.332,1994,7.83
+Karl-Bonhoeffer-Nervenklinik,U8,52.587,13.34,1994,8.26
+Lindauer Allee,U8,52.58,13.345,1994,7.42
+Paracelsus-Bad,U8,52.568,13.349,1987,6.07
+Residenzstraße,U8,52.564,13.352,1987,5.58
+Franz-Neumann-Platz,U8,52.561,13.359,1987,5.13
+Osloer Straße,U8,52.556,13.3825,1977,4.43
+Pankstraße,U8,52.5489,13.3901,1977,3.72
+Gesundbrunnen U,U8,52.5483,13.3891,1930,3.64
+Voltastraße,U8,52.543,13.3865,1930,3.03
+Bernauer Straße,U8,52.5378,13.3933,1930,2.61
+Rosenthaler Platz,U8,52.529,13.4011,1930,2.12
+Weinmeisterstraße,U8,52.5237,13.4032,1930,1.91
+Heinrich-Heine-Straße,U8,52.5099,13.4148,1930,2.61
+Moritzplatz,U8,52.5031,13.4118,1926,2.73
+Kottbusser Tor U8,U8,52.4994,13.4181,1926,3.32
+Schönleinstraße,U8,52.4925,13.4225,1929,4.02
+Hermannplatz U8,U8,52.4865,13.4233,1929,4.53
+Boddinstraße,U8,52.4795,13.4297,1929,5.4
+Leinestraße,U8,52.4733,13.4318,1929,6.02
+Hermannstraße,U8,52.4674,13.4313,1996,6.54
+Westkreuz,S Ringbahn,52.5018,13.284,1928,6.54
+Halensee S,S Ringbahn,52.496,13.296,1877,5.97
+Hohenzollerndamm S,S Ringbahn,52.487,13.317,1877,5.24
+Heidelberger Platz,S Ringbahn,52.481,13.317,1877,5.68
+Bundesplatz,S Ringbahn,52.476,13.329,1877,5.56
+Innsbrucker Platz,S Ringbahn,52.4774,13.3416,1933,4.97
+Schöneberg S,S Ringbahn,52.4775,13.353,1872,4.63
+Südkreuz,S Ringbahn,52.475,13.365,1872,4.67
+Tempelhof S,S Ringbahn,52.471,13.385,1879,5.06
+Hermannstraße S,S Ringbahn,52.4674,13.4313,1872,6.54
+Neukölln S,S Ringbahn,52.4655,13.4421,1872,7.14
+Sonnenallee,S Ringbahn,52.473,13.4569,1872,7.21
+Treptower Park,S Ringbahn,52.494,13.463,1842,6.28
+Ostkreuz,S Ringbahn,52.5028,13.4691,1882,6.37
+Frankfurter Allee,S Ringbahn,52.516,13.475,1872,6.58
+Landsberger Allee,S Ringbahn,52.529,13.472,1872,6.53
+Storkower Straße,S Ringbahn,52.523,13.475,1872,6.63
+Greifswalder Straße,S Ringbahn,52.541,13.45,1872,5.61
+Prenzlauer Allee S,S Ringbahn,52.5454,13.4368,1872,5.14
+Schönhauser Allee,S Ringbahn,52.5489,13.4138,1872,4.37
+Gesundbrunnen S,S Ringbahn,52.5483,13.3891,1872,3.64
+Westhafen,S Ringbahn,52.538,13.345,1872,3.27
+Beusselstraße,S Ringbahn,52.534,13.332,1872,3.67
+Jungfernheide S,S Ringbahn,52.536,13.294,1872,6.07
+Wannsee,S1,52.42,13.164,1874,18.01
+Nikolassee,S1,52.431,13.197,1874,15.48
+Schlachtensee,S1,52.438,13.216,1874,13.99
+Mexikoplatz,S1,52.449,13.228,1905,12.6
+Zehlendorf S,S1,52.429,13.258,1874,12.65
+Sundgauer Straße,S1,52.441,13.271,1885,11.06
+Lichterfelde West,S1,52.431,13.287,1872,11.3
+Botanischer Garten,S1,52.442,13.309,1872,9.48
+Friedenau S,S1,52.472,13.33,1933,5.89
+Anhalter Bahnhof,S1,52.5039,13.3825,1939,1.42
+Brandenburger Tor S,S1,52.5163,13.3777,1936,0.0
+Berlin Hauptbahnhof,Stadtbahn,52.5251,13.3694,2006,1.13
+Friedrichstraße,Stadtbahn,52.5202,13.387,1882,0.76
+Alexanderplatz S,Stadtbahn,52.5219,13.4132,1882,2.48
+Hackescher Markt,Stadtbahn,52.523,13.4023,1882,1.82
+Jannowitzbrücke,Stadtbahn,52.5141,13.418,1882,2.74
+Ostbahnhof,Stadtbahn,52.5102,13.4344,1842,3.9
+Warschauer Straße S,Stadtbahn,52.5057,13.4495,1882,5.0
+Charlottenburg S,Stadtbahn,52.506,13.303,1882,5.18
+Savignyplatz,Stadtbahn,52.505,13.3208,1882,4.05
+Zoologischer Garten S,Stadtbahn,52.5071,13.332,1882,3.26
+Tiergarten S,Stadtbahn,52.5145,13.3501,1882,1.88
+Bellevue,Stadtbahn,52.5197,13.3501,1882,1.91
