@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-08-18T13:14:10",
+  "question": "asthma treatment plan",
+  "search_query": "asthma (asthma treatment plan)",
+  "datasource": "medical",
+  "answer": "The asthma treatment plans from the retrieved documents include various medications and assessments for patients with asthma. Here are the key components from the clinical notes:\n\n1. **Medications Prescribed**:\n   - **Albuterol**: This is a common rescue inhaler used for quick relief of asthma symptoms. It is noted in multiple encounters with a dosage of 0.83 MG/ML in inhalation solution form.\n   - **Inhaled Corticosteroids**: Different forms of inhaled corticosteroids were prescribed, including:\n     - Beclomethasone dipropionate (Qvar) at 0.04 MG/ACTUAT.\n     - Fluticasone propionate (Flovent) at varying dosages (0.044 MG/ACTUAT and 0.11 MG/ACTUAT).\n     - Budesonide at dosages of 0.125 MG/ML and 0.25 MG/ML in inhalation suspension.\n\n2. **Assessment and Plan**:\n   - Patients presented with common asthma symptoms such as wheezing, shortness of breath, and mucus secretion.\n   - The treatment plans included immunizations (e.g., influenza) and a focus on asthma management, which may involve self-management strategies.\n\n3. **Billing Information**:\n   - The costs associated with these treatments varied, with amounts billed to different insurance providers, indicating the financial aspect of asthma care.\n\nOverall, the treatment plans emphasize the use of bronchodilators and inhaled corticosteroids, which are standard in managing asthma, along with regular assessments of the patient's condition and symptoms (Synthea).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the treatment plans for asthma as detailed in the retrieved context, including the medications prescribed and the assessment of patients' symptoms. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Encounter: General examination of patient (procedure) on 2020-12-07.\nConditions: Asthma (disorder).\nImmunizations: Influenza, split virus, trivalent, PF.\nMedications: albuterol 0.83 MG/ML Inhalation Solution, Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler [Qvar].\nBilled: $272.80 to Medicaid.\n\nClinical note:\n2020-12-07\r\n\r\n# Chief Complaint\r\n- Wheezing\r\n- Shortness of Breath\r\n- Mucus Secretion\r\n\r\n\r\n# History of Present Illness\r\nEmilio417 is a 19 year-old hispanic white male. Patient has a history of childhood asthma (disorder).\r\n\r\n# Social History\r\n Patient has never smoked.\r\n Patient identifies as heterosexual.\r\n\r\nPatient comes from a middle socioeconomic background.\r\n Patient has completed some college courses.\r\nPatient currently has Medicaid.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nbreath-actuated 120 actuat beclomethasone dipropionate 0.04 mg/actuat metered dose inhaler [qvar]; albuterol 0.83 mg/ml inhalation solution\r\n\r\n# Assessment and Plan\r\nPatient is presenting with asthma (disorder). \r\n\r\n\r\n## Plan\r\nPatient was given the following immunizations: influenza, split virus, trivalent, pf. \r\nThe patient was prescribed the following medications:\r\n- albuterol 0.83 mg/ml inhalation solution\r\n- breath-actuated 120 actuat beclomethasone dipropionate 0.04 mg/actuat metered dose inhaler [qvar]",
+      "metadata": {
+        "encounter_id": "ba4f6e7c-573a-d062-7496-7be8c987dd6f",
+        "date": "2020-12-07",
+        "gender": "male",
+        "total_billed": 272.8,
+        "birth_date": "2001-10-08",
+        "patient_name": "Emilio417 Sandoval902",
+        "encounter_type": "General examination of patient (procedure)",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "state": "MA",
+        "patient_id": "ba4f6e7c-573a-d062-d76a-6aa924e41317",
+        "source_file": "Emilio417_Sandoval902_ba4f6e7c-573a-d062-d76a-6aa924e41317.json",
+        "insurer": "Medicaid",
+        "data_source": "synthea"
+      }
+    },
+    {
+      "content": "Encounter: General examination of patient (procedure) on 2011-09-19.\nConditions: Asthma (disorder).\nMedications: 120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent], albuterol 0.83 MG/ML Inhalation Solution.\nBilled: $136.80 to Medicaid.\n\nClinical note:\n2011-09-19\r\n\r\n# Chief Complaint\r\n- Shortness of Breath\r\n- Wheezing\r\n- Chest Pressure\r\n\r\n\r\n# History of Present Illness\r\nDominique369 is a 20 year-old nonhispanic white male.\r\n\r\n# Social History\r\nPatient is married. Patient has never smoked.\r\n Patient identifies as heterosexual.\r\n\r\nPatient comes from a middle socioeconomic background.\r\n Patient has completed some college courses.\r\nPatient currently has Medicaid.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- 120 actuat fluticasone propionate 0.11 mg/actuat metered dose inhaler [flovent]\r\n- albuterol 0.83 mg/ml inhalation solution",
+      "metadata": {
+        "birth_date": "1991-07-15",
+        "total_billed": 136.8,
+        "state": "MA",
+        "encounter_type": "General examination of patient (procedure)",
+        "patient_name": "Dominique369 Refugio197 Prohaska837",
+        "source_file": "Dominique369_Prohaska837_eed91978-0729-69a2-8cb0-d68caaa77ad3.json",
+        "date": "2011-09-19",
+        "insurer": "Medicaid",
+        "patient_id": "eed91978-0729-69a2-8cb0-d68caaa77ad3",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "data_source": "synthea",
+        "encounter_id": "eed91978-0729-69a2-8b2b-90cf1e9ad661",
+        "gender": "male"
+      }
+    },
+    {
+      "content": "Encounter: Encounter for symptom (procedure) on 2002-09-13.\nConditions: Childhood asthma (disorder).\nMedications: budesonide 0.125 MG/ML Inhalation Suspension, NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin].\nBilled: $85.55 to Cigna Health.\n\nClinical note:\n2002-09-13\r\n\r\n# Chief Complaint\r\nNo complaints.\r\n\r\n# History of Present Illness\r\nGaylord332 is a 4 year-old nonhispanic white male.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a middle socioeconomic background.\r\n\r\nPatient currently has Cigna Health.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with childhood asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- budesonide 0.125 mg/ml inhalation suspension\r\n- nda020983 200 actuat albuterol 0.09 mg/actuat metered dose inhaler [ventolin]\r\nThe patient was placed on a careplan:\r\n- asthma self management (regime/therapy)",
+      "metadata": {
+        "date": "2002-09-13",
+        "patient_id": "aa430f1c-a4b3-18d0-e175-18afe1030694",
+        "source_file": "Gaylord332_Nolan344_aa430f1c-a4b3-18d0-e175-18afe1030694.json",
+        "total_billed": 85.55,
+        "state": "MA",
+        "data_source": "synthea",
+        "gender": "male",
+        "encounter_type": "Encounter for symptom (procedure)",
+        "birth_date": "1997-11-25",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "patient_name": "Gaylord332 Darryl392 Nolan344",
+        "insurer": "Cigna Health",
+        "encounter_id": "aa430f1c-a4b3-18d0-6af6-cbbb7a1dbd7b"
+      }
+    },
+    {
+      "content": "Encounter: General examination of patient (procedure) on 1998-03-18.\nConditions: Asthma (disorder).\nMedications: 120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent], albuterol 0.83 MG/ML Inhalation Solution.\nBilled: $136.80 to Humana.\n\nClinical note:\n1998-03-18\r\n\r\n# Chief Complaint\r\n- Shortness of Breath\r\n- Wheezing\r\n- Cough\r\n\r\n\r\n# History of Present Illness\r\nApolonia139 is a 20 year-old nonhispanic white female.\r\n\r\n# Social History\r\nPatient is single. Patient has never smoked.\r\n Patient identifies as heterosexual.\r\n\r\nPatient comes from a middle socioeconomic background.\r\n Patient is a college graduate.\r\nPatient currently has Humana.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- 120 actuat fluticasone propionate 0.044 mg/actuat metered dose inhaler [flovent]\r\n- albuterol 0.83 mg/ml inhalation solution",
+      "metadata": {
+        "encounter_type": "General examination of patient (procedure)",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "birth_date": "1978-01-11",
+        "encounter_id": "97cf4c09-1b3b-97c4-e79c-0858245492ca",
+        "data_source": "synthea",
+        "gender": "female",
+        "date": "1998-03-18",
+        "state": "MA",
+        "patient_id": "97cf4c09-1b3b-97c4-3a79-17daeffa4970",
+        "insurer": "Humana",
+        "source_file": "Apolonia139_Hammes673_97cf4c09-1b3b-97c4-3a79-17daeffa4970.json",
+        "total_billed": 136.8,
+        "patient_name": "Apolonia139 Hammes673"
+      }
+    },
+    {
+      "content": "Encounter: General examination of patient (procedure) on 2019-03-30.\nConditions: Asthma (disorder).\nImmunizations: Influenza, split virus, trivalent, PF, Hep B, adult.\nMedications: budesonide 0.25 MG/ML Inhalation Suspension, albuterol 0.83 MG/ML Inhalation Solution.\nBilled: $408.80 to NO_INSURANCE.\n\nClinical note:\n2019-03-30\r\n\r\n# Chief Complaint\r\n- Wheezing\r\n- Shortness of Breath\r\n\r\n\r\n# History of Present Illness\r\nKirby843 is a 20 year-old nonhispanic white male. Patient has a history of childhood asthma (disorder).\r\n\r\n# Social History\r\n Patient has never smoked.\r\n Patient identifies as heterosexual.\r\n\r\nPatient comes from a middle socioeconomic background.\r\n Patient has a high school education.\r\nPatient currently has NO INSURANCE.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nalbuterol 0.83 mg/ml inhalation solution; budesonide 0.25 mg/ml inhalation suspension\r\n\r\n# Assessment and Plan\r\nPatient is presenting with asthma (disorder). \r\n\r\n\r\n## Plan\r\nPatient was given the following immunizations: influenza, split virus, trivalent, pf, hep b, adult. \r\nThe patient was prescribed the following medications:\r\n- budesonide 0.25 mg/ml inhalation suspension\r\n- albuterol 0.83 mg/ml inhalation solution",
+      "metadata": {
+        "patient_name": "Kirby843 Sterling124 Jacobs452",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease,colorectal_cancer,asthma,lung_cancer,depression",
+        "source_file": "Kirby843_Jacobs452_ced28612-a5a7-d965-50af-3d6e329ad040.json",
+        "birth_date": "1999-01-23",
+        "total_billed": 408.8,
+        "state": "MA",
+        "encounter_id": "ced28612-a5a7-d965-c40d-baaba8459c45",
+        "date": "2019-03-30",
+        "patient_id": "ced28612-a5a7-d965-50af-3d6e329ad040",
+        "data_source": "synthea",
+        "insurer": "NO_INSURANCE",
+        "encounter_type": "General examination of patient (procedure)",
+        "gender": "male"
+      }
+    }
+  ]
+}

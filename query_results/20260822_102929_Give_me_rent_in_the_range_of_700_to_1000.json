@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-08-22T10:29:29",
+  "question": "Give me rent in the range of 700 to 1000",
+  "search_query": "Search for rental properties with a price range between $700 and $1,000.",
+  "datasource": "real_estate",
+  "routing": "auto",
+  "filters": null,
+  "answer": "The retrieved documents do not contain any information about rental prices. They only provide details about properties for sale, including their prices, but do not mention any rental listings or rent amounts. Therefore, I cannot provide rent in the range of 700 to 1000.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the content of the retrieved context, which only discusses properties for sale and does not provide any information about rental prices. Therefore, the answer is fully supported and directly addresses the question."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 50.5 m2, on floor 4 of 4, built 1958 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class F. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Yorckstraße (U7), 51 min away; 10.44 km to Brandenburg Gate. Price: EUR 92,000 (1,815 EUR/m2). Listed 2025-10-12 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "price_per_m2_eur": 1815,
+        "price_eur": 92000,
+        "rooms": 1,
+        "bezirk": "Lichtenberg",
+        "year_built": 1958,
+        "source": "secondary_sales",
+        "id": "S044867",
+        "ortsteil": "Malchow",
+        "date_listed": "2025-10-12",
+        "area_m2": 50.5,
+        "kiez_premium": "low",
+        "energy_class": "F",
+        "property_type": "1_room",
+        "listing_type": "resale"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Weißensee, Pankow, Berlin. 2-room 2_room, 71.4 m2, on floor 3 of 3, built 2011 (new_post_2010). Condition: kernsaniert, position: vorderhaus, energy class A. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Leinestraße (U8), 43 min away; 5.94 km to Brandenburg Gate. Price: EUR 355,000 (4,968 EUR/m2). Listed 2023-12-28 at a mortgage rate of 4.1%.",
+      "metadata": {
+        "date_listed": "2023-12-28",
+        "kiez_premium": "medium",
+        "price_per_m2_eur": 4968,
+        "id": "S015759",
+        "bezirk": "Pankow",
+        "energy_class": "A",
+        "listing_type": "resale",
+        "year_built": 2011,
+        "ortsteil": "Weißensee",
+        "price_eur": 355000,
+        "rooms": 2,
+        "area_m2": 71.4,
+        "property_type": "2_room",
+        "source": "secondary_sales"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Staaken, Spandau, Berlin. 1-room 1_room, 37.5 m2, on floor 0 of 4, built 1981 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class F. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 59 min away; 16.42 km to Brandenburg Gate. Price: EUR 72,000 (1,932 EUR/m2). Listed 2023-11-20 at a mortgage rate of 4.1%.",
+      "metadata": {
+        "property_type": "1_room",
+        "source": "secondary_sales",
+        "energy_class": "F",
+        "area_m2": 37.5,
+        "year_built": 1981,
+        "rooms": 1,
+        "id": "S013299",
+        "price_eur": 72000,
+        "price_per_m2_eur": 1932,
+        "listing_type": "resale",
+        "date_listed": "2023-11-20",
+        "kiez_premium": "low",
+        "bezirk": "Spandau",
+        "ortsteil": "Staaken"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 80.5 m2, on floor 0 of 8, built 1994 (modern_1990_2010). Condition: renovierungsbedürftig, position: seitenflügel, energy class B. Lift: yes, balcony: no, cellar: no, parking: no. Nearest transit: Bellevue (Stadtbahn), 51 min away; 10.77 km to Brandenburg Gate. Price: EUR 173,000 (2,154 EUR/m2). Listed 2025-09-15 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "listing_type": "resale",
+        "area_m2": 80.5,
+        "rooms": 2,
+        "id": "S014554",
+        "ortsteil": "Hohenschönhausen",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "year_built": 1994,
+        "source": "secondary_sales",
+        "price_per_m2_eur": 2154,
+        "bezirk": "Lichtenberg",
+        "price_eur": 173000,
+        "energy_class": "B",
+        "date_listed": "2025-09-15"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 1-room 1_room, 22.4 m2, on floor 1 of 5, built 1965 (post_war_1949_1990). Condition: renoviert, position: hinterhaus, energy class A. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Halensee S (S Ringbahn), 35 min away; 14.97 km to Brandenburg Gate. Price: EUR 49,000 (2,201 EUR/m2). Listed 2021-08-20 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "price_eur": 49000,
+        "ortsteil": "Gatow",
+        "energy_class": "A",
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "date_listed": "2021-08-20",
+        "rooms": 1,
+        "price_per_m2_eur": 2201,
+        "property_type": "1_room",
+        "year_built": 1965,
+        "area_m2": 22.4,
+        "bezirk": "Spandau",
+        "kiez_premium": "medium",
+        "id": "S030850"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 43.8 m2, on floor 1 of 4, built 1965 (post_war_1949_1990). Condition: kernsaniert, position: vorderhaus, energy class D. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Leinestraße (U8), 56 min away; 10.93 km to Brandenburg Gate. Price: EUR 126,000 (2,875 EUR/m2). Listed 2022-12-14 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "price_per_m2_eur": 2875,
+        "listing_type": "resale",
+        "source": "secondary_sales",
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Malchow",
+        "area_m2": 43.8,
+        "rooms": 1,
+        "energy_class": "D",
+        "price_eur": 126000,
+        "year_built": 1965,
+        "kiez_premium": "low",
+        "date_listed": "2022-12-14",
+        "property_type": "1_room",
+        "id": "S043158"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 42.9 m2, on floor 6 of 6, built 2009 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class D. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Lindauer Allee (U8), 50 min away; 10.92 km to Brandenburg Gate. Price: EUR 142,000 (3,315 EUR/m2). Listed 2021-06-26 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "energy_class": "D",
+        "id": "S019064",
+        "kiez_premium": "low",
+        "rooms": 1,
+        "date_listed": "2021-06-26",
+        "property_type": "1_room",
+        "area_m2": 42.9,
+        "ortsteil": "Hohenschönhausen",
+        "price_per_m2_eur": 3315,
+        "listing_type": "resale",
+        "bezirk": "Lichtenberg",
+        "source": "secondary_sales",
+        "price_eur": 142000,
+        "year_built": 2009
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 5-room 5_room_plus, 152.8 m2, on floor 3 of 3, built 1991 (modern_1990_2010). Condition: renoviert, position: vorderhaus, energy class F. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Yorckstraße (U7), 56 min away; 13.52 km to Brandenburg Gate. Price: EUR 378,000 (2,475 EUR/m2). Listed 2021-08-27 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "ortsteil": "Gatow",
+        "id": "S001770",
+        "year_built": 1991,
+        "listing_type": "resale",
+        "area_m2": 152.8,
+        "price_per_m2_eur": 2475,
+        "energy_class": "F",
+        "bezirk": "Spandau",
+        "source": "secondary_sales",
+        "date_listed": "2021-08-27",
+        "price_eur": 378000,
+        "rooms": 5,
+        "kiez_premium": "medium",
+        "property_type": "5_room_plus"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 1-room 1_room, 26.5 m2, on floor 1 of 6, built 1977 (post_war_1949_1990). Condition: renoviert, position: hinterhaus, energy class F. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Theodor-Heuss-Platz (U2), 33 min away; 13.76 km to Brandenburg Gate. Price: EUR 54,000 (2,023 EUR/m2). Listed 2023-12-24 at a mortgage rate of 4.1%.",
+      "metadata": {
+        "price_per_m2_eur": 2023,
+        "area_m2": 26.5,
+        "date_listed": "2023-12-24",
+        "kiez_premium": "medium",
+        "bezirk": "Spandau",
+        "source": "secondary_sales",
+        "property_type": "1_room",
+        "energy_class": "F",
+        "year_built": 1977,
+        "ortsteil": "Gatow",
+        "listing_type": "resale",
+        "price_eur": 54000,
+        "rooms": 1,
+        "id": "S023130"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 4-room 4_room, 124.3 m2, on floor 2 of 6, built 1979 (post_war_1949_1990). Condition: kernsaniert, position: vorderhaus, energy class E. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Yorckstraße (U7), 49 min away; 8.94 km to Brandenburg Gate. Price: EUR 357,000 (2,870 EUR/m2). Listed 2025-10-07 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "ortsteil": "Malchow",
+        "listing_type": "resale",
+        "energy_class": "E",
+        "bezirk": "Lichtenberg",
+        "id": "S002158",
+        "area_m2": 124.3,
+        "year_built": 1979,
+        "rooms": 4,
+        "source": "secondary_sales",
+        "date_listed": "2025-10-07",
+        "property_type": "4_room",
+        "kiez_premium": "low",
+        "price_per_m2_eur": 2870,
+        "price_eur": 357000
+      }
+    }
+  ]
+}

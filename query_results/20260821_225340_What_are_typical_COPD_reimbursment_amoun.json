@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-08-21T22:53:40",
+  "question": "What are typical COPD reimbursment amounts?",
+  "search_query": "What are the typical reimbursement amounts for COPD (chronic obstructive pulmonary disease)?",
+  "datasource": "medical",
+  "answer": "The typical reimbursement amounts for COPD (Chronic Obstructive Pulmonary Disease) based on the retrieved Medicare claims data from 2008-2010 are as follows:\n\n- For a service on May 10, 2009, the claim payment amount was $200.00.\n- For a service on June 27, 2009, the claim payment amount was also $200.00.\n- For a service on October 8, 2009, the claim payment amount was $170.00.\n\nThus, the reimbursement amounts for COPD services during this period ranged from $170.00 to $200.00 (CMS SynPUF).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the reimbursement amounts for COPD based on the retrieved context, which provides specific claim payment amounts for services rendered. All claims mentioned in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Pde claim for beneficiary 00187DB5DFDE4D18. Known chronic conditions: COPD, depression, diabetes, ischemic heart disease. Service on 20090510. Claim payment amount: $200.00.",
+      "metadata": {
+        "beneficiary_id": "00187DB5DFDE4D18",
+        "claim_type": "pde",
+        "from_date": "20090510",
+        "thru_date": "",
+        "amount": 200.0,
+        "state_code": "45",
+        "chronic_conditions": "COPD, depression, diabetes, ischemic heart disease",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Prescription_Drug_Events_Sample_1.csv",
+        "_id": "b25e62da-5540-4248-b801-450945e582bf",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Pde claim for beneficiary 00187DB5DFDE4D18. Known chronic conditions: COPD, depression, diabetes, ischemic heart disease. Service on 20090510. Claim payment amount: $200.00.",
+      "metadata": {
+        "beneficiary_id": "00187DB5DFDE4D18",
+        "claim_type": "pde",
+        "from_date": "20090510",
+        "thru_date": "",
+        "amount": 200.0,
+        "state_code": "45",
+        "chronic_conditions": "COPD, depression, diabetes, ischemic heart disease",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Prescription_Drug_Events_Sample_1.csv",
+        "_id": "1afd87bd-bb72-40f4-aa9b-2f9e34b4d105",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Pde claim for beneficiary 00187DB5DFDE4D18. Known chronic conditions: COPD, depression, diabetes, ischemic heart disease. Service on 20091008. Claim payment amount: $170.00.",
+      "metadata": {
+        "beneficiary_id": "00187DB5DFDE4D18",
+        "claim_type": "pde",
+        "from_date": "20091008",
+        "thru_date": "",
+        "amount": 170.0,
+        "state_code": "45",
+        "chronic_conditions": "COPD, depression, diabetes, ischemic heart disease",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Prescription_Drug_Events_Sample_1.csv",
+        "_id": "97ab40d0-cba5-49ad-b4a4-40556b14fb85",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Pde claim for beneficiary 00187DB5DFDE4D18. Known chronic conditions: COPD, depression, diabetes, ischemic heart disease. Service on 20091008. Claim payment amount: $170.00.",
+      "metadata": {
+        "beneficiary_id": "00187DB5DFDE4D18",
+        "claim_type": "pde",
+        "from_date": "20091008",
+        "thru_date": "",
+        "amount": 170.0,
+        "state_code": "45",
+        "chronic_conditions": "COPD, depression, diabetes, ischemic heart disease",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Prescription_Drug_Events_Sample_1.csv",
+        "_id": "df2b47fd-a04b-4b96-80e9-26445d609a5f",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Pde claim for beneficiary 00187DB5DFDE4D18. Known chronic conditions: COPD, depression, diabetes, ischemic heart disease. Service on 20090627. Claim payment amount: $200.00.",
+      "metadata": {
+        "beneficiary_id": "00187DB5DFDE4D18",
+        "claim_type": "pde",
+        "from_date": "20090627",
+        "thru_date": "",
+        "amount": 200.0,
+        "state_code": "45",
+        "chronic_conditions": "COPD, depression, diabetes, ischemic heart disease",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Prescription_Drug_Events_Sample_1.csv",
+        "_id": "0b88139b-2350-497f-86db-7bd2f4e64a36",
+        "_collection_name": "medicine_claims"
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "timestamp": "2026-08-22T10:30:22",
+  "question": "Give me rent in the range of 700 to 1000",
+  "search_query": "Search for rental properties with a price range between $700 and $1,000.",
+  "datasource": "real_estate",
+  "routing": "forced",
+  "filters": {
+    "source": "rentals"
+  },
+  "answer": "In the range of EUR 700 to 1000, there is one rental apartment listed:\n\n- A 2-room apartment in Weißensee, Pankow, Berlin, with a Kaltmiete (base rent) of EUR 748/month and a Warmmiete (total rent including utilities) of EUR 908/month (18.04 EUR/m²). This apartment is 41.4 m² in size and is located on the first floor of a five-story building, in a condition described as \"kernsaniert\" (fully renovated) (Real Estate). \n\nNo other apartments within the specified rent range were found in the retrieved documents.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately identifies the only rental apartment within the specified range of EUR 700 to 1000, providing details that are fully supported by the retrieved context."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Weißensee, Pankow, Berlin. 1-room 1_room, 32.7 m2, floor 1 of 3, post_war_1949_1990, condition modernisiert, position seitenflügel, energy class F. Furnished: yes, lift: no, balcony: yes. Nearest transit: Beusselstraße (S Ringbahn), 113 min; 7.02 km to Brandenburg Gate. Kaltmiete EUR 269/month, Nebenkosten EUR 137, Warmmiete EUR 406/month (8.22 EUR/m2 kalt). Deposit: 2 months. Listed 2022-10-29.",
+      "metadata": {
+        "kaltmiete_eur_monthly": 269,
+        "bezirk": "Pankow",
+        "furnished": "True",
+        "kiez_premium": "medium",
+        "listing_type": "rental",
+        "area_m2": 32.7,
+        "ortsteil": "Weißensee",
+        "source": "rentals",
+        "warmmiete_eur_monthly": 406,
+        "rent_per_m2_kalt_eur": 8.22,
+        "energy_class": "F",
+        "rooms": 1,
+        "property_type": "1_room",
+        "date_listed": "2022-10-29",
+        "id": "R020450"
+      }
+    },
+    {
+      "content": "Rental apartment in Weißensee, Pankow, Berlin. 2-room 2_room, 41.4 m2, floor 1 of 5, altbau_pre_1949, condition kernsaniert, position gartenhaus, energy class F. Furnished: no, lift: no, balcony: yes. Nearest transit: Klosterstraße (U2), 64 min; 7.19 km to Brandenburg Gate. Kaltmiete EUR 748/month, Nebenkosten EUR 160, Warmmiete EUR 908/month (18.04 EUR/m2 kalt). Deposit: 2 months. Listed 2025-10-28.",
+      "metadata": {
+        "kiez_premium": "medium",
+        "rooms": 2,
+        "area_m2": 41.4,
+        "furnished": "False",
+        "id": "R019352",
+        "ortsteil": "Weißensee",
+        "listing_type": "rental",
+        "kaltmiete_eur_monthly": 748,
+        "energy_class": "F",
+        "bezirk": "Pankow",
+        "warmmiete_eur_monthly": 908,
+        "property_type": "2_room",
+        "rent_per_m2_kalt_eur": 18.04,
+        "source": "rentals",
+        "date_listed": "2025-10-28"
+      }
+    },
+    {
+      "content": "Rental apartment in Malchow, Lichtenberg, Berlin. 1-room 1_room, 46.0 m2, floor 0 of 5, modern_1990_2010, condition renovierungsbedürftig, position gartenhaus, energy class B. Furnished: no, lift: no, balcony: yes. Nearest transit: Bellevue (Stadtbahn), 133 min; 8.16 km to Brandenburg Gate. Kaltmiete EUR 401/month, Nebenkosten EUR 150, Warmmiete EUR 551/month (8.71 EUR/m2 kalt). Deposit: 3 months. Listed 2025-01-05.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 8.71,
+        "date_listed": "2025-01-05",
+        "kaltmiete_eur_monthly": 401,
+        "source": "rentals",
+        "ortsteil": "Malchow",
+        "warmmiete_eur_monthly": 551,
+        "listing_type": "rental",
+        "property_type": "1_room",
+        "area_m2": 46.0,
+        "energy_class": "B",
+        "bezirk": "Lichtenberg",
+        "rooms": 1,
+        "id": "R007008",
+        "furnished": "False",
+        "kiez_premium": "low"
+      }
+    },
+    {
+      "content": "Rental apartment in Weißensee, Pankow, Berlin. 4-room 4_room, 54.8 m2, floor 2 of 4, altbau_pre_1949, condition kernsaniert, position vorderhaus, energy class F. Furnished: no, lift: no, balcony: no. Nearest transit: Yorckstraße (U7), 111 min; 6.8 km to Brandenburg Gate. Kaltmiete EUR 639/month, Nebenkosten EUR 161, Warmmiete EUR 800/month (11.65 EUR/m2 kalt). Deposit: 3 months. Listed 2025-03-05.",
+      "metadata": {
+        "warmmiete_eur_monthly": 800,
+        "ortsteil": "Weißensee",
+        "rooms": 4,
+        "energy_class": "F",
+        "source": "rentals",
+        "kaltmiete_eur_monthly": 639,
+        "listing_type": "rental",
+        "property_type": "4_room",
+        "kiez_premium": "medium",
+        "area_m2": 54.8,
+        "id": "R015445",
+        "rent_per_m2_kalt_eur": 11.65,
+        "bezirk": "Pankow",
+        "furnished": "False",
+        "date_listed": "2025-03-05"
+      }
+    },
+    {
+      "content": "Rental apartment in Weißensee, Pankow, Berlin. 2-room 2_room, 72.6 m2, floor 1 of 5, new_post_2010, condition kernsaniert, position hinterhaus, energy class A_plus. Furnished: no, lift: yes, balcony: no. Nearest transit: Klosterstraße (U2), 68 min; 6.38 km to Brandenburg Gate. Kaltmiete EUR 1174/month, Nebenkosten EUR 245, Warmmiete EUR 1419/month (16.16 EUR/m2 kalt). Deposit: 3 months. Listed 2025-02-25.",
+      "metadata": {
+        "ortsteil": "Weißensee",
+        "warmmiete_eur_monthly": 1419,
+        "listing_type": "rental",
+        "property_type": "2_room",
+        "rooms": 2,
+        "energy_class": "A_plus",
+        "rent_per_m2_kalt_eur": 16.16,
+        "kaltmiete_eur_monthly": 1174,
+        "source": "rentals",
+        "id": "R005205",
+        "date_listed": "2025-02-25",
+        "bezirk": "Pankow",
+        "area_m2": 72.6,
+        "furnished": "False",
+        "kiez_premium": "medium"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 29.8 m2, floor 2 of 4, altbau_pre_1949, condition kernsaniert, position vorderhaus, energy class E. Furnished: no, lift: no, balcony: no. Nearest transit: Bernauer Straße (U8), 98 min; 10.27 km to Brandenburg Gate. Kaltmiete EUR 293/month, Nebenkosten EUR 86, Warmmiete EUR 379/month (9.84 EUR/m2 kalt). Deposit: 1 months. Listed 2024-10-19.",
+      "metadata": {
+        "source": "rentals",
+        "bezirk": "Lichtenberg",
+        "listing_type": "rental",
+        "rooms": 1,
+        "date_listed": "2024-10-19",
+        "kaltmiete_eur_monthly": 293,
+        "property_type": "1_room",
+        "id": "R000683",
+        "area_m2": 29.8,
+        "furnished": "False",
+        "energy_class": "E",
+        "ortsteil": "Hohenschönhausen",
+        "warmmiete_eur_monthly": 379,
+        "kiez_premium": "low",
+        "rent_per_m2_kalt_eur": 9.84
+      }
+    },
+    {
+      "content": "Rental apartment in Französisch Buchholz, Pankow, Berlin. 5-room 5_room_plus, 123.0 m2, floor 0 of 6, altbau_pre_1949, condition kernsaniert, position vorderhaus, energy class H. Furnished: no, lift: no, balcony: yes. Nearest transit: Bellevue (Stadtbahn), 127 min; 8.9 km to Brandenburg Gate. Kaltmiete EUR 1207/month, Nebenkosten EUR 341, Warmmiete EUR 1548/month (9.82 EUR/m2 kalt). Deposit: 3 months. Listed 2024-09-16.",
+      "metadata": {
+        "id": "R006972",
+        "rent_per_m2_kalt_eur": 9.82,
+        "area_m2": 123.0,
+        "kiez_premium": "medium",
+        "rooms": 5,
+        "bezirk": "Pankow",
+        "source": "rentals",
+        "energy_class": "H",
+        "furnished": "False",
+        "warmmiete_eur_monthly": 1548,
+        "ortsteil": "Französisch Buchholz",
+        "property_type": "5_room_plus",
+        "kaltmiete_eur_monthly": 1207,
+        "listing_type": "rental",
+        "date_listed": "2024-09-16"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 5-room 5_room_plus, 194.4 m2, floor 1 of 8, modern_1990_2010, condition kernsaniert, position hinterhaus, energy class B. Furnished: no, lift: yes, balcony: no. Nearest transit: Pankstraße (U8), 100 min; 10.4 km to Brandenburg Gate. Kaltmiete EUR 1472/month, Nebenkosten EUR 700, Warmmiete EUR 2173/month (7.58 EUR/m2 kalt). Deposit: 3 months. Listed 2025-03-10.",
+      "metadata": {
+        "id": "R013174",
+        "kiez_premium": "low",
+        "date_listed": "2025-03-10",
+        "property_type": "5_room_plus",
+        "source": "rentals",
+        "listing_type": "rental",
+        "energy_class": "B",
+        "ortsteil": "Hohenschönhausen",
+        "rooms": 5,
+        "furnished": "False",
+        "warmmiete_eur_monthly": 2173,
+        "bezirk": "Lichtenberg",
+        "kaltmiete_eur_monthly": 1472,
+        "rent_per_m2_kalt_eur": 7.58,
+        "area_m2": 194.4
+      }
+    },
+    {
+      "content": "Rental apartment in Malchow, Lichtenberg, Berlin. 1-room 1_room, 29.3 m2, floor 5 of 5, new_post_2010, condition saniert, position seitenflügel, energy class B. Furnished: yes, lift: no, balcony: no. Nearest transit: Bellevue (Stadtbahn), 130 min; 9.23 km to Brandenburg Gate. Kaltmiete EUR 354/month, Nebenkosten EUR 101, Warmmiete EUR 455/month (12.09 EUR/m2 kalt). Deposit: 2 months. Listed 2025-11-30.",
+      "metadata": {
+        "area_m2": 29.3,
+        "energy_class": "B",
+        "warmmiete_eur_monthly": 455,
+        "listing_type": "rental",
+        "kaltmiete_eur_monthly": 354,
+        "furnished": "True",
+        "bezirk": "Lichtenberg",
+        "property_type": "1_room",
+        "rent_per_m2_kalt_eur": 12.09,
+        "id": "R016383",
+        "rooms": 1,
+        "source": "rentals",
+        "kiez_premium": "low",
+        "ortsteil": "Malchow",
+        "date_listed": "2025-11-30"
+      }
+    },
+    {
+      "content": "Rental apartment in Lübars, Reinickendorf, Berlin. 1-room 1_room, 27.4 m2, floor 0 of 8, modern_1990_2010, condition modernisiert, position seitenflügel, energy class E. Furnished: no, lift: yes, balcony: no. Nearest transit: Franz-Neumann-Platz (U8), 67 min; 11.14 km to Brandenburg Gate. Kaltmiete EUR 265/month, Nebenkosten EUR 84, Warmmiete EUR 350/month (9.67 EUR/m2 kalt). Deposit: 2 months. Listed 2024-04-10.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 9.67,
+        "source": "rentals",
+        "kaltmiete_eur_monthly": 265,
+        "property_type": "1_room",
+        "warmmiete_eur_monthly": 350,
+        "date_listed": "2024-04-10",
+        "energy_class": "E",
+        "furnished": "False",
+        "id": "R022686",
+        "kiez_premium": "medium",
+        "listing_type": "rental",
+        "rooms": 1,
+        "ortsteil": "Lübars",
+        "area_m2": 27.4,
+        "bezirk": "Reinickendorf"
+      }
+    }
+  ]
+}

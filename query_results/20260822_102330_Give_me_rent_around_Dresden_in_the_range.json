@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-08-22T10:23:30",
+  "question": "Give me rent around Dresden in the range of 700 to 1000",
+  "search_query": "Search for rental properties in Dresden with a price range of 700 to 1000 euros.",
+  "datasource": "real_estate",
+  "routing": "auto",
+  "filters": null,
+  "answer": "The retrieved documents do not contain any information about rental prices in Dresden or any other location. They only provide details about properties for sale in Malchow, Lichtenberg, Berlin. Therefore, I cannot provide an answer regarding rent in the specified range of 700 to 1000.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 1,
+    "hallucinated": false,
+    "rationale": "The answer accurately states that the retrieved context does not contain information about rental prices in Dresden, which is true based on the context provided. The answer is directly relevant to the question asked."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 4-room 4_room, 124.3 m2, on floor 2 of 6, built 1979 (post_war_1949_1990). Condition: kernsaniert, position: vorderhaus, energy class E. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Yorckstraße (U7), 49 min away; 8.94 km to Brandenburg Gate. Price: EUR 357,000 (2,870 EUR/m2). Listed 2025-10-07 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "rooms": 4,
+        "price_per_m2_eur": 2870,
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Malchow",
+        "property_type": "4_room",
+        "source": "secondary_sales",
+        "kiez_premium": "low",
+        "listing_type": "resale",
+        "date_listed": "2025-10-07",
+        "id": "S002158",
+        "energy_class": "E",
+        "price_eur": 357000,
+        "year_built": 1979,
+        "area_m2": 124.3
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 2-room 2_room, 55.5 m2, on floor 3 of 5, built 1985 (post_war_1949_1990). Condition: renoviert, position: vorderhaus, energy class E. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Pankstraße (U8), 30 min away; 10.56 km to Brandenburg Gate. Price: EUR 133,000 (2,388 EUR/m2). Listed 2022-07-31 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "id": "S043604",
+        "price_per_m2_eur": 2388,
+        "rooms": 2,
+        "area_m2": 55.5,
+        "ortsteil": "Malchow",
+        "kiez_premium": "low",
+        "listing_type": "resale",
+        "date_listed": "2022-07-31",
+        "bezirk": "Lichtenberg",
+        "price_eur": 133000,
+        "year_built": 1985,
+        "source": "secondary_sales",
+        "energy_class": "E",
+        "property_type": "2_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 2-room 2_room, 66.4 m2, on floor 2 of 5, built 1958 (post_war_1949_1990). Condition: renovierungsbedürftig, position: vorderhaus, energy class D. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Osloer Straße (U8), 33 min away; 9.99 km to Brandenburg Gate. Price: EUR 151,000 (2,269 EUR/m2). Listed 2025-06-17 at a mortgage rate of 3.3%.",
+      "metadata": {
+        "bezirk": "Lichtenberg",
+        "rooms": 2,
+        "kiez_premium": "low",
+        "year_built": 1958,
+        "source": "secondary_sales",
+        "listing_type": "resale",
+        "price_eur": 151000,
+        "ortsteil": "Malchow",
+        "price_per_m2_eur": 2269,
+        "date_listed": "2025-06-17",
+        "area_m2": 66.4,
+        "property_type": "2_room",
+        "id": "S029391",
+        "energy_class": "D"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 40.5 m2, on floor 1 of 5, built 1950 (post_war_1949_1990). Condition: renovierungsbedürftig, position: gartenhaus, energy class E. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Voltastraße (U8), 37 min away; 11.03 km to Brandenburg Gate. Price: EUR 73,000 (1,790 EUR/m2). Listed 2021-12-15 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "year_built": 1950,
+        "energy_class": "E",
+        "kiez_premium": "low",
+        "source": "secondary_sales",
+        "rooms": 1,
+        "id": "S049183",
+        "price_eur": 73000,
+        "listing_type": "resale",
+        "ortsteil": "Malchow",
+        "price_per_m2_eur": 1790,
+        "bezirk": "Lichtenberg",
+        "date_listed": "2021-12-15",
+        "area_m2": 40.5,
+        "property_type": "1_room"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 44.0 m2, on floor 4 of 4, built 1964 (post_war_1949_1990). Condition: renoviert, position: vorderhaus, energy class E. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Pankstraße (U8), 33 min away; 8.77 km to Brandenburg Gate. Price: EUR 97,000 (2,213 EUR/m2). Listed 2025-07-18 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "kiez_premium": "low",
+        "year_built": 1964,
+        "listing_type": "resale",
+        "price_per_m2_eur": 2213,
+        "source": "secondary_sales",
+        "bezirk": "Lichtenberg",
+        "property_type": "1_room",
+        "ortsteil": "Malchow",
+        "price_eur": 97000,
+        "date_listed": "2025-07-18",
+        "rooms": 1,
+        "area_m2": 44.0,
+        "id": "S009326",
+        "energy_class": "E"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 50.5 m2, on floor 4 of 4, built 1958 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class F. Lift: no, balcony: no, cellar: yes, parking: no. Nearest transit: Yorckstraße (U7), 51 min away; 10.44 km to Brandenburg Gate. Price: EUR 92,000 (1,815 EUR/m2). Listed 2025-10-12 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "bezirk": "Lichtenberg",
+        "date_listed": "2025-10-12",
+        "year_built": 1958,
+        "area_m2": 50.5,
+        "source": "secondary_sales",
+        "property_type": "1_room",
+        "listing_type": "resale",
+        "rooms": 1,
+        "kiez_premium": "low",
+        "price_per_m2_eur": 1815,
+        "id": "S044867",
+        "energy_class": "F",
+        "price_eur": 92000,
+        "ortsteil": "Malchow"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 2-room 2_room, 58.5 m2, on floor 4 of 5, built 1994 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class D. Lift: yes, balcony: no, cellar: no, parking: no. Nearest transit: Voltastraße (U8), 33 min away; 10.45 km to Brandenburg Gate. Price: EUR 187,000 (3,200 EUR/m2). Listed 2021-04-14 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "kiez_premium": "low",
+        "price_per_m2_eur": 3200,
+        "property_type": "2_room",
+        "bezirk": "Lichtenberg",
+        "id": "S043020",
+        "source": "secondary_sales",
+        "ortsteil": "Malchow",
+        "rooms": 2,
+        "area_m2": 58.5,
+        "energy_class": "D",
+        "listing_type": "resale",
+        "price_eur": 187000,
+        "date_listed": "2021-04-14",
+        "year_built": 1994
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 2-room 2_room, 69.4 m2, on floor 2 of 6, built 2014 (new_post_2010). Condition: kernsaniert, position: vorderhaus, energy class A. Lift: yes, balcony: no, cellar: no, parking: no. Nearest transit: Klosterstraße (U2), 37 min away; 10.65 km to Brandenburg Gate. Price: EUR 315,000 (4,535 EUR/m2). Listed 2026-03-31 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "bezirk": "Lichtenberg",
+        "date_listed": "2026-03-31",
+        "rooms": 2,
+        "price_eur": 315000,
+        "price_per_m2_eur": 4535,
+        "listing_type": "resale",
+        "area_m2": 69.4,
+        "energy_class": "A",
+        "property_type": "2_room",
+        "year_built": 2014,
+        "kiez_premium": "low",
+        "source": "secondary_sales",
+        "ortsteil": "Malchow",
+        "id": "S008685"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 2-room 2_room, 65.0 m2, on floor 3 of 4, built 1976 (post_war_1949_1990). Condition: kernsaniert, position: gartenhaus, energy class G. Lift: no, balcony: yes, cellar: no, parking: no. Nearest transit: Voltastraße (U8), 31 min away; 9.68 km to Brandenburg Gate. Price: EUR 99,000 (1,516 EUR/m2). Listed 2020-08-26 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "area_m2": 65.0,
+        "ortsteil": "Malchow",
+        "source": "secondary_sales",
+        "kiez_premium": "low",
+        "bezirk": "Lichtenberg",
+        "property_type": "2_room",
+        "year_built": 1976,
+        "energy_class": "G",
+        "listing_type": "resale",
+        "date_listed": "2020-08-26",
+        "price_per_m2_eur": 1516,
+        "price_eur": 99000,
+        "rooms": 2,
+        "id": "S045312"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Malchow, Lichtenberg, Berlin. 1-room 1_room, 52.2 m2, on floor 0 of 5, built 1978 (post_war_1949_1990). Condition: kernsaniert, position: vorderhaus, energy class G. Lift: no, balcony: no, cellar: no, parking: no. Nearest transit: Bernauer Straße (U8), 36 min away; 9.5 km to Brandenburg Gate. Price: EUR 109,000 (2,097 EUR/m2). Listed 2025-09-17 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "listing_type": "resale",
+        "price_per_m2_eur": 2097,
+        "date_listed": "2025-09-17",
+        "rooms": 1,
+        "kiez_premium": "low",
+        "year_built": 1978,
+        "source": "secondary_sales",
+        "property_type": "1_room",
+        "bezirk": "Lichtenberg",
+        "energy_class": "G",
+        "price_eur": 109000,
+        "id": "S009749",
+        "area_m2": 52.2,
+        "ortsteil": "Malchow"
+      }
+    }
+  ]
+}

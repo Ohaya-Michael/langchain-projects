@@ -12,7 +12,7 @@ import os
 import json
 from datetime import datetime
 from pathlib import Path
-from typing import Literal, Optional
+from typing import Literal, Optional, Dict, Any
 from functools import lru_cache
 
 from dotenv import load_dotenv
@@ -79,9 +79,9 @@ Retrieved documents:
 Answer:"""
 
 
-# -------------------
+# ---------------------------------------------------------------------------
 # Structured schemas
-# -------------------
+# ---------------------------------------------------------------------------
 class RouteQuery(BaseModel):
     """Route a user query to the most relevant datasource."""
 
@@ -120,9 +120,9 @@ def format_docs(docs):
     )
 
 
-# ----------------------------------------------
+# ---------------------------------------------------------------------------
 # Pipeline: built once, reused across requests
-# ----------------------------------------------
+# ---------------------------------------------------------------------------
 class RagPipeline:
     def __init__(self):
         load_dotenv()
@@ -142,6 +142,8 @@ class RagPipeline:
             persist_directory="./chroma_medicine",
         )
 
+        # keep the stores so we can build filtered retrievers per request
+        self.stores = {"real_estate": real_estate, "medical": medical}
         self.real_estate_retriever = real_estate.as_retriever(search_kwargs={"k": 5})
         self.medical_retriever = medical.as_retriever(search_kwargs={"k": 5})
 
@@ -191,16 +193,28 @@ class RagPipeline:
         self.evaluator = eval_prompt | llm.with_structured_output(RagEvaluation)
 
     def answer_evaluate_and_save(self, query: str, save: bool = True,
-                                 out_dir=RESULTS_DIR) -> dict:
+                                 out_dir=RESULTS_DIR,
+                                 datasource: Optional[str] = None,
+                                 filters: Optional[Dict[str, Any]] = None,
+                                 k: int = 5) -> dict:
         # 1. rewrite the query for retrieval
         search_query = self.query_rewriter.invoke({"question": query})
 
-        # 2. route + retrieve using the rewritten query
-        datasource = self.question_router.invoke({"question": search_query}).datasource
-        retriever = (self.real_estate_retriever if datasource == "real_estate"
-                     else self.medical_retriever)
+        # 2. route (unless the caller forced a domain), then retrieve
+        forced = datasource in ("real_estate", "medical")
+        if forced:
+            ds = datasource
+        else:
+            ds = self.question_router.invoke({"question": search_query}).datasource
+
+        # build a retriever, applying a metadata filter if one was supplied
+        search_kwargs: Dict[str, Any] = {"k": k}
+        if filters:
+            search_kwargs["filter"] = filters
+        retriever = self.stores[ds].as_retriever(search_kwargs=search_kwargs)
         docs = retriever.invoke(search_query)
         context = format_docs(docs)
+        datasource = ds
 
         # 3. answer the ORIGINAL question against the retrieved context
         answer = self.answer_chain.invoke({"question": query, "context": context})
@@ -219,6 +233,8 @@ class RagPipeline:
             "question": query,
             "search_query": search_query,
             "datasource": datasource,
+            "routing": "forced" if forced else "auto",
+            "filters": filters or None,
             "answer": answer,
             "evaluation": eval_dict,
             "retrieved": [
@@ -235,7 +251,7 @@ class RagPipeline:
                 json.dump(record, f, ensure_ascii=False, indent=2)
             record["saved_path"] = str(path)
 
-        return record["answer"]
+        return record
 
 
 @lru_cache(maxsize=1)
@@ -244,11 +260,21 @@ def get_pipeline() -> RagPipeline:
     return RagPipeline()
 
 
-# ------
+# -----
 # API
-# ------
+# -----
 class QueryRequest(BaseModel):
     question: str = Field(..., description="The user's question.")
+    datasource: Optional[Literal["real_estate", "medical"]] = Field(
+        None,
+        description="Force a domain. Omit / null to let the router decide automatically.",
+    )
+    filters: Optional[Dict[str, Any]] = Field(
+        None,
+        description="Chroma metadata where-clause, e.g. {\"rooms\": {\"$gte\": 3}} "
+                    "or {\"data_source\": \"cms_synpuf\"}.",
+    )
+    k: int = Field(5, ge=1, le=25, description="Number of documents to retrieve.")
     save: bool = Field(True, description="Whether to log the result to disk.")
 
 
@@ -257,13 +283,13 @@ class QueryResponse(BaseModel):
     question: str
     search_query: str
     datasource: str
+    routing: str
+    filters: Optional[Dict[str, Any]] = None
     answer: str
     evaluation: RagEvaluation
     retrieved: list
     saved_path: Optional[str] = None
 
-class QueryAnswer(BaseModel):
-    answer: str
 
 app = FastAPI(title="Two-Domain RAG API")
 
@@ -279,11 +305,17 @@ def health():
     return {"status": "ok"}
 
 
-@app.post("/query") #, response_model=QueryResponse
+@app.post("/query", response_model=QueryResponse)
 def query(req: QueryRequest):
     if not req.question.strip():
         raise HTTPException(status_code=422, detail="question must not be empty")
-    return get_pipeline().answer_evaluate_and_save(req.question, save=req.save)
+    return get_pipeline().answer_evaluate_and_save(
+        req.question,
+        save=req.save,
+        datasource=req.datasource,
+        filters=req.filters,
+        k=req.k,
+    )
 
 
 if __name__ == "__main__":

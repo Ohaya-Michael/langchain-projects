@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-08-21T22:53:52",
+  "question": "asthma treatment plan",
+  "search_query": "asthma (asthma) treatment plan",
+  "datasource": "medical",
+  "answer": "The treatment plan for asthma, as indicated in the retrieved documents, typically includes a combination of medications and a care plan focused on self-management. \n\nFor example, one patient, a 4-year-old male with childhood asthma, was prescribed the following medications:\n- Fluticasone propionate 0.11 mg/actuat metered dose inhaler (Flovent)\n- Albuterol 0.83 mg/ml inhalation solution\n\nAdditionally, he was placed on a care plan for asthma self-management (Synthea).\n\nAnother patient, a 3-year-old male, was prescribed:\n- Budesonide 0.25 mg/ml inhalation suspension\n- Albuterol 0.09 mg/actuat metered dose inhaler (ProAir)\n\nHe was also placed on a similar care plan for asthma self-management (Synthea).\n\nThese treatment plans emphasize the importance of medication adherence and self-management strategies to control asthma symptoms, such as wheezing and shortness of breath.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the treatment plans for asthma as detailed in the retrieved context, including specific medications and the emphasis on self-management. All claims made in the answer are supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Encounter: Asthma follow-up (regime/therapy) on 2021-06-12.\nBilled: $142.58 to Humana.\n\nClinical note:\n2021-06-12\r\n\r\n# Chief Complaint\r\n- Chest Pressure\r\n- Shortness of Breath\r\n- Wheezing\r\n\r\n\r\n# History of Present Illness\r\nThresa531 is a 11 year-old nonhispanic white female.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a high socioeconomic background.\r\n\r\nPatient currently has Humana.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\n\r\n\r\n\r\n## Plan",
+      "metadata": {
+        "patient_id": "c5b71c82-86df-e422-1d9c-4372d52ea6ce",
+        "patient_name": "Thresa531 Glenn0 Dickinson688",
+        "gender": "female",
+        "birth_date": "2009-12-03",
+        "state": "MA",
+        "encounter_id": "c5b71c82-86df-e422-5ade-e497a4c5bee5",
+        "date": "2021-06-12",
+        "encounter_type": "Asthma follow-up (regime/therapy)",
+        "total_billed": 142.58,
+        "insurer": "Humana",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease",
+        "data_source": "synthea",
+        "source_file": "Thresa531_Dickinson688_c5b71c82-86df-e422-1d9c-4372d52ea6ce.json",
+        "_id": "830f5933-ef9d-4696-be01-c901146fd8d1",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Encounter: Encounter for symptom (procedure) on 2015-05-17.\nConditions: Childhood asthma (disorder).\nMedications: 120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent], albuterol 0.83 MG/ML Inhalation Solution.\nBilled: $85.55 to UnitedHealthcare.\n\nClinical note:\n2015-05-17\r\n\r\n# Chief Complaint\r\n- Chest Pressure\r\n- Wheezing\r\n- Shortness of Breath\r\n\r\n\r\n# History of Present Illness\r\nRaymon366 is a 4 year-old nonhispanic white male.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a middle socioeconomic background.\r\n\r\nPatient currently has UnitedHealthcare.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with childhood asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- 120 actuat fluticasone propionate 0.11 mg/actuat metered dose inhaler [flovent]\r\n- albuterol 0.83 mg/ml inhalation solution\r\nThe patient was placed on a careplan:\r\n- asthma self management (regime/therapy)",
+      "metadata": {
+        "patient_id": "281e30d2-dbd9-f572-7b48-13a34fe19f5c",
+        "patient_name": "Raymon366 Wunsch504",
+        "gender": "male",
+        "birth_date": "2010-06-28",
+        "state": "MA",
+        "encounter_id": "281e30d2-dbd9-f572-3003-c822c254b16f",
+        "date": "2015-05-17",
+        "encounter_type": "Encounter for symptom (procedure)",
+        "total_billed": 85.55,
+        "insurer": "UnitedHealthcare",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease",
+        "data_source": "synthea",
+        "source_file": "Raymon366_Wunsch504_281e30d2-dbd9-f572-7b48-13a34fe19f5c.json",
+        "_id": "51823cf2-5a13-4530-b20b-5d2050e425e5",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Encounter: Asthma follow-up (regime/therapy) on 2020-06-17.\nBilled: $142.58 to Humana.\n\nClinical note:\n2020-06-17\r\n\r\n# Chief Complaint\r\n- Chest Pressure\r\n- Shortness of Breath\r\n- Wheezing\r\n\r\n\r\n# History of Present Illness\r\nThresa531 is a 10 year-old nonhispanic white female.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a high socioeconomic background.\r\n\r\nPatient currently has Humana.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\n\r\n\r\n\r\n## Plan",
+      "metadata": {
+        "patient_id": "c5b71c82-86df-e422-1d9c-4372d52ea6ce",
+        "patient_name": "Thresa531 Glenn0 Dickinson688",
+        "gender": "female",
+        "birth_date": "2009-12-03",
+        "state": "MA",
+        "encounter_id": "c5b71c82-86df-e422-906e-3112ab2e80b1",
+        "date": "2020-06-17",
+        "encounter_type": "Asthma follow-up (regime/therapy)",
+        "total_billed": 142.58,
+        "insurer": "Humana",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease",
+        "data_source": "synthea",
+        "source_file": "Thresa531_Dickinson688_c5b71c82-86df-e422-1d9c-4372d52ea6ce.json",
+        "_id": "4f115cbd-b8ca-425c-9f7a-3a8c8e5df047",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Encounter: Emergency hospital admission for asthma (procedure) on 2017-06-30.\nBilled: $146.18 to Humana.\n\nClinical note:\n2017-06-30\r\n\r\n# Chief Complaint\r\n- Chest Pressure\r\n- Shortness of Breath\r\n- Wheezing\r\n\r\n\r\n# History of Present Illness\r\nThresa531 is a 7 year-old nonhispanic white female.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a high socioeconomic background.\r\n\r\nPatient currently has Humana.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\n\r\n\r\n\r\n## Plan",
+      "metadata": {
+        "patient_id": "c5b71c82-86df-e422-1d9c-4372d52ea6ce",
+        "patient_name": "Thresa531 Glenn0 Dickinson688",
+        "gender": "female",
+        "birth_date": "2009-12-03",
+        "state": "MA",
+        "encounter_id": "c5b71c82-86df-e422-f467-face2c80b3cf",
+        "date": "2017-06-30",
+        "encounter_type": "Emergency hospital admission for asthma (procedure)",
+        "total_billed": 146.18,
+        "insurer": "Humana",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease",
+        "data_source": "synthea",
+        "source_file": "Thresa531_Dickinson688_c5b71c82-86df-e422-1d9c-4372d52ea6ce.json",
+        "_id": "4e20e9ee-fb81-4fe3-9d11-17e7e5b402d9",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Encounter: Encounter for symptom (procedure) on 2012-01-15.\nConditions: Childhood asthma (disorder).\nMedications: budesonide 0.25 MG/ML Inhalation Suspension, NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir].\nBilled: $85.55 to Blue Cross Blue Shield.\n\nClinical note:\n2012-01-15\r\n\r\n# Chief Complaint\r\n- Wheezing\r\n- Shortness of Breath\r\n- Chest Pressure\r\n- Cough\r\n- Nasal Congestion\r\n\r\n\r\n# History of Present Illness\r\nReed154 is a 3 year-old nonhispanic white male.\r\n\r\n# Social History\r\n Patient has never smoked.\r\n\r\n\r\nPatient comes from a high socioeconomic background.\r\n\r\nPatient currently has Blue Cross Blue Shield.\r\n\r\n# Allergies\r\nNo Known Allergies.\r\n\r\n# Medications\r\nNo Active Medications.\r\n\r\n# Assessment and Plan\r\nPatient is presenting with childhood asthma (disorder). \r\n\r\n\r\n## Plan\r\n\r\nThe patient was prescribed the following medications:\r\n- budesonide 0.25 mg/ml inhalation suspension\r\n- nda021457 200 actuat albuterol 0.09 mg/actuat metered dose inhaler [proair]\r\nThe patient was placed on a careplan:\r\n- asthma self management (regime/therapy)",
+      "metadata": {
+        "patient_id": "02c9f672-0f94-7759-955b-aba81dc3bb50",
+        "patient_name": "Reed154 White193",
+        "gender": "male",
+        "birth_date": "2008-07-11",
+        "state": "MA",
+        "encounter_id": "02c9f672-0f94-7759-b823-19b95aba9be5",
+        "date": "2012-01-15",
+        "encounter_type": "Encounter for symptom (procedure)",
+        "total_billed": 85.55,
+        "insurer": "Blue Cross Blue Shield",
+        "disease_module_tag": "copd,breast_cancer,chronic_kidney_disease",
+        "data_source": "synthea",
+        "source_file": "Reed154_White193_02c9f672-0f94-7759-955b-aba81dc3bb50.json",
+        "_id": "eee0d553-4cdc-4576-beb0-7d194f6edaab",
+        "_collection_name": "medicine_claims"
+      }
+    }
+  ]
+}

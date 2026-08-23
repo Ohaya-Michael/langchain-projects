@@ -1,0 +1,220 @@
+{
+  "timestamp": "2026-08-22T17:44:50",
+  "question": "Give me rent in the range of 700 to 1000 in Hohenschönhausen",
+  "search_query": "Find rental properties in Hohenschönhausen with a price range of 700 to 1000 euros.",
+  "datasource": "real_estate",
+  "routing": "forced",
+  "filters": {
+    "source": "rentals"
+  },
+  "answer": "In Hohenschönhausen, there are several rental apartments with monthly rents within the range of €700 to €1000:\n\n1. A 2-room apartment (68.9 m²) with a cold rent (Kaltmiete) of €625 and a warm rent (Warmmiete) of €947 per month (listed 2022-12-01).\n2. A 4-room apartment (85.1 m²) with a cold rent of €886 and a warm rent of €1117 per month (listed 2025-02-12). While the warm rent exceeds €1000, the cold rent is within the specified range.\n\nThe only apartment that fits entirely within the specified rent range is the 2-room apartment with a warm rent of €947. The 4-room apartment's warm rent exceeds the upper limit of your range. \n\nThus, the relevant option is the 2-room apartment at €947/month (Warmmiete) (Real Estate).",
+  "evaluation": {
+    "faithfulness": 3,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer correctly identifies the 2-room apartment with a warm rent of €947 as fitting within the specified range. However, it inaccurately includes the 4-room apartment, which exceeds the upper limit of €1000 for warm rent, thus affecting the overall faithfulness score."
+  },
+  "retrieved": [
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 4-room 4_room, 119.2 m2, floor 1 of 6, altbau_pre_1949, condition kernsaniert, position gartenhaus, energy class E. Furnished: no, lift: no, balcony: yes. Nearest transit: Hohenzollerndamm S (S Ringbahn), 188 min; 9.74 km to Brandenburg Gate. Kaltmiete EUR 955/month, Nebenkosten EUR 464, Warmmiete EUR 1419/month (8.01 EUR/m2 kalt). Deposit: 1 months. Listed 2023-02-07.",
+      "metadata": {
+        "kiez_premium": "low",
+        "date_listed": "2023-02-07",
+        "furnished": "False",
+        "bezirk": "Lichtenberg",
+        "warmmiete_eur_monthly": 1419,
+        "listing_type": "rental",
+        "source": "rentals",
+        "energy_class": "E",
+        "rent_per_m2_kalt_eur": 8.01,
+        "area_m2": 119.2,
+        "kaltmiete_eur_monthly": 955,
+        "id": "R002798",
+        "rooms": 4,
+        "ortsteil": "Hohenschönhausen",
+        "property_type": "4_room"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 50.4 m2, floor 2 of 3, altbau_pre_1949, condition modernisiert, position vorderhaus, energy class F. Furnished: no, lift: no, balcony: no. Nearest transit: Bernauer Straße (U8), 98 min; 9.58 km to Brandenburg Gate. Kaltmiete EUR 416/month, Nebenkosten EUR 182, Warmmiete EUR 598/month (8.26 EUR/m2 kalt). Deposit: 1 months. Listed 2024-12-30.",
+      "metadata": {
+        "listing_type": "rental",
+        "rooms": 1,
+        "id": "R022169",
+        "ortsteil": "Hohenschönhausen",
+        "area_m2": 50.4,
+        "kaltmiete_eur_monthly": 416,
+        "warmmiete_eur_monthly": 598,
+        "source": "rentals",
+        "kiez_premium": "low",
+        "property_type": "1_room",
+        "furnished": "False",
+        "energy_class": "F",
+        "date_listed": "2024-12-30",
+        "rent_per_m2_kalt_eur": 8.26,
+        "bezirk": "Lichtenberg"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 48.9 m2, floor 2 of 6, altbau_pre_1949, condition saniert, position seitenflügel, energy class F. Furnished: yes, lift: yes, balcony: yes. Nearest transit: Hohenzollerndamm S (S Ringbahn), 184 min; 9.3 km to Brandenburg Gate. Kaltmiete EUR 569/month, Nebenkosten EUR 133, Warmmiete EUR 702/month (11.63 EUR/m2 kalt). Deposit: 2 months. Listed 2026-04-07.",
+      "metadata": {
+        "ortsteil": "Hohenschönhausen",
+        "furnished": "True",
+        "warmmiete_eur_monthly": 702,
+        "source": "rentals",
+        "date_listed": "2026-04-07",
+        "bezirk": "Lichtenberg",
+        "rooms": 1,
+        "listing_type": "rental",
+        "energy_class": "F",
+        "id": "R009870",
+        "area_m2": 48.9,
+        "kiez_premium": "low",
+        "kaltmiete_eur_monthly": 569,
+        "property_type": "1_room",
+        "rent_per_m2_kalt_eur": 11.63
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 68.9 m2, floor 1 of 4, modern_1990_2010, condition modernisiert, position vorderhaus, energy class E. Furnished: no, lift: yes, balcony: no. Nearest transit: Pankow U2 (U2), 86 min; 10.64 km to Brandenburg Gate. Kaltmiete EUR 625/month, Nebenkosten EUR 322, Warmmiete EUR 947/month (9.07 EUR/m2 kalt). Deposit: 3 months. Listed 2022-12-01.",
+      "metadata": {
+        "rent_per_m2_kalt_eur": 9.07,
+        "listing_type": "rental",
+        "kaltmiete_eur_monthly": 625,
+        "furnished": "False",
+        "id": "R006310",
+        "rooms": 2,
+        "date_listed": "2022-12-01",
+        "energy_class": "E",
+        "ortsteil": "Hohenschönhausen",
+        "source": "rentals",
+        "warmmiete_eur_monthly": 947,
+        "bezirk": "Lichtenberg",
+        "area_m2": 68.9,
+        "property_type": "2_room",
+        "kiez_premium": "low"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 4-room 4_room, 133.6 m2, floor 2 of 4, altbau_pre_1949, condition modernisiert, position gartenhaus, energy class C. Furnished: yes, lift: no, balcony: no. Nearest transit: Pankow U2 (U2), 82 min; 8.59 km to Brandenburg Gate. Kaltmiete EUR 1830/month, Nebenkosten EUR 533, Warmmiete EUR 2363/month (13.7 EUR/m2 kalt). Deposit: 3 months. Listed 2025-10-05.",
+      "metadata": {
+        "bezirk": "Lichtenberg",
+        "kaltmiete_eur_monthly": 1830,
+        "source": "rentals",
+        "id": "R009113",
+        "property_type": "4_room",
+        "rooms": 4,
+        "area_m2": 133.6,
+        "rent_per_m2_kalt_eur": 13.7,
+        "ortsteil": "Hohenschönhausen",
+        "energy_class": "C",
+        "furnished": "True",
+        "kiez_premium": "low",
+        "date_listed": "2025-10-05",
+        "warmmiete_eur_monthly": 2363,
+        "listing_type": "rental"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 4-room 4_room, 85.1 m2, floor 3 of 5, modern_1990_2010, condition modernisiert, position gartenhaus, energy class B. Furnished: no, lift: yes, balcony: yes. Nearest transit: Landsberger Allee (S Ringbahn), 58 min; 10.08 km to Brandenburg Gate. Kaltmiete EUR 886/month, Nebenkosten EUR 230, Warmmiete EUR 1117/month (10.42 EUR/m2 kalt). Deposit: 3 months. Listed 2025-02-12.",
+      "metadata": {
+        "energy_class": "B",
+        "source": "rentals",
+        "date_listed": "2025-02-12",
+        "ortsteil": "Hohenschönhausen",
+        "listing_type": "rental",
+        "bezirk": "Lichtenberg",
+        "rooms": 4,
+        "property_type": "4_room",
+        "warmmiete_eur_monthly": 1117,
+        "kiez_premium": "low",
+        "kaltmiete_eur_monthly": 886,
+        "id": "R007108",
+        "rent_per_m2_kalt_eur": 10.42,
+        "area_m2": 85.1,
+        "furnished": "False"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 29.8 m2, floor 2 of 4, altbau_pre_1949, condition kernsaniert, position vorderhaus, energy class E. Furnished: no, lift: no, balcony: no. Nearest transit: Bernauer Straße (U8), 98 min; 10.27 km to Brandenburg Gate. Kaltmiete EUR 293/month, Nebenkosten EUR 86, Warmmiete EUR 379/month (9.84 EUR/m2 kalt). Deposit: 1 months. Listed 2024-10-19.",
+      "metadata": {
+        "energy_class": "E",
+        "source": "rentals",
+        "furnished": "False",
+        "property_type": "1_room",
+        "warmmiete_eur_monthly": 379,
+        "rent_per_m2_kalt_eur": 9.84,
+        "listing_type": "rental",
+        "bezirk": "Lichtenberg",
+        "area_m2": 29.8,
+        "kaltmiete_eur_monthly": 293,
+        "date_listed": "2024-10-19",
+        "rooms": 1,
+        "id": "R000683",
+        "ortsteil": "Hohenschönhausen",
+        "kiez_premium": "low"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 35.6 m2, floor 2 of 3, altbau_pre_1949, condition renovierungsbedürftig, position vorderhaus, energy class E. Furnished: no, lift: no, balcony: no. Nearest transit: Prenzlauer Allee S (S Ringbahn), 65 min; 9.19 km to Brandenburg Gate. Kaltmiete EUR 424/month, Nebenkosten EUR 192, Warmmiete EUR 616/month (11.92 EUR/m2 kalt). Deposit: 2 months. Listed 2023-05-14.",
+      "metadata": {
+        "listing_type": "rental",
+        "energy_class": "E",
+        "kiez_premium": "low",
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Hohenschönhausen",
+        "source": "rentals",
+        "furnished": "False",
+        "rent_per_m2_kalt_eur": 11.92,
+        "kaltmiete_eur_monthly": 424,
+        "warmmiete_eur_monthly": 616,
+        "date_listed": "2023-05-14",
+        "area_m2": 35.6,
+        "property_type": "1_room",
+        "rooms": 1,
+        "id": "R022506"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 32.7 m2, floor 4 of 4, post_war_1949_1990, condition renoviert, position vorderhaus, energy class C. Furnished: no, lift: no, balcony: no. Nearest transit: Hallesches Tor (U1), 132 min; 10.29 km to Brandenburg Gate. Kaltmiete EUR 242/month, Nebenkosten EUR 128, Warmmiete EUR 370/month (7.39 EUR/m2 kalt). Deposit: 3 months. Listed 2024-09-18.",
+      "metadata": {
+        "source": "rentals",
+        "warmmiete_eur_monthly": 370,
+        "listing_type": "rental",
+        "rooms": 1,
+        "bezirk": "Lichtenberg",
+        "area_m2": 32.7,
+        "furnished": "False",
+        "ortsteil": "Hohenschönhausen",
+        "id": "R021289",
+        "property_type": "1_room",
+        "rent_per_m2_kalt_eur": 7.39,
+        "kiez_premium": "low",
+        "date_listed": "2024-09-18",
+        "kaltmiete_eur_monthly": 242,
+        "energy_class": "C"
+      }
+    },
+    {
+      "content": "Rental apartment in Hohenschönhausen, Lichtenberg, Berlin. 1-room 1_room, 40.9 m2, floor 1 of 3, modern_1990_2010, condition saniert, position gartenhaus, energy class G. Furnished: no, lift: yes, balcony: no. Nearest transit: Landsberger Allee (S Ringbahn), 54 min; 9.81 km to Brandenburg Gate. Kaltmiete EUR 236/month, Nebenkosten EUR 154, Warmmiete EUR 390/month (5.76 EUR/m2 kalt). Deposit: 3 months. Listed 2021-01-03.",
+      "metadata": {
+        "furnished": "False",
+        "energy_class": "G",
+        "date_listed": "2021-01-03",
+        "listing_type": "rental",
+        "area_m2": 40.9,
+        "source": "rentals",
+        "rent_per_m2_kalt_eur": 5.76,
+        "rooms": 1,
+        "ortsteil": "Hohenschönhausen",
+        "kaltmiete_eur_monthly": 236,
+        "warmmiete_eur_monthly": 390,
+        "kiez_premium": "low",
+        "id": "R002262",
+        "bezirk": "Lichtenberg",
+        "property_type": "1_room"
+      }
+    }
+  ]
+}

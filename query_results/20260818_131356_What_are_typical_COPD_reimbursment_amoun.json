@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-08-18T13:13:56",
+  "question": "What are typical COPD reimbursment amounts?",
+  "search_query": "What are the typical reimbursement amounts for COPD (chronic obstructive pulmonary disease)?",
+  "datasource": "medical",
+  "answer": "Typical reimbursement amounts for COPD-related inpatient claims, based on the retrieved documents, vary significantly. One claim shows a payment amount of $27,000 for a patient with COPD among other chronic conditions (CMS SynPUF). In contrast, another claim for a different patient with similar conditions indicates a reimbursement of $4,000 (CMS SynPUF). Additionally, a third claim reflects a payment of $6,000 for a patient also diagnosed with COPD (CMS SynPUF). \n\nThese discrepancies in reimbursement amounts can be attributed to various factors, including the specific services rendered, the duration of the hospital stay, and the overall health status of the patients involved.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the reimbursement amounts for COPD-related inpatient claims as presented in the retrieved context, providing specific figures and acknowledging variability. It also correctly attributes the information to the source."
+  },
+  "retrieved": [
+    {
+      "content": "Inpatient claim for beneficiary 15AC2A2FFF2365D9. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Service from 20090520 to 20090523. Provider: 5201TA. Diagnosis codes (ICD-9): 4414, 4414, 29680, 41400, V4582, 496, 32723, 4019. Claim payment amount: $27000.00.",
+      "metadata": {
+        "claim_type": "inpatient",
+        "from_date": "20090520",
+        "thru_date": "20090523",
+        "beneficiary_id": "15AC2A2FFF2365D9",
+        "amount": 27000.0,
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "state_code": "52",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "diagnosis_codes": "4414, 4414, 29680, 41400, V4582, 496, 32723, 4019",
+        "data_source": "cms_synpuf"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 15AC2A2FFF2365D9. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Service from 20090520 to 20090523. Provider: 5201TA. Diagnosis codes (ICD-9): 4414, 4414, 29680, 41400, V4582, 496, 32723, 4019. Claim payment amount: $27000.00.",
+      "metadata": {
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "state_code": "52",
+        "amount": 27000.0,
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "data_source": "cms_synpuf",
+        "claim_type": "inpatient",
+        "thru_date": "20090523",
+        "diagnosis_codes": "4414, 4414, 29680, 41400, V4582, 496, 32723, 4019",
+        "from_date": "20090520",
+        "beneficiary_id": "15AC2A2FFF2365D9"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 23139CBEFDD82DB9. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Service from 20090220 to 20090221. Provider: 3400XN. Diagnosis codes (ICD-9): 43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859. Claim payment amount: $4000.00.",
+      "metadata": {
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "thru_date": "20090221",
+        "beneficiary_id": "23139CBEFDD82DB9",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "from_date": "20090220",
+        "diagnosis_codes": "43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859",
+        "state_code": "34",
+        "claim_type": "inpatient",
+        "amount": 4000.0,
+        "data_source": "cms_synpuf"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 23139CBEFDD82DB9. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Service from 20090220 to 20090221. Provider: 3400XN. Diagnosis codes (ICD-9): 43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859. Claim payment amount: $4000.00.",
+      "metadata": {
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "beneficiary_id": "23139CBEFDD82DB9",
+        "claim_type": "inpatient",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "diagnosis_codes": "43310, 43310, 71590, 25000, V4573, 43330, 4019, 496, V173, 5859",
+        "amount": 4000.0,
+        "state_code": "34",
+        "from_date": "20090220",
+        "thru_date": "20090221"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 23AF5F07B3E4A4B5. Known chronic conditions: congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis. Service from 20090330 to 20090331. Provider: 1000AH. Diagnosis codes (ICD-9): 4111, 41401, 73390, 5533, 78609, 3970, 4111, 27801, 4258. Claim payment amount: $6000.00.",
+      "metadata": {
+        "from_date": "20090330",
+        "thru_date": "20090331",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "diagnosis_codes": "4111, 41401, 73390, 5533, 78609, 3970, 4111, 27801, 4258",
+        "claim_type": "inpatient",
+        "chronic_conditions": "congestive heart failure, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, rheumatoid/osteoarthritis",
+        "beneficiary_id": "23AF5F07B3E4A4B5",
+        "state_code": "10",
+        "data_source": "cms_synpuf",
+        "amount": 6000.0
+      }
+    }
+  ]
+}
