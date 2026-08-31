@@ -140,8 +140,15 @@ langchain_project/
 ├── query_chroma_db_vectordb.py           # CLI to query a Chroma store directly
 ├── using_langchain_langgraph.py          # the LangGraph RAG pipeline
 ├── using_langchain_langgraph.ipynb       # notebook version of the pipeline
-├── langchain_chain_rag_function_api.py   # pipeline wrapped as a callable API
+├── langchain_chain_rag_function_api.py   # chain backend (local Chroma), FastAPI `app`
+├── using_langchain_langgraph_cloud.py    # LangGraph backend over Qdrant Cloud (build_pipeline)
+├── langgraph_api.py                      # FastAPI wrapper -> serves the LangGraph backend
+├── rag_streamlit_app.py                  # Streamlit UI — HTTP client of the RAG API
 ├── dashboard.py                          # Streamlit + pandas monitoring dashboard
+├── Dockerfile.chain_api                  # image: chain backend + local Chroma
+├── Dockerfile.langgraph_cloud            # image: LangGraph backend + Qdrant Cloud
+├── docker-compose.yml                    # one API + both Streamlit apps
+├── .dockerignore                         # keeps stores/logs/venv out of the image
 ├── testing_rag_api.ipynb                 # scratch notebook for exercising the API
 ├── download_data_script/                 # fetch + parse CMS SynPUF and Synthea data
 ├── immobilien_dataset/                   # the five Berlin real-estate CSVs
@@ -152,7 +159,7 @@ langchain_project/
 └── __pycache__/
 ```
 
-Plus hidden files `.env` (holds `OPENAI_API_KEY`) and `.gitignore`.
+Plus hidden files `.env` (holds `OPENAI_API_KEY`, plus `QDRANT_URL` / `QDRANT_API_KEY` for the Qdrant-Cloud backend) and `.gitignore`.
 
 ### 📥 Data & large files (not on GitHub)
 
@@ -205,10 +212,85 @@ graph.invoke({"question": "What are typical COPD reimbursement amounts?"})   # �
 graph.invoke({"question": "new build with parking in Mitte"})                # → real_estate
 ```
 
+## 🐳 Run with Docker
+
+Two Dockerfiles are provided — **one per backend** — plus a `docker-compose.yml` that also
+stands up both Streamlit apps. Pick the backend that matches where your vectors live:
+
+| Dockerfile | Backend entrypoint | Vector store | Extra env |
+|------------|--------------------|--------------|-----------|
+| `Dockerfile.chain_api` | `langchain_chain_rag_function_api.py` (LangChain chain) | **local Chroma** (`./chroma_immobilien`, `./chroma_medicine`) | — |
+| `Dockerfile.langgraph_cloud` | `using_langchain_langgraph_cloud.py` served via `langgraph_api.py` | **Qdrant Cloud** | `QDRANT_URL`, `QDRANT_API_KEY` |
+
+> 🔌 `using_langchain_langgraph_cloud.py` has no web server of its own, so `langgraph_api.py`
+> wraps it in the **same** `/query` + `/health` API the chain backend exposes — so
+> `rag_streamlit_app.py` works against either backend unchanged.
+
+### 1️⃣ Configure `.env`
+
+```bash
+# always
+OPENAI_API_KEY=sk-...
+# only for the langgraph_cloud backend
+QDRANT_URL=https://<your-cluster>.qdrant.io:6333
+QDRANT_API_KEY=...
+```
+
+### 2️⃣ Quickest path — `docker compose` (API + both Streamlit apps)
+
+```bash
+docker compose up --build
+```
+
+| Service | URL | What it is |
+|---------|-----|------------|
+| `api` | http://localhost:8000/docs | the RAG API (Swagger UI) |
+| `rag_explorer` | http://localhost:8501 | `rag_streamlit_app.py` — ask questions |
+| `dashboard` | http://localhost:8502 | `dashboard.py` — quality monitoring |
+
+In the Explorer sidebar, set **API base URL** to `http://api:8000` (containers talk over the
+compose network, so `localhost` won't reach the `api` service).
+
+**Switch backend:** in `docker-compose.yml`, change the `api` service's `dockerfile:` from
+`Dockerfile.chain_api` to `Dockerfile.langgraph_cloud` (and make sure `QDRANT_URL` /
+`QDRANT_API_KEY` are in `.env`), then re-run `docker compose up --build`.
+
+### 3️⃣ Or run a single backend image (no compose)
+
+```bash
+# chain + local Chroma
+docker build -f Dockerfile.chain_api -t rag-chain-api .
+docker run --env-file .env -p 8000:8000 \
+    -v "$PWD/chroma_immobilien:/app/chroma_immobilien:ro" \
+    -v "$PWD/chroma_medicine:/app/chroma_medicine:ro" \
+    -v "$PWD/query_results:/app/query_results" rag-chain-api
+
+# LangGraph + Qdrant Cloud
+docker build -f Dockerfile.langgraph_cloud -t rag-langgraph-cloud .
+docker run --env-file .env -p 8000:8000 \
+    -v "$PWD/query_results:/app/query_results" rag-langgraph-cloud
+```
+
+Then hit the API:
+
+```bash
+curl http://localhost:8000/health
+curl -X POST http://localhost:8000/query \
+     -H "Content-Type: application/json" \
+     -d '{"question": "typical COPD reimbursement amounts?"}'
+```
+
+> 🗂️ The Chroma stores and `query_results/` are **mounted at runtime**, not baked into the
+> image (see `.dockerignore`). For a self-contained chain image, delete the two `chroma_*`
+> lines from `.dockerignore` so the stores get copied in at build time.
+> 🤖 The first build pre-downloads the `sentence-transformers` embedding models — slow once,
+> cached thereafter.
+
 ## 🛠️ Tech stack
 
-**Python** · **LangChain** · **LangGraph** · **Chroma** (vector DB) · **sentence-transformers**
-(local embeddings) · **OpenAI** `gpt-4o-mini` · **Streamlit** + **pandas** (monitoring) · **FastAPI** (serving)
+**Python** · **LangChain** · **LangGraph** · **Chroma** + **Qdrant Cloud** (vector DBs) ·
+**sentence-transformers** (local embeddings) · **OpenAI** `gpt-4o-mini` · **Streamlit** +
+**pandas** (monitoring) · **FastAPI** (serving) · **Docker** + **docker-compose**
 
 ## 🧭 Notes & next steps
 

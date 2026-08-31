@@ -1,0 +1,64 @@
+# One API backend + the two Streamlit apps.
+#
+# Switch backend by pointing the `api` service at the other Dockerfile:
+#   - Dockerfile.chain_api        -> LangChain chain + local Chroma
+#   - Dockerfile.langgraph_cloud  -> LangGraph + Qdrant Cloud (needs QDRANT_* in .env)
+#
+# Secrets/config come from .env (OPENAI_API_KEY, and for the langgraph backend
+# QDRANT_URL + QDRANT_API_KEY).
+#
+#   docker compose up --build
+#   Explorer  -> http://localhost:8501   (set sidebar "API base URL" to http://api:8000)
+#   Dashboard -> http://localhost:8502
+#   API docs  -> http://localhost:8000/docs
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.chain_api          # <-- swap to Dockerfile.langgraph_cloud
+    container_name: rag-api
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Used only by the chain_api backend; harmless for the langgraph backend.
+      - ./chroma_immobilien:/app/chroma_immobilien:ro
+      - ./chroma_medicine:/app/chroma_medicine:ro
+      # Both backends write query logs here; the dashboard reads them.
+      - ./query_results:/app/query_results
+      - hf_models:/models
+    restart: unless-stopped
+
+  rag_explorer:                                  # rag_streamlit_app.py — HTTP client of the API
+    build:
+      context: .
+      dockerfile: Dockerfile.chain_api           # reuse a backend image (has streamlit + requests)
+    container_name: rag-explorer
+    command: >
+      streamlit run rag_streamlit_app.py
+      --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    restart: unless-stopped
+    # In the app sidebar, set "API base URL" to http://api:8000 (containers talk
+    # over the compose network, so localhost won't reach the api service).
+
+  dashboard:                                     # dashboard.py — reads ./query_results/*.json
+    build:
+      context: .
+      dockerfile: Dockerfile.chain_api           # reuse a backend image (has streamlit + pandas)
+    container_name: rag-dashboard
+    command: >
+      streamlit run dashboard.py
+      --server.port 8502 --server.address 0.0.0.0
+    volumes:
+      - ./query_results:/app/query_results:ro
+    ports:
+      - "8502:8502"
+    restart: unless-stopped
+
+volumes:
+  hf_models:

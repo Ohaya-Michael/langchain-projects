@@ -1,0 +1,24 @@
+# Secrets — passed at runtime via env_file, never baked into the image
+.env
+
+# Virtualenv / caches / VCS
+langchain_project_venv/
+**/__pycache__/
+*.pyc
+.git/
+.gitignore
+
+# Notebooks and data — not needed to run the services
+*.ipynb
+data/
+immobilien_dataset/
+download_data_script/
+generate_ground_truth.py
+generate_rag_ground_truth.ipynb
+
+# Vector stores + logs are mounted as volumes at runtime, not copied into the image.
+# (If you want a fully self-contained chain_api image with NO volume mounts,
+#  delete the two chroma_* lines so the stores get baked in.)
+chroma_immobilien/
+chroma_medicine/
+query_results/

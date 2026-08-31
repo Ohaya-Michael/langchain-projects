@@ -235,7 +235,7 @@ class RagEvaluation(BaseModel):
     hallucinated: bool = Field(...,
         description="True if the answer states facts not present in the context.")
     rationale: str = Field(..., description="One or two sentences justifying the scores.")
-
+  
 
 def build_evaluator(llm):
     eval_llm = llm.with_structured_output(RagEvaluation)
@@ -375,3 +375,4 @@ def build_pipeline():
         medical_retriever, document_grader, answer_chain, evaluator,
     )
     return graph
+

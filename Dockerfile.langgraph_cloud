@@ -1,0 +1,40 @@
+# Backend #2 — LangGraph pipeline over Qdrant CLOUD
+#   graph      : using_langchain_langgraph_cloud.py  (build_pipeline(), no server)
+#   served by  : langgraph_api.py  (thin FastAPI wrapper -> same /query + /health)
+#   vector DB  : Qdrant Cloud  (QDRANT_URL + QDRANT_API_KEY from .env)
+#   embeddings : all-MiniLM-L6-v2 (real-estate) + paraphrase-multilingual-MiniLM-L12-v2 (medical)
+#
+# Build:  docker build -f Dockerfile.langgraph_cloud -t rag-langgraph-cloud .
+# Run  :  docker run --env-file .env -p 8000:8000 \
+#             -v "$PWD/query_results:/app/query_results" rag-langgraph-cloud
+
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    TOKENIZERS_PARALLELISM=false \
+    HF_HOME=/models
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# This backend uses TWO embedding models (one per collection) — cache both.
+RUN python -c "from sentence_transformers import SentenceTransformer as S; \
+S('sentence-transformers/all-MiniLM-L6-v2'); \
+S('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')"
+
+COPY . .
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+    CMD python -c "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health').status==200 else 1)"
+
+# Serve the LangGraph pipeline through the FastAPI wrapper (langgraph_api.py).
+CMD ["uvicorn", "langgraph_api:app", "--host", "0.0.0.0", "--port", "8000"]

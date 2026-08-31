@@ -21,8 +21,6 @@ from pydantic import BaseModel, Field
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
-from langchain_qdrant import QdrantVectorStore
-from qdrant_client import QdrantClient
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -143,28 +141,6 @@ class RagPipeline:
             embedding_function=embeddings,
             persist_directory="./chroma_medicine",
         )
-
-        # # Each collection MUST be queried with the model it was ingested with.
-        # re_embeddings = HuggingFaceEmbeddings(
-        #     model_name="sentence-transformers/all-MiniLM-L6-v2")
-        # med_embeddings = HuggingFaceEmbeddings(
-        #     model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-
-        # client = QdrantClient(
-        #     url=os.environ["QDRANT_URL"],    
-        #     api_key=os.environ["QDRANT_API_KEY"],
-        # )
-
-        # real_estate = QdrantVectorStore(
-        #     client=client,
-        #     collection_name="immobilien",
-        #     embedding=re_embeddings,
-        # )
-        # medical = QdrantVectorStore(
-        #     client=client,
-        #     collection_name="medicine_claims",
-        #     embedding=med_embeddings,
-        # )
 
         # keep the stores so we can build filtered retrievers per request
         self.stores = {"real_estate": real_estate, "medical": medical}
@@ -333,7 +309,6 @@ def health():
 def query(req: QueryRequest):
     if not req.question.strip():
         raise HTTPException(status_code=422, detail="question must not be empty")
-    print(req)
     return get_pipeline().answer_evaluate_and_save(
         req.question,
         save=req.save,
