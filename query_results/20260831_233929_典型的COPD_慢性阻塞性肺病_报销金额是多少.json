@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-08-31T23:39:29",
+  "question": "典型的COPD（慢性阻塞性肺病）报销金额是多少？",
+  "search_query": "典型的COPD（慢性阻塞性肺病）报销金额是多少？",
+  "datasource": "medical",
+  "answer": "根据从CMS SynPUF文档中检索到的信息，典型的COPD（慢性阻塞性肺病）报销金额在不同的住院索赔中有所不同。具体来说：\n\n1. 一项住院索赔的报销金额为$13,000.00（服务日期为2009年11月5日至11月8日）；\n2. 另一项住院索赔的报销金额为$4,000.00（服务日期为2008年4月22日至4月23日）；\n3. 还有一项住院索赔的报销金额为$6,000.00（服务日期为2010年7月27日至7月30日）。\n\n因此，COPD的报销金额在这些案例中分别为$4,000.00、$6,000.00和$13,000.00，显示出不同情况下的报销金额差异。这些差异可能与患者的具体病情、治疗复杂性以及服务提供者的不同有关（CMS SynPUF）。",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, providing specific reimbursement amounts for COPD-related inpatient claims. Each claim amount mentioned in the answer is directly supported by the context."
+  },
+  "retrieved": [
+    {
+      "content": "Inpatient claim for beneficiary 05542CF50E75DF8F. Known chronic conditions: COPD. Service from 20091105 to 20091108. Provider: 2400MP. Diagnosis codes (ICD-9): 71596, 8208, 71865, 496, 2724, 2851, 27801. Claim payment amount: $13000.00.",
+      "metadata": {
+        "beneficiary_id": "05542CF50E75DF8F",
+        "claim_type": "inpatient",
+        "from_date": "20091105",
+        "thru_date": "20091108",
+        "amount": 13000.0,
+        "state_code": "24",
+        "chronic_conditions": "COPD",
+        "diagnosis_codes": "71596, 8208, 71865, 496, 2724, 2851, 27801",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "_id": "e869f281-49fc-4fa3-a951-07fee0af1f2b",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 05542CF50E75DF8F. Known chronic conditions: COPD. Service from 20091105 to 20091108. Provider: 2400MP. Diagnosis codes (ICD-9): 71596, 8208, 71865, 496, 2724, 2851, 27801. Claim payment amount: $13000.00.",
+      "metadata": {
+        "beneficiary_id": "05542CF50E75DF8F",
+        "claim_type": "inpatient",
+        "from_date": "20091105",
+        "thru_date": "20091108",
+        "amount": 13000.0,
+        "state_code": "24",
+        "chronic_conditions": "COPD",
+        "diagnosis_codes": "71596, 8208, 71865, 496, 2724, 2851, 27801",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_1.csv",
+        "_id": "3a34bdd8-1b2e-4da7-a089-56b7709161b1",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 00F8E9D7DF49A8FB. Known chronic conditions: COPD. Service from 20080422 to 20080423. Provider: 0700JR. Diagnosis codes (ICD-9): 78039, 34590, 49390, 25000, V103. Claim payment amount: $4000.00.",
+      "metadata": {
+        "beneficiary_id": "00F8E9D7DF49A8FB",
+        "claim_type": "inpatient",
+        "from_date": "20080422",
+        "thru_date": "20080423",
+        "amount": 4000.0,
+        "state_code": "07",
+        "chronic_conditions": "COPD",
+        "diagnosis_codes": "78039, 34590, 49390, 25000, V103",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_2.csv",
+        "_id": "35e8396a-0ad7-48d4-a5fb-3287f9348cf7",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 00F8E9D7DF49A8FB. Known chronic conditions: COPD. Service from 20080422 to 20080423. Provider: 0700JR. Diagnosis codes (ICD-9): 78039, 34590, 49390, 25000, V103. Claim payment amount: $4000.00.",
+      "metadata": {
+        "beneficiary_id": "00F8E9D7DF49A8FB",
+        "claim_type": "inpatient",
+        "from_date": "20080422",
+        "thru_date": "20080423",
+        "amount": 4000.0,
+        "state_code": "07",
+        "chronic_conditions": "COPD",
+        "diagnosis_codes": "78039, 34590, 49390, 25000, V103",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_2.csv",
+        "_id": "09721743-4b61-40fd-a553-53b12ffcee1e",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Inpatient claim for beneficiary 0074D83CE976F532. Known chronic conditions: COPD. Service from 20100727 to 20100730. Provider: 2500PG. Diagnosis codes (ICD-9): 79902, 496, 78791, 2738, 486, 7140, V1079, 2767. Claim payment amount: $6000.00.",
+      "metadata": {
+        "beneficiary_id": "0074D83CE976F532",
+        "claim_type": "inpatient",
+        "from_date": "20100727",
+        "thru_date": "20100730",
+        "amount": 6000.0,
+        "state_code": "25",
+        "chronic_conditions": "COPD",
+        "diagnosis_codes": "79902, 496, 78791, 2738, 486, 7140, V1079, 2767",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Inpatient_Claims_Sample_2.csv",
+        "_id": "1a48d9ec-a2bc-4584-a774-fb1608d1c4ab",
+        "_collection_name": "medicine_claims"
+      }
+    }
+  ]
+}

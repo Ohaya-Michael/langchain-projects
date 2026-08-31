@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-08-24T11:09:56",
+  "question": "What is the best 2 bedroom apartments between the price of 700 and 1000",
+  "search_query": "Best two-bedroom apartments priced between $700 and $1,000.",
+  "datasource": "real_estate",
+  "routing": "auto",
+  "filters": null,
+  "answer": "The retrieved documents do not contain any 2-bedroom apartments listed between the price of EUR 700 and EUR 1,000. All the listed apartments are priced significantly higher, with the lowest being EUR 81,000. Therefore, there are no suitable options available within the specified price range.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately reflects the information in the retrieved context, which confirms that there are no 2-bedroom apartments listed within the specified price range of EUR 700 to EUR 1,000. All listed apartments are priced significantly higher."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Wartenberg, Lichtenberg, Berlin. 2-room 2_room, 49.5 m2, on floor 2 of 5, built 1978 (post_war_1949_1990). Condition: modernisiert, position: hinterhaus, energy class F. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Adenauerplatz (U7), 70 min away; 11.0 km to Brandenburg Gate. Price: EUR 81,000 (1,639 EUR/m2). Listed 2022-10-21 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S035802",
+        "listing_type": "resale",
+        "ortsteil": "Wartenberg",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 49.5,
+        "year_built": 1978,
+        "energy_class": "F",
+        "price_eur": 81000,
+        "price_per_m2_eur": 1639,
+        "date_listed": "2022-10-21",
+        "_id": "b8237858-07f4-464c-8bb9-f1957567a9c1",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 80.5 m2, on floor 0 of 8, built 1994 (modern_1990_2010). Condition: renovierungsbedürftig, position: seitenflügel, energy class B. Lift: yes, balcony: no, cellar: no, parking: no. Nearest transit: Bellevue (Stadtbahn), 51 min away; 10.77 km to Brandenburg Gate. Price: EUR 173,000 (2,154 EUR/m2). Listed 2025-09-15 at a mortgage rate of 3.1%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S014554",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 80.5,
+        "year_built": 1994,
+        "energy_class": "B",
+        "price_eur": 173000,
+        "price_per_m2_eur": 2154,
+        "date_listed": "2025-09-15",
+        "_id": "b183adf3-81a9-411a-a3d1-6ac40cf6fcf9",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 79.5 m2, on floor 0 of 5, built 1999 (modern_1990_2010). Condition: modernisiert, position: vorderhaus, energy class C. Lift: yes, balcony: no, cellar: no, parking: yes. Nearest transit: Yorckstraße (U7), 50 min away; 9.45 km to Brandenburg Gate. Price: EUR 260,000 (3,271 EUR/m2). Listed 2024-10-20 at a mortgage rate of 3.5%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S040869",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 79.5,
+        "year_built": 1999,
+        "energy_class": "C",
+        "price_eur": 260000,
+        "price_per_m2_eur": 3271,
+        "date_listed": "2024-10-20",
+        "_id": "ebd0adb0-ec32-4b38-8cb9-e3eea81a5aa8",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 80.2 m2, on floor 3 of 8, built 1991 (modern_1990_2010). Condition: renoviert, position: vorderhaus, energy class E. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Franz-Neumann-Platz (U8), 46 min away; 10.53 km to Brandenburg Gate. Price: EUR 212,000 (2,647 EUR/m2). Listed 2022-08-05 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S010120",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 80.2,
+        "year_built": 1991,
+        "energy_class": "E",
+        "price_eur": 212000,
+        "price_per_m2_eur": 2647,
+        "date_listed": "2022-08-05",
+        "_id": "532f7356-72f1-43c5-8712-cd5a43a4acdd",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 52.6 m2, on floor 7 of 8, built 1985 (post_war_1949_1990). Condition: kernsaniert, position: vorderhaus, energy class E. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Leinestraße (U8), 48 min away; 10.72 km to Brandenburg Gate. Price: EUR 177,000 (3,375 EUR/m2). Listed 2022-07-14 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S003769",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 52.6,
+        "year_built": 1985,
+        "energy_class": "E",
+        "price_eur": 177000,
+        "price_per_m2_eur": 3375,
+        "date_listed": "2022-07-14",
+        "_id": "fa149456-cb30-4af9-ba4c-38c21e74d7cd",
+        "_collection_name": "immobilien"
+      }
+    }
+  ]
+}

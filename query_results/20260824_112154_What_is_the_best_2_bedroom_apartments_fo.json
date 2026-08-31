@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-08-24T11:21:54",
+  "question": "What is the best 2 bedroom apartments for purchase.",
+  "search_query": "What are the best two-bedroom apartments available for purchase?",
+  "datasource": "real_estate",
+  "routing": "forced",
+  "filters": null,
+  "answer": "Based on the retrieved documents, here are some options for 2-bedroom apartments available for purchase in Berlin:\n\n1. **Hohenschönhausen, Lichtenberg**:\n   - **Size**: 59.0 m²\n   - **Condition**: Renovated\n   - **Floor**: 2 of 6\n   - **Energy Class**: F\n   - **Lift**: Yes\n   - **Balcony**: Yes\n   - **Price**: EUR 160,000 (EUR 2,709/m²)\n   - **Listed**: 2022-09-15\n   - **Mortgage Rate**: 3.4%\n\n2. **Wartenberg, Lichtenberg**:\n   - **Size**: 49.5 m²\n   - **Condition**: Modernized\n   - **Floor**: 2 of 5\n   - **Energy Class**: F\n   - **Lift**: Yes\n   - **Balcony**: No\n   - **Price**: EUR 81,000 (EUR 1,639/m²)\n   - **Listed**: 2022-10-21\n   - **Mortgage Rate**: 3.4%\n\n3. **Hohenschönhausen, Lichtenberg**:\n   - **Size**: 83.9 m²\n   - **Condition**: Renovated\n   - **Floor**: 2 of 8\n   - **Energy Class**: D\n   - **Lift**: Yes\n   - **Balcony**: Yes\n   - **Parking**: Yes\n   - **Price**: EUR 269,000 (EUR 3,205/m²)\n   - **Listed**: 2021-09-11\n   - **Mortgage Rate**: 1.1%\n\n4. **Lübars, Reinickendorf**:\n   - **Size**: 58.7 m²\n   - **Condition**: Completely renovated\n   - **Floor**: 3 of 3\n   - **Energy Class**: C\n   - **Lift**: Yes\n   - **Balcony**: Yes\n   - **Price**: EUR 264,000 (EUR 4,504/m²)\n   - **Listed**: 2021-11-11\n   - **Mortgage Rate**: 1.1%\n\n5. **Hohenschönhausen, Lichtenberg**:\n   - **Size**: 80.2 m²\n   - **Condition**: Renovated\n   - **Floor**: 3 of 8\n   - **Energy Class**: E\n   - **Lift**: Yes\n   - **Balcony**: Yes\n   - **Price**: EUR 212,000 (EUR 2,647/m²)\n   - **Listed**: 2022-08-05\n   - **Mortgage Rate**: 3.4%\n\nThese options vary in size, condition, and price, allowing for different preferences and budgets.",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the retrieved context, listing multiple 2-bedroom apartments for purchase in Berlin with details that are fully supported by the context provided."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 59.0 m2, on floor 2 of 6, built 1993 (modern_1990_2010). Condition: renoviert, position: vorderhaus, energy class F. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Wittenau U (U8), 55 min away; 9.64 km to Brandenburg Gate. Price: EUR 160,000 (2,709 EUR/m2). Listed 2022-09-15 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S049363",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 59.0,
+        "year_built": 1993,
+        "energy_class": "F",
+        "price_eur": 160000,
+        "price_per_m2_eur": 2709,
+        "date_listed": "2022-09-15",
+        "_id": "c9e4bb89-42bf-45c7-be34-61f8f1a1c6cf",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wartenberg, Lichtenberg, Berlin. 2-room 2_room, 49.5 m2, on floor 2 of 5, built 1978 (post_war_1949_1990). Condition: modernisiert, position: hinterhaus, energy class F. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Adenauerplatz (U7), 70 min away; 11.0 km to Brandenburg Gate. Price: EUR 81,000 (1,639 EUR/m2). Listed 2022-10-21 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S035802",
+        "listing_type": "resale",
+        "ortsteil": "Wartenberg",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 49.5,
+        "year_built": 1978,
+        "energy_class": "F",
+        "price_eur": 81000,
+        "price_per_m2_eur": 1639,
+        "date_listed": "2022-10-21",
+        "_id": "b8237858-07f4-464c-8bb9-f1957567a9c1",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 83.9 m2, on floor 2 of 8, built 2020 (new_post_2010). Condition: saniert, position: hinterhaus, energy class D. Lift: yes, balcony: yes, cellar: yes, parking: yes. Nearest transit: Franz-Neumann-Platz (U8), 42 min away; 10.49 km to Brandenburg Gate. Price: EUR 269,000 (3,205 EUR/m2). Listed 2021-09-11 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S041306",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 83.9,
+        "year_built": 2020,
+        "energy_class": "D",
+        "price_eur": 269000,
+        "price_per_m2_eur": 3205,
+        "date_listed": "2021-09-11",
+        "_id": "7940d9f2-7dd7-4d07-b160-1f91a2282d61",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Lübars, Reinickendorf, Berlin. 2-room 2_room, 58.7 m2, on floor 3 of 3, built 1993 (modern_1990_2010). Condition: kernsaniert, position: vorderhaus, energy class C. Lift: yes, balcony: yes, cellar: yes, parking: no. Nearest transit: Rosenthaler Platz (U8), 40 min away; 10.2 km to Brandenburg Gate. Price: EUR 264,000 (4,504 EUR/m2). Listed 2021-11-11 at a mortgage rate of 1.1%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S010371",
+        "listing_type": "resale",
+        "ortsteil": "Lübars",
+        "bezirk": "Reinickendorf",
+        "kiez_premium": "medium",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 58.7,
+        "year_built": 1993,
+        "energy_class": "C",
+        "price_eur": 264000,
+        "price_per_m2_eur": 4504,
+        "date_listed": "2021-11-11",
+        "_id": "5f2e59a1-47e4-400c-bcbd-e01cd28984b9",
+        "_collection_name": "immobilien"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Hohenschönhausen, Lichtenberg, Berlin. 2-room 2_room, 80.2 m2, on floor 3 of 8, built 1991 (modern_1990_2010). Condition: renoviert, position: vorderhaus, energy class E. Lift: yes, balcony: yes, cellar: no, parking: no. Nearest transit: Franz-Neumann-Platz (U8), 46 min away; 10.53 km to Brandenburg Gate. Price: EUR 212,000 (2,647 EUR/m2). Listed 2022-08-05 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "source": "secondary_sales",
+        "id": "S010120",
+        "listing_type": "resale",
+        "ortsteil": "Hohenschönhausen",
+        "bezirk": "Lichtenberg",
+        "kiez_premium": "low",
+        "property_type": "2_room",
+        "rooms": 2,
+        "area_m2": 80.2,
+        "year_built": 1991,
+        "energy_class": "E",
+        "price_eur": 212000,
+        "price_per_m2_eur": 2647,
+        "date_listed": "2022-08-05",
+        "_id": "532f7356-72f1-43c5-8712-cd5a43a4acdd",
+        "_collection_name": "immobilien"
+      }
+    }
+  ]
+}

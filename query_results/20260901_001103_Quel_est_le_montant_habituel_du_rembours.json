@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-09-01T00:11:03",
+  "question": "Quel est le montant habituel du remboursement pour une BPCO (bronchopneumopathie chronique obstructive) ?",
+  "search_query": "Quel est le montant habituel du remboursement pour une BPCO (bronchopneumopathie chronique obstructive) ?",
+  "datasource": "medical",
+  "answer": "Le montant habituel du remboursement pour une BPCO (bronchopneumopathie chronique obstructive) varie selon les services fournis. Dans les documents récupérés, on observe des montants de remboursement de 60,00 $ pour un service identifié par le code HCPCS 99283 et de 200,00 $ pour un service identifié par le code HCPCS 97001. Un autre montant de 500,00 $ est mentionné pour le code HCPCS 36415. \n\nCes montants reflètent des paiements réels pour des services liés à des patients ayant la BPCO, mais il est important de noter que les montants peuvent varier en fonction du type de service et de la situation clinique spécifique (CMS SynPUF).",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately summarizes the reimbursement amounts found in the retrieved context, which includes specific payment amounts for different HCPCS codes related to services for patients with COPD. It also correctly notes that these amounts can vary based on the type of service."
+  },
+  "retrieved": [
+    {
+      "content": "Outpatient claim for beneficiary 005ECDDFC331F40E. Known chronic conditions: Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis. Provider: 2000HG. Procedure/service codes (HCPCS): 99283. Claim payment amount: $60.00.",
+      "metadata": {
+        "beneficiary_id": "005ECDDFC331F40E",
+        "claim_type": "outpatient",
+        "from_date": "",
+        "thru_date": "",
+        "amount": 60.0,
+        "state_code": "47",
+        "chronic_conditions": "Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Outpatient_Claims_Sample_2.csv",
+        "_id": "25abaa29-6250-4643-a40d-a664eaad9470",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Outpatient claim for beneficiary 005ECDDFC331F40E. Known chronic conditions: Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis. Provider: 2000HG. Procedure/service codes (HCPCS): 99283. Claim payment amount: $60.00.",
+      "metadata": {
+        "beneficiary_id": "005ECDDFC331F40E",
+        "claim_type": "outpatient",
+        "from_date": "",
+        "thru_date": "",
+        "amount": 60.0,
+        "state_code": "47",
+        "chronic_conditions": "Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Outpatient_Claims_Sample_2.csv",
+        "_id": "ed37b29c-bcea-44fc-9b81-62fd47427bca",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Outpatient claim for beneficiary 0138E0C383A1FD4C. Known chronic conditions: Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Provider: 2601XC. Procedure/service codes (HCPCS): 97001. Claim payment amount: $200.00.",
+      "metadata": {
+        "beneficiary_id": "0138E0C383A1FD4C",
+        "claim_type": "outpatient",
+        "from_date": "",
+        "thru_date": "",
+        "amount": 200.0,
+        "state_code": "26",
+        "chronic_conditions": "Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Outpatient_Claims_Sample_1.csv",
+        "_id": "10dad041-2b1b-49c8-940f-8a7f2bd3a7cf",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Outpatient claim for beneficiary 0138E0C383A1FD4C. Known chronic conditions: Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis. Provider: 2601XC. Procedure/service codes (HCPCS): 97001. Claim payment amount: $200.00.",
+      "metadata": {
+        "beneficiary_id": "0138E0C383A1FD4C",
+        "claim_type": "outpatient",
+        "from_date": "",
+        "thru_date": "",
+        "amount": 200.0,
+        "state_code": "26",
+        "chronic_conditions": "Alzheimer's/dementia, congestive heart failure, COPD, diabetes, ischemic heart disease, osteoporosis, rheumatoid/osteoarthritis",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Outpatient_Claims_Sample_1.csv",
+        "_id": "7174c3d2-a927-41cc-aba3-f4e6036e8b85",
+        "_collection_name": "medicine_claims"
+      }
+    },
+    {
+      "content": "Outpatient claim for beneficiary 00E9682E760E1ABF. Known chronic conditions: Alzheimer's/dementia, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis. Provider: 3013MR. Procedure/service codes (HCPCS): 36415. Claim payment amount: $500.00.",
+      "metadata": {
+        "beneficiary_id": "00E9682E760E1ABF",
+        "claim_type": "outpatient",
+        "from_date": "",
+        "thru_date": "",
+        "amount": 500.0,
+        "state_code": "30",
+        "chronic_conditions": "Alzheimer's/dementia, chronic kidney disease, COPD, depression, diabetes, ischemic heart disease, osteoporosis",
+        "data_source": "cms_synpuf",
+        "source_file": "DE1_0_2008_to_2010_Outpatient_Claims_Sample_1.csv",
+        "_id": "05a32e61-f352-4bcf-904e-b7dd352c132d",
+        "_collection_name": "medicine_claims"
+      }
+    }
+  ]
+}

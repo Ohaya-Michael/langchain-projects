@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-08-24T17:58:48",
+  "question": "List all  2 bedroom apartments for purchase between 80000 and 82000.",
+  "search_query": "List all two-bedroom apartments for purchase priced between $80,000 and $82,000.",
+  "datasource": "real_estate",
+  "routing": "forced",
+  "filters": {
+    "$and": [
+      {
+        "rooms": {
+          "$lte": 3.0
+        }
+      },
+      {
+        "price_eur": {
+          "$lt": 82000.0
+        }
+      }
+    ]
+  },
+  "answer": "The only 2-bedroom apartment for purchase between EUR 80,000 and EUR 82,000 is:\n\n- **Location**: Wartenberg, Lichtenberg, Berlin\n  - **Size**: 49.5 m²\n  - **Floor**: 2 of 5\n  - **Built**: 1978\n  - **Condition**: modernisiert\n  - **Energy Class**: F\n  - **Lift**: Yes\n  - **Balcony**: No\n  - **Cellar**: Yes\n  - **Parking**: No\n  - **Nearest Transit**: Adenauerplatz (U7), 70 min away; 11.0 km to Brandenburg Gate\n  - **Price**: EUR 81,000 (1,639 EUR/m²)\n  - **Listed**: 2022-10-21 at a mortgage rate of 3.4% \n\nThis listing meets the specified criteria for a 2-bedroom apartment within the price range. (Real Estate)",
+  "evaluation": {
+    "faithfulness": 5,
+    "answer_relevance": 5,
+    "context_relevance": 5,
+    "hallucinated": false,
+    "rationale": "The answer accurately lists the only 2-bedroom apartment within the specified price range of EUR 80,000 to EUR 82,000, as supported by the retrieved context. All details provided in the answer are directly drawn from the context."
+  },
+  "retrieved": [
+    {
+      "content": "For-sale apartment (resale) in Wartenberg, Lichtenberg, Berlin. 1-room 1_room, 20.0 m2, on floor 1 of 4, built 1985 (post_war_1949_1990). Condition: modernisiert, position: hinterhaus, energy class C. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Uhlandstraße (U1), 67 min away; 11.58 km to Brandenburg Gate. Price: EUR 38,000 (1,908 EUR/m2). Listed 2023-02-05 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "id": "S017081",
+        "energy_class": "C",
+        "listing_type": "resale",
+        "date_listed": "2023-02-05",
+        "price_eur": 38000,
+        "source": "secondary_sales",
+        "kiez_premium": "low",
+        "rooms": 1,
+        "ortsteil": "Wartenberg",
+        "area_m2": 20.0,
+        "bezirk": "Lichtenberg",
+        "property_type": "1_room",
+        "year_built": 1985,
+        "price_per_m2_eur": 1908
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Wartenberg, Lichtenberg, Berlin. 2-room 2_room, 49.5 m2, on floor 2 of 5, built 1978 (post_war_1949_1990). Condition: modernisiert, position: hinterhaus, energy class F. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Adenauerplatz (U7), 70 min away; 11.0 km to Brandenburg Gate. Price: EUR 81,000 (1,639 EUR/m2). Listed 2022-10-21 at a mortgage rate of 3.4%.",
+      "metadata": {
+        "listing_type": "resale",
+        "kiez_premium": "low",
+        "energy_class": "F",
+        "bezirk": "Lichtenberg",
+        "ortsteil": "Wartenberg",
+        "price_per_m2_eur": 1639,
+        "year_built": 1978,
+        "area_m2": 49.5,
+        "rooms": 2,
+        "property_type": "2_room",
+        "source": "secondary_sales",
+        "date_listed": "2022-10-21",
+        "price_eur": 81000,
+        "id": "S035802"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Staaken, Spandau, Berlin. 1-room 1_room, 37.5 m2, on floor 0 of 4, built 1981 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class F. Lift: no, balcony: yes, cellar: yes, parking: no. Nearest transit: Bellevue (Stadtbahn), 59 min away; 16.42 km to Brandenburg Gate. Price: EUR 72,000 (1,932 EUR/m2). Listed 2023-11-20 at a mortgage rate of 4.1%.",
+      "metadata": {
+        "rooms": 1,
+        "ortsteil": "Staaken",
+        "listing_type": "resale",
+        "price_eur": 72000,
+        "date_listed": "2023-11-20",
+        "property_type": "1_room",
+        "price_per_m2_eur": 1932,
+        "kiez_premium": "low",
+        "energy_class": "F",
+        "source": "secondary_sales",
+        "area_m2": 37.5,
+        "id": "S013299",
+        "bezirk": "Spandau",
+        "year_built": 1981
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Mahlsdorf, Marzahn-Hellersdorf, Berlin. 2-room 2_room, 54.1 m2, on floor 5 of 5, built 1985 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class G. Lift: no, balcony: no, cellar: no, parking: no. Nearest transit: Bellevue (Stadtbahn), 81 min away; 18.0 km to Brandenburg Gate. Price: EUR 73,000 (1,352 EUR/m2). Listed 2024-04-28 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "listing_type": "resale",
+        "rooms": 2,
+        "id": "S015998",
+        "date_listed": "2024-04-28",
+        "source": "secondary_sales",
+        "bezirk": "Marzahn-Hellersdorf",
+        "property_type": "2_room",
+        "kiez_premium": "low",
+        "year_built": 1985,
+        "price_eur": 73000,
+        "area_m2": 54.1,
+        "price_per_m2_eur": 1352,
+        "ortsteil": "Mahlsdorf",
+        "energy_class": "G"
+      }
+    },
+    {
+      "content": "For-sale apartment (resale) in Gatow, Spandau, Berlin. 1-room 1_room, 32.8 m2, on floor 2 of 8, built 1972 (post_war_1949_1990). Condition: kernsaniert, position: hinterhaus, energy class D. Lift: yes, balcony: no, cellar: yes, parking: no. Nearest transit: Stadtmitte (U2), 63 min away; 15.1 km to Brandenburg Gate. Price: EUR 79,000 (2,395 EUR/m2). Listed 2024-06-16 at a mortgage rate of 3.85%.",
+      "metadata": {
+        "listing_type": "resale",
+        "year_built": 1972,
+        "property_type": "1_room",
+        "price_per_m2_eur": 2395,
+        "bezirk": "Spandau",
+        "price_eur": 79000,
+        "energy_class": "D",
+        "rooms": 1,
+        "id": "S021018",
+        "date_listed": "2024-06-16",
+        "area_m2": 32.8,
+        "ortsteil": "Gatow",
+        "kiez_premium": "medium",
+        "source": "secondary_sales"
+      }
+    }
+  ]
+}
