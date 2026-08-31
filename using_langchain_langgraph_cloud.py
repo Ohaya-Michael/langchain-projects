@@ -109,11 +109,13 @@ def build_llm():
 def build_query_rewriter(llm):
     # --- query rewriter: raw question -> retrieval-optimized search query ---
     rewrite_system = """You rewrite a user's question into a clear, self-contained \
-search query optimized for retrieving documents from a vector database. Fix \
-spelling, expand abbreviations to their full form while keeping the acronym \
-(e.g. "COPD" -> "COPD (chronic obstructive pulmonary disease)"), and strip \
-chit-chat. Do NOT change the meaning or add facts. Return only the rewritten \
-query, nothing else."""
+search query in ENGLISH, optimized for retrieving documents from a vector \
+database. If the question is written in another language, translate it to \
+English. Fix spelling, expand abbreviations to their full form while keeping \
+the acronym (e.g. "COPD" -> "COPD (chronic obstructive pulmonary disease)"), \
+and strip chit-chat. Keep proper nouns and place names as written (e.g. \
+"Kreuzberg", "Mitte") — do not translate them. Do NOT change the meaning or add \
+facts. Return only the rewritten English query, nothing else."""
 
     rewrite_prompt = ChatPromptTemplate.from_messages([
         ("system", rewrite_system),
